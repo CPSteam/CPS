@@ -1,0 +1,17 @@
+[ 2016-07-12T12:28:38+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.012958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.072864s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.018388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.021927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022166s ]
+
