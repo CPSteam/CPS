@@ -1,0 +1,102 @@
+[ 2016-08-16T09:31:32+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002641s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.031794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000956s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001489s ]
+
+[ 2016-08-16T09:36:42+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012603s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000822s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001186s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2016-08-16T09:36:44+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002061s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001548s ]
+
+[ 2016-08-16T09:36:48+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002647s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2016-08-16T09:36:50+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001214s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002227s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011052s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000732s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001407s ]
+
+[ 2016-08-16T09:36:51+08:00 ] ::1 /CPS/index.php/Student/Stu/project_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002256s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.013355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+

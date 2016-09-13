@@ -1,0 +1,382 @@
+[ 2016-09-12T20:10:52+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.049789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000936s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001473s ]
+
+[ 2016-09-12T20:10:55+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000812s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001699s ]
+
+[ 2016-09-12T20:10:57+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001153s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.062302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062473s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000796s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001178s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2016-09-12T20:10:58+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001466s ]
+
+[ 2016-09-12T20:11:00+08:00 ] ::1 /CPS/index.php/Student/Stu/project_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.036280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036427s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001436s ]
+
+[ 2016-09-12T21:36:49+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.021763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002478s ]
+
+[ 2016-09-12T21:37:11+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003697s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002083s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.035267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001847s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002204s ]
+
+[ 2016-09-12T21:38:49+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000801s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001097s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002102s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002366s ]
+
+[ 2016-09-12T21:38:51+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003403s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000469s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002740s ]
+
+[ 2016-09-12T21:44:33+08:00 ] ::1 /CPS/index.php/Student/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003839s ]
+
+[ 2016-09-12T21:45:01+08:00 ] ::1 /CPS/index.php/Student/Stu/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003919s ]
+
+[ 2016-09-12T21:48:42+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004450s ]
+
+[ 2016-09-12T21:48:53+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003706s ]
+SQL: SHOW COLUMNS FROM `cps_course` [ RunTime:0.011919s ]
+ERR: 1146:Table 'cps.cps_course' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cps_course`
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001948s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003037s ]
+
+[ 2016-09-12T22:02:03+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002588s ]
+
+[ 2016-09-12T22:02:13+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003551s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.012294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002082s ]
+
+[ 2016-09-12T22:02:43+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003400s ]
+SQL: SHOW COLUMNS FROM `cps_course` [ RunTime:0.009529s ]
+ERR: 1146:Table 'cps.cps_course' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `cps_course`
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002054s ]
+
+[ 2016-09-12T22:03:19+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003298s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.017409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001851s ]
+
+[ 2016-09-12T22:03:24+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003059s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002588s ]
+
+[ 2016-09-12T22:06:59+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003170s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.015393s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002955s ]
+
+[ 2016-09-12T22:07:08+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003467s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001861s ]
+
+[ 2016-09-12T22:07:10+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002836s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003944s ]
+
+[ 2016-09-12T22:07:12+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002763s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002086s ]
+
+[ 2016-09-12T22:07:12+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001915s ]
+
+[ 2016-09-12T22:07:13+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001841s ]
+

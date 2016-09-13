@@ -28,18 +28,18 @@
       </tr>
    </thead>
    <tbody>
+   <foreach name="info" item="v">
       <tr>
-         <td>综合课程设计1</td>
-         <td>25615161</td>
+         <td>{$v.course_name}</td>
+         <td>{$v.course_id}</td>
          <td>
-         	<p>dsagdsgsdgsdsa<br>
-         	dgsdggsdgdsgsdgsdg</p>
+         	<p>{$v.course_detail_info}</p>
          </td>
          <td>
          	<a href="project_info.html"><button type="button" class="btn btn-info">查看</button></a>
          </td>
       </tr>
-     
+   </foreach>
    </tbody>
 	</table>
 </div>

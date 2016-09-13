@@ -5,6 +5,11 @@ use Think\Controller;
 class StuController extends Controller{
 
 	function course_info(){
+		//$course = D('Course');
+       // var_dump($course);
+       $course = new \Model\CourseModel();
+       $info = $course->select();
+       $this->assign('info',$info);
 		$this->display();
 	}
 	function myproject(){

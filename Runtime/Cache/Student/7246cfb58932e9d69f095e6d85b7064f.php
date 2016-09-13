@@ -6,25 +6,7 @@
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
    <script src="/CPS/Public/bootstrap/js/jquery.js"></script>
-   <style type="text/css">
-         th{
-            text-align: center;
-         }
-         li a:hover{
-            color:   #ADADAD;
-            text-decoration:none;
-         }
-
-         li a{
-            color: #5B5B5B;
-         }
-
-         #breadTab{
-            width: 1080px;
-            margin-bottom: 0px;
-            height:36px;
-         }
-   </style>
+   <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
         <div id="breadTab">
