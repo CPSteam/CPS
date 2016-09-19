@@ -1,6 +1,6 @@
 
 /*
-��ʼ
+��ʼ
 */
 .stugroup{
     width: 200px;
@@ -38,4 +38,35 @@ li a{
     height: 20px;
     opacity: 0.5;
     border-radius: 5px;
+}
+
+/*我的课题*/
+
+#collapse {
+  display: none;
+}
+
+.toggle-control {
+  position: absolute;
+  width: 1080px;
+  height: 40px;
+  z-index: 999;
+}
+
+.toggle-control a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background: #eee;
+  opacity: .2;
+  -webkit-transition: ease .2s;
+  -o-transition: ease .2s;
+  transition: ease .2s;
+}
+
+.toggle-control a:hover {
+  opacity: 0;
+  -webkit-transition: ease .2s;
+  -o-transition: ease .2s;
+  transition: ease .2s;
 }
