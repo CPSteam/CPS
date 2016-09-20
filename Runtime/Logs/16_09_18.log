@@ -1,0 +1,1316 @@
+[ 2016-09-18T22:30:01+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.013346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042469s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.107376s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.010204s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.129429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.129728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.022078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.022140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.022362s ]
+
+[ 2016-09-18T22:30:04+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003309s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001898s ]
+
+[ 2016-09-18T22:30:24+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000464s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.103809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002167s ]
+
+[ 2016-09-18T22:30:35+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003178s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001857s ]
+
+[ 2016-09-18T22:30:53+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002773s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002124s ]
+
+[ 2016-09-18T22:31:30+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002798s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002934s ]
+
+[ 2016-09-18T22:32:05+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003243s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002209s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002507s ]
+
+[ 2016-09-18T22:33:54+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.076376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.008898s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002885s ]
+
+[ 2016-09-18T22:39:09+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003431s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001754s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001974s ]
+
+[ 2016-09-18T22:39:23+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003496s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000360s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001229s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002114s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002371s ]
+
+[ 2016-09-18T22:39:27+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000567s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002168s ]
+
+[ 2016-09-18T22:40:37+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000516s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006061s ]
+
+[ 2016-09-18T23:06:28+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003188s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021763s ]
+
+[ 2016-09-18T23:06:54+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003348s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021044s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001160s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027447s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001822s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002846s ]
+
+[ 2016-09-18T23:09:11+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003359s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.020879s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001208s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000463s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002542s ]
+
+[ 2016-09-18T23:09:31+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002945s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021585s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001979s ]
+
+[ 2016-09-18T23:10:07+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003242s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022891s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030680s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001456s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002182s ]
+
+[ 2016-09-18T23:11:00+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002876s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.032575s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002065s ]
+
+[ 2016-09-18T23:11:17+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003488s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021559s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001290s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002289s ]
+
+[ 2016-09-18T23:12:02+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003047s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.020829s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001607s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000396s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002109s ]
+
+[ 2016-09-18T23:12:33+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004218s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021997s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002378s ]
+
+[ 2016-09-18T23:17:16+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005017s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021049s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001380s ]
+
+[ 2016-09-18T23:17:28+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004980s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021814s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `student_group` [ RunTime:0.021240s ]
+SQL: C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000556s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'C.student_id from course as A,project as B,student as C,student_group as D where' at line 1
+ [ SQL语句 ] : C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002689s ]
+
+[ 2016-09-18T23:18:01+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003406s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021152s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `student_group` [ RunTime:0.021221s ]
+SQL: C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000631s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'C.student_id from course as A,project as B,student as C,student_group as D where' at line 1
+ [ SQL语句 ] : C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002420s ]
+
+[ 2016-09-18T23:18:25+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002801s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022402s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001221s ]
+SQL: C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000485s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'C.student_id from course as A,project as B,student as C,student_group as D where' at line 1
+ [ SQL语句 ] : C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002463s ]
+
+[ 2016-09-18T23:18:40+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003825s ]
+NOTIC: [8] Undefined variable: course F:\web\CPS\Student\Controller\StuController.class.php 第 31 行.
+
+[ 2016-09-18T23:18:59+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002999s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021987s ]
+SQL: C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000548s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'C.student_id from course as A,project as B,student as C,student_group as D where' at line 1
+ [ SQL语句 ] : C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8] Undefined variable: team F:\web\CPS\Runtime\Cache\Student\b9146860cbe6309b8a9a621ad0ff6f28.php 第 34 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003122s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003393s ]
+
+[ 2016-09-18T23:19:17+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003809s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021524s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001452s ]
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001170s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001825s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002338s ]
+
+[ 2016-09-18T23:20:15+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002671s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021939s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001109s ]
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000879s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002640s ]
+
+[ 2016-09-18T23:21:00+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003246s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021738s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001130s ]
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000966s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001449s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004038s ]
+
+[ 2016-09-18T23:21:27+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005206s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021305s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001197s ]
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000934s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.032545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002841s ]
+
+[ 2016-09-18T23:21:41+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003316s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022250s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001110s ]
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000810s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000404s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.032736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002191s ]
+
+[ 2016-09-18T23:27:19+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003241s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022085s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000888s ]
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 12 行.
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001908s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002135s ]
+
+[ 2016-09-18T23:27:36+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002662s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022056s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000819s ]
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 13 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000984s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001779s ]
+
+[ 2016-09-18T23:28:39+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003154s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022519s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000794s ]
+SQL: UPDATE `course` SET `course_id`=10 WHERE ( course_id=1 ) [ RunTime:0.047115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002208s ]
+
+[ 2016-09-18T23:29:45+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003487s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.023197s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000873s ]
+SQL: UPDATE `course` SET `course_id`=10 WHERE ( course_id=1 ) [ RunTime:0.000646s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001985s ]
+
+[ 2016-09-18T23:30:30+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003122s ]
+
+[ 2016-09-18T23:31:00+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002851s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021172s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000931s ]
+SQL: UPDATE `course` SET `course_name`='<h style=\"color:red;\">fff</h>' WHERE ( course_id=1 ) [ RunTime:0.000739s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001374s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002008s ]
+
+[ 2016-09-18T23:31:06+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002856s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022777s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000868s ]
+SQL: UPDATE `course` SET `course_name`='<h style=\"color:red;\">fff</h>' WHERE ( course_id=1 ) [ RunTime:0.000627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001273s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001819s ]
+
+[ 2016-09-18T23:31:21+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003181s ]
+
+[ 2016-09-18T23:31:54+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002837s ]
+
+[ 2016-09-18T23:31:55+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002734s ]
+
+[ 2016-09-18T23:32:07+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002659s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021104s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000804s ]
+SQL: UPDATE `course` SET `course_name`='<h style=\"color:red;\">fff</h>' WHERE ( course_id=10 ) [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002014s ]
+
+[ 2016-09-18T23:32:14+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003288s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.020806s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000921s ]
+SQL: UPDATE `course` SET `course_name`='<h style=\"color:red;\">fff</h>' WHERE ( course_id=10 ) [ RunTime:0.000831s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023505s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001258s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001922s ]
+
+[ 2016-09-18T23:32:42+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002866s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021818s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001022s ]
+SQL: UPDATE `course` SET `course_name`='�ۺϿγ����1' WHERE ( course_id=10 ) [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000321s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.022711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001775s ]
+
+[ 2016-09-18T23:32:45+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002975s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.020609s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000804s ]
+SQL: UPDATE `course` SET `course_name`='�ۺϿγ����1' WHERE ( course_id=10 ) [ RunTime:0.000734s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001892s ]
+
+[ 2016-09-18T23:33:29+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003306s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.020702s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000732s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001532s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002115s ]
+
+[ 2016-09-18T23:33:35+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002675s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021158s ]
+SQL: select A.course_name,A.course_id,B.project_name,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.006054s ]
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000990s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.031701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002027s ]
+
+[ 2016-09-18T23:35:25+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003345s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021057s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001166s ]
+NOTIC: [8] Undefined variable: item F:\web\CPS\Student\Controller\StuController.class.php 第 32 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000934s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.032176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002138s ]
+
+[ 2016-09-18T23:35:47+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003526s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.020938s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001522s ]
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000195s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000612s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034376s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002109s ]
+
+[ 2016-09-18T23:38:19+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003319s ]
+
+[ 2016-09-18T23:38:32+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002737s ]
+
+[ 2016-09-18T23:38:50+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002845s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022047s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001209s ]
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 32 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 33 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.032730s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002617s ]
+
+[ 2016-09-18T23:39:34+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003735s ]
+
+[ 2016-09-18T23:39:53+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002852s ]
+
+[ 2016-09-18T23:40:06+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004502s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022309s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001257s ]
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 32 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 33 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000970s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000395s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003780s ]
+
+[ 2016-09-18T23:40:28+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003190s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022184s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001278s ]
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 32 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 37 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001276s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-09-18T23:41:16+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003187s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.020852s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001213s ]
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 32 行.
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 33 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 38 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000952s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000402s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.032714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032964s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002657s ]
+
+[ 2016-09-18T23:41:37+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003106s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.020952s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001234s ]
+NOTIC: [8] Undefined index: project_status F:\web\CPS\Student\Controller\StuController.class.php 第 32 行.
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 33 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 38 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000390s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.032951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001937s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002315s ]
+
+[ 2016-09-18T23:41:49+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004760s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021843s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001245s ]
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 33 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 38 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000870s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.031562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031796s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002107s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002567s ]
+
+[ 2016-09-18T23:42:05+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002647s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021048s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001370s ]
+NOTIC: [8] Use of undefined constant project_status - assumed 'project_status' F:\web\CPS\Student\Controller\StuController.class.php 第 32 行.
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 33 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 38 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000881s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000981s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001935s ]
+
+[ 2016-09-18T23:43:40+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002724s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022881s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001396s ]
+
+[ 2016-09-18T23:43:48+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003052s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021340s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001275s ]
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 33 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 38 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034938s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002429s ]
+
+[ 2016-09-18T23:44:17+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003389s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021490s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001470s ]
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 33 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 38 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001215s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000387s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033589s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003233s ]
+
+[ 2016-09-18T23:44:25+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003758s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022630s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001571s ]
+NOTIC: [8] Undefined index: project_status F:\web\CPS\Student\Controller\StuController.class.php 第 32 行.
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 33 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 38 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001940s ]
+
+[ 2016-09-18T23:44:32+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005914s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021579s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001233s ]
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 33 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 38 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000960s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000380s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001191s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001399s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002524s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002808s ]
+
+[ 2016-09-18T23:44:52+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003192s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.026970s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001510s ]
+NOTIC: [8] Trying to get property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 34 行.
+NOTIC: [2] Attempt to assign property of non-object F:\web\CPS\Student\Controller\StuController.class.php 第 39 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001320s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000450s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002772s ]
+
+[ 2016-09-18T23:46:51+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003594s ]
+
+[ 2016-09-18T23:50:11+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003504s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021766s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001163s ]
+NOTIC: [2] Illegal offset type F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [2] Illegal offset type F:\web\CPS\Student\Controller\StuController.class.php 第 41 行.
+NOTIC: [2] Illegal offset type F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [2] Illegal offset type F:\web\CPS\Student\Controller\StuController.class.php 第 41 行.
+NOTIC: [2] Illegal offset type F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [2] Illegal offset type F:\web\CPS\Student\Controller\StuController.class.php 第 41 行.
+NOTIC: [2] Illegal offset type F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [2] Illegal offset type F:\web\CPS\Student\Controller\StuController.class.php 第 41 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000948s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002211s ]
+
+[ 2016-09-18T23:52:02+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003789s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021679s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001205s ]
+NOTIC: [8] Undefined offset: 0 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 1 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 2 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 3 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000990s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.032005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000969s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001972s ]
+
+[ 2016-09-18T23:52:50+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003220s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021049s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001183s ]
+NOTIC: [8] Undefined offset: 0 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 1 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 2 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 3 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002171s ]
+
+[ 2016-09-18T23:54:05+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003507s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.021302s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001367s ]
+NOTIC: [8] Undefined offset: 0 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 1 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 2 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 3 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000897s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000386s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002583s ]
+
+[ 2016-09-18T23:55:03+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003601s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.024313s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001264s ]
+NOTIC: [8] Undefined offset: 0 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 1 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 2 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+NOTIC: [8] Undefined offset: 3 F:\web\CPS\Student\Controller\StuController.class.php 第 36 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.000946s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.036210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003168s ]
+
+[ 2016-09-18T23:56:13+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003016s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.029615s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_status,D.group_id,C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id; [ RunTime:0.001366s ]
+NOTIC: [8] Undefined offset: 0 F:\web\CPS\Student\Controller\StuController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 1 F:\web\CPS\Student\Controller\StuController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 2 F:\web\CPS\Student\Controller\StuController.class.php 第 37 行.
+NOTIC: [8] Undefined offset: 3 F:\web\CPS\Student\Controller\StuController.class.php 第 37 行.
+SQL: select C.student_id from course as A,project as B,student as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id=C.group_id;  [ RunTime:0.001025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000393s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.035366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003175s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003763s ]
+
