@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
 	<title>我的课题</title>
@@ -77,22 +77,20 @@
 				</a>
 				</thead>
 			<tbody id="collapse">
-			<foreach name="report" item="v">
-				<tr>
-					<td>{$v.course_name}</td>
-					<td>{$v.course_id}</td>
-					<td>{$v.project_name}</td>
-					<td>{$v.project_id}</td>
-					<td>{$v.teacher_id}</td>
-					<td>{$v.main_project}</td>
+			<?php if(is_array($report)): foreach($report as $key=>$v): ?><tr>
+					<td><?php echo ($v["course_name"]); ?></td>
+					<td><?php echo ($v["course_id"]); ?></td>
+					<td><?php echo ($v["project_name"]); ?></td>
+					<td><?php echo ($v["project_id"]); ?></td>
+					<td><?php echo ($v["teacher_id"]); ?></td>
+					<td><?php echo ($v["main_project"]); ?></td>
 					<td>
 						<a href="#">查看</a>
 					</td>
 					<td>
-						{$v.project_status}
+						<?php echo ($v["project_status"]); ?>
 					</td>
-				</tr>
-				</foreach>
+				</tr><?php endforeach; endif; ?>
 			</tbody>
 		</table>
 	</div>
@@ -114,20 +112,18 @@
 				</tr>
 			</thead>
 			<tbody>
-			<foreach name="report" item="h">
-				<tr>
-					<td>{$h.middle_expected_result}</td>
+			<?php if(is_array($report)): foreach($report as $key=>$h): ?><tr>
+					<td><?php echo ($h["middle_expected_result"]); ?></td>
 					<!-- <td>xx</td> -->
 					<td>90</td>
 					<td>
-						{$h.project_comment_info}
+						<?php echo ($h["project_comment_info"]); ?>
 					</td>
 					<td>
 						<button type="button" class="btn btn-primary">查看</button>
 						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">提交</button>
 					</td>
-				</tr>
-			</foreach>
+				</tr><?php endforeach; endif; ?>
 			</tbody>
 		</table>
 	</div>
@@ -149,20 +145,18 @@
 				</tr>
 			</thead>
 			<tbody>
-				<foreach name="report" item="m">
-				<tr>
-					<td>{$m.final_expected_result}</td>
+				<?php if(is_array($report)): foreach($report as $key=>$m): ?><tr>
+					<td><?php echo ($m["final_expected_result"]); ?></td>
 					<!-- <td>xx</td> -->
 					<td>90</td>
 					<td>
-						{$m.project_comment_info}
+						<?php echo ($m["project_comment_info"]); ?>
 					</td>
 					<td>
 						<button type="button" class="btn btn-primary">查看</button>
 						<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal1">提交</button>
 					</td>
-				</tr>
-			</foreach>
+				</tr><?php endforeach; endif; ?>
 		</tbody>
 	</table>
 </div>
