@@ -11,10 +11,10 @@
 <body>
         <div id="breadTab">
         <ol class="breadcrumb" style="background-color:#FFFFFF;">
-         <li><a href="course_info.html">课程信息</a></li>
-          <li><a href="myproject.html">我的课题</a></li>
-          <li><a href="myteam.html">我的队伍</a></li>
-          <li><a href="team_manage.html">队伍管理</a></li>
+         <li><a href="/CPS/index.php/Student/Stu/course_info">课程信息</a></li>
+          <li><a href="/CPS/index.php/Student/Stu/myproject">我的课题</a></li>
+          <li><a href="/CPS/index.php/Student/Stu/myteam">我的队伍</a></li>
+          <li><a href="/CPS/index.php/Student/Stu/team_manage">队伍管理</a></li>
         </ol>
         </div>
         <div style="width: 1080px;">
@@ -35,63 +35,22 @@
                  <td><?php echo ($v["course_name"]); ?></td>
                  <td><?php echo ($v["course_id"]); ?></td>
                  <td><?php echo ($v["project_name"]); ?></td>
-                 <td>
+                 <td name="group_id">
                      <?php echo ($v["group_id"]); ?>
                  </td>
                  <td>
-                     <?php if(is_array($studentid)): foreach($studentid as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br/><?php endforeach; endif; ?>
+                     <?php if(is_array($v["students"])): foreach($v["students"] as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br/><?php endforeach; endif; ?>
                  </td>
                  <td>
                    <?php echo ($v["project_status"]); ?>
                  </td>
                    <td>
-                    <!-- 按钮触发模态框 -->
-                    <!--<button class="btn btn-info" data-toggle="modal" data-target="#myModal1">-->
-                          <!--管理-->
-                    <!--</button>-->
-                       <?php echo ($v["group_manage"]); ?>
-
-                    <!-- 模态框（Modal） -->
-                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                           <div class="modal-dialog">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                       <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
-                                          &times;
-                                       </button>
-                                       <h4 class="modal-title" id="myModalLabel1">
-                                       管理队员
-                                       </h4>
-                                    </div>
-                                 <div class="modal-body">
-                                      <table class="table table-bordered table table-striped text-center">
-                                           <thead>
-                                                 <tr>
-                                                    <th>组员</th>
-                                                    <th>操作</th>
-                                                 </tr>
-                                           </thead>
-                                           <tbody>
-                                           <?php if(is_array($studentid)): foreach($studentid as $key=>$v): ?><form action="/CPS/index.php/Student/Stu/team_manage" type="get">
-                                                 <tr>
-                                                   <td name="student_id">
-                                                       <input type="text" style="border: none;outline: none;color:#000;background-color: transparent;" name="student_id" value="<?php echo ($v["student_id"]); ?>-<?php echo ($v["student_name"]); ?>"/>
-                                                   </td>
-                                                   <td>
-                                                       <input type="submit" value="踢出" class="btn btn-danger"/>
-                                                   </td>
-                                                   </tr>
-                                               </form><?php endforeach; endif; ?>
-                                          </tbody>
-                                       </table>
-                                 </div>
-                              </div><!-- /.modal-content -->
-                        </div><!-- /.modal -->
-                    </div>
+                   <a href="<?php echo ($Manage_url); ?>/group_id/<?php echo ($v["group_id"]); ?>"><button type="button" class="btn btn-info" >管理</button></a><br>
+                   <?php echo ($v["group_manage"]); ?>
                  </td>
               </tr><?php endforeach; endif; ?>
            </tbody>
-            </table>
+          </table>
         </div>
 
         <div>
@@ -110,7 +69,7 @@
                                 </div>
                              <div class="modal-body">
                              <div class="stugroup">
-                                 <form action="/CPS/index.php/Student/Stu/team_manage" method="post" enctype="multipart/form-data">
+                                 <form action="<?php echo ($teamManage_url); ?>" method="post" enctype="multipart/form-data">
                                  <h5>课程名称</h5>
                                  <input type="text" name="course_name"/>
                                  <h5>课题名称</h5>
@@ -146,7 +105,7 @@
                                  <div class="modal-body">
                                      <!--<h5>学生姓名</h5>-->
                                      <!--<input type="text"/>-->
-                                     <form action="/CPS/index.php/Student/Stu/team_manage" method="post" enctype="multipart/form-data">
+                                     <form action="<?php echo ($teamManage_url); ?>" method="post" enctype="multipart/form-data">
                                      <h5>学生学号</h5>
                                      <input type="text" name="student_id"/>
                                      <input type="submit" class="btn btn-info" style="margin-left: 25px; margin-top: 5px;" value="邀请">
