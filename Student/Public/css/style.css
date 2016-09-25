@@ -42,10 +42,6 @@ li a{
 
 /*我的课题*/
 
-#collapse {
-  display: none;
-}
-
 .toggle-control {
   position: absolute;
   width: 1080px;

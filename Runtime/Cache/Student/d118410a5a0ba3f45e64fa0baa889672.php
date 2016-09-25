@@ -19,23 +19,22 @@
 		</ol>
 	</div>
 	<div style="width: 1080px;">
-		<div class="toggle-control">
+		<!-- <div class="toggle-control">
 			<a href="#"></a>
-		</div>
+		</div> -->
 		<table class="table table-bordered table table-striped text-center">
 				<thead>
-					<tr class="success">
-						<th><a>课程名称</a></th>
-						<th><a>课程ID</a></th>
-						<th><a>课题名称</a></th>
-						<th><a>课题ID</a></th>
-						<th><a>指导教师</a></th>
-						<th><a>详情</a></th>
-						<th><a>状态</a></th>
+					<tr>
+						<th>课程名称</th>
+						<th>课程ID</th>
+						<th>课题名称</th>
+						<th>课题ID</th>
+						<th>指导教师</th>
+						<th>详情</th>
+						<th>状态</th>
 					</tr>
-				</a>
 				</thead>
-			<tbody id="collapse">
+			<tbody>
 				<tr>
 					<td>综合课程设计1</td>
 					<td>25615161</td>
@@ -51,7 +50,7 @@
 				</tr>
 
 				<tr>
-					<td>综合课程设计1</td>
+					<td>综合课程设计2</td>
 					<td>25615161</td>
 					<td>基于安卓的开发平台</td>
 					<td>621655</td>
@@ -65,7 +64,7 @@
 				</tr>
 
 				<tr>
-					<td>综合课程设计1</td>
+					<td>综合课程设计3</td>
 					<td>25615161</td>
 					<td>基于安卓的开发平台</td>
 					<td>621655</td>

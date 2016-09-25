@@ -31,29 +31,28 @@
               </tr>
            </thead>
            <tbody>
-              <tr>
-                 <td>综合课程设计1</td>
-                 <td>25615161</td>
-                 <td>基于安卓的开发平台</td>
+           <?php if(is_array($team)): foreach($team as $key=>$v): ?><tr>
+                 <td><?php echo ($v["course_name"]); ?></td>
+                 <td><?php echo ($v["course_id"]); ?></td>
+                 <td><?php echo ($v["project_name"]); ?></td>
                  <td>
-                    415165
+                     <?php echo ($v["group_id"]); ?>
                  </td>
                  <td>
-                    1452695-xx<br>
-                    1235864-xx<br>
-                    1698524-xx
+                     <?php if(is_array($studentid)): foreach($studentid as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br/><?php endforeach; endif; ?>
                  </td>
                  <td>
-                   <p style="color: green;">已通过</p>
+                   <?php echo ($v["project_status"]); ?>
                  </td>
                    <td>
                     <!-- 按钮触发模态框 -->
-                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal1">
-                          管理
-                    </button>
+                    <!--<button class="btn btn-info" data-toggle="modal" data-target="#myModal1">-->
+                          <!--管理-->
+                    <!--</button>-->
+                       <?php echo ($v["group_manage"]); ?>
 
                     <!-- 模态框（Modal） -->
-                     <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                            <div class="modal-dialog">
                               <div class="modal-content">
                                   <div class="modal-header">
@@ -73,24 +72,16 @@
                                                  </tr>
                                            </thead>
                                            <tbody>
+                                           <?php if(is_array($studentid)): foreach($studentid as $key=>$v): ?><form action="/CPS/index.php/Student/Stu/team_manage" type="get">
                                                  <tr>
-                                                   <td>2014220202001-xx</td>
+                                                   <td name="student_id">
+                                                       <input type="text" style="border: none;outline: none;color:#000;background-color: transparent;" name="student_id" value="<?php echo ($v["student_id"]); ?>-<?php echo ($v["student_name"]); ?>"/>
+                                                   </td>
                                                    <td>
-                                                       <button type="button" class="btn btn-danger">踢出</button>
+                                                       <input type="submit" value="踢出" class="btn btn-danger"/>
                                                    </td>
                                                    </tr>
-                                                   <tr>
-                                                   <td>2014220202001-xx</td>
-                                                   <td>
-                                                       <button type="button" class="btn btn-danger">踢出</button>
-                                                   </td>
-                                                   </tr>
-                                                   <tr>
-                                                   <td>2014220202001-xx</td>
-                                                   <td>
-                                                       <button type="button" class="btn btn-danger">踢出</button>
-                                                   </td>
-                                                   </tr>
+                                               </form><?php endforeach; endif; ?>
                                           </tbody>
                                        </table>
                                  </div>
@@ -98,81 +89,7 @@
                         </div><!-- /.modal -->
                     </div>
                  </td>
-              </tr>
-
-           </tbody>
-           <tbody>
-              <tr>
-                 <td>综合课程设计1</td>
-                 <td>25615161</td>
-                 <td>基于安卓的开发平台</td>
-                 <td>
-                    415165
-                 </td>
-                 <td>
-                    1452695-xx<br>
-                    1235864-xx<br>
-                    1698524-xx
-                 </td>
-                 <td>
-                   <p style="color: blue;">待审核</p>
-                 </td>
-                 <td>
-                    <!-- 按钮触发模态框 -->
-                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal2">
-                          管理
-                    </button>
-                    <br>
-                    <button type="button" class="btn btn-danger">删除</button>
-
-                     <!-- 模态框（Modal） -->
-                        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                           <div class="modal-dialog">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                       <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
-                                          &times;
-                                       </button>
-                                       <h4 class="modal-title" id="myModalLabel2">
-                                       管理队员
-                                       </h4>
-                                    </div>
-                                 <div class="modal-body">
-                                      <table class="table table-bordered table table-striped text-center">
-                                           <thead>
-                                                 <tr>
-                                                    <th>组员</th>
-                                                    <th>操作</th>
-                                                 </tr>
-                                           </thead>
-                                           <tbody>
-                                                 <tr>
-                                                   <td>2014220202001-xx</td>
-                                                   <td>
-                                                       <button type="button" class="btn btn-danger">踢出</button>
-                                                   </td>
-                                                   </tr>
-                                                   <tr>
-                                                   <td>2014220202001-xx</td>
-                                                   <td>
-                                                       <button type="button" class="btn btn-danger">踢出</button>
-                                                   </td>
-                                                   </tr>
-                                                   <tr>
-                                                   <td>2014220202001-xx</td>
-                                                   <td>
-                                                       <button type="button" class="btn btn-danger">踢出</button>
-                                                   </td>
-                                                   </tr>
-                                          </tbody>
-                                       </table>
-                                 </div>
-                              </div><!-- /.modal-content -->
-                        </div><!-- /.modal -->
-                    </div>
-                 </td>
-              </tr>
-
+              </tr><?php endforeach; endif; ?>
            </tbody>
             </table>
         </div>
@@ -193,18 +110,22 @@
                                 </div>
                              <div class="modal-body">
                              <div class="stugroup">
+                                 <form action="/CPS/index.php/Student/Stu/team_manage" method="post" enctype="multipart/form-data">
                                  <h5>课程名称</h5>
-                                 <input type="text"/>
+                                 <input type="text" name="course_name"/>
                                  <h5>课题名称</h5>
-                                 <input type="text"/>
+                                 <input type="text" name="project_name"/>
                                  <h5>课题id</h5>
-                                 <input type="text"/>
-                                 <h5>邀请学生</h5>
-                                 <input type="text"/>
+                                 <input type="text" name="project_id"/>
+                                 <h5>
+                                     邀请学生
                                  <span>
-                                 <button type="button" class="btn btn-default"  data-toggle="modal" data-target="#myModa">+</button>
+                                    <button type="button"  class="btn btn-default"  data-toggle="modal" data-target="#myModa">+</button>
                                  </span>
-                                  <button class="btn btn-info" style="margin-left: 25px; margin-top: 5px;">申请学生组</button>
+                                 </h5>
+                                 <br/>
+                                 <input type="submit" class="btn btn-info" style="margin-left: 25px; margin-top: 5px;" value="申请学生组">
+                                 </form>
                                   </div>
                              </div>
                           </div><!-- /.modal-content -->
@@ -223,11 +144,13 @@
                                        </h4>
                                     </div>
                                  <div class="modal-body">
-                                     <h5>学生姓名</h5>
-                                     <input type="text"/>
+                                     <!--<h5>学生姓名</h5>-->
+                                     <!--<input type="text"/>-->
+                                     <form action="/CPS/index.php/Student/Stu/team_manage" method="post" enctype="multipart/form-data">
                                      <h5>学生学号</h5>
-                                     <input type="text"/>
-                                      <button class="btn btn-info" style="margin-left: 25px; margin-top: 5px;">邀请</button>
+                                     <input type="text" name="student_id"/>
+                                     <input type="submit" class="btn btn-info" style="margin-left: 25px; margin-top: 5px;" value="邀请">
+                                     </form>
                                  </div>
                               </div><!-- /.modal-content -->
                         </div><!-- /.modal -->
