@@ -3,9 +3,9 @@
 <head>
    <title>课程</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
-   <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <script src="/CPS/Student/Public/js/global.js"></script>
    <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>

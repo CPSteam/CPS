@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>队伍信息</title>
+   <title>队伍管理</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
- 	 <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- 	 <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
- 	 <script src="/CPS/Student/Public/js/global.js"></script>
- 	 <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
+   <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
+   <script src="/CPS/Student/Public/js/global.js"></script>
+   <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
   <div class="navWrap">
@@ -52,77 +52,44 @@
   </div>
         <div id="breadTab" class="breadTab">
         <ol class="breadcrumb" style="background-color:#FFFFFF;">
-          <li><a href="/CPS/index.php/Student/Stu/course_info">课程信息</a></li>
+         <li><a href="/CPS/index.php/Student/Stu/course_info">课程信息</a></li>
           <li><a href="/CPS/index.php/Student/Stu/myproject">我的课题</a></li>
           <li><a href="/CPS/index.php/Student/Stu/myteam">我的队伍</a></li>
           <li><a href="/CPS/index.php/Student/Stu/team_manage">队伍管理</a></li>
         </ol>
         </div>
-        <div style="width: 1080px; margin: 0 auto">
-            <table class="table table-bordered table table-striped text-center">
+        <div style="width: 1080px; margin: 0 auto;">
+           <table class="table table-bordered table table-striped text-center">
            <thead>
               <tr>
-                 <th>课程名称</th>
-                 <th>课程ID</th>
-                 <th>课题名称</th>
-                 <th>指导教师</th>
                  <th>队伍ID</th>
-                 <th>队员</th>
-                 <th>课题详情</th>
                  <th>申请状态</th>
+                 <th>队员</th>
               </tr>
            </thead>
            <tbody>
-              <tr>
-                 <td>综合课程设计1</td>
-                 <td>25615161</td>
-                 <td>基于安卓的开发平台</td>
-                 <td>
-                    xxx
+           <?php if(is_array($team)): foreach($team as $key=>$v): ?><tr>
+                 <td name="group_id">
+                     <?php echo ($v["group_id"]); ?>
                  </td>
                  <td>
-                   102658
+                   <?php echo ($v["project_status"]); ?>
                  </td>
                  <td>
-                    1452695-xx<br>
-                    1235864-xx<br>
-                    1698524-xx
+                 <form action="<?php echo ($teamMember_url); ?>" method="post" enctype="multipart/form-data">
+                     <?php if(is_array($v["students"])): foreach($v["students"] as $key=>$h): ?><input type="text" style="border: none;outline: none;color:#000;background-color: transparent;" name="students" value="<?php echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?>"/>
+                        <input type="submit" value="踢出" class="btn btn-danger kick-btn"/><br/><?php endforeach; endif; ?>
+                  </form>
                  </td>
-                  <td>
-                   <a href="#">查看</a>
-                 </td>
-                 <td>
-                    <p style="color:green">已通过</p>
-                 </td>
-              </tr>
-
+              </tr><?php endforeach; endif; ?>
            </tbody>
-            <tbody>
-              <tr>
-                <td>综合课程设计1</td>
-                 <td>25615161</td>
-                 <td>基于安卓的开发平台</td>
-                 <td>
-                    xxx
-                 </td>
-                 <td>
-                   102658
-                 </td>
-                 <td>
-                    1452695-xx<br>
-                    1235864-xx<br>
-                    1698524-xx
-                 </td>
-                  <td>
-                    <a href="#">查看</a>
-                 </td>
-                 <td>
-                    <p style="color:blue">待审核</p>
-                 </td>
-              </tr>
+          </table>
+        </div>
 
-           </tbody>
-            </table>
+        <div>
+
+
+
         </div>
 </body>
 </html>
