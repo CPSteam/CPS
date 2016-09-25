@@ -16,7 +16,6 @@
             <div class="row">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header inline">
-                    <span>当前学期：</span>
                     <img class="logo navbar-brand" src="/CPS/Public/img/logo.png">
                     <a id="course" class="navbar-brand nav-height" href="#" onclick="delaye()" style="color: white;">实验实践教学选课选题管理系统</a>
                 </div>
@@ -31,6 +30,7 @@
                                                             <ul id="term-dropdown" class="dropdown-menu" role="menu" aria-labelledby="termList">
                                                                 <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                                            </ul>
                                                         </span> -->
+														<span>当前学期：</span>
                             <span class="dropdown">
                                 <a id="termList" href="#term-dropdown" style="text-decoration: none;color:white;">
                                     <span id="termID">2016-2017-1</span><span class="caret"></span>
@@ -50,7 +50,7 @@
         </div>
     </nav>
 	</div>
-	<div class="breadTab clearfloat">
+	<div class="breadTab">
 		<ol class="breadcrumb" style="background-color:#FFFFFF;">
 			<li><a href="/CPS/index.php/Student/Stu/course_info">课程信息</a></li>
           <li><a href="/CPS/index.php/Student/Stu/myproject">我的课题</a></li>
