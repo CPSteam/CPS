@@ -95,8 +95,8 @@
 		</table>
 	</div>
 
-	<div class="div_title_midle">
-		<h4 style="color: black; text-align: center; font-family: 微软雅黑;">期中报告</h4>
+	<div class="div_title_middle">
+		<h4>期中报告</h4>
 	</div>
 
 	<div style="width: 1080px; margin: 0 auto;">
@@ -129,7 +129,7 @@
 	</div>
 
 	<div class="div_title_final">
-		<h4 style="color: black; text-align: center;">结题报告</h4>
+		<h4>结题报告</h4>
 	</div>
 
 	<div style="width: 1080px; margin: 0 auto;">
