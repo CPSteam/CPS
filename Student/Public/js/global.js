@@ -1,8 +1,12 @@
-/*手风琴效果*/
-
+/*导航栏日期弹出*/
 $(document).ready(function() {
-  var obj = $('#collapse');
-  $('.toggle-control').click(function() {
-    obj.stop().toggle('500');
+  $('#termList').click(function() {
+    if($('#term-dropdown').hasClass('active')) {
+      $('#term-dropdown').css({display: "none"});
+      $('#term-dropdown').removeClass('active');
+    } else {
+      $('#term-dropdown').css({display: "block"});
+      $('#term-dropdown').addClass('active');
+    }
   });
 });
