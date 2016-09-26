@@ -16,7 +16,6 @@
             <div class="row">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header inline">
-                    <span>当前学期：</span>
                     <img class="logo navbar-brand" src="/CPS/Public/img/logo.png">
                     <a id="course" class="navbar-brand nav-height" href="#" onclick="delaye()" style="color: white;">实验实践教学选课选题管理系统</a>
                 </div>
@@ -31,6 +30,7 @@
                                                             <ul id="term-dropdown" class="dropdown-menu" role="menu" aria-labelledby="termList">
                                                                 <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                                            </ul>
                                                         </span> -->
+                            <span>当前学期：</span>
                             <span class="dropdown">
                                 <a id="termList" href="#term-dropdown" style="text-decoration: none;color:white;">
                                     <span id="termID">2016-2017-1</span><span class="caret"></span>
@@ -42,7 +42,7 @@
                             <a style="float: right;" href="javascript:;">当前用户:&nbsp;李陈扬</a>
                             <!---->
                         </li>
-                        <li><a href="#" onclick="delaye()" style="padding-right:0px;" id="lout">注销</a></li>
+                        <li><a href="<?php echo ($login_url); ?>" onclick="delaye()" style="padding-right:0px;" id="lout">注销</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->

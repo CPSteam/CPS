@@ -42,7 +42,7 @@
                             <a style="float: right;" href="javascript:;">当前用户:&nbsp;李陈扬</a>
                             <!---->
                         </li>
-                        <li><a href="#" onclick="delaye()" style="padding-right:0px;" id="lout">注销</a></li>
+                        <li><a href="<?php echo ($login_url); ?>" onclick="delaye()" style="padding-right:0px;" id="lout">注销</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -95,11 +95,11 @@
 		</table>
 	</div>
 
-	<div class="div_title_midle">
-		<h4 style="color: black; text-align: center; font-family: 微软雅黑;">期中报告</h4>
+	<div class="div_title_middle">
+		<h4>期中报告</h4>
 	</div>
 
-	<div style="width: 1080px;">
+	<div style="width: 1080px; margin: 0 auto;">
 		<table class="table table-bordered table table-striped text-center">
 			<thead>
 				<tr>
@@ -129,10 +129,10 @@
 	</div>
 
 	<div class="div_title_final">
-		<h4 style="color: black; text-align: center;">结题报告</h4>
+		<h4>结题报告</h4>
 	</div>
 
-	<div style="width: 1080px;">
+	<div style="width: 1080px; margin: 0 auto;">
 		<table class="table table-bordered table table-striped text-center">
 			<thead>
 				<tr>
