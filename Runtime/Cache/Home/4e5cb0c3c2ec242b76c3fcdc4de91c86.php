@@ -35,11 +35,11 @@
         <div class="border-container">
          <div class="input-group" >
             <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-            <input type="text" id="username" name="username" class="form-control input-margin" placeholder="用户名">
+            <input type="text" id="student_id" name="student_id" class="form-control input-margin" placeholder="用户名">
          </div>
          <div class="input-group">
             <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            <input type="text" id="password" name="password" class="form-control input-margin" placeholder="密码">
+            <input type="text" id="student_password" name="student_password" class="form-control input-margin" placeholder="密码">
         </div>
         <div class="input-group">
             <span class="input-group-addon"><span class="glyphicon glyphicon-pencil"></span></span>

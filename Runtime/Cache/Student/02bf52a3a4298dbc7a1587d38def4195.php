@@ -10,6 +10,7 @@
    <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
+   
   <div class="navWrap">
     <nav class="navbar navbar-inverse">
         <div class="container">
@@ -23,13 +24,6 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <!--                             <span class="dropdown">
-                                                            <a style="color: #656565;text-decoration:none;" id="termList" role="button" data-toggle="dropdown" data-target="#" href="#">
-                                                                <span id="termID">2016-2017-1</span><span class="caret"></span>
-                                                            </a>
-                                                            <ul id="term-dropdown" class="dropdown-menu" role="menu" aria-labelledby="termList">
-                                                                <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                                            </ul>
-                                                        </span> -->
                             <span>当前学期：</span>
                             <span class="dropdown">
                                 <a id="termList" href="#term-dropdown" style="text-decoration: none;color:white;">
@@ -42,7 +36,7 @@
                             <a style="float: right;" href="javascript:;">当前用户:&nbsp;李陈扬</a>
                             <!---->
                         </li>
-                        <li><a href="#" onclick="delaye()" style="padding-right:0px;" id="lout">注销</a></li>
+                        <li><a href="<?php echo ($login_url); ?>" onclick="delaye()" style="padding-right:0px;" id="lout">注销</a></li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse -->
@@ -50,14 +44,15 @@
         </div>
     </nav>
   </div>
+
    <div class="breadTab clearfloat">
-   <ol class="breadcrumb" style="background-color:#FFFFFF;">
+  <ol class="breadcrumb" style="background-color:#FFFFFF;">
     <li><a href="/CPS/index.php/Student/Stu/course_info">课程信息</a></li>
-     <li><a href="/CPS/index.php/Student/Stu/myproject">我的课题</a></li>
-     <li><a href="/CPS/index.php/Student/Stu/myteam">我的队伍</a></li>
-     <li><a href="/CPS/index.php/Student/Stu/team_manage">队伍管理</a></li>
-   </ol>
-   </div>
+    <li><a href="/CPS/index.php/Student/Stu/myproject">我的课题</a></li>
+    <li><a href="/CPS/index.php/Student/Stu/myteam">我的队伍</a></li>
+    <li><a href="/CPS/index.php/Student/Stu/team_manage">队伍管理</a></li>
+  </ol>
+  </div>
    	<div style="width: 1080px; margin: 0 auto">
        <table class="table table-bordered table table-striped text-center">
       <thead>

@@ -56,7 +56,7 @@
             <input name="verify" width="50%" height="34" class="form-control" style="width: 180px;" placeholder="验证码" type="text">                  
             <img width="30%" height="34" alt="验证码" src="<?php echo U('Home/Index/verify_c',array());?>" title="点击刷新" onclick="this.src=this.src+'?'+Math.random()">  
         </div>
-         <a href="<?php echo ($login_url); ?>"><button class="btn btn-lg btn-primary btn-block input-margin" type="submit">确定</button></a>
+        <button class="btn btn-lg btn-primary btn-block input-margin" type="submit">确定</button>
       </form>
       </div>
   </div>
