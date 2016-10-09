@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>我的队伍</title>
+   <title>课程</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -10,50 +10,37 @@
    <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
-   <include file="Header:header"/>
-   <include file="Tab:tab_student"/>
+    <include file="Home/View/Header/header.html"/>
+    <include file="Tab:tab_student"/>
    	<div style="width: 1080px; margin: 0 auto">
        <table class="table table-bordered table table-striped text-center">
-      <thead>
-         <tr>
-            <th>课程名称</th>
-            <th>课程ID</th>
-            <th>邀请信息</th>
-            <th>处理状态</th>
-            <th>操作</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>综合课程设计1</td>
-            <td>25615161</td>
-            <td>学生20142202020001-xx邀请您加入队伍</td>
-            <td>
-               <p style="color:green">已同意</p>
-            </td>
-            <td>
-               <a href="team_info.html"><button type="button" class="btn btn-primary">查看队伍</button></a>
-            </td>
-         </tr>
-
-      </tbody>
-      <tbody>
-         <tr>
-            <td>综合课程设计1</td>
-            <td>25615161</td>
-            <td>学生20142202020001-xx邀请您加入队伍</td>
-            <td>
-               <p style="color:blue">未处理</p>
-            </td>
-            <td>
-               <button type="button" class="btn btn-success">同意</button>
-               <button type="button" class="btn btn-danger">拒绝</button>
-            </td>
-         </tr>
-
-      </tbody>
-       </table>
+         <thead>
+            <tr>
+               <th>课程名称</th>
+               <th>课题名称</th>
+               <th>邀请信息</th>
+               <th>处理状态</th>
+               <th>操作</th>
+            </tr>
+         </thead>
+         <tbody>
+            <foreach name="inviteMessage" item="v">
+               <tr>
+               <foreach name="v.course_project" item="h">
+                  <td>{$h.course_name}</td>
+                  <td>{$h.project_name}</td>
+                  <td>学生{$h.student_id}-{$h.student_name}邀请您加入队伍</td>
+                  </foreach>
+                  <td>
+                     {$manage_status}
+                  </td>
+                  <td>
+                     {$team_button}
+                  </td>
+               </tr>
+            </foreach>
+         </tbody>
+      </table>
    </div>
-
 </body>
 </html>

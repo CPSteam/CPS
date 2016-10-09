@@ -5,6 +5,7 @@ use Think\Controller;
 
 class IndexController extends Controller {
     function index(){
-        echo 'ff';
+ 
+       $this -> display();
     }
 }

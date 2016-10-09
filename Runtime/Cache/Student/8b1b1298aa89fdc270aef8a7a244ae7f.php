@@ -1,17 +1,16 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-	<title>我的课题</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
-	<link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
-	<script src="/CPS/Student/Public/js/global.js"></script>
-	<link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
+   <title>课程</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
+   <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
+   <script src="/CPS/Student/Public/js/global.js"></script>
+   <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
-	
-  <div class="navWrap">
+     <div class="navWrap">
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="row">
@@ -33,7 +32,7 @@
                                     <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                </ul>
                             </span>
                             &nbsp;
-                            <a style="float: right;" href="javascript:;">当前用户:&nbsp;李陈扬</a>
+                            <a style="float: right;" href="javascript:;">当前用户:&nbsp;<?php echo ($_SESSION['name']); ?></a>
                             <!---->
                         </li>
                         <li><a href="<?php echo ($login_url); ?>" onclick="delaye()" style="padding-right:0px;" id="lout">注销</a></li>
@@ -45,7 +44,7 @@
     </nav>
   </div>
 
-	<div class="breadTab clearfloat">
+    <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
     <li><a href="/CPS/index.php/Student/Stu/course_info">课程信息</a></li>
     <li><a href="/CPS/index.php/Student/Stu/myproject">我的课题</a></li>
@@ -54,9 +53,6 @@
   </ol>
   </div>
 	<div style="width: 1080px; margin: 0 auto">
-		<!-- <div class="toggle-control">
-			<a href="#"></a>
-		</div> -->
 		<table class="table table-bordered table table-striped text-center">
 				<thead>
 					<tr>
@@ -65,6 +61,8 @@
 						<th>课题名称</th>
 						<th>课题ID</th>
 						<th>指导教师</th>
+						<th>队伍ID</th>
+						<th>队员</th>
 						<th>详情</th>
 						<th>状态</th>
 						<th>操作</th>
@@ -77,14 +75,20 @@
 					<td><?php echo ($v["project_name"]); ?></td>
 					<td><?php echo ($v["project_id"]); ?></td>
 					<td><?php echo ($v["teacher_id"]); ?></td>
+					<td><?php echo ($v["group_id"]); ?></td>
+					<td>
+						<?php if(is_array($v["students"])): foreach($v["students"] as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br/><?php endforeach; endif; ?>
+					</td>
 					<td>
 						<a href="#">查看</a>
 					</td>
 					<td>
-						 <?php echo ($v["project_status"]); ?>
+						 <?php echo ($v["group_project_status"]); ?>
 					</td>
 					<td>
-						 <a href="<?php echo ($projectInfo_url); ?>/project_id/<?php echo ($v["project_id"]); ?>"><button type="button" class="btn btn-info" >查看报告</button></a>
+						 <a href="<?php echo ($projectInfo_url); ?>/project_id/<?php echo ($v["project_id"]); ?>">
+						 	<button type="button" class="btn btn-info <?php echo ($button_disabled); ?>">查看报告</button>
+						 </a>
 					</td>
 				</tr><?php endforeach; endif; ?>
 			</tbody>

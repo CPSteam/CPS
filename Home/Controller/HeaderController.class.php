@@ -1,9 +1,9 @@
 <?php
-namespace Student\Controller;
+namespace Home\Controller;
 use Think\Controller;
 
 class HeaderController extends Controller{
-	function header(){		
+	function header(){	
 		$this -> display();
 	}
 }

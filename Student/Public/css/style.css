@@ -210,3 +210,13 @@ breadTab导航
   width:1080px;
   margin: 0 auto;
 }
+
+.width-input{
+  margin-top: 10px;
+  margin-left: 0px;
+  width: 100px;
+}
+
+.danger-button{
+  margin-left: 0px;
+}

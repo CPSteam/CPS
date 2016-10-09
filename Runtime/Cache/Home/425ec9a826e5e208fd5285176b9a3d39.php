@@ -32,7 +32,7 @@
                                     <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                </ul>
                             </span>
                             &nbsp;
-                            <a style="float: right;" href="javascript:;">当前用户:&nbsp;李陈扬</a>
+                            <a style="float: right;" href="javascript:;">当前用户:&nbsp;<?php echo ($student_id); ?></a>
                             <!---->
                         </li>
                         <li><a href="<?php echo ($login_url); ?>" onclick="delaye()" style="padding-right:0px;" id="lout">注销</a></li>

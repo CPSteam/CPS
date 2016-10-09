@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>我的队伍</title>
+   <title>课程</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -10,8 +10,7 @@
    <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
-   
-  <div class="navWrap">
+     <div class="navWrap">
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="row">
@@ -33,7 +32,7 @@
                                     <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                </ul>
                             </span>
                             &nbsp;
-                            <a style="float: right;" href="javascript:;">当前用户:&nbsp;李陈扬</a>
+                            <a style="float: right;" href="javascript:;">当前用户:&nbsp;<?php echo ($_SESSION['name']); ?></a>
                             <!---->
                         </li>
                         <li><a href="<?php echo ($login_url); ?>" onclick="delaye()" style="padding-right:0px;" id="lout">注销</a></li>
@@ -45,7 +44,7 @@
     </nav>
   </div>
 
-   <div class="breadTab clearfloat">
+    <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
     <li><a href="/CPS/index.php/Student/Stu/course_info">课程信息</a></li>
     <li><a href="/CPS/index.php/Student/Stu/myproject">我的课题</a></li>
@@ -55,46 +54,29 @@
   </div>
    	<div style="width: 1080px; margin: 0 auto">
        <table class="table table-bordered table table-striped text-center">
-      <thead>
-         <tr>
-            <th>课程名称</th>
-            <th>课程ID</th>
-            <th>邀请信息</th>
-            <th>处理状态</th>
-            <th>操作</th>
-         </tr>
-      </thead>
-      <tbody>
-         <tr>
-            <td>综合课程设计1</td>
-            <td>25615161</td>
-            <td>学生20142202020001-xx邀请您加入队伍</td>
-            <td>
-               <p style="color:green">已同意</p>
-            </td>
-            <td>
-               <a href="team_info.html"><button type="button" class="btn btn-primary">查看队伍</button></a>
-            </td>
-         </tr>
-
-      </tbody>
-      <tbody>
-         <tr>
-            <td>综合课程设计1</td>
-            <td>25615161</td>
-            <td>学生20142202020001-xx邀请您加入队伍</td>
-            <td>
-               <p style="color:blue">未处理</p>
-            </td>
-            <td>
-               <button type="button" class="btn btn-success">同意</button>
-               <button type="button" class="btn btn-danger">拒绝</button>
-            </td>
-         </tr>
-
-      </tbody>
-       </table>
+         <thead>
+            <tr>
+               <th>课程名称</th>
+               <th>课题名称</th>
+               <th>邀请信息</th>
+               <th>处理状态</th>
+               <th>操作</th>
+            </tr>
+         </thead>
+         <tbody>
+            <?php if(is_array($inviteMessage)): foreach($inviteMessage as $key=>$v): ?><tr>
+               <?php if(is_array($v["course_project"])): foreach($v["course_project"] as $key=>$h): ?><td><?php echo ($h["course_name"]); ?></td>
+                  <td><?php echo ($h["project_name"]); ?></td>
+                  <td>学生<?php echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?>邀请您加入队伍</td><?php endforeach; endif; ?>
+                  <td>
+                     <?php echo ($manage_status); ?>
+                  </td>
+                  <td>
+                     <?php echo ($team_button); ?>
+                  </td>
+               </tr><?php endforeach; endif; ?>
+         </tbody>
+      </table>
    </div>
-
 </body>
 </html>

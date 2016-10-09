@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>队伍管理</title>
+   <title>课程</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
+   <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
    <script src="/CPS/Student/Public/js/global.js"></script>
    <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
-          <include file="Header:header"/>
-          <include file="Tab:tab_student"/>
+    <include file="Home/View/Header/header.html"/>
+    <include file="Tab:tab_student"/>
         	<div style="width: 1080px; margin: 0 auto">
             <table class="table table-bordered table table-striped text-center">
            <thead>
               <tr>
-                 <th>课程名称</th>
-                 <th>课程ID</th>
-                 <th>课题名称</th>
                  <th>队伍ID</th>
                  <th>队员</th>
                  <th>申请状态</th>
@@ -28,9 +25,6 @@
            <tbody>
            <foreach name="team" item="v">
               <tr>
-                 <td>{$v.course_name}</td>
-                 <td>{$v.course_id}</td>
-                 <td>{$v.project_name}</td>
                  <td name="group_id">
                      {$v.group_id}
                  </td>
@@ -40,11 +34,12 @@
                      </foreach>
                  </td>
                  <td>
-                   {$v.project_status}
+                   {$v.group_project_status}
                  </td>
-                   <td>
-                   <a href="{$Manage_url}/group_id/{$v.group_id}"><button type="button" class="btn btn-info" >管理</button></a><br>
-                   {$v.group_manage}
+                 <td>
+                     <a href="{$Manage_url}/group_id/{$v.group_id}">
+                        <button type="button" class="btn btn-info {$button_disabled}">管理</button>
+                     </a>
                  </td>
               </tr>
             </foreach>
@@ -53,9 +48,9 @@
         </div>
 
         <div class="create-btn">
-         <button class="btn btn-info" data-toggle="modal" data-target="#myModa3">创建队伍</button>
+         <button class="btn btn-info" data-toggle="modal" data-target="#myModa">创建队伍</button>
          <!-- 模态框（Modal） -->
-                    <div class="modal fade" id="myModa3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="myModa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                        <div class="modal-dialog">
                           <div class="modal-content">
                               <div class="modal-header">
@@ -63,28 +58,17 @@
                                       &times;
                                    </button>
                                    <h4 class="modal-title" id="myModalLabel3">
-                                   管理队员
+                                   邀请队员
                                    </h4>
                                 </div>
                              <div class="modal-body">
-                             <div class="stugroup">
-                                 <form action="{$teamManage_url}" method="post" enctype="multipart/form-data">
-                                 <h5>课程名称</h5>
-                                 <input type="text" name="course_name"/>
-                                 <h5>课题名称</h5>
-                                 <input type="text" name="project_name"/>
-                                 <h5>课题id</h5>
-                                 <input type="text" name="project_id"/>
-                                 <h5>
-                                     邀请学生
-                                 <span>
-                                    <button type="button"  class="btn btn-default"  data-toggle="modal" data-target="#myModa">+</button>
-                                 </span>
-                                 </h5>
-                                 <br/>
-                                 <input type="submit" class="btn btn-info" style="margin-left: 25px; margin-top: 5px;" value="申请学生组">
-                                 </form>
-                                  </div>
+                               <div class="stugroup">
+                                   <form action="{$teamManage_url}" method="post" enctype="multipart/form-data">
+                                       <h5 style="text-align: left;">邀请同学</h5>
+                                       <input type="text" name="student_id" class="form-control"/>
+                                       <input type="submit" class="btn btn-info width-input" value="邀请">
+                                       </form>
+                                </div>
                              </div>
                           </div><!-- /.modal-content -->
                     </div><!-- /.modal -->

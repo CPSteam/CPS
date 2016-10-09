@@ -2,8 +2,8 @@
 namespace Student\Controller;
 use Think\Controller;
 
-class HeaderController extends Controller{
-	function tab(){		
+class TabController extends Controller{
+	function tab_student(){	
 		$this -> display();
 	}
 }

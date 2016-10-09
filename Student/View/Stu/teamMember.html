@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>队伍管理</title>
+   <title>课程</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -10,8 +10,8 @@
    <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
-        <include file="Header:header"/>
-        <include file="Tab:tab_student"/>
+    <include file="Home/View/Header/header.html"/>
+    <include file="Tab:tab_student"/>
         <div style="width: 1080px; margin: 0 auto;">
            <table class="table table-bordered table table-striped text-center">
            <thead>
@@ -19,6 +19,7 @@
                  <th>队伍ID</th>
                  <th>申请状态</th>
                  <th>队员</th>
+                 <th>队员管理</th>
               </tr>
            </thead>
            <tbody>
@@ -28,26 +29,46 @@
                      {$v.group_id}
                  </td>
                  <td>
-                   {$v.project_status}
+                   {$v.group_project_status}
                  </td>
                  <td>
-                 <form action="{$teamMember_url}" method="post" enctype="multipart/form-data">
-                     <foreach name="v.students" item="h">
-                        <input type="text" style="border: none;outline: none;color:#000;background-color: transparent;" name="students" value="{$h.student_id}-{$h.student_name}"/>
-                        <input type="submit" value="踢出" class="btn btn-danger kick-btn"/><br/>
-                     </foreach>
-                  </form>
+                   <foreach name="v.students" item="h">
+                          {$h.student_id}-{$h.student_name}<br/>
+                   </foreach>
+                 </td>
+                 <td>
+                   <button type="button" class="btn btn-danger kick-btn danger-button" data-toggle="modal" data-target="#myModa">踢出队员</button>
+                   <!-- 模态框（Modal） -->
+                    <div class="modal fade" id="myModa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                   <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+                                      &times;
+                                   </button>
+                                   <h4 class="modal-title" id="myModalLabel3">
+                                   队员管理
+                                   </h4>
+                                </div>
+                             <div class="modal-body">
+                             <div class="stugroup">
+                                 <form action="{$teamMember_url}" method="post" enctype="multipart/form-data">
+                                     <h5 style="text-align: left;">请确认想要踢除的学生学号</h5>
+                                     <input type="text" name="student_id" class="form-control"/>
+                                     <input type="submit" class="btn btn-danger width-input" value="确定">
+                                     </form>
+                                  </div>
+                             </div>
+                          </div><!-- /.modal-content -->
+                    </div><!-- /.modal -->
+                </div>
                  </td>
               </tr>
             </foreach>
            </tbody>
           </table>
         </div>
-
-        <div>
-
-
-
-        </div>
+      <div>
+    </div>
 </body>
 </html>
