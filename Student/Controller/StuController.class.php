@@ -75,7 +75,7 @@ class StuController extends Controller{
 	}
 	
 	function myteam(){
-		$invite_id = "select student_message,student_message_status from student_group_member where student_id = ".$_SESSION['id'];
+		$invite_id = "select student_message,student_message_status,group_id from student_group_member where student_id = ".$_SESSION['id'];
 		$inviteMessage = D('student_group_member')->query($invite_id);
 
 		$this->assign('myteam_url',U('myteam'));
@@ -86,17 +86,25 @@ class StuController extends Controller{
  			$inviteMessage[$key]['course_project'] = D('course') -> query($teamInviterSql);
 
  			$inviteMessage[$key]['student_message_status'] = $invite_status;;
-
  			if($inviteMessage[$key]['student_message_status'] == 0){
+ 				if($inviteMessage[$key]['group_id'] == 0){
+ 					$team_button = '';
+ 					$manage_status = '';
+ 				}else{
 	 		  	$team_button = '<a href='.U('myteam').'/invite_status/1'.'><button type="button" class="btn btn-success">同意		</button></a>
 	               <a href='.U('myteam').'/invite_status/2'.'><button type="button" class="btn btn-danger">拒绝</button></a>';
 	            $manage_status = '<p style="color:blue">未处理</p>';
+	        	}
  			}else if($inviteMessage[$key]['student_message_status'] == 1){
  				$team_button = '<a href='.U('team_info').'><button type="button" class="btn btn-primary">查看队伍</button></a>';
  				$manage_status = '<p style="color:green">已同意</p>';
+ 				$agree_sql = 'update student_group_member set student_message_status = 1 where student_id = '.$_SESSION['id'];
+ 				D('student_group_member')->query($agree_sql);
  			}else{
  				$team_button = '<button type="button" class="btn btn-primary disabled">查看队伍</button>';
  				$manage_status = '<p style="color:red">拒绝</p>';
+ 				$deny_sql = 'update student_group_member set student_message_status = 2 where student_id = '.$_SESSION['id'];
+ 				D('student_group_member')->query($deny_sql);
  			}
  			
  			$this -> assign('team_button',$team_button);
@@ -167,21 +175,13 @@ class StuController extends Controller{
 
 	 	   $this->assign('team',$team);
 
-   		    if(!empty($_GET)){
-				// dump($_GET['student']);
-            }else{
-
-            }
-
    		   if(!empty($_POST)){
    		   		$send_message = "update student_group_member set student_message='".$_SESSION['id']."' where student_id = ".$_POST['student_id'];
    		   		D('student_group_member')->query($send_message);
-   		   		// dump($send_message);
-   		   		// dump($_POST['student_id']);
    		   }else{
-				$this->display();
+				
    		   }
-
+   		   $this->display();
 	}
 
 	function teamMember(){
@@ -215,7 +215,6 @@ class StuController extends Controller{
  	   				$this -> error('不能踢除本人！');
  	   			}else{
  	   				$delete_sql = "update student_group_member set is_available=0 where student_id = ".$_POST['student_id'];
- 	   				dump($delete_sql);
    		   			D('student')->query($delete_sql);
    		   			$this -> redirect('team_manage');
  	   			}
