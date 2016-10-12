@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>课程</title>
+   <title>管理员</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
-   <script src="/CPS/Student/Public/js/global.js"></script>
-   <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
+   <script src="/CPS/Manager/Public/js/global.js"></script>
+   <link href="/CPS/Manager/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
      <div class="navWrap">
@@ -53,17 +53,18 @@
   </ol>
   </div>
   	<div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table table-striped text-center">
+  	<table class="table table-bordered table-striped text-center">
      <thead>
         <tr>
            <th>课程名称</th>
-           <th>课程ID</th>
            <th>课程内容</th>
-           <th>课题信息</th>
+           <th>课程信息</th>
+           <th>答辩组信息</th>
+           <th>文件信息</th>
         </tr>
      </thead>
      <tbody>
-     <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+     <!-- <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
            <td><?php echo ($v["course_name"]); ?></td>
            <td><?php echo ($v["course_id"]); ?></td>
            <td>
@@ -72,9 +73,24 @@
            <td>
            	<a href="<?php echo ($query_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
            </td>
-        </tr><?php endforeach; endif; ?>
+        </tr><?php endforeach; endif; ?> -->
+        <tr>
+          <td>综合课程设计</td>
+          <td>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </td>
+          <td>
+            <a href="#"><button type="button" class="btn btn-info">查看</button></a>
+          </td>
+          <td>
+            <a href="#"><button type="button" class="btn btn-info">查看</button></a>
+          </td>
+          <td>
+            <a href="#"><button type="button" class="btn btn-info">查看</button></a>
+          </td>
+        </tr>
      </tbody>
-  	</table>
+    </table>
   </div>
 </body>
 </html>
