@@ -13,30 +13,101 @@
     <include file="Home/View/Header/header.html"/>
     <include file="Tab:tab_manager"/>
   	<div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table table-striped text-center">
+    	<table class="table table-bordered table-striped text-center">
+       <thead>
+          <tr>
+             <th>课程名称</th>
+             <th>课程内容</th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>综合课程设计</td>
+           <td>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+           </td>
+         </tr>
+       <!-- <foreach name="info" item="v">
+          <tr>
+             <td>{$v.course_name}</td>
+             <td>{$v.course_id}</td>
+             <td>
+             	<p>{$v.course_detail_info}</p>
+             </td>
+             <td>
+             	<a href="{$query_url}/course_id/{$v.course_id}"><button type="button" class="btn btn-info">查看</button></a>
+             </td>
+          </tr>
+       </foreach> -->
+       </tbody>
+    	</table>
+
+    <div class="div_title_middle">
+      <h4>期中报告</h4>
+    </div>
+
+    <table class="table table-bordered table-striped text-center">
      <thead>
         <tr>
-           <th>课程名称</th>
-           <th>课程ID</th>
-           <th>课程内容</th>
-           <th>课题信息</th>
+           <th>预期成果</th>
+           <th>主要任务内容</th>
+           <th>截止日期</th>
+           <th>文件类型</th>
+           <th>限制大小</th>
         </tr>
      </thead>
      <tbody>
-     <foreach name="info" item="v">
-        <tr>
-           <td>{$v.course_name}</td>
-           <td>{$v.course_id}</td>
-           <td>
-           	<p>{$v.course_detail_info}</p>
-           </td>
-           <td>
-           	<a href="{$query_url}/course_id/{$v.course_id}"><button type="button" class="btn btn-info">查看</button></a>
-           </td>
-        </tr>
-     </foreach>
+       <tr>
+         <td>预期成果</th>
+         <td>
+           <p>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           </p>
+         </td>
+         <td>截止日期</td>
+         <td>文件类型</td>
+         <td>限制大小</td>
+       </tr>
      </tbody>
-  	</table>
+    </table>
+    <a href="./edit_file.html">
+      <button type="button" class="btn btn-info">编辑文件</button>
+    </a>
+
+    <div class="div_title_middle">
+      <h4>期中报告</h4>
+    </div>
+    <table class="table table-bordered table-striped text-center">
+     <thead>
+        <tr>
+           <th>预期成果</th>
+           <th>主要任务内容</th>
+           <th>截止日期</th>
+           <th>文件类型</th>
+           <th>限制大小</th>
+        </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>预期成果</td>
+         <td>
+           <p>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+           </p>
+           <p><a href="#">详情</a></p>
+         </td>
+         <td>2014-12-11</td>
+         <td>文件类型</td>
+         <td>限制大小</td>
+       </tr>
+     </tbody>
+    </table>
+    <a href="./edit_file.html">
+      <button type="button" class="btn btn-info">编辑文件</button>
+    </a>
+
   </div>
 </body>
 </html>

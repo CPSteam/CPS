@@ -53,7 +53,7 @@
   </ol>
   </div>
   	<div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table table-striped text-center">
+  	<table class="table table-bordered table-striped text-center">
      <thead>
         <tr>
            <th>课程名称</th>

@@ -12,31 +12,46 @@
 <body>
     <include file="Home/View/Header/header.html"/>
     <include file="Tab:tab_manager"/>
-  	<div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table table-striped text-center">
-     <thead>
-        <tr>
-           <th>课程名称</th>
-           <th>课程ID</th>
-           <th>课程内容</th>
-           <th>课题信息</th>
-        </tr>
-     </thead>
-     <tbody>
-     <foreach name="info" item="v">
-        <tr>
-           <td>{$v.course_name}</td>
-           <td>{$v.course_id}</td>
-           <td>
-           	<p>{$v.course_detail_info}</p>
-           </td>
-           <td>
-           	<a href="{$query_url}/course_id/{$v.course_id}"><button type="button" class="btn btn-info">查看</button></a>
-           </td>
-        </tr>
-     </foreach>
-     </tbody>
-  	</table>
-  </div>
+    <form action="#" method="" role="form">
+      <div style="width: 400px; margin: 0 auto;">
+        <div class="form-group">
+          <label for="doc_name">文档名称</label>
+          <input type="text" class="form-control" name="" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="deadline">截止日期</label>
+          <input type="text" class="form-control" name="" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="doc_type">文件类型</label>
+          </div>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="" value="doc">doc
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="" value="zip">zip
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="" value="png">png
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="size_limit">大小限制（单位：KB）</label>
+          <input type="text" class="form-control" name="" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="result">预期成果</label>
+          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="result">预期成果</label>
+          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
+        </div>
+      </div>
+    </form>
 </body>
 </html>

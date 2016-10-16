@@ -25,4 +25,7 @@ class ManageController extends Controller {
 	function edit_group() {
 		$this->display();
 	}
+	function group_info() {
+		$this->display();
+	}
 }

@@ -52,36 +52,44 @@
     <li><a href="/CPS/index.php/Student/Stu/team_manage">队伍管理</a></li>
   </ol>
   </div>
-    <form action="#" method="" role="form">
-      <div style="width: 400px; margin: 0 auto;">
-        <div class="form-group">
-          <label for="course_name">课程名称</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
-        </div>
-        <div class="form-group">
-          <label for="course_content">课程内容</label>
-          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="group_num">答辩组人数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
-        </div>
-        <div class="form-group">
-          <label for="stu_num">学生组人数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
-        </div>
-        <div class="form-group">
-          <label for="teacher_max_course_num">教师允许申请课题数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
-        </div>
-        <div class="form-group">
-          <label for="stu_max_course_num">学生允许申请课题数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
-        </div>
-        <div>
-          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
-        </div>
-      </div>
-    </form>
+  	<div style="width: 1080px; margin: 0 auto">
+  	<table class="table table-bordered table-striped text-center">
+     <thead>
+        <tr>
+           <th>答辩组ID</th>
+           <th>组长</th>
+           <th>组员</th>
+        </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>132165</td>
+         <td>12321-xx</td>
+         <td>
+           <p>12323-xx</p>
+           <p>12323-xx</p>
+         </td>
+       </tr>
+       <tr>
+         <td>132165</td>
+         <td>12321-xx</td>
+         <td>
+           <p>12323-xx</p>
+           <p>12323-xx</p>
+         </td>
+       </tr>
+     <!-- <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+           <td><?php echo ($v["course_name"]); ?></td>
+           <td><?php echo ($v["course_id"]); ?></td>
+           <td>
+           	<p><?php echo ($v["course_detail_info"]); ?></p>
+           </td>
+           <td>
+           	<a href="<?php echo ($query_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
+           </td>
+        </tr><?php endforeach; endif; ?> -->
+     </tbody>
+  	</table>
+  </div>
 </body>
 </html>
