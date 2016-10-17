@@ -133,7 +133,6 @@
 			<thead>
 				<tr>
 					<th>结题预期成果</th>
-					<!-- <th>结题任务内容</th> -->
 					<th>评分</th>
 					<th>课题评论</th>
 					<th>报告操作</th>
@@ -143,7 +142,6 @@
 			<tbody>
 				<?php if(is_array($report)): foreach($report as $key=>$m): ?><tr>
 					<td><?php echo ($m["final_expected_result"]); ?></td>
-					<!-- <td>xx</td> -->
 					<td><?php echo ($m["group_final_report_score"]); ?></td>
 					<td>
 						<?php echo ($m["project_comment_info"]); ?>

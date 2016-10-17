@@ -74,31 +74,56 @@
                    <?php if(is_array($v["students"])): foreach($v["students"] as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br/><?php endforeach; endif; ?>
                  </td>
                  <td>
-                   <button type="button" class="btn btn-danger kick-btn danger-button" data-toggle="modal" data-target="#myModa">踢出队员</button>
+                   <button type="button" class="btn btn-danger kick-btn danger-button" data-toggle="modal" data-target="#myModa1">踢出队员</button><br/>
                    <!-- 模态框（Modal） -->
-                    <div class="modal fade" id="myModa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                       <div class="modal-dialog">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                   <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
-                                      &times;
-                                   </button>
-                                   <h4 class="modal-title" id="myModalLabel3">
-                                   队员管理
-                                   </h4>
-                                </div>
-                             <div class="modal-body">
-                             <div class="stugroup">
-                                 <form action="<?php echo ($teamMember_url); ?>" method="post" enctype="multipart/form-data">
-                                     <h5 style="text-align: left;">请确认想要踢除的学生学号</h5>
-                                     <input type="text" name="student_id" class="form-control"/>
-                                     <input type="submit" class="btn btn-danger width-input" value="确定">
-                                     </form>
+                      <div class="modal fade" id="myModa1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                         <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                     <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                                     </button>
+                                     <h4 class="modal-title" id="myModalLabel3">
+                                     队员管理
+                                     </h4>
                                   </div>
-                             </div>
-                          </div><!-- /.modal-content -->
-                    </div><!-- /.modal -->
-                </div>
+                               <div class="modal-body">
+                               <div class="stugroup">
+                                   <form action="<?php echo ($teamMember_url); ?>" method="post" enctype="multipart/form-data">
+                                       <h5 style="text-align: left;">请确认想要踢除的学生学号</h5>
+                                       <input type="text" name="student_id" class="form-control"/>
+                                       <input type="submit" class="btn btn-danger width-input" value="确定">
+                                       </form>
+                                    </div>
+                               </div>
+                            </div><!-- /.modal-content -->
+                      </div><!-- /.modal -->
+                  </div>
+                     <button class="btn btn-info" data-toggle="modal" data-target="#myModa2">邀请队友</button>
+                    <!-- 模态框（Modal） -->
+                     <div class="modal fade" id="myModa2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                   <div class="modal-dialog">
+                                      <div class="modal-content">
+                                          <div class="modal-header">
+                                               <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+                                                  &times;
+                                               </button>
+                                               <h4 class="modal-title" id="myModalLabel">
+                                               邀请队员
+                                               </h4>
+                                            </div>
+                                         <div class="modal-body">
+                                             <!--<h5>学生姓名</h5>
+                                             <!--<input type="text"/>-->
+                                             <form action="<?php echo ($teamMember_url); ?>" method="get" enctype="multipart/form-data">
+                                             <h5>学生学号</h5>
+                                             <input type="text" name="studentId"/>
+                                             <input type="submit" class="btn btn-info" style="margin-left: 25px; margin-top: 5px;" value="邀请">
+                                             </form>
+                                         </div>
+                                      </div><!-- /.modal-content -->
+                                </div><!-- /.modal -->
+                       </div>
                  </td>
               </tr><?php endforeach; endif; ?>
            </tbody>

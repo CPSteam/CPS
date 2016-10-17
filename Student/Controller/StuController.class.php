@@ -82,9 +82,12 @@ class StuController extends Controller{
 	 	$invite_status = I('invite_status');
 
 		foreach($inviteMessage as $key => $s){
-			$teamInviterSql = "select  A.course_name,B.project_name,E.student_id,E.student_name from course as A,project as B,student_group_member as C,student_group as D,student as E where A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = ".$inviteMessage[$key]['student_message'];
+			$teamInviterSql = "select  distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = ".$inviteMessage[$key]['student_message'];
  			$inviteMessage[$key]['course_project'] = D('course') -> query($teamInviterSql);
 
+ 			$courseInfo = '';//当申请了课题才显示
+
+ 			$invite_status = I('invite_status');
  			$inviteMessage[$key]['student_message_status'] = $invite_status;;
  			if($inviteMessage[$key]['student_message_status'] == 0){
  				if($inviteMessage[$key]['group_id'] == 0){
@@ -98,7 +101,7 @@ class StuController extends Controller{
  			}else if($inviteMessage[$key]['student_message_status'] == 1){
  				$team_button = '<a href='.U('team_info').'><button type="button" class="btn btn-primary">查看队伍</button></a>';
  				$manage_status = '<p style="color:green">已同意</p>';
- 				$agree_sql = 'update student_group_member set student_message_status = 1 where student_id = '.$_SESSION['id'];
+ 				$agree_sql = "insert into student_group_member values(".$_SESSION['id'].",5,'',0,1,0,1,1,0)";
  				D('student_group_member')->query($agree_sql);
  			}else{
  				$team_button = '<button type="button" class="btn btn-primary disabled">查看队伍</button>';
@@ -147,46 +150,50 @@ class StuController extends Controller{
 
 	function team_manage(){
 		   $student_id = $_SESSION['id'];
-	 	   $projectTeam_sql = "select D.group_project_status,D.group_id,D.group_manage from project as B,student_group_member as C,student_group as D where  B.project_id=D.project_id  and C.group_id=D.group_id and C.student_id=".$student_id;
+		   $this -> assign('session_id',$student_id);
+		   //创建学生组
+		   $teamCreate = I('teamCreate');
+		   if($teamCreate == 1){
+		   		$teamNew_sql = "insert into student_group values(5,1,0,".$_SESSION['id'].",0,1,0,0,'',0)";
+		   		D('student_group')->query($teamNew_sql);
+		   		$groupNew_sql = "insert into student_group_member values(".$_SESSION['id'].",5,'',0,1,0,1,1,1)";
+		   		D('student_group_member')->query($groupNew_sql);
+		   }
+		   //显示学生组
+	 	   $projectTeam_sql = "select D.group_project_status,D.group_id,D.group_manage,C.is_groupLeader from student_group_member as C,student_group as D where C.group_id=D.group_id and C.student_id=".$student_id;
 	 	   $course = new \Model\CourseModel();
 	 	   $team =  $course->query($projectTeam_sql);
 	 	    $this->assign('teamManage_url',U('team_manage'));
 		    $this->assign('Manage_url',U('teamMember'));
 			$this -> assign('login_url',U('Home/Login/login'));
 	 	   foreach($team as $key => $s){
-	 	   		$groupMember_sql = "select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = ".$team[$key]['group_id'];
-	 	   		// dump($groupMember_sql);
+	 	   		$groupMember_sql = "select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = ".$team[$key]['group_id'];
 	 	   		$team[$key]['students'] = $course->query($groupMember_sql);
 
-				   if($team[$key]['group_project_status'] == 0){
-						$team[$key]['group_project_status'] = '<p style="color: red;">拒绝</p>';
-						$button_disabled = 'disabled';
-	                    $this -> assign('button_disabled',$button_disabled);
-	                    $this -> assign('Manage_url','#');
-				   }
-					else if($team[$key]['group_project_status'] == 1){
-	                    $team[$key]['group_project_status'] = '<p style="color: blue;">待审核</p>';
-	                }
-				   else{
-						 $team[$key]['group_project_status'] = '<p style="color: green;">已通过</p>';
-				   }
+				$groupLeader_sql = "select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = ".$team[$key]['group_id'];
+	 	   		$team[$key]['Leader'] = $course->query($groupLeader_sql);
+	 	   		$Leader = $team[$key]['Leader'];
 
+			   if($team[$key]['group_project_status'] == 0){
+					$team[$key]['group_project_status'] = '<p style="color: red;">拒绝</p>';
+					$button_disabled = 'disabled';
+	                $this -> assign('button_disabled',$button_disabled);
+	                $this -> assign('Manage_url','#');
+			   }
+				else if($team[$key]['group_project_status'] == 1){
+	                $team[$key]['group_project_status'] = '<p style="color: blue;">待审核</p>';
+	            }
+			   else{
+					 $team[$key]['group_project_status'] = '<p style="color: green;">已通过</p>';
+			   }
 	 	   }
-
 	 	   $this->assign('team',$team);
-
-   		   if(!empty($_POST)){
-   		   		$send_message = "update student_group_member set student_message='".$_SESSION['id']."' where student_id = ".$_POST['student_id'];
-   		   		D('student_group_member')->query($send_message);
-   		   }else{
-				
-   		   }
    		   $this->display();
 	}
 
 	function teamMember(){
 		   $group_id = I('group_id');
-		   $projectTeam_sql = "select A.course_name,A.course_id,B.project_name,D.group_project_status,D.group_id,D.group_manage from course as A,project as B,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and D.group_id = ".$group_id;
+		   $projectTeam_sql = "select D.group_project_status,D.group_id,D.group_manage from student_group as D where D.group_id = ".$group_id;
 	 	   $course = new \Model\CourseModel();
 	 	   $team =  $course->query($projectTeam_sql);
 		   $this->assign('teamMember_url',U('teamMember'));
@@ -220,6 +227,13 @@ class StuController extends Controller{
  	   			}
    		   }else{
 				$this->display();
+   		   }
+
+   		    if(!empty($_GET)){
+   		   		$send_message = "update student_group_member set student_message='".$_SESSION['id']."' where student_id = ".$_GET['studentId'];
+   		   		D('student_group_member')->query($send_message);
+   		   }else{
+				
    		   }
 	}
 }
