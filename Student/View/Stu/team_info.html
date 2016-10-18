@@ -22,20 +22,32 @@
                  <th>队伍ID</th>
                  <th>队员</th>
                  <th>课题详情</th>
-                 <!-- <th>申请状态</th> -->
               </tr>
            </thead>
            <tbody>
-           <foreach name="inviteMessage" item="v">
+           <if condition="$projectid eq 0">
               <tr>
-                 <foreach name="v.course_project" item="h">
-                   <td>{$h.course_name}</td>
-                   <td>{$h.project_name}</td>
+                   <td>--</td>
+                   <td>--</td>
+                   <td>--</td>
+                   <td>--</td>
                    <td>
-                      {$h.teacher_id}
+                   <foreach name="group_member" item="m">
+                      {$m.student_id}-{$m.student_name}<br/>
+                      </foreach>
+                   </td>
+                    <td>--</td>
+                </tr>
+           <else/>
+             <foreach name="teamInfo" item="v">
+                <tr>
+                   <td>{$v.course_name}</td>
+                   <td>{$v.project_name}</td>
+                   <td>
+                      {$v.teacher_id}
                    </td>
                    <td>
-                     {$h.group_id}
+                     {$v.group_id}
                    </td>
                    <td>
                    <foreach name="group_member" item="m">
@@ -45,12 +57,9 @@
                     <td>
                      <a href="#">查看</a>
                    </td>
-                   <!-- <td>
-                      <p style="color:green">已通过</p>
-                   </td> -->
-                </foreach>
-              </tr>
-            </foreach>
+                </tr>
+              </foreach>
+            </if>
            </tbody>
          </table>
         </div>

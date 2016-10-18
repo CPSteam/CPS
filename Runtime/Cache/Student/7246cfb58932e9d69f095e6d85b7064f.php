@@ -62,18 +62,28 @@
                  <th>队伍ID</th>
                  <th>队员</th>
                  <th>课题详情</th>
-                 <!-- <th>申请状态</th> -->
               </tr>
            </thead>
            <tbody>
-           <?php if(is_array($inviteMessage)): foreach($inviteMessage as $key=>$v): ?><tr>
-                 <?php if(is_array($v["course_project"])): foreach($v["course_project"] as $key=>$h): ?><td><?php echo ($h["course_name"]); ?></td>
-                   <td><?php echo ($h["project_name"]); ?></td>
+           <?php if($projectid == 0): ?><tr>
+                   <td>--</td>
+                   <td>--</td>
+                   <td>--</td>
+                   <td>--</td>
                    <td>
-                      <?php echo ($h["teacher_id"]); ?>
+                   <?php if(is_array($group_member)): foreach($group_member as $key=>$m): echo ($m["student_id"]); ?>-<?php echo ($m["student_name"]); ?><br/><?php endforeach; endif; ?>
+                   </td>
+                    <td>--</td>
+                </tr>
+           <?php else: ?>
+             <?php if(is_array($teamInfo)): foreach($teamInfo as $key=>$v): ?><tr>
+                   <td><?php echo ($v["course_name"]); ?></td>
+                   <td><?php echo ($v["project_name"]); ?></td>
+                   <td>
+                      <?php echo ($v["teacher_id"]); ?>
                    </td>
                    <td>
-                     <?php echo ($h["group_id"]); ?>
+                     <?php echo ($v["group_id"]); ?>
                    </td>
                    <td>
                    <?php if(is_array($group_member)): foreach($group_member as $key=>$m): echo ($m["student_id"]); ?>-<?php echo ($m["student_name"]); ?><br/><?php endforeach; endif; ?>
@@ -81,10 +91,7 @@
                     <td>
                      <a href="#">查看</a>
                    </td>
-                   <!-- <td>
-                      <p style="color:green">已通过</p>
-                   </td> --><?php endforeach; endif; ?>
-              </tr><?php endforeach; endif; ?>
+                </tr><?php endforeach; endif; endif; ?>
            </tbody>
          </table>
         </div>

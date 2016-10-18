@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>课程</title>
+   <title>管理员</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
-   <script src="/CPS/Student/Public/js/global.js"></script>
-   <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
+   <script src="/CPS/Manager/Public/js/global.js"></script>
+   <link href="/CPS/Manager/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
      <div class="navWrap">
@@ -54,27 +54,71 @@
   </div>
   	<div style="width: 1080px; margin: 0 auto">
   	<table class="table table-bordered table-striped text-center">
-     <thead>
+      <thead>
+         <tr>
+            <th>课程名称</th>
+            <th>课程内容</th>
+            <th>答辩组信息</th>
+         </tr>
+      </thead>
+      <tbody>
         <tr>
-           <th>课程名称</th>
-           <th>课程ID</th>
-           <th>课程内容</th>
-           <th>课题信息</th>
+          <td>综合课程设计一</td>
+          <td>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nesciunt ipsam architecto, similique vitae cumque odio eaque quas ut, adipisci quam iusto dolor maiores debitis et laudantium. Consequatur, non, obcaecati?</p>
+            <p><a href="#">详情</a></p>
+          </td>
+          <td>
+            <a href="./check_group.html"><button class="btn btn-info" type="button">查看</button></a>
+          </td>
         </tr>
-     </thead>
-     <tbody>
-     <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
-           <td><?php echo ($v["course_name"]); ?></td>
-           <td><?php echo ($v["course_id"]); ?></td>
-           <td>
-           	<p><?php echo ($v["course_detail_info"]); ?></p>
-           </td>
-           <td>
-           	<a href="<?php echo ($query_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
-           </td>
-        </tr><?php endforeach; endif; ?>
-     </tbody>
+      <!-- <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+            <td><?php echo ($v["course_name"]); ?></td>
+            <td><?php echo ($v["course_id"]); ?></td>
+            <td>
+            	<p><?php echo ($v["course_detail_info"]); ?></p>
+            </td>
+            <td>
+            	<a href="<?php echo ($query_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
+            </td>
+         </tr><?php endforeach; endif; ?> -->
+      </tbody>
   	</table>
+    <form class="form-horizontal" action="#" method="" role="form">
+      <div style="width: 400px; margin: 0 auto;">
+        <label for="members">答辩组组长</label>
+        <div class="form-group">
+          <div class="col-sm-11">
+            <select class="form-control" style="margin-top: 5px;">
+              <option>123344-xx</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+
+        <label for="members">答辩组组员</label>
+        <div class="form-group">
+          <div class="col-sm-11">
+            <select class="form-control" style="margin-top: 5px;">
+              <option>123344-xx</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="col-sm-1">
+            <a href="#"><button class="btn btn-info" type="button">+</button></a>
+          </div>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
+        </div>
+      </div>
+    </form>
   </div>
 </body>
 </html>

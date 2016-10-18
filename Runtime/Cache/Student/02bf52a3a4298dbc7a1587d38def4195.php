@@ -64,17 +64,37 @@
             </tr>
          </thead>
          <tbody>
-            <?php if(is_array($inviteMessage)): foreach($inviteMessage as $key=>$v): ?><tr>
-               <?php if(is_array($v["course_project"])): foreach($v["course_project"] as $key=>$h): ?><td><?php echo ($h["course_name"]); ?></td>
-                  <td><?php echo ($h["project_name"]); ?></td>
-                  <td>学生<?php echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?>邀请您加入队伍</td><?php endforeach; endif; ?>
-                  <td>
-                     <?php echo ($manage_status); ?>
-                  </td>
-                  <td>
-                     <?php echo ($team_button); ?>
-                  </td>
-               </tr><?php endforeach; endif; ?>
+            <?php if(is_array($inviteMessage)): foreach($inviteMessage as $key=>$v): if($v["student_message"] == ''): else: ?>
+               <tr>
+               <?php if($v["project_id"] == 0): ?><td>--</td>
+                 <td>--</td>
+               <?php else: ?>
+                 <?php if(is_array($v["course_project"])): foreach($v["course_project"] as $key=>$m): ?><td><?php echo ($m["course_name"]); ?></td>
+                    <td><?php echo ($m["project_name"]); ?></td><?php endforeach; endif; endif; ?>
+               <?php if(is_array($v["students"])): foreach($v["students"] as $key=>$h): ?><td>学生<?php echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?>邀请您加入队伍</td><?php endforeach; endif; ?>
+               <?php if($v["student_message"] == ''): else: ?>
+                  <?php if($v["student_message_status"] == 1): ?><td>
+                        <p style="color:blue">未处理</p>
+                     </td>
+                     <td>
+                       <a href="<?php echo ($myteam_url); ?>/invite_status/2/group_id/<?php echo ($v["group_id"]); ?>"><button type="button" class="btn btn-success">同意</button></a>
+                        <a href="<?php echo ($myteam_url); ?>/invite_status/0/group_id/<?php echo ($v["group_id"]); ?>"><button type="button" class="btn btn-danger">拒绝</button></a>
+                     </td>
+                  <?php elseif($v["student_message_status"] == 2): ?>
+                      <td>
+                        <p style="color:green">已同意</p>
+                     </td>
+                     <td>
+                        <a href="<?php echo ($team_info); ?>/group_id/<?php echo ($v["group_id"]); ?>"><button type="button" class="btn btn-primary">查看队伍</button></a>
+                     </td>
+                  <?php else: ?>
+                      <td>
+                        <p style="color:red">拒绝</p>
+                     </td>
+                     <td>
+                         <button type="button" class="btn btn-primary disabled">查看队伍</button>
+                     </td><?php endif; endif; ?>
+               </tr><?php endif; endforeach; endif; ?>
          </tbody>
       </table>
    </div>
