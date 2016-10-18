@@ -54,61 +54,34 @@
   </div>
   	<div style="width: 1080px; margin: 0 auto">
   	<table class="table table-bordered table-striped text-center">
-      <thead>
-         <tr>
-            <th>课程名称</th>
-            <th>课程内容</th>
-            <th>答辩组信息</th>
-         </tr>
-      </thead>
-      <tbody>
-        <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
-            <td><?php echo ($v["course_name"]); ?></td>
-            <td>
-              <p><?php echo ($v["course_detail_info"]); ?></p>
-              <p><a href="#">详情</a></p>
-            </td>
-            <td>
-              <a href="<?php echo ($check_group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button class="btn btn-info" type="button">查看</button></a>
-            </td>
-          </tr><?php endforeach; endif; ?>
-      </tbody>
+     <thead>
+        <tr>
+           <th>课程名称</th>
+           <th>课程内容</th>
+           <th>答辩组人数</th>
+           <th>学生组人数</th>
+           <th>学生允许申请课题数</th>
+           <th>教师允许申请课题数</th>
+           <th>更改</th>
+        </tr>
+     </thead>
+     <tbody>
+       <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+          <td><?php echo ($v["course_name"]); ?></td>
+          <td>
+            <p><?php echo ($v["course_detail_info"]); ?></p>
+            <p><a href="#">详情</a></p>
+          </td>
+          <td><?php echo ($v["reply_num"]); ?></td>
+          <td><?php echo ($v["group_num"]); ?></td>
+          <td><?php echo ($v["stu_course_max"]); ?></td>
+          <td><?php echo ($v["teacher_course_max"]); ?></td>
+          <td>
+            <a href="<?php echo ($edit_courseInfo_url); ?>"><button type="button" class="btn btn-info">编辑</button></a>
+          </td>
+        </tr><?php endforeach; endif; ?>
+     </tbody>
   	</table>
-    <form class="form-horizontal" action="#" method="" role="form">
-      <div style="width: 400px; margin: 0 auto;">
-        <label for="members">答辩组组长</label>
-        <div class="form-group">
-          <div class="col-sm-11">
-            <select class="form-control" style="margin-top: 5px;">
-              <option>123344-xx</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-        </div>
-
-        <label for="members">答辩组组员</label>
-        <div class="form-group">
-          <div class="col-sm-11">
-            <select class="form-control" style="margin-top: 5px;">
-              <option>123344-xx</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="col-sm-1">
-            <a href="#"><button class="btn btn-info" type="button">+</button></a>
-          </div>
-        </div>
-        <div>
-          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
-        </div>
-      </div>
-    </form>
   </div>
 </body>
 </html>

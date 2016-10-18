@@ -66,16 +66,6 @@
         </tr>
      </thead>
      <tbody>
-     <!-- <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
-           <td><?php echo ($v["course_name"]); ?></td>
-           <td><?php echo ($v["course_id"]); ?></td>
-           <td>
-           	<p><?php echo ($v["course_detail_info"]); ?></p>
-           </td>
-           <td>
-           	<a href="<?php echo ($query_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
-           </td>
-        </tr><?php endforeach; endif; ?> -->
         <tr>
           <td>综合课程设计</td>
           <td>

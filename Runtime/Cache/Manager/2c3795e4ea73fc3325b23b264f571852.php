@@ -110,7 +110,7 @@
        </tr>
      </tbody>
     </table>
-    <a href="./edit_file.html">
+    <a href="<?php echo ($edit_file_url); ?>">
       <button type="button" class="btn btn-info">编辑文件</button>
     </a>
 
