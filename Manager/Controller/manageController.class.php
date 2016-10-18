@@ -8,7 +8,7 @@ class ManageController extends Controller {
 		$course = D('Course');
 		$info = $course -> select();
 		$this->assign('course_url',U('check_courseinfo'));
-		$this->assign('group_url',U('check_check_group'));
+		$this->assign('group_url',U('check_group'));
 		$this->assign('file_url',U('check_file'));
 
 		$this -> assign('info',$info);
@@ -27,6 +27,12 @@ class ManageController extends Controller {
 		$this -> display();
 	}
 	function check_group() {
+		$course_id = I('course_id');
+		$group_sql = "select * from course where course.course_id = ".$course_id;
+		$course = D('Course');
+		$info = $course -> query($group_sql);
+
+		$this -> assign('info',$info);
 		$this -> display();
 	}
 	function edit_courseInfo() {

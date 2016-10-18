@@ -62,26 +62,16 @@
         </tr>
      </thead>
      <tbody>
-       <tr>
-         <td>综合课程设计一</td>
+      <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+         <td><?php echo ($v["course_name"]); ?></td>
          <td>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nesciunt ipsam architecto, similique vitae cumque odio eaque quas ut, adipisci quam iusto dolor maiores debitis et laudantium. Consequatur, non, obcaecati?</p>
+           <p><?php echo ($v["course_detail_info"]); ?></p>
            <p><a href="#">详情</a></p>
          </td>
          <td>
-           <a href="./edit_group.html"><button class="btn btn-info" type="button">编辑</button></a>
+           <a href="/CPS/index.php/Manager/Manage/edit_group.html"><button class="btn btn-info" type="button">编辑</button></a>
          </td>
-       </tr>
-     <!-- <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
-           <td><?php echo ($v["course_name"]); ?></td>
-           <td><?php echo ($v["course_id"]); ?></td>
-           <td>
-           	<p><?php echo ($v["course_detail_info"]); ?></p>
-           </td>
-           <td>
-           	<a href="<?php echo ($query_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
-           </td>
-        </tr><?php endforeach; endif; ?> -->
+       </tr><?php endforeach; endif; ?>
      </tbody>
   	</table>
   </div>

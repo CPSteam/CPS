@@ -73,7 +73,7 @@
             <a href="<?php echo ($course_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
           </td>
           <td>
-            <a href="<?php echo ($group_url); ?>"><button type="button" class="btn btn-info">查看</button></a>
+            <a href="<?php echo ($group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
           </td>
           <td>
             <a href="<?php echo ($file_url); ?>"><button type="button" class="btn btn-info">查看</button></a>

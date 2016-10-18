@@ -374,3 +374,134 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
 
+[ 2016-10-18T20:42:20+08:00 ] ::1 /CPS/index.php/Student/Stu/project_info/course_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0151s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id from course as A,project as B where A.course_id=B.course_id and B.course_id=1 [ RunTime:0.0039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019298s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2016-10-18T20:42:42+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.0051s ]
+SQL: select student_message,student_message_status,group_id from student_group_member where student_id = 2014220202007 [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0033s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select  distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select  distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+
+[ 2016-10-18T20:42:45+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0183s ]
+SQL: select D.group_project_status,D.group_id,D.group_manage,C.is_groupLeader from student_group_member as C,student_group as D where C.group_id=D.group_id and C.student_id=2014220202007 [ RunTime:0.0054s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 3 [ RunTime:0.0054s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 3 [ RunTime:0.0043s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 4 [ RunTime:0.0037s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 4 [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2016-10-18T20:42:48+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0109s ]
+SQL: select  A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status from course as A,project as B,student_group_member as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = 2014220202007 [ RunTime:0.0012s ]
+SQL: select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 3 [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: button_disabled G:\MyGIT\CPS\Runtime\Cache\Student\d118410a5a0ba3f45e64fa0baa889672.php 第 90 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012742s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2016-10-18T20:42:55+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0194s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2016-10-18T20:43:01+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
