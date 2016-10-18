@@ -77,7 +77,7 @@
           <td><?php echo ($v["stu_course_max"]); ?></td>
           <td><?php echo ($v["teacher_course_max"]); ?></td>
           <td>
-            <a href="/CPS/index.php/Manager/Manage/edit_courseInfo.html"><button type="button" class="btn btn-info">编辑</button></a>
+            <a href="<?php echo ($edit_courseInfo_url); ?>"><button type="button" class="btn btn-info">编辑</button></a>
           </td>
         </tr><?php endforeach; endif; ?>
      </tbody>

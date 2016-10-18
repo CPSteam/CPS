@@ -69,7 +69,7 @@
            <p><a href="#">详情</a></p>
          </td>
          <td>
-           <a href="/CPS/index.php/Manager/Manage/edit_group.html"><button class="btn btn-info" type="button">编辑</button></a>
+           <a href="<?php echo ($edit_group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button class="btn btn-info" type="button">编辑</button></a>
          </td>
        </tr><?php endforeach; endif; ?>
      </tbody>

@@ -10,6 +10,7 @@ class ManageController extends Controller {
 		$this->assign('course_url',U('check_courseinfo'));
 		$this->assign('group_url',U('check_group'));
 		$this->assign('file_url',U('check_file'));
+		$this -> assign('login_url',U('Home/Login/login'));
 
 		$this -> assign('info',$info);
 		$this -> display();
@@ -19,11 +20,18 @@ class ManageController extends Controller {
 		$course_sql = "select * from course where course.course_id = ".$course_id;
 		$course = D('Course');
 		$info = $course -> query($course_sql);
+		$this->assign('edit_courseInfo_url',U('edit_courseInfo'));
+		$this -> assign('login_url',U('Home/Login/login'));
 
 		$this -> assign('info',$info);
 		$this -> display();
 	}
 	function check_file() {
+
+		$this->assign('edit_file_url',U('edit_file'));
+		$this -> assign('login_url',U('Home/Login/login'));
+
+		// $this -> assign('info',$info);
 		$this -> display();
 	}
 	function check_group() {
@@ -31,6 +39,8 @@ class ManageController extends Controller {
 		$group_sql = "select * from course where course.course_id = ".$course_id;
 		$course = D('Course');
 		$info = $course -> query($group_sql);
+		$this->assign('edit_group_url',U('edit_group'));
+		$this -> assign('login_url',U('Home/Login/login'));
 
 		$this -> assign('info',$info);
 		$this -> display();
@@ -42,6 +52,14 @@ class ManageController extends Controller {
 		$this -> display();
 	}
 	function edit_group() {
+		$course_id = I('course_id');
+		$group_sql = "select * from course where course.course_id = ".$course_id;
+		$course = D('Course');
+		$info = $course -> query($group_sql);
+		$this -> assign('check_group_url',U('check_group'));
+		$this -> assign('login_url',U('Home/Login/login'));
+
+		$this -> assign('info',$info);
 		$this -> display();
 	}
 	function group_info() {
