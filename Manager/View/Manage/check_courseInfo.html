@@ -26,32 +26,22 @@
         </tr>
      </thead>
      <tbody>
-     <!-- <foreach name="info" item="v">
+       <foreach name="info" item="v">
         <tr>
-           <td>{$v.course_name}</td>
-           <td>{$v.course_id}</td>
-           <td>
-           	<p>{$v.course_detail_info}</p>
-           </td>
-           <td>
-           	<a href="{$query_url}/course_id/{$v.course_id}"><button type="button" class="btn btn-info">查看</button></a>
-           </td>
-        </tr>
-     </foreach> -->
-        <tr>
-          <td>综合课程设计</td>
+          <td>{$v.course_name}</td>
           <td>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>{$v.course_detail_info}</p>
             <p><a href="#">详情</a></p>
           </td>
-          <td>5</td>
-          <td>4</td>
-          <td>1</td>
-          <td>1</td>
+          <td>{$v.reply_num}</td>
+          <td>{$v.group_num}</td>
+          <td>{$v.stu_course_max}</td>
+          <td>{$v.teacher_course_max}</td>
           <td>
             <a href="./edit_courseInfo.html"><button type="button" class="btn btn-info">编辑</button></a>
           </td>
         </tr>
+      </foreach>
      </tbody>
   	</table>
   </div>

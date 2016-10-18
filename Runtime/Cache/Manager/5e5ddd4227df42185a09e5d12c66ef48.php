@@ -58,9 +58,11 @@
         <tr>
            <th>课程名称</th>
            <th>课程内容</th>
-           <th>课程信息</th>
-           <th>答辩组信息</th>
-           <th>文件信息</th>
+           <th>答辩组人数</th>
+           <th>学生组人数</th>
+           <th>学生允许申请课题数</th>
+           <th>教师允许申请课题数</th>
+           <th>更改</th>
         </tr>
      </thead>
      <tbody>
@@ -68,19 +70,18 @@
           <td><?php echo ($v["course_name"]); ?></td>
           <td>
             <p><?php echo ($v["course_detail_info"]); ?></p>
+            <p><a href="#">详情</a></p>
           </td>
+          <td><?php echo ($v["reply_num"]); ?></td>
+          <td><?php echo ($v["group_num"]); ?></td>
+          <td><?php echo ($v["stu_course_max"]); ?></td>
+          <td><?php echo ($v["teacher_course_max"]); ?></td>
           <td>
-            <a href="<?php echo ($course_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
-          </td>
-          <td>
-            <a href="<?php echo ($group_url); ?>"><button type="button" class="btn btn-info">查看</button></a>
-          </td>
-          <td>
-            <a href="<?php echo ($file_url); ?>"><button type="button" class="btn btn-info">查看</button></a>
+            <a href="./edit_courseInfo.html"><button type="button" class="btn btn-info">编辑</button></a>
           </td>
         </tr><?php endforeach; endif; ?>
      </tbody>
-    </table>
+  	</table>
   </div>
 </body>
 </html>
