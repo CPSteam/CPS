@@ -52,48 +52,27 @@
     <li><a href="/CPS/index.php/Student/Stu/team_manage">队伍管理</a></li>
   </ol>
   </div>
-    <div>
-        <h3 style="text-align: center;">申请课题</h3><br/>
-        <div class="stugroup" style="text-align: left;margin:0 auto;">
-        <form action="<?php echo ($teamMember_url); ?>" method="get" enctype="multipart/form-data">
+      <h3 style="text-align: center;">申请课题</h3><br/>
+      <div class="stugroup">
+      <form action="<?php echo ($apply_project_url); ?>" method="post" enctype="multipart/form-data"> 
          <h5>课程名称</h5>
-         <input type="text" class="form-control" placeholder="<?php echo ($v["course_name"]); ?>" />
+         <input type="text" class="form-control" name="course_name" value="<?php echo ($course_name); ?>" />
          <h5>课题名称</h5>
-         <input type="text" class="form-control" placeholder="<?php echo ($v["project_name"]); ?>" />
+         <input type="text" class="form-control" name="project_name" value="<?php echo ($project_name); ?>" />
          <h5>课题id</h5>
-         <input type="text" class="form-control" placeholder="<?php echo ($v["project_id"]); ?>"/>
-         <h5>学生组</h5>
-         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1">选择学生组</button><br/>
-         <!-- 模态框（Modal） -->
-            <div class="modal fade" id="myModa1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-               <div class="modal-dialog">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                           <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
-                              &times;
-                           </button>
-                           <h4 class="modal-title" id="myModalLabel3">
-                           学生组列表
-                           </h4>
-                        </div>
-                     <div class="modal-body">
-                     <div class="stugroup">
-                         <form action="<?php echo ($teamMember_url); ?>" method="post" enctype="multipart/form-data">
-                             <h5 style="text-align: left;">请选择学生组</h5>
-                             <input type="text" name="student_id" class="form-control"/>
-                             <input type="submit" class="btn btn-info width-input" value="确定">
-                             </form>
-                          </div>
-                     </div>
-                  </div><!-- /.modal-content -->
-            </div><!-- /.modal -->
-        </div>
+         <input type="text" class="form-control" name="project_id" value="<?php echo ($project_id); ?>"/>
+         <?php if($apply_id == ''): ?><h5>学生组<span style="color: red;">（请创建一个新学生组）</span></h5>
+         <?php else: ?>
+         <h5>学生组</h5><?php endif; ?>
+          <select id="apply_group_id" class="select-type">
+          <?php if(is_array($apply_group_id)): foreach($apply_group_id as $key=>$v): ?><option value="<?php echo ($v["group_id"]); ?>"><?php echo ($v["group_id"]); ?></option><?php endforeach; endif; ?>
+          </select>
+         <input type="text" id="apply_project_id" name="apply_group_id" class="form-control">
          <h5>提交附件</h5>
          <input type="file">
          <br>
          <button class="btn btn-info" style="margin-left: 60px;" type="submit">提交</button>
          </form>
         </div>
-    </div>
 </body>
 </html>

@@ -48,6 +48,29 @@ class StuController extends Controller{
 	}
 
 	function apply_project(){
+		$course_name = I('course_name');
+		$this -> assign('course_name',$course_name);
+		$project_name = I('project_name');
+		$this -> assign('project_name',$project_name);
+		$project_id = I('project_id');
+		$this -> assign('project_id',$project_id);
+		$this -> assign('apply_project_url',U('apply_project'));
+
+		$apply_group = "select A.group_id from student_group as A,student_group_member as B where  A.group_id=B.group_id and B.student_id=".$_SESSION['id']." and B.is_groupLeader = 1 and A.project_id = 0";
+		$apply_group_id = D('student_group') -> query($apply_group);
+		$this -> assign('apply_group_id',$apply_group_id);
+
+		foreach ($apply_group_id as $key => $s) {
+			$apply_id = $apply_group_id[$key]['group_id'];
+			$this->assign('apply_id',$apply_id);
+		}
+
+		if(!empty($_POST)){
+			$update_projectId_sql = "update student_group set project_id = ".$_POST['project_id']." where group_id =".$_POST['apply_group_id'];
+			D('student_group') -> query($update_projectId_sql);
+		}else{
+			
+		}
 		$this->display();
 	}
 	
@@ -152,7 +175,7 @@ class StuController extends Controller{
 		   if($teamCreate == 1){
 		   		$teamNew_sql = "insert into student_group values(6,1,0,".$_SESSION['id'].",1,1,0,0,'',0)";
 		   		D('student_group')->query($teamNew_sql);
-		   		$groupNew_sql = "insert into student_group_member values(".$_SESSION['id'].",6,'',0,1,0,1,1,1)";
+		   		$groupNew_sql = "insert into student_group_member values(".$_SESSION['id'].",6,'',2,1,0,1,1,1)";
 		   		D('student_group_member')->query($groupNew_sql);
 		   }
 		   //显示学生组
@@ -163,7 +186,7 @@ class StuController extends Controller{
 		    $this->assign('Manage_url',U('teamMember'));
 			$this -> assign('login_url',U('Home/Login/login'));
 	 	   foreach($team as $key => $s){
-	 	   		$groupMember_sql = "select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = ".$team[$key]['group_id'];
+	 	   		$groupMember_sql = "select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = ".$team[$key]['group_id'];
 	 	   		$team[$key]['students'] = $course->query($groupMember_sql);
 
 				$groupLeader_sql = "select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = ".$team[$key]['group_id'];
@@ -197,7 +220,7 @@ class StuController extends Controller{
 		   $this->assign('teamManage_url',U('team_manage'));
 
 	 	   foreach($team as $key => $s){
-	 	   		$groupMember_sql = "select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = ".$team[$key]['group_id'];
+	 	   		$groupMember_sql = "select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = ".$team[$key]['group_id'];
 	 	   		$team[$key]['students'] = $course->query($groupMember_sql);
 
 			   if($team[$key]['group_project_status'] == 0){
@@ -217,7 +240,7 @@ class StuController extends Controller{
  	   			if($_POST['student_id'] == $_SESSION['id']){
  	   				$this -> error('不能踢除本人！');
  	   			}else{
- 	   				$delete_sql = "update student_group_member set is_available=0 where student_id = ".$_POST['student_id'];
+ 	   				$delete_sql = "update student_group_member set is_available=0 where student_id = ".$_POST['student_id']." and group_id = ".$_POST['group_id'];
    		   			D('student')->query($delete_sql);
    		   			$this -> redirect('team_manage');
  	   			}

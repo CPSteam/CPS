@@ -12,48 +12,31 @@
 <body>
     <include file="Home/View/Header/header.html"/>
     <include file="Tab:tab_student"/>
-    <div>
-        <h3 style="text-align: center;">申请课题</h3><br/>
-        <div class="stugroup" style="text-align: left;margin:0 auto;">
-        <form action="{$teamMember_url}" method="get" enctype="multipart/form-data">
+      <h3 style="text-align: center;">申请课题</h3><br/>
+      <div class="stugroup">
+      <form action="{$apply_project_url}" method="post" enctype="multipart/form-data"> 
          <h5>课程名称</h5>
-         <input type="text" class="form-control" placeholder="{$v.course_name}" />
+         <input type="text" class="form-control" name="course_name" value="{$course_name}" />
          <h5>课题名称</h5>
-         <input type="text" class="form-control" placeholder="{$v.project_name}" />
+         <input type="text" class="form-control" name="project_name" value="{$project_name}" />
          <h5>课题id</h5>
-         <input type="text" class="form-control" placeholder="{$v.project_id}"/>
+         <input type="text" class="form-control" name="project_id" value="{$project_id}"/>
+         <if condition="$apply_id eq ''">
+         <h5>学生组<span style="color: red;">（请创建一个新学生组）</span></h5>
+         <else/>
          <h5>学生组</h5>
-         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1">选择学生组</button><br/>
-         <!-- 模态框（Modal） -->
-            <div class="modal fade" id="myModa1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-               <div class="modal-dialog">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                           <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
-                              &times;
-                           </button>
-                           <h4 class="modal-title" id="myModalLabel3">
-                           学生组列表
-                           </h4>
-                        </div>
-                     <div class="modal-body">
-                     <div class="stugroup">
-                         <form action="{$teamMember_url}" method="post" enctype="multipart/form-data">
-                             <h5 style="text-align: left;">请选择学生组</h5>
-                             <input type="text" name="student_id" class="form-control"/>
-                             <input type="submit" class="btn btn-info width-input" value="确定">
-                             </form>
-                          </div>
-                     </div>
-                  </div><!-- /.modal-content -->
-            </div><!-- /.modal -->
-        </div>
+         </if>
+          <select id="apply_group_id" class="select-type">
+          <foreach name="apply_group_id" item="v">
+            <option value="{$v.group_id}">{$v.group_id}</option>
+           </foreach>
+          </select>
+         <input type="text" id="apply_project_id" name="apply_group_id" class="form-control">
          <h5>提交附件</h5>
          <input type="file">
          <br>
          <button class="btn btn-info" style="margin-left: 60px;" type="submit">提交</button>
          </form>
         </div>
-    </div>
 </body>
 </html>

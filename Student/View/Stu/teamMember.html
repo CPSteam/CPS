@@ -55,6 +55,7 @@
                                    <form action="{$teamMember_url}" method="post" enctype="multipart/form-data">
                                        <h5 style="text-align: left;">请确认想要踢除的学生学号</h5>
                                        <input type="text" name="student_id" class="form-control"/>
+                                       <input type="hidden" name="group_id" value="{$v.group_id}"/>
                                        <input type="submit" class="btn btn-danger width-input" value="确定">
                                        </form>
                                     </div>

@@ -125,6 +125,7 @@ ul.navbar-nav span {
 .stugroup{
     width: 200px;
     margin-left: 200px;
+    margin:0 auto;
 }
 th{
     text-align: center;
@@ -219,4 +220,9 @@ breadTab导航
 
 .danger-button{
   margin-left: 0px;
+}
+
+.select-type{
+  width: 200px;
+  border-radius: 2px;
 }

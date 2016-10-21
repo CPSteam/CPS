@@ -104,8 +104,6 @@
                                        </h4>
                                     </div>
                                  <div class="modal-body">
-                                     <!--<h5>学生姓名</h5>-->
-                                     <!--<input type="text"/>-->
                                      <form action="<?php echo ($teamManage_url); ?>" method="post" enctype="multipart/form-data">
                                      <h5>学生学号</h5>
                                      <input type="text" name="student_id"/>
