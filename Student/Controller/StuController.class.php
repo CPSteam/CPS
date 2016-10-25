@@ -145,6 +145,7 @@ class StuController extends Controller{
 
 	function team_info(){
 		$teamgroup_id = I('group_id');
+		$this -> assign('teamgroup_id',$teamgroup_id);
 		$is_project = "select project_id from student_group where group_id =".$teamgroup_id;
 		$project_id =D('project')->query($is_project);
 		
@@ -160,7 +161,7 @@ class StuController extends Controller{
 			}
 		}
 
-		$groupMember_sql = "select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = ".$teamgroup_id;
+		$groupMember_sql = "select A.student_id,A.student_name,B.group_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = ".$teamgroup_id;
 		$memember = D('course')->query($groupMember_sql);
 		$this -> assign('teamInfo',$teamInfo);
 		$this -> assign('group_member',$memember);

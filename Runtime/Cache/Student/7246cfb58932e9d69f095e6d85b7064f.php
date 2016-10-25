@@ -69,7 +69,7 @@
                    <td>--</td>
                    <td>--</td>
                    <td>--</td>
-                   <td>--</td>
+                   <td><?php echo ($teamgroup_id); ?></td>
                    <td>
                    <?php if(is_array($group_member)): foreach($group_member as $key=>$m): echo ($m["student_id"]); ?>-<?php echo ($m["student_name"]); ?><br/><?php endforeach; endif; ?>
                    </td>

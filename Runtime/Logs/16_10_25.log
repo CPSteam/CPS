@@ -1,0 +1,1180 @@
+[ 2016-10-25T12:30:19+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.012928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.070859s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.076803s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.014221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.012909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013131s ]
+
+[ 2016-10-25T12:30:19+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001923s ]
+
+[ 2016-10-25T12:30:34+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002801s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.138625s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202003' )  [ RunTime:0.018495s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.104853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.105121s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001428s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202003' )  [ RunTime:0.000826s ]
+
+[ 2016-10-25T12:30:35+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202003
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003022s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.080485s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000952s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.114108s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001380s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001874s ]
+
+[ 2016-10-25T12:30:40+08:00 ] ::1 /CPS/index.php/Student/Stu/project_info/course_id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002653s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011213s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id from course as A,project as B where A.course_id=B.course_id and B.course_id=2 [ RunTime:0.052206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\467ad321caedc5f9d0d0f1d71b17234e.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.054595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001834s ]
+
+[ 2016-10-25T12:30:42+08:00 ] ::1 /CPS/index.php/Student/Stu/apply_project/course_name/%E7%BB%BC%E5%90%88%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A12/project_name/%E5%BE%B7%E5%9B%BD/project_id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003057s ]
+SQL: SHOW COLUMNS FROM `student_group` [ RunTime:0.046183s ]
+SQL: select A.group_id from student_group as A,student_group_member as B where  A.group_id=B.group_id and B.student_id=2014220202003 and B.is_groupLeader = 1 and A.project_id = 0 [ RunTime:0.031478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\2fcfd96cd3dd6e46976260639afcc850.php 第 38 行.
+NOTIC: [8] Undefined variable: apply_id F:\web\CPS\Runtime\Cache\Student\2fcfd96cd3dd6e46976260639afcc850.php 第 64 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001863s ]
+
+[ 2016-10-25T12:30:46+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002599s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011634s ]
+SQL: select D.group_project_status,D.group_id,D.group_manage,C.is_groupLeader from student_group_member as C,student_group as D where C.group_id=D.group_id and C.student_id=2014220202003 [ RunTime:0.001008s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 1 [ RunTime:0.154410s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 1 [ RunTime:0.001276s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 5 [ RunTime:0.001264s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 5 [ RunTime:0.001111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.050554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050809s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2016-10-25T12:30:52+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002602s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.029671s ]
+SQL: select  A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status from course as A,project as B,student_group_member as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = 2014220202003 [ RunTime:0.001318s ]
+SQL: select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 1 [ RunTime:0.001633s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.059759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001805s ]
+
+[ 2016-10-25T12:30:55+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003079s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011158s ]
+SQL: select D.group_project_status,D.group_id,D.group_manage,C.is_groupLeader from student_group_member as C,student_group as D where C.group_id=D.group_id and C.student_id=2014220202003 [ RunTime:0.000894s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 1 [ RunTime:0.001329s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 1 [ RunTime:0.001204s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 5 [ RunTime:0.001779s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 5 [ RunTime:0.001406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025071s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001680s ]
+
+[ 2016-10-25T12:31:46+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002659s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011905s ]
+SQL: select  A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status from course as A,project as B,student_group_member as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = 2014220202003 [ RunTime:0.001098s ]
+SQL: select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 1 [ RunTime:0.001310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001478s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001682s ]
+
+[ 2016-10-25T12:31:49+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002626s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.053031s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202003 [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.051948s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000559s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.037683s ]
+SQL: select project_id from student_group where group_id =1 [ RunTime:0.000806s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =1 [ RunTime:0.000821s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000401s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000565s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =5 [ RunTime:0.000694s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id =  [ RunTime:0.000395s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044213s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001704s ]
+
+[ 2016-10-25T12:31:51+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003674s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.010976s ]
+SQL: select D.group_project_status,D.group_id,D.group_manage,C.is_groupLeader from student_group_member as C,student_group as D where C.group_id=D.group_id and C.student_id=2014220202003 [ RunTime:0.000864s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 1 [ RunTime:0.001273s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 1 [ RunTime:0.001143s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 5 [ RunTime:0.001249s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 5 [ RunTime:0.001295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001802s ]
+
+[ 2016-10-25T12:33:27+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003038s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.044051s ]
+SQL: select D.group_project_status,D.group_id,D.group_manage,C.is_groupLeader from student_group_member as C,student_group as D where C.group_id=D.group_id and C.student_id=2014220202003 [ RunTime:0.000922s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 1 [ RunTime:0.001615s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 1 [ RunTime:0.001399s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 5 [ RunTime:0.001462s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 5 [ RunTime:0.001307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001923s ]
+
+[ 2016-10-25T12:33:30+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003135s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.011562s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202003 [ RunTime:0.000903s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011473s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000536s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.016508s ]
+SQL: select project_id from student_group where group_id =1 [ RunTime:0.000757s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =1 [ RunTime:0.000779s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000428s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000771s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =5 [ RunTime:0.001366s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id =  [ RunTime:0.000609s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001734s ]
+
+[ 2016-10-25T12:33:33+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002697s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.011579s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202003 [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.012435s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000550s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.019811s ]
+SQL: select project_id from student_group where group_id =1 [ RunTime:0.000820s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =1 [ RunTime:0.001225s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000549s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000639s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =5 [ RunTime:0.000770s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id =  [ RunTime:0.000440s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027532s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000944s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001469s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001678s ]
+
+[ 2016-10-25T12:33:36+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003692s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011568s ]
+SQL: select D.group_project_status,D.group_id,D.group_manage,C.is_groupLeader from student_group_member as C,student_group as D where C.group_id=D.group_id and C.student_id=2014220202003 [ RunTime:0.001023s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 1 [ RunTime:0.001396s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 1 [ RunTime:0.001137s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 5 [ RunTime:0.001434s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 5 [ RunTime:0.001234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001740s ]
+
+[ 2016-10-25T12:33:42+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002615s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001737s ]
+
+[ 2016-10-25T12:33:43+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001746s ]
+
+[ 2016-10-25T12:33:47+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001420s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001759s ]
+
+[ 2016-10-25T12:33:48+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763?0.00519418831112084
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001813s ]
+
+[ 2016-10-25T12:33:48+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763?0.00519418831112084?0.026168918728536994
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001899s ]
+
+[ 2016-10-25T12:33:49+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763?0.00519418831112084?0.026168918728536994?0.3966348932381125
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001715s ]
+
+[ 2016-10-25T12:33:50+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763?0.00519418831112084?0.026168918728536994?0.3966348932381125?0.480360644958997
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001760s ]
+
+[ 2016-10-25T12:33:50+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763?0.00519418831112084?0.026168918728536994?0.3966348932381125?0.480360644958997?0.3158843250154859
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001496s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001737s ]
+
+[ 2016-10-25T12:33:51+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763?0.00519418831112084?0.026168918728536994?0.3966348932381125?0.480360644958997?0.3158843250154859?0.421002896617638
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001463s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001705s ]
+
+[ 2016-10-25T12:33:52+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763?0.00519418831112084?0.026168918728536994?0.3966348932381125?0.480360644958997?0.3158843250154859?0.421002896617638?0.15404295045871907
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001732s ]
+
+[ 2016-10-25T12:33:58+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763?0.00519418831112084?0.026168918728536994?0.3966348932381125?0.480360644958997?0.3158843250154859?0.421002896617638?0.15404295045871907?0.8874600108597064
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002961s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001805s ]
+
+[ 2016-10-25T12:33:58+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763?0.00519418831112084?0.026168918728536994?0.3966348932381125?0.480360644958997?0.3158843250154859?0.421002896617638?0.15404295045871907?0.8874600108597064?0.49157604495315677
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001484s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001719s ]
+
+[ 2016-10-25T12:33:59+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.17011844309658763?0.00519418831112084?0.026168918728536994?0.3966348932381125?0.480360644958997?0.3158843250154859?0.421002896617638?0.15404295045871907?0.8874600108597064?0.49157604495315677?0.10594933995431965
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001723s ]
+
+[ 2016-10-25T12:34:04+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001424s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002655s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.011455s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202007' )  [ RunTime:0.000990s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000941s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001154s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202007' )  [ RunTime:0.000908s ]
+
+[ 2016-10-25T12:34:05+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202007
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002862s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011794s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000820s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001722s ]
+
+[ 2016-10-25T12:34:12+08:00 ] ::1 /CPS/index.php/Student/Stu/project_info/course_id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002622s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.098845s ]
+SQL: select A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id from course as A,project as B where A.course_id=B.course_id and B.course_id=2 [ RunTime:0.000880s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\467ad321caedc5f9d0d0f1d71b17234e.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020151s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001866s ]
+
+[ 2016-10-25T12:34:14+08:00 ] ::1 /CPS/index.php/Student/Stu/apply_project/course_name/%E7%BB%BC%E5%90%88%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A12/project_name/%E5%BE%B7%E5%9B%BD/project_id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006256s ]
+SQL: SHOW COLUMNS FROM `student_group` [ RunTime:0.011640s ]
+SQL: select A.group_id from student_group as A,student_group_member as B where  A.group_id=B.group_id and B.student_id=2014220202007 and B.is_groupLeader = 1 and A.project_id = 0 [ RunTime:0.001020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\2fcfd96cd3dd6e46976260639afcc850.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.019979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001485s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001696s ]
+
+[ 2016-10-25T12:34:18+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002660s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.011545s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202007 [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.012107s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 2014220202001 [ RunTime:0.001267s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011191s ]
+SQL: select project_id from student_group where group_id =3 [ RunTime:0.000790s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =3 [ RunTime:0.001210s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000579s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: select project_id from student_group where group_id =4 [ RunTime:0.000669s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =4 [ RunTime:0.000758s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202007 and group_id =  [ RunTime:0.000474s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202007 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001935s ]
+
+[ 2016-10-25T12:34:40+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002933s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011748s ]
+SQL: select project_id from student_group where group_id =3 [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011473s ]
+SQL: select  distinct A.course_name,B.project_name,B.teacher_id,D.group_id from course as A,project as B,student_group_member as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.group_id =3 [ RunTime:0.001325s ]
+SQL: select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 3 [ RunTime:0.001269s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001687s ]
+
+[ 2016-10-25T12:34:47+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002596s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.011855s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202007 [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011700s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 2014220202001 [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011858s ]
+SQL: select project_id from student_group where group_id =3 [ RunTime:0.000743s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =3 [ RunTime:0.000853s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000615s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: select project_id from student_group where group_id =4 [ RunTime:0.000997s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =4 [ RunTime:0.000947s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202007 and group_id =  [ RunTime:0.000459s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202007 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028014s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001711s ]
+
+[ 2016-10-25T12:35:07+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002721s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.011833s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202007 [ RunTime:0.000905s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011728s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 2014220202009 [ RunTime:0.001221s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011742s ]
+SQL: select project_id from student_group where group_id =3 [ RunTime:0.000726s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =3 [ RunTime:0.000821s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000394s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: select project_id from student_group where group_id =4 [ RunTime:0.000700s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =4 [ RunTime:0.000728s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202007 and group_id =  [ RunTime:0.000407s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202007 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027958s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002128s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002514s ]
+
+[ 2016-10-25T12:35:09+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002641s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011493s ]
+SQL: select project_id from student_group where group_id =3 [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011148s ]
+SQL: select  distinct A.course_name,B.project_name,B.teacher_id,D.group_id from course as A,project as B,student_group_member as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.group_id =3 [ RunTime:0.001392s ]
+SQL: select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 3 [ RunTime:0.001281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001477s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001681s ]
+
+[ 2016-10-25T12:35:13+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003147s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.012080s ]
+SQL: select project_id from student_group where group_id =3 [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.012329s ]
+SQL: select  distinct A.course_name,B.project_name,B.teacher_id,D.group_id from course as A,project as B,student_group_member as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.group_id =3 [ RunTime:0.001315s ]
+SQL: select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 3 [ RunTime:0.001263s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000498s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000954s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001676s ]
+
+[ 2016-10-25T12:35:16+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002771s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.010963s ]
+SQL: select D.group_project_status,D.group_id,D.group_manage,C.is_groupLeader from student_group_member as C,student_group as D where C.group_id=D.group_id and C.student_id=2014220202007 [ RunTime:0.000864s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 3 [ RunTime:0.001309s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 3 [ RunTime:0.001252s ]
+SQL: select A.student_id,A.student_name,C.is_groupLeader from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.student_message_status=2 and C.group_id = 4 [ RunTime:0.001273s ]
+SQL: select A.student_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.is_groupLeader=1 and C.group_id = 4 [ RunTime:0.001141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+NOTIC: [8] Undefined variable: button_disabled F:\web\CPS\Runtime\Cache\Student\b9146860cbe6309b8a9a621ad0ff6f28.php 第 78 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001680s ]
+
+[ 2016-10-25T12:35:16+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002582s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001999s ]
+
+[ 2016-10-25T12:35:17+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002932s ]
+
+[ 2016-10-25T12:35:25+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002657s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.012149s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202003' )  [ RunTime:0.000788s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000944s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001148s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202003' )  [ RunTime:0.000852s ]
+
+[ 2016-10-25T12:35:26+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202003
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003278s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011885s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001677s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001919s ]
+
+[ 2016-10-25T12:35:32+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003549s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.012557s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202003 [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.012647s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000461s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011891s ]
+SQL: select project_id from student_group where group_id =1 [ RunTime:0.000716s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =1 [ RunTime:0.000813s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000367s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000944s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =5 [ RunTime:0.000946s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id =  [ RunTime:0.000451s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029211s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001903s ]
+
+[ 2016-10-25T12:36:11+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002623s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.011292s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202003 [ RunTime:0.000918s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011328s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000494s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011721s ]
+SQL: select project_id from student_group where group_id =1 [ RunTime:0.000723s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =1 [ RunTime:0.000801s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 2014220202005 [ RunTime:0.001113s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000602s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =5 [ RunTime:0.000708s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id =  [ RunTime:0.000392s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001769s ]
+
+[ 2016-10-25T12:36:13+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004135s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.012703s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011389s ]
+SQL: select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001368s ]
+NOTIC: [8] Undefined variable: teamInfo F:\web\CPS\Student\Controller\StuController.class.php 第 165 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001344s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002008s ]
+
+[ 2016-10-25T12:36:22+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002674s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.011747s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202003 [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.019426s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000491s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011840s ]
+SQL: select project_id from student_group where group_id =1 [ RunTime:0.000794s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =1 [ RunTime:0.001118s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 2014220202005 [ RunTime:0.001374s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000705s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =5 [ RunTime:0.000750s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id =  [ RunTime:0.000373s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000949s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001786s ]
+
+[ 2016-10-25T12:36:28+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002791s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011871s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011924s ]
+SQL: select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001405s ]
+NOTIC: [8] Undefined variable: teamInfo F:\web\CPS\Student\Controller\StuController.class.php 第 165 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001690s ]
+
+[ 2016-10-25T12:38:50+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002989s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.012671s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011468s ]
+SQL: select A.student_id,A.student_name,B.group_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001431s ]
+NOTIC: [8] Undefined variable: teamInfo F:\web\CPS\Student\Controller\StuController.class.php 第 165 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001679s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001881s ]
+
+[ 2016-10-25T12:39:11+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003016s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.061181s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011459s ]
+SQL: select A.student_id,A.student_name,B.group_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001640s ]
+NOTIC: [8] Undefined variable: teamInfo F:\web\CPS\Student\Controller\StuController.class.php 第 165 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026409s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001918s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002144s ]
+
+[ 2016-10-25T12:39:23+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003376s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.031441s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.012625s ]
+SQL: select A.student_id,A.student_name,B.group_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001650s ]
+NOTIC: [8] Undefined variable: teamInfo F:\web\CPS\Student\Controller\StuController.class.php 第 165 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000362s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001361s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003147s ]
+
+[ 2016-10-25T12:39:54+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003092s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011854s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011152s ]
+SQL: select A.student_id,A.student_name,B.group_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001487s ]
+NOTIC: [8] Undefined variable: teamInfo F:\web\CPS\Student\Controller\StuController.class.php 第 165 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001925s ]
+
+[ 2016-10-25T12:41:17+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003637s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011998s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011236s ]
+SQL: select A.student_id,A.student_name,B.group_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001436s ]
+SQL: select A.student_id,A.student_name,B.group_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001448s ]
+NOTIC: [8] Undefined variable: teamInfo F:\web\CPS\Student\Controller\StuController.class.php 第 167 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026504s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001897s ]
+
+[ 2016-10-25T12:41:20+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002695s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.011838s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202003 [ RunTime:0.001037s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011850s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000566s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.012248s ]
+SQL: select project_id from student_group where group_id =1 [ RunTime:0.000762s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =1 [ RunTime:0.000995s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 2014220202005 [ RunTime:0.001378s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000783s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =5 [ RunTime:0.001063s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id =  [ RunTime:0.000701s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029803s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000988s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002007s ]
+
+[ 2016-10-25T12:41:23+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003277s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.012016s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.012400s ]
+SQL: select A.student_id,A.student_name,B.group_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001546s ]
+SQL: select A.student_id,A.student_name,B.group_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001546s ]
+NOTIC: [8] Undefined variable: teamInfo F:\web\CPS\Student\Controller\StuController.class.php 第 167 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000974s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001754s ]
+
+[ 2016-10-25T12:43:12+08:00 ] ::1 /CPS/index.php/Student/Stu/team_info/group_id/5
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002839s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011732s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011530s ]
+SQL: select A.student_id,A.student_name,B.group_id from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = 5 [ RunTime:0.001388s ]
+NOTIC: [8] Undefined variable: teamInfo F:\web\CPS\Student\Controller\StuController.class.php 第 166 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000331s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\7246cfb58932e9d69f095e6d85b7064f.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002063s ]
+
+[ 2016-10-25T12:43:19+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003465s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.011843s ]
+SQL: select A.student_message,A.student_message_status,B.project_id,B.group_id from student_group_member as A,student_group as B where A.group_id=B.group_id and A.student_id =2014220202003 [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011155s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id =  [ RunTime:0.000548s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011359s ]
+SQL: select project_id from student_group where group_id =1 [ RunTime:0.000795s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =1 [ RunTime:0.000971s ]
+SQL: select distinct E.student_id,E.student_name from student_group_member as C,student_group as D,student as E where  C.group_id=D.group_id and C.student_id=E.student_id and C.student_id = 2014220202005 [ RunTime:0.001355s ]
+SQL: select project_id from student_group where group_id =5 [ RunTime:0.000712s ]
+SQL: select A.course_name,B.project_name,C.group_id from course as A,project as B,student_group as C where A.course_id=B.course_id and B.project_id=C.project_id and C.group_id =5 [ RunTime:0.001203s ]
+SQL: update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id =  [ RunTime:0.000691s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : update student_group_member set student_message_status = 0 where student_id = 2014220202003 and group_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000343s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Student\02bf52a3a4298dbc7a1587d38def4195.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001930s ]
+
