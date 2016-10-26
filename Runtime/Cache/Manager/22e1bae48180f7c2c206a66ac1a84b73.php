@@ -46,12 +46,11 @@
 
     <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
-    <li><a href="/CPS/index.php/Student/Stu/course_info">课程信息</a></li>
-    <li><a href="/CPS/index.php/Student/Stu/myproject">我的课题</a></li>
-    <li><a href="/CPS/index.php/Student/Stu/myteam">我的队伍</a></li>
-    <li><a href="/CPS/index.php/Student/Stu/team_manage">队伍管理</a></li>
+    <li><a href="/CPS/index.php/Manager/Manage/check_file">文件信息</a></li>
+	<li><a href="/CPS/index.php/Manager/Manage/check_file">文件管理</a></li>
   </ol>
-  </div>
+</div>
+
     <form action="#" method="" role="form">
       <div style="width: 400px; margin: 0 auto;">
         <div class="form-group">
