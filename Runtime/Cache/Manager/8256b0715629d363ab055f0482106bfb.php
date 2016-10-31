@@ -50,6 +50,7 @@
     <li><a href="/CPS/index.php/Manager/Manage/check_courseInfo">课程组信息</a></li>
     <li><a href="/CPS/index.php/Manager/Manage/check_group">答辩组信息</a></li>
     <li><a href="/CPS/index.php/Manager/Manage/check_file">文件信息</a></li>
+    <li><a href="/CPS/index.php/Student/Stu/course_info">课程</a></li>
   </ol>
 </div>
 
