@@ -15,21 +15,18 @@ class StuController extends Controller{
 	}
 	function myproject(){
 		$student_id = $_SESSION['id'];
- 		// $course = new \Model\CourseModel();
- 		// $peojectSql = "select  A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status from course as A,project as B,student_group_member as C,student_group as D where A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = ".$_SESSION['id'];
- 		// $peojectSql = M('course as A')->join('project as B on A.course_id=B.course_id')->join('student_group as D on B.project_id=D.project_id')->join('student_group_member as C on C.group_id=D.group_id')->where("C.student_id = $_SESSION['id']")->field('A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status',true)->select();
- 		$demo=M("course");
-		$list=$demo->table('course A,project B,student_group_member C,student_group D')->where("A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = '$student_id'")->field('A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status')->select();
-		dump($demo->getLastSql()); 
-
- 		//$projectInfo = $course -> query($peojectSql);
-
+ 		$demo_project=M("course");
+		$projectInfo=$demo_project->table('course A,project B,student_group_member C,student_group D')->where("A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = '$student_id'")->field('A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status')->select();
+	
  		$this -> assign('projectInfo_url',U('project_report'));
  		$this -> assign('login_url',U('Home/Login/login'));
 
  		foreach($projectInfo as $key => $s){
- 			$groupMember_sql = "select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = ".$projectInfo[$key]['group_id'];
-	 	   		$projectInfo[$key]['students'] = $course->query($groupMember_sql);
+ 			$demo_groupMember=M("student_group_member");
+ 			$projectInfo[$key]['group_id'] = $group_id;
+ 			dump($projectInfo[$key]['group_id']);
+ 			$groupMember_sql = $demo_groupMember->table('student as A,student_group as B,student_group_member as C')->where("A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = '$group_id'")->field('A.student_id,A.student_name')->select();
+ 			// $groupMember_sql = "select A.student_id,A.student_name from student as A,student_group as B,student_group_member as C where A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = ".$projectInfo[$key]['group_id'];
 
 			   if($projectInfo[$key]['group_project_status'] == 0){
 					$projectInfo[$key]['group_project_status'] = '<p style="color: red;">拒绝</p>';
