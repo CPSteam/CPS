@@ -46,12 +46,11 @@
 
     <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
-    <li><a href="/CPS/index.php/Student/Stu/course_info">课程信息</a></li>
-    <li><a href="/CPS/index.php/Student/Stu/myproject">我的课题</a></li>
-    <li><a href="/CPS/index.php/Student/Stu/myteam">我的队伍</a></li>
-    <li><a href="/CPS/index.php/Student/Stu/team_manage">队伍管理</a></li>
+    <li><a href="/CPS/index.php/Manager/Manage/check_group">答辩组信息</a></li>
+	<li><a href="/CPS/index.php/Manager/Manage/check_group">答辩组管理</a></li>
   </ol>
-  </div>
+</div>
+
   	<div style="width: 1080px; margin: 0 auto">
   	<table class="table table-bordered table-striped text-center">
       <thead>
@@ -62,26 +61,16 @@
          </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>综合课程设计一</td>
-          <td>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nesciunt ipsam architecto, similique vitae cumque odio eaque quas ut, adipisci quam iusto dolor maiores debitis et laudantium. Consequatur, non, obcaecati?</p>
-            <p><a href="#">详情</a></p>
-          </td>
-          <td>
-            <a href="./check_group.html"><button class="btn btn-info" type="button">查看</button></a>
-          </td>
-        </tr>
-      <!-- <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+        <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
             <td><?php echo ($v["course_name"]); ?></td>
-            <td><?php echo ($v["course_id"]); ?></td>
             <td>
-            	<p><?php echo ($v["course_detail_info"]); ?></p>
+              <p><?php echo ($v["course_detail_info"]); ?></p>
+              <p><a href="#">详情</a></p>
             </td>
             <td>
-            	<a href="<?php echo ($query_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
+              <a href="<?php echo ($check_group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button class="btn btn-info" type="button">查看</button></a>
             </td>
-         </tr><?php endforeach; endif; ?> -->
+          </tr><?php endforeach; endif; ?>
       </tbody>
   	</table>
     <form class="form-horizontal" action="#" method="" role="form">

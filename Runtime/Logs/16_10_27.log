@@ -1,0 +1,75 @@
+[ 2016-10-27T10:41:27+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002766s ]
+
+[ 2016-10-27T10:41:28+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002339s ]
+
+[ 2016-10-27T10:41:41+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018165s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2016-10-27T10:41:41+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002073s ]
+
+[ 2016-10-27T10:55:35+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003493s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000340s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002421s ]
+
+[ 2016-10-27T10:55:35+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002227s ]
+

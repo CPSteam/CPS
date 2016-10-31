@@ -47,11 +47,10 @@
     <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
     <li><a href="/CPS/index.php/Student/Stu/course_info">课程信息</a></li>
-    <li><a href="/CPS/index.php/Student/Stu/myproject">我的课题</a></li>
-    <li><a href="/CPS/index.php/Student/Stu/myteam">我的队伍</a></li>
-    <li><a href="/CPS/index.php/Student/Stu/team_manage">队伍管理</a></li>
+	<li><a href="/CPS/index.php/Student/Stu/course_info">课程管理</a></li>
   </ol>
-  </div>
+</div>
+
   	<div style="width: 1080px; margin: 0 auto">
   	<table class="table table-bordered table-striped text-center">
      <thead>
@@ -66,30 +65,20 @@
         </tr>
      </thead>
      <tbody>
-     <!-- <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
-           <td><?php echo ($v["course_name"]); ?></td>
-           <td><?php echo ($v["course_id"]); ?></td>
-           <td>
-           	<p><?php echo ($v["course_detail_info"]); ?></p>
-           </td>
-           <td>
-           	<a href="<?php echo ($query_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
-           </td>
-        </tr><?php endforeach; endif; ?> -->
-        <tr>
-          <td>综合课程设计</td>
+       <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+          <td><?php echo ($v["course_name"]); ?></td>
           <td>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p><?php echo ($v["course_detail_info"]); ?></p>
             <p><a href="#">详情</a></p>
           </td>
-          <td>5</td>
-          <td>4</td>
-          <td>1</td>
-          <td>1</td>
+          <td><?php echo ($v["reply_num"]); ?></td>
+          <td><?php echo ($v["group_num"]); ?></td>
+          <td><?php echo ($v["stu_course_max"]); ?></td>
+          <td><?php echo ($v["teacher_course_max"]); ?></td>
           <td>
-            <a href="./edit_courseInfo.html"><button type="button" class="btn btn-info">编辑</button></a>
+            <a href="<?php echo ($edit_courseInfo_url); ?>"><button type="button" class="btn btn-info">编辑</button></a>
           </td>
-        </tr>
+        </tr><?php endforeach; endif; ?>
      </tbody>
   	</table>
   </div>

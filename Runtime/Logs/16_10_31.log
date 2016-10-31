@@ -1,0 +1,705 @@
+[ 2016-10-31T15:38:43+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.015802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.033318s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000405s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001170s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.111141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.017059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.038149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.038749s ]
+
+[ 2016-10-31T15:38:44+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001802s ]
+
+[ 2016-10-31T15:38:54+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002581s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.285841s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202005' )  [ RunTime:0.122442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000370s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001165s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.159171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.160093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003855s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202005' )  [ RunTime:0.002444s ]
+
+[ 2016-10-31T15:38:55+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202005
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005928s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.046733s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001219s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000243s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000549s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.111398s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002231s ]
+
+[ 2016-10-31T15:53:29+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000327s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002639s ]
+
+[ 2016-10-31T15:53:30+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002064s ]
+
+[ 2016-10-31T15:53:36+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003029s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.070039s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202005' )  [ RunTime:0.000831s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001332s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202005' )  [ RunTime:0.000840s ]
+
+[ 2016-10-31T15:53:36+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202005
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002697s ]
+
+[ 2016-10-31T15:54:16+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202005
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003480s ]
+
+[ 2016-10-31T16:14:26+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202005
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004204s ]
+
+[ 2016-10-31T16:14:28+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202005
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002903s ]
+
+[ 2016-10-31T16:14:38+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002188s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.017917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001672s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002211s ]
+
+[ 2016-10-31T16:14:39+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002217s ]
+
+[ 2016-10-31T16:14:44+08:00 ] ::1 /CPS/index.php/Home/Index/verify_c?0.20691539266500025
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002076s ]
+
+[ 2016-10-31T16:14:49+08:00 ] ::1 /CPS/index.php/Home/Login/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002762s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.010951s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202005' )  [ RunTime:0.001009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001408s ]
+SQL: SELECT * FROM `student` WHERE ( `student_id` = '2014220202005' )  [ RunTime:0.000908s ]
+
+[ 2016-10-31T16:14:49+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202005
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003176s ]
+
+[ 2016-10-31T16:15:32+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202005
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003287s ]
+
+[ 2016-10-31T16:25:24+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202005
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004183s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011312s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002346s ]
+
+[ 2016-10-31T16:25:40+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info/student_id/2014220202005
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004126s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.022462s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001241s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000415s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002412s ]
+
+[ 2016-10-31T16:25:43+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003664s ]
+SQL: SHOW COLUMNS FROM course as _a [ RunTime:0.000486s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as _a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM course as _a
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.084848s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id )  [ RunTime:0.093963s ]
+ERR: 1054:Unknown column 'A.course_name' in 'field list'
+ [ SQL语句 ] : SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id ) 
+
+[ 2016-10-31T16:25:49+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002859s ]
+SQL: SHOW COLUMNS FROM course as _a [ RunTime:0.000686s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as _a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM course as _a
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.014792s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id )  [ RunTime:0.000673s ]
+ERR: 1054:Unknown column 'A.course_name' in 'field list'
+ [ SQL语句 ] : SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id ) 
+NOTIC: [8] Undefined variable: course F:\web\CPS\Student\Controller\StuController.class.php 第 24 行.
+
+[ 2016-10-31T16:26:03+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003293s ]
+SQL: SHOW COLUMNS FROM course as _a [ RunTime:0.001616s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as _a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM course as _a
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011160s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id )  [ RunTime:0.000679s ]
+ERR: 1054:Unknown column 'A.course_name' in 'field list'
+ [ SQL语句 ] : SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id ) 
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.118130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003499s ]
+
+[ 2016-10-31T16:26:19+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002850s ]
+SQL: SHOW COLUMNS FROM course as _a [ RunTime:0.000721s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as _a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM course as _a
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.013375s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id )  [ RunTime:0.000781s ]
+ERR: 1054:Unknown column 'A.course_name' in 'field list'
+ [ SQL语句 ] : SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id ) 
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024145s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001803s ]
+
+[ 2016-10-31T16:26:47+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001934s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003398s ]
+SQL: SHOW COLUMNS FROM course as _a [ RunTime:0.000840s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as _a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM course as _a
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.012621s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id )  [ RunTime:0.001082s ]
+ERR: 1054:Unknown column 'A.course_name' in 'field list'
+ [ SQL语句 ] : SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id ) 
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002273s ]
+
+[ 2016-10-31T16:27:04+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011862s ]
+SQL: SHOW COLUMNS FROM course as _a [ RunTime:0.000642s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as _a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM course as _a
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.010707s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id )  [ RunTime:0.001099s ]
+ERR: 1054:Unknown column 'A.course_name' in 'field list'
+ [ SQL语句 ] : SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id ) 
+
+[ 2016-10-31T16:27:13+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003452s ]
+SQL: SHOW COLUMNS FROM course as _a [ RunTime:0.000727s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as _a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM course as _a
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.010767s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id )  [ RunTime:0.000733s ]
+ERR: 1054:Unknown column 'A.course_name' in 'field list'
+ [ SQL语句 ] : SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id ) 
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000361s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001993s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002228s ]
+
+[ 2016-10-31T16:27:33+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003003s ]
+SQL: SHOW COLUMNS FROM course as _a [ RunTime:0.001600s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as _a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM course as _a
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.012251s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id )  [ RunTime:0.001160s ]
+ERR: 1054:Unknown column 'A.course_name' in 'field list'
+ [ SQL语句 ] : SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id ) 
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001684s ]
+
+[ 2016-10-31T16:27:47+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003135s ]
+SQL: SHOW COLUMNS FROM course as _a [ RunTime:0.000656s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as _a' at line 1
+ [ SQL语句 ] : SHOW COLUMNS FROM course as _a
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.024005s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id )  [ RunTime:0.000702s ]
+ERR: 1054:Unknown column 'A.course_name' in 'field list'
+ [ SQL语句 ] : SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id ) 
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002107s ]
+
+[ 2016-10-31T16:28:15+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.008019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009573s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.015692s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.010436s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM course A,project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id )  [ RunTime:0.001762s ]
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\web\CPS\Student\Controller\StuController.class.php 第 29 行.
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 50 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002527s ]
+
+[ 2016-10-31T16:32:20+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003224s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.014424s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.012311s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM course A,project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = $student_id )  [ RunTime:0.000851s ]
+ERR: 1054:Unknown column '$student_id' in 'where clause'
+ [ SQL语句 ] : SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM course A,project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = $student_id ) 
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\web\CPS\Student\Controller\StuController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 51 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.032959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002142s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002546s ]
+
+[ 2016-10-31T16:32:53+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003167s ]
+
+[ 2016-10-31T16:33:13+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003105s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.017129s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.015040s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM course A,project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = '2014220202005' )  [ RunTime:0.001296s ]
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 30 行.
+NOTIC: [2] Invalid argument supplied for foreach() F:\web\CPS\Student\Controller\StuController.class.php 第 30 行.
+NOTIC: [8] Undefined variable: projectInfo F:\web\CPS\Student\Controller\StuController.class.php 第 51 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002155s ]
+
+[ 2016-10-31T16:34:34+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003377s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.010472s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001213s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.050028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001938s ]
+
+[ 2016-10-31T16:34:38+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_courseinfo/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003139s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.012085s ]
+SQL: select * from course where course.course_id = 1 [ RunTime:0.001007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000537s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.108731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001411s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002934s ]
+
+[ 2016-10-31T16:34:40+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_courseInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002948s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined variable: login_url F:\web\CPS\Runtime\Cache\Manager\68247e6d515880d6d6d221e10f1184f4.php 第 38 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.061017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001717s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2016-10-31T16:34:44+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_courseInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001827s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003766s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.010763s ]
+SQL: select * from course where course.course_id =  [ RunTime:0.000626s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : select * from course where course.course_id = 
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000930s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001769s ]
+
+[ 2016-10-31T16:34:46+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002696s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.014829s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001184s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.020728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001836s ]
+
+[ 2016-10-31T16:34:53+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_group/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002681s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.015716s ]
+SQL: select * from course where course.course_id = 1 [ RunTime:0.001125s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.095385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095722s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001291s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002423s ]
+
+[ 2016-10-31T16:35:06+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_group/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002963s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.017553s ]
+SQL: select * from course where course.course_id = 1 [ RunTime:0.001178s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000368s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.081688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001682s ]
+
+[ 2016-10-31T16:35:50+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_group/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002891s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.014370s ]
+SQL: select * from course where course.course_id = 1 [ RunTime:0.001272s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.023147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002442s ]
+
+[ 2016-10-31T16:35:52+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_group/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003364s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.102233s ]
+SQL: select * from course where course.course_id = 1 [ RunTime:0.001038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000159s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002929s ]
+
+[ 2016-10-31T16:36:02+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_group/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002635s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.026025s ]
+SQL: select * from course where course.course_id = 1 [ RunTime:0.001489s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001516s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002051s ]
+
+[ 2016-10-31T16:36:37+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002779s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000246s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000680s ]
+NOTIC: [8] Undefined variable: info F:\web\CPS\Runtime\Cache\Manager\caa33c8960ecc6b3e692c341028440cf.php 第 71 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.070292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003401s ]
+
