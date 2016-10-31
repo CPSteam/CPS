@@ -46,8 +46,9 @@
 
     <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
-    <li><a href="/CPS/index.php/Manager/Manage/check_group">答辩组信息</a></li>
-	<li><a href="/CPS/index.php/Manager/Manage/check_group">答辩组管理</a></li>
+    <li><a href="/CPS/index.php/Manager/Manage/manage_info">课程</a></li>
+    <li><a href="javascript: history.back(-1)">答辩组信息</a></li>
+	  <li>编辑答辩组</li>
   </ol>
 </div>
 
