@@ -161,6 +161,10 @@ breadTab导航
     padding-bottom: 20px;
 }
 
+.breadcrumb>li+li:before {
+    content: ">";
+}
+
 .div_title_middle,.div_title_final {
     background-color:rgb(64, 117, 133);
     width: 1080px;
@@ -226,5 +230,5 @@ breadTab导航
 */
 
 td p {
-    max-width: 500px;
+    max-width: 400px;
 }
