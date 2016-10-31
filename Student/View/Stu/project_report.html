@@ -42,7 +42,7 @@
 					<td>{$v.main_project}</td>
 					<td>{$v.group_id}</td>
 					<td>
-						<foreach name="v.students" item="h">
+						<foreach name="groupMember" item="h">
                         	{$h.student_id}-{$h.student_name}<br/>
                      	</foreach>
 					</td>

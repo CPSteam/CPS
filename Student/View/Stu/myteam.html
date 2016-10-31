@@ -37,8 +37,8 @@
                     <td>{$m.project_name}</td>
                  </foreach>
                </if>
-               <foreach name="v.students" item="h">
-                  <td>学生{$h.student_id}-{$h.student_name}邀请您加入队伍</td>
+               <foreach name="v.teamInviter" item="l">
+                  <td>学生{$l.student_id}-{$l.student_name}邀请您加入队伍</td>
                </foreach>
                <if condition="$v.student_message eq ''">
                <else/>
