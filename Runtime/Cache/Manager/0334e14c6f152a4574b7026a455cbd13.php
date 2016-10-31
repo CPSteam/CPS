@@ -80,7 +80,7 @@
         <div class="form-group">
           <div class="col-sm-11">
             <select class="form-control" style="margin-top: 5px;">
-              <option>123344-xx</option>
+              <option>123344-x'x</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>
@@ -90,10 +90,10 @@
         </div>
 
         <label for="members">答辩组组员</label>
-        <div class="form-group">
+        <div class="form-group" id="add-member">
           <div class="col-sm-11">
-            <select class="form-control" style="margin-top: 5px;">
-              <option>123344-xx</option>
+            <select class="form-control" id="group-member" style="margin-top: 5px;">
+              <option>添加最多三名组员</option>
               <option>2</option>
               <option>3</option>
               <option>4</option>

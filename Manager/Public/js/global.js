@@ -29,3 +29,38 @@ $(document).ready(function() {
     });
   });
 });
+
+/*edit_group添加组员*/
+
+$(document).ready(function() {
+  $("#add-member").append('<div class="form-group" id="member"></div>');
+
+  //改变选项
+  $("#group-member").change(function() {
+    $val = $(this).val();
+    $valList = $("#member input");
+    $flag = true;
+
+    $valList.each(function() {
+      if($(this).val() == $val) {
+        $flag = false;
+        return 0;
+      }
+      // console.log($(this).val());
+    });
+    if($val == "添加最多三名组员") {
+      return 0;
+    }
+    if($valList.length >= 3) {
+      return 0;
+    }
+    if($flag == true) {
+      $("#member").append('<input type="text" class="form-control add-member" name="" value="' + $val + '">');
+    }
+  });
+
+  //移除选项
+  $(".form-group").on("click","input.add-member", function() {
+    $(this).remove();
+  });
+});

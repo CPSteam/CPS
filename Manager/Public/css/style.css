@@ -232,3 +232,13 @@ breadTab导航
 td p {
     max-width: 400px;
 }
+
+
+/*
+编辑答辩组
+*/
+
+.add-member {
+  margin: 0 0 5px 15px;
+  max-width: 200px;
+}
