@@ -239,6 +239,7 @@ td p {
 */
 
 .add-member {
-  margin: 0 0 5px 15px;
-  max-width: 200px;
+  margin: 0 0 5px 30px;
+  max-width: 365px;
+  cursor: pointer;
 }
