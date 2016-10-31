@@ -46,7 +46,7 @@
 
     <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
-    <li><a href="/CPS/index.php/Student/Stu/course_info">课程</a></li>
+    <li><a href="/CPS/index.php/Manager/Manage/manage_info">课程</a></li>
   </ol>
 </div>
 
