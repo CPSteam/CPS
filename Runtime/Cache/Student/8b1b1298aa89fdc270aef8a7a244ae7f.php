@@ -77,7 +77,7 @@
 					<td><?php echo ($v["teacher_id"]); ?></td>
 					<td><?php echo ($v["group_id"]); ?></td>
 					<td>
-						<?php if(is_array($v["students"])): foreach($v["students"] as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br/><?php endforeach; endif; ?>
+						<?php if(is_array($groupMember)): foreach($groupMember as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br/><?php endforeach; endif; ?>
 					</td>
 					<td>
 						<a href="#">查看</a>

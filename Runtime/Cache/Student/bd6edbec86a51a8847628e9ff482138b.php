@@ -29,7 +29,8 @@
                                     <span id="termID">2016-2017-1</span><span class="caret"></span>
                                 </a>
                                 <ul id="term-dropdown" style="display: none;position: absolute;left: 0;top: 38px;border:1px solid #555;border-radius: 5px;background:#e6e6e6;padding:2px 5px; ">
-                                    <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                </ul>
+                                    <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>
+                                </ul>
                             </span>
                             &nbsp;
                             <a style="float: right;" href="javascript:;">当前用户:&nbsp;<?php echo ($_SESSION['name']); ?></a>
@@ -90,7 +91,7 @@
                                <div class="modal-body">
                                <div class="stugroup">
                                    <form action="<?php echo ($teamMember_url); ?>" method="post" enctype="multipart/form-data">
-                                       <h5 style="text-align: left;">请确认想要踢除的学生学号</h5>
+                                       <h5 style="text-align: center;">请确认想要踢除的学生学号</h5>
                                        <input type="text" name="student_id" class="form-control"/>
                                        <input type="hidden" name="group_id" value="<?php echo ($v["group_id"]); ?>"/>
                                        <input type="submit" class="btn btn-danger width-input" value="确定">
@@ -114,13 +115,14 @@
                                                </h4>
                                             </div>
                                          <div class="modal-body">
-                                             <!--<h5>学生姓名</h5>
-                                             <!--<input type="text"/>-->
-                                             <form action="<?php echo ($teamMember_url); ?>" method="get" enctype="multipart/form-data">
-                                             <h5>学生学号</h5>
-                                             <input type="text" name="studentId"/>
-                                             <input type="submit" class="btn btn-info" style="margin-left: 25px; margin-top: 5px;" value="邀请">
-                                             </form>
+                                           <div class="stugroup">
+                                               <form action="<?php echo ($teamMember_url); ?>" method="get" enctype="multipart/form-data">
+                                               <h5 style="text-align: center;">学生学号</h5>
+                                               <input type="text" class="form-control" name="studentId"/>
+                                               <input type="hidden" name="get_group_id" value="<?php echo ($v["group_id"]); ?>">
+                                               <input type="submit" class="btn btn-info width-input" value="邀请">
+                                               </form>
+                                            </div>
                                          </div>
                                       </div><!-- /.modal-content -->
                                 </div><!-- /.modal -->

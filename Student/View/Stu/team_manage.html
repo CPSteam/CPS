@@ -37,7 +37,7 @@
                    {$v.group_project_status}
                  </td>
                  <td>
-                  <foreach name="v.Leader" item="h">
+                  <foreach name="groupLeader" item="h">
                     <if condition="$h.student_id eq $session_id">
                        <a href="{$Manage_url}/group_id/{$v.group_id}">
                           <button type="button" class="btn btn-info {$button_disabled}">管理</button>

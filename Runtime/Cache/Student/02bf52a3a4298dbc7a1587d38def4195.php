@@ -29,7 +29,8 @@
                                     <span id="termID">2016-2017-1</span><span class="caret"></span>
                                 </a>
                                 <ul id="term-dropdown" style="display: none;position: absolute;left: 0;top: 38px;border:1px solid #555;border-radius: 5px;background:#e6e6e6;padding:2px 5px; ">
-                                    <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                </ul>
+                                    <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>
+                                </ul>
                             </span>
                             &nbsp;
                             <a style="float: right;" href="javascript:;">当前用户:&nbsp;<?php echo ($_SESSION['name']); ?></a>
@@ -71,7 +72,7 @@
                <?php else: ?>
                  <?php if(is_array($v["course_project"])): foreach($v["course_project"] as $key=>$m): ?><td><?php echo ($m["course_name"]); ?></td>
                     <td><?php echo ($m["project_name"]); ?></td><?php endforeach; endif; endif; ?>
-               <?php if(is_array($v["students"])): foreach($v["students"] as $key=>$h): ?><td>学生<?php echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?>邀请您加入队伍</td><?php endforeach; endif; ?>
+               <?php if(is_array($v["teamInviter"])): foreach($v["teamInviter"] as $key=>$l): ?><td>学生<?php echo ($l["student_id"]); ?>-<?php echo ($l["student_name"]); ?>邀请您加入队伍</td><?php endforeach; endif; ?>
                <?php if($v["student_message"] == ''): else: ?>
                   <?php if($v["student_message_status"] == 1): ?><td>
                         <p style="color:blue">未处理</p>

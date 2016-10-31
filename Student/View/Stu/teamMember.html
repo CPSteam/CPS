@@ -53,7 +53,7 @@
                                <div class="modal-body">
                                <div class="stugroup">
                                    <form action="{$teamMember_url}" method="post" enctype="multipart/form-data">
-                                       <h5 style="text-align: left;">请确认想要踢除的学生学号</h5>
+                                       <h5 style="text-align: center;">请确认想要踢除的学生学号</h5>
                                        <input type="text" name="student_id" class="form-control"/>
                                        <input type="hidden" name="group_id" value="{$v.group_id}"/>
                                        <input type="submit" class="btn btn-danger width-input" value="确定">
@@ -77,13 +77,14 @@
                                                </h4>
                                             </div>
                                          <div class="modal-body">
-                                             <!--<h5>学生姓名</h5>
-                                             <!--<input type="text"/>-->
-                                             <form action="{$teamMember_url}" method="get" enctype="multipart/form-data">
-                                             <h5>学生学号</h5>
-                                             <input type="text" name="studentId"/>
-                                             <input type="submit" class="btn btn-info" style="margin-left: 25px; margin-top: 5px;" value="邀请">
-                                             </form>
+                                           <div class="stugroup">
+                                               <form action="{$teamMember_url}" method="get" enctype="multipart/form-data">
+                                               <h5 style="text-align: center;">学生学号</h5>
+                                               <input type="text" class="form-control" name="studentId"/>
+                                               <input type="hidden" name="get_group_id" value="{$v.group_id}">
+                                               <input type="submit" class="btn btn-info width-input" value="邀请">
+                                               </form>
+                                            </div>
                                          </div>
                                       </div><!-- /.modal-content -->
                                 </div><!-- /.modal -->
