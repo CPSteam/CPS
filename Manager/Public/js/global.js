@@ -46,7 +46,6 @@ $(document).ready(function() {
         $flag = false;
         return 0;
       }
-      // console.log($(this).val());
     });
     if($val == "添加最多三名组员") {
       return 0;
@@ -55,12 +54,17 @@ $(document).ready(function() {
       return 0;
     }
     if($flag == true) {
-      $("#member").append('<input type="text" class="form-control add-member" name="" value="' + $val + '">');
+      $("#member").append('<input type="text" class="form-control add-member" name="member' + ($valList.length + 1) + '" value="' + $val + '"><span class="glyphicon glyphicon-remove"style="float: right; left: -80px; top: -26px; color: #666; cursor: pointer"></span>');
     }
   });
 
   //移除选项
   $(".form-group").on("click","input.add-member", function() {
+    $(this).next().remove();
+    $(this).remove();
+  });
+  $(".form-group").on("click","span.glyphicon-remove", function() {
+    $(this).prev().remove();
     $(this).remove();
   });
 });
