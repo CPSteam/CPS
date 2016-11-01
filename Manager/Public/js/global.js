@@ -33,6 +33,8 @@ $(document).ready(function() {
 /*edit_group添加组员*/
 
 $(document).ready(function() {
+  $member = ["member0", "member1", "member2"];//添加成员的name
+
   $("#add-member").append('<div class="form-group" id="member"></div>');
 
   //改变选项
@@ -40,7 +42,6 @@ $(document).ready(function() {
     $val = $(this).val();
     $valList = $("#member input");
     $flag = true;
-
     $valList.each(function() {
       if($(this).val() == $val) {
         $flag = false;
@@ -54,16 +55,20 @@ $(document).ready(function() {
       return 0;
     }
     if($flag == true) {
-      $("#member").append('<input type="text" class="form-control add-member" name="member' + ($valList.length + 1) + '" value="' + $val + '"><span class="glyphicon glyphicon-remove"style="float: right; left: -80px; top: -26px; color: #666; cursor: pointer"></span>');
+      $("#member").append('<input type="text" class="form-control add-member" name="' + $member.shift() +'" value="' + $val + '"><span class="glyphicon glyphicon-remove"style="float: right; left: -80px; top: -26px; color: #666; cursor: pointer"></span>');
     }
   });
 
   //移除选项
   $(".form-group").on("click","input.add-member", function() {
+    $thisname = $(this).attr("name");
+    $member.push($thisname);
     $(this).next().remove();
     $(this).remove();
   });
   $(".form-group").on("click","span.glyphicon-remove", function() {
+    $thisname = $(this).prev().attr("name");
+    $member.push($thisname);
     $(this).prev().remove();
     $(this).remove();
   });
