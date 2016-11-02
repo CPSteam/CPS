@@ -29,7 +29,8 @@
                                     <span id="termID">2016-2017-1</span><span class="caret"></span>
                                 </a>
                                 <ul id="term-dropdown" style="display: none;position: absolute;left: 0;top: 38px;border:1px solid #555;border-radius: 5px;background:#e6e6e6;padding:2px 5px; ">
-                                    <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                </ul>
+                                    <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>
+                                </ul>
                             </span>
                             &nbsp;
                             <a style="float: right;" href="javascript:;">当前用户:&nbsp;<?php echo ($_SESSION['name']); ?></a>
@@ -52,31 +53,31 @@
   </ol>
 </div>
 
-    <form action="#" method="" role="form">
+    <form action="<?php echo ($edit_courseInfo_url); ?>" method="post" role="form">
       <div style="width: 400px; margin: 0 auto;">
         <div class="form-group">
           <label for="course_name">课程名称</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <input type="text" class="form-control" name="list_course_name" value="<?php echo ($list_course_name); ?>" readonly>
         </div>
         <div class="form-group">
           <label for="course_content">课程内容</label>
-          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
+          <textarea class="form-control" rows="3" readonly="readonly" name="list_course_detail_info" placeholder="<?php echo ($list_course_detail_info); ?>"><?php echo ($list_course_detail_info); ?></textarea>
         </div>
         <div class="form-group">
-          <label for="group_num">答辩组人数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <label for="reply_num">答辩组人数</label>
+          <input type="text" class="form-control" name="modify_reply_num" placeholder="请输入">
         </div>
         <div class="form-group">
-          <label for="stu_num">学生组人数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <label for="group_num">学生组人数</label>
+          <input type="text" class="form-control" name="modify_group_num" placeholder="请输入">
         </div>
         <div class="form-group">
           <label for="teacher_max_course_num">教师允许申请课题数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <input type="text" class="form-control" name="modify_teacher_max_course_num" placeholder="请输入">
         </div>
         <div class="form-group">
           <label for="stu_max_course_num">学生允许申请课题数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <input type="text" class="form-control" name="modify_stu_max_course_num" placeholder="请输入">
         </div>
         <div>
           <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>

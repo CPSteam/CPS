@@ -42,11 +42,9 @@
         <div class="form-group">
           <div class="col-sm-11">
             <select class="form-control" style="margin-top: 5px;" name="test">
-              <option>123344-x'x</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <foreach name="group_teacher" item="v">
+                <option>{$v.teacher_name}</option>
+              </foreach>
             </select>
           </div>
         </div>
@@ -56,10 +54,9 @@
           <div class="col-sm-11">
             <select class="form-control" id="group-member" style="margin-top: 5px;" name="test1">
               <option>添加最多三名组员</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <foreach name="group_teacher" item="v">
+                <option>{$v.teacher_name}</option>
+              </foreach>
             </select>
           </div>
           <div class="col-sm-1">

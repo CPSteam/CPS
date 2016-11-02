@@ -41,7 +41,7 @@ class ManageController extends Controller {
 		$info = M("course")->where("course_id = '$course_id'")->select();
 
 		$reply_group = M("reply")->where("course_id = '$course_id'")->field('reply_group_id,group_leader_id')->select();
-		
+
 		foreach ($reply_group as $key => $s) {
 			$reply_group_id = $reply_group[$key]['reply_group_id'];
 			$group_teachers = M("reply_member")->table('reply_member as A,teacher as B')->where("A.teacher_id=B.teacher_id and A.reply_group_id = '$reply_group_id'")->field('B.teacher_id,B.teacher_name')->select();
@@ -84,14 +84,16 @@ class ManageController extends Controller {
 	function edit_group() {
 		$this -> assign('edit_group_url',U('edit_group'));
 		$course_id = I('course_id');
-		$info = M("course")->where("course_id = '$course_id'")->select();
+		$info = M("Course") -> where("course_id = '$course_id'") -> select();
+		$group_teacher = M("Teacher") -> select();
 		$this -> assign('check_group_url',U('check_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
 
 		$this -> assign('info',$info);
+		$this -> assign('group_teacher',$group_teacher);
 
 		if(!empty($_POST)){
-			
+
 		}
 		$this -> display();
 	}

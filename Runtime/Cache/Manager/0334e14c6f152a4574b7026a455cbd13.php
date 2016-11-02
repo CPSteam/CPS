@@ -75,17 +75,13 @@
           </tr><?php endforeach; endif; ?>
       </tbody>
   	</table>
-    <form class="form-horizontal" action="#" method="" role="form">
+    <form class="form-horizontal" action="<?php echo ($edit_group_url); ?>" method="post" role="form">
       <div style="width: 400px; margin: 0 auto;">
         <label for="members">答辩组组长</label>
         <div class="form-group">
           <div class="col-sm-11">
-            <select class="form-control" style="margin-top: 5px;">
-              <option>123344-x'x</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+            <select class="form-control" style="margin-top: 5px;" name="test">
+              <?php if(is_array($group_teacher)): foreach($group_teacher as $key=>$v): ?><option><?php echo ($v["teacher_name"]); ?></option><?php endforeach; endif; ?>
             </select>
           </div>
         </div>
@@ -93,12 +89,9 @@
         <label for="members">答辩组组员</label>
         <div class="form-group" id="add-member">
           <div class="col-sm-11">
-            <select class="form-control" id="group-member" style="margin-top: 5px;">
+            <select class="form-control" id="group-member" style="margin-top: 5px;" name="test1">
               <option>添加最多三名组员</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
+              <?php if(is_array($group_teacher)): foreach($group_teacher as $key=>$v): ?><option><?php echo ($v["teacher_name"]); ?></option><?php endforeach; endif; ?>
             </select>
           </div>
           <div class="col-sm-1">
@@ -106,7 +99,7 @@
           </div>
         </div>
         <div>
-          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
+          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">创建</button>
         </div>
       </div>
     </form>
