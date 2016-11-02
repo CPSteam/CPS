@@ -25,7 +25,12 @@ class ManageController extends Controller {
 		$this -> display();
 	}
 	function check_file() {
-
+		$this->assign('course_file_conf_url',U('course_file_conf'));
+		$this -> assign('login_url',U('Home/Login/login'));
+		$this->assign('check_file_conf_url',U('check_file_conf'));
+		$this -> display();
+	}
+	function check_file_conf() {
 		$this->assign('edit_file_url',U('edit_file'));
 		$this -> assign('login_url',U('Home/Login/login'));
 

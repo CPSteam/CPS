@@ -49,50 +49,75 @@
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
     <li><a href="/CPS/index.php/Manager/Manage/manage_info">课程</a></li>
 	  <li><a href="javascript: history.back(-1)">文件信息</a></li>
-    <li>文件编辑</li>
+    <li>文件配置</li>
   </ol>
 </div>
 
-    <form action="#" method="" role="form">
-      <div style="width: 400px; margin: 0 auto;">
-        <div class="form-group">
-          <label for="doc_name">文档名称</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
-        </div>
-        <div class="form-group">
-          <label for="deadline">截止日期</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
-        </div>
-        <div class="form-group">
-          <div>
-            <label for="doc_type">文件类型</label>
-          </div>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="" value="doc">doc
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="" value="zip">zip
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="" value="png">png
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="size_limit">大小限制（单位：KB）</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
-        </div>
-        <div class="form-group">
-          <label for="result">预期成果</label>
-          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="result">预期成果</label>
-          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
-        </div>
-        <div>
-          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
-        </div>
+  	<div style="width: 1080px; margin: 0 auto">
+
+      <div class="div_title_middle">
+        <h4>期中报告</h4>
       </div>
-    </form>
+
+      <table class="table table-bordered table-striped text-center">
+       <thead>
+          <tr>
+             <th>预期成果</th>
+             <th>主要任务内容</th>
+             <th>截止日期</th>
+             <th>文件类型</th>
+             <th>限制大小</th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>预期成果</th>
+           <td>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+           </td>
+           <td>截止日期</td>
+           <td>文件类型</td>
+           <td>限制大小</td>
+         </tr>
+       </tbody>
+      </table>
+      <a href="<?php echo ($edit_file_url); ?>">
+        <button type="button" class="btn btn-info">编辑文件</button>
+      </a>
+
+      <div class="div_title_middle">
+        <h4>期中报告</h4>
+      </div>
+      <table class="table table-bordered table-striped text-center">
+       <thead>
+          <tr>
+             <th>预期成果</th>
+             <th>主要任务内容</th>
+             <th>截止日期</th>
+             <th>文件类型</th>
+             <th>限制大小</th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>预期成果</td>
+           <td>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+             <p><a href="#">详情</a></p>
+           </td>
+           <td>2014-12-11</td>
+           <td>文件类型</td>
+           <td>限制大小</td>
+         </tr>
+       </tbody>
+      </table>
+      <a href="<?php echo ($edit_file_url); ?>">
+        <button type="button" class="btn btn-info">编辑文件</button>
+      </a>
+  </div>
 </body>
 </html>

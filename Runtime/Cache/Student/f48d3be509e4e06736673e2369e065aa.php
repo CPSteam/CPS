@@ -29,7 +29,8 @@
                                     <span id="termID">2016-2017-1</span><span class="caret"></span>
                                 </a>
                                 <ul id="term-dropdown" style="display: none;position: absolute;left: 0;top: 38px;border:1px solid #555;border-radius: 5px;background:#e6e6e6;padding:2px 5px; ">
-                                    <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                </ul>
+                                    <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>
+                                </ul>
                             </span>
                             &nbsp;
                             <a style="float: right;" href="javascript:;">当前用户:&nbsp;<?php echo ($_SESSION['name']); ?></a>
@@ -76,42 +77,7 @@
                    <a href="#">查看</a>
                  </td>
                  <td>
-                     <!-- 按钮触发模态框 -->
-                    <button class="btn btn-info" data-toggle="modal" data-target="#myModal1">
-                          申请
-                    </button>
-
-                    <!-- 模态框（Modal） -->
-                         <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                           <div class="modal-dialog">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                       <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
-                                          &times;
-                                       </button>
-                                       <h4 class="modal-title" id="myModalLabel1">
-                                       申请课题
-                                       </h4>
-                                    </div>
-                                 <div class="modal-body">
-                                    <div class="stugroup" style="text-align: left;">
-                                     <h5>课程名称</h5>
-                                     <input type="text" placeholder="<?php echo ($v["course_name"]); ?>" />
-                                     <h5>课题名称</h5>
-                                     <input type="text" placeholder="<?php echo ($v["project_name"]); ?>" />
-                                     <h5>课题id</h5>
-                                     <input type="text" placeholder="<?php echo ($v["project_id"]); ?>"/>
-                                     <h5>学生组</h5>
-                                     <button>选择学生组</button>
-                                     <h5>提交附件</h5>
-                                     <input type="file" id="inputfile">
-                                     <br>
-                                      <button class="btn btn-info" style="margin-left: 40px;">提交</button>
-                                      </div>
-                                 </div>
-                              </div><!-- /.modal-content -->
-                        </div><!-- /.modal -->
-                    </div>
+                    <a href="<?php echo ($apply_project); ?>/course_name/<?php echo ($v["course_name"]); ?>/project_name/<?php echo ($v["project_name"]); ?>/project_id/<?php echo ($v["project_id"]); ?>"><button class="btn btn-info">申请</button></a>
                  </td>
               </tr><?php endforeach; endif; ?>
            </tbody>

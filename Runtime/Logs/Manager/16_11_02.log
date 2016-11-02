@@ -1,0 +1,2143 @@
+[ 2016-11-02T15:44:24+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0973s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\1d0f9561805f6437cd1f5cb6fa5f64a6.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.039725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.039845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001993s ]
+
+[ 2016-11-02T15:44:26+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+NOTIC: [8] Undefined variable: info G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2016-11-02T15:44:53+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2016-11-02T15:45:29+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000383s ]
+
+[ 2016-11-02T15:47:26+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000439s ]
+
+[ 2016-11-02T15:47:43+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000373s ]
+
+[ 2016-11-02T15:50:56+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000488s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000467s ]
+
+[ 2016-11-02T15:52:55+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2016-11-02T16:02:06+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000715s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2016-11-02T16:02:50+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000479s ]
+
+[ 2016-11-02T16:03:20+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000606s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000663s ]
+
+[ 2016-11-02T16:03:30+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001848s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015577s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001094s ]
+
+[ 2016-11-02T16:03:57+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000207s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000435s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-11-02T16:04:14+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2016-11-02T16:11:01+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000384s ]
+
+[ 2016-11-02T16:21:03+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-11-02T16:21:59+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2016-11-02T16:22:56+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000299s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2016-11-02T16:24:10+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2016-11-02T16:24:12+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2016-11-02T16:24:13+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2016-11-02T16:28:24+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2016-11-02T16:28:34+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2016-11-02T16:35:36+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020272s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000588s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2016-11-02T16:39:18+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2016-11-02T16:39:47+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003876s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003902s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2016-11-02T16:40:32+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2016-11-02T16:41:48+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000401s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2016-11-02T16:47:49+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000336s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000362s ]
+
+[ 2016-11-02T16:48:22+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-11-02T16:48:23+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000285s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004387s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000482s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000537s ]
+
+[ 2016-11-02T16:48:29+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\1d0f9561805f6437cd1f5cb6fa5f64a6.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009424s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2016-11-02T16:48:31+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000297s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003922s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000318s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2016-11-02T16:49:05+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2016-11-02T16:49:08+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000342s ]
+
+[ 2016-11-02T16:49:10+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005564s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2016-11-02T16:49:51+08:00 ] ::1 /CPS/index.php/Manager/Manage/editfiel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000329s ]
+ERR: 非法操作:editfiel
+
+[ 2016-11-02T16:49:57+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit%E2%80%94%E2%80%94fiel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+ERR: 非法操作:edit——fiel
+
+[ 2016-11-02T16:50:02+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit%E2%80%94%E2%80%94fiel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+ERR: 非法操作:edit——fiel
+
+[ 2016-11-02T16:50:17+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_fiel.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+ERR: 非法操作:edit_fiel
+
+[ 2016-11-02T16:50:21+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2016-11-02T16:53:54+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2016-11-02T16:54:10+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000290s ]
+
+[ 2016-11-02T16:54:53+08:00 ] ::1 /CPS/index.php/Manager/Manage/file_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000223s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000296s ]
+ERR: 非法操作:file_info
+
+[ 2016-11-02T16:54:57+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004030s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-11-02T16:55:09+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004531s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000324s ]
+
+[ 2016-11-02T16:55:13+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000288s ]
+
+[ 2016-11-02T16:58:06+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2016-11-02T16:58:07+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2016-11-02T16:58:12+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004801s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2016-11-02T16:59:12+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000282s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000308s ]
+
+[ 2016-11-02T16:59:13+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000287s ]
+
+[ 2016-11-02T16:59:20+08:00 ] ::1 /CPS/index.php/Manager/Manage/file_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+ERR: 非法操作:file_info
+
+[ 2016-11-02T16:59:23+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005170s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2016-11-02T16:59:27+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003926s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000292s ]
+
+[ 2016-11-02T17:00:13+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000321s ]
+
+[ 2016-11-02T17:00:28+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000296s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000320s ]
+
+[ 2016-11-02T17:00:30+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000294s ]
+
+[ 2016-11-02T17:00:33+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-11-02T17:00:34+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000294s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_file_url G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000294s ]
+
+[ 2016-11-02T17:03:08+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004621s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000332s ]
+
+[ 2016-11-02T17:03:09+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000389s ]
+
+[ 2016-11-02T17:04:11+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000622s ]
+
+[ 2016-11-02T17:04:44+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-11-02T17:04:46+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000292s ]
+
+[ 2016-11-02T17:04:54+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000274s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000297s ]
+
+[ 2016-11-02T17:05:44+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000314s ]
+
+[ 2016-11-02T17:05:46+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2016-11-02T17:05:47+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2016-11-02T17:05:56+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004909s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2016-11-02T17:06:16+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000304s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2016-11-02T17:06:23+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2016-11-02T17:06:27+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2016-11-02T17:06:33+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005412s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2016-11-02T17:06:38+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004536s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-11-02T17:06:46+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004207s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000173s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000303s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2016-11-02T17:06:56+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-11-02T17:06:59+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\1d0f9561805f6437cd1f5cb6fa5f64a6.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-11-02T17:07:03+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000302s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000294s ]
+
+[ 2016-11-02T17:07:09+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\1d0f9561805f6437cd1f5cb6fa5f64a6.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011579s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2016-11-02T17:07:14+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\1d0f9561805f6437cd1f5cb6fa5f64a6.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2016-11-02T17:07:17+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2016-11-02T17:07:19+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\1d0f9561805f6437cd1f5cb6fa5f64a6.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004677s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000289s ]
+
+[ 2016-11-02T17:07:20+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005651s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2016-11-02T17:07:35+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2016-11-02T17:07:41+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000290s ]
+
+[ 2016-11-02T17:07:57+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2016-11-02T17:07:59+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2016-11-02T17:10:32+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000419s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2016-11-02T17:10:39+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000438s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000214s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2016-11-02T17:11:05+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\1d0f9561805f6437cd1f5cb6fa5f64a6.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016528s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2016-11-02T17:11:06+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\2c3795e4ea73fc3325b23b264f571852.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2016-11-02T17:11:07+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2016-11-02T17:11:23+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005439s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2016-11-02T17:11:28+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-11-02T17:12:08+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000344s ]
+
+[ 2016-11-02T17:12:13+08:00 ] ::1 /CPS/index.php/Manager/Manage/course_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\385f652a5bb378448596c0d35a963104.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000157s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2016-11-02T17:12:17+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000296s ]
+
+[ 2016-11-02T17:12:21+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file_conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000305s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\df1d53bb8f9c9dbf33cb339e17cae4dc.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2016-11-02T17:12:23+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\1d0f9561805f6437cd1f5cb6fa5f64a6.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000357s ]
+
+[ 2016-11-02T17:12:31+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-11-02T17:12:44+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_file
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Manager\22e1bae48180f7c2c206a66ac1a84b73.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003877s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000271s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
