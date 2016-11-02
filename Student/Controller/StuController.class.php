@@ -21,7 +21,7 @@ class StuController extends Controller{
 
  		foreach($projectInfo as $key => $s){
  			$group_id = $projectInfo[$key]['group_id'];
- 			$groupMember = M("student_group_member")->table('student as A,student_group as B,student_group_member as C')->where("A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = '$group_id'")->field('A.student_id,A.student_name')->select();
+ 			$projectInfo[$key]['students'] = M("student_group_member")->table('student as A,student_group as B,student_group_member as C')->where("A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = '$group_id'")->field('A.student_id,A.student_name')->select();
 			   if($projectInfo[$key]['group_project_status'] == 0){
 					$projectInfo[$key]['group_project_status'] = '<p style="color: red;">拒绝</p>';
 					$button_disabled = 'disabled';

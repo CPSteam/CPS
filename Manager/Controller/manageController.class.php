@@ -39,10 +39,18 @@ class ManageController extends Controller {
 	function check_group() {
 		$course_id = I('course_id');
 		$info = M("course")->where("course_id = '$course_id'")->select();
+
+		$reply_group = M("reply")->where("course_id = '$course_id'")->field('reply_group_id,group_leader_id')->select();
+		
+		foreach ($reply_group as $key => $s) {
+			$reply_group_id = $reply_group[$key]['reply_group_id'];
+			$reply_group['teachers'] = M("reply_member")->table('reply_member as A,teacher as B')->where("A.teacher_id=B.teacher_id and A.reply_group_id = '$reply_group_id'")->field('B.teacher_id,B.teacher_name')->select();
+		}
 		$this->assign('edit_group_url',U('edit_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
 
-		$this -> assign('info',$info);
+		$this -> assign('course_info',$info);
+		$this -> assign('reply_group_info',$reply_group);
 		$this -> display();
 	}
 	function edit_courseInfo() {
