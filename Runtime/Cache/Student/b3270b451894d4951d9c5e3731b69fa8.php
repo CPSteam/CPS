@@ -29,7 +29,8 @@
                                     <span id="termID">2016-2017-1</span><span class="caret"></span>
                                 </a>
                                 <ul id="term-dropdown" style="display: none;position: absolute;left: 0;top: 38px;border:1px solid #555;border-radius: 5px;background:#e6e6e6;padding:2px 5px; ">
-                                    <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>                                </ul>
+                                    <li><a onclick="changeTerm('2015-2016-1')" href="#">2015-2016-1</a></li><li><a onclick="changeTerm('2015-2016-2')" href="#">2015-2016-2</a></li><li><a onclick="changeTerm('2016-2017-1')" href="#">2016-2017-1</a></li>
+                                </ul>
                             </span>
                             &nbsp;
                             <a style="float: right;" href="javascript:;">当前用户:&nbsp;<?php echo ($_SESSION['name']); ?></a>
@@ -74,7 +75,7 @@
                    <?php echo ($v["group_project_status"]); ?>
                  </td>
                  <td>
-                  <?php if(is_array($v["Leader"])): foreach($v["Leader"] as $key=>$h): if($h["student_id"] == $session_id): ?><a href="<?php echo ($Manage_url); ?>/group_id/<?php echo ($v["group_id"]); ?>">
+                  <?php if(is_array($groupLeader)): foreach($groupLeader as $key=>$h): if($h["student_id"] == $session_id): ?><a href="<?php echo ($Manage_url); ?>/group_id/<?php echo ($v["group_id"]); ?>">
                           <button type="button" class="btn btn-info <?php echo ($button_disabled); ?>">管理</button>
                        </a>
                       <?php else: ?>
@@ -91,7 +92,6 @@
           <a href="<?php echo ($teamManage_url); ?>/teamCreate/1"><button class="btn btn-info">创建队伍</button></a>
         </div>
         <div class="create-btn">
-        <!--  <button class="btn btn-info" data-toggle="modal" data-target="#myModa">创建队伍</button>
          <!-- 模态框（Modal） -->
              <div class="modal fade" id="myModa" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                            <div class="modal-dialog">
@@ -105,8 +105,6 @@
                                        </h4>
                                     </div>
                                  <div class="modal-body">
-                                     <!--<h5>学生姓名</h5>-->
-                                     <!--<input type="text"/>-->
                                      <form action="<?php echo ($teamManage_url); ?>" method="post" enctype="multipart/form-data">
                                      <h5>学生学号</h5>
                                      <input type="text" name="student_id"/>

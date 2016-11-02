@@ -1,0 +1,178 @@
+[ 2016-11-01T22:50:42+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Student\962a37c6a940fbdbf6ec68b49eefdef8.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2016-11-01T22:50:48+08:00 ] ::1 /CPS/index.php/Student/Stu/project_info/course_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0175s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0112s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id FROM course as A,project as B WHERE ( A.course_id=B.course_id and B.course_id= '1' )  [ RunTime:0.0583s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Student\f48d3be509e4e06736673e2369e065aa.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Student\f48d3be509e4e06736673e2369e065aa.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000415s ]
+
+[ 2016-11-01T22:50:52+08:00 ] ::1 /CPS/index.php/Student/Stu/team_manage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Undefined index: id G:\MyGIT\CPS\Student\Controller\StuController.class.php 第 171 行.
+SQL: SHOW COLUMNS FROM `student_group` [ RunTime:0.0655s ]
+SQL: SELECT * FROM `student_group` ORDER BY group_id desc LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.0296s ]
+SQL: SELECT D.group_project_status,D.group_id,D.group_manage,C.is_groupLeader FROM student_group_member as C,student_group as D WHERE ( C.group_id=D.group_id and C.student_id = '' )  [ RunTime:0.0035s ]
+NOTIC: [8] Undefined variable: I G:\MyGIT\CPS\Student\Controller\StuController.class.php 第 239 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Student\b3270b451894d4951d9c5e3731b69fa8.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000961s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2016-11-01T22:50:55+08:00 ] ::1 /CPS/index.php/Student/Stu/myteam
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+NOTIC: [8] Undefined index: id G:\MyGIT\CPS\Student\Controller\StuController.class.php 第 104 行.
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `student_group_member` [ RunTime:0.0086s ]
+SQL: SELECT A.student_message,A.student_message_status,B.project_id,B.group_id FROM student_group_member as A,student_group as B WHERE ( A.group_id=B.group_id and A.student_id = '' )  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: teamInviter G:\MyGIT\CPS\Student\Controller\StuController.class.php 第 119 行.
+NOTIC: [8] Undefined variable: projectId G:\MyGIT\CPS\Student\Controller\StuController.class.php 第 120 行.
+NOTIC: [8] Undefined variable: course_project G:\MyGIT\CPS\Student\Controller\StuController.class.php 第 121 行.
+NOTIC: [2] Illegal offset type in isset or empty G:\MyGIT\ThinkPHP\Library\Think\Model.class.php 第 445 行.
+SQL: UPDATE `student_group_member` SET `student_message_status`='0' WHERE ( student_id = '' and group_id = '' ) [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Student\696712bc6c050eaf78c6bc5e65322331.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url G:\MyGIT\CPS\Runtime\Cache\Student\696712bc6c050eaf78c6bc5e65322331.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000381s ]
+
+[ 2016-11-01T22:50:58+08:00 ] ::1 /CPS/index.php/Student/Stu/myproject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
+NOTIC: [8] Undefined index: id G:\MyGIT\CPS\Student\Controller\StuController.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0188s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0094s ]
+SQL: SELECT A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status FROM course A,project B,student_group_member C,student_group D WHERE ( A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = '' )  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined variable: groupMember G:\MyGIT\CPS\Student\Controller\StuController.class.php 第 42 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Student\d118410a5a0ba3f45e64fa0baa889672.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012336s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2016-11-01T22:51:00+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Student\962a37c6a940fbdbf6ec68b49eefdef8.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2016-11-01T22:51:23+08:00 ] ::1 /CPS/index.php/Student/Stu/course_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined index: name G:\MyGIT\CPS\Runtime\Cache\Student\962a37c6a940fbdbf6ec68b49eefdef8.php 第 36 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
