@@ -16,11 +16,11 @@
       <div class="stugroup">
       <form action="{$apply_project_url}" method="post" enctype="multipart/form-data"> 
          <h5>课程名称</h5>
-         <input type="text" class="form-control" name="course_name" value="{$course_name}" />
+         <input type="text" class="form-control" name="course_name" value="{$course_name}" readonly>
          <h5>课题名称</h5>
-         <input type="text" class="form-control" name="project_name" value="{$project_name}" />
+         <input type="text" class="form-control" name="project_name" value="{$project_name}" readonly>
          <h5>课题id</h5>
-         <input type="text" class="form-control" name="project_id" value="{$project_id}"/>
+         <input type="text" class="form-control" name="project_id" value="{$project_id}" readonly>
          <if condition="$apply_id eq ''">
          <h5>学生组<span style="color: red;">（请创建一个新学生组）</span></h5>
          <else/>
