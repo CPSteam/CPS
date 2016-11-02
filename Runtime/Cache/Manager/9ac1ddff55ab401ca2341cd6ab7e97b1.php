@@ -53,41 +53,35 @@
   </ol>
 </div>
 
-    <form action="#" method="" role="form">
+    <form action="<?php echo ($edit_file_url); ?>" method="post" role="form">
       <div style="width: 400px; margin: 0 auto;">
         <div class="form-group">
           <label for="doc_name">文档名称</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <input type="text" class="form-control" name="file_type_name" value="<?php echo ($file_type_name); ?>">
+          <input type="hidden" name="modify_file_type_id" value="<?php echo ($file_type_id); ?>">
+          <input type="hidden" name="course_id" value="<?php echo ($course_id); ?>">
         </div>
         <div class="form-group">
           <label for="deadline">截止日期</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <input type="date" class="form-control" name="modify_file_deadline">
         </div>
         <div class="form-group">
           <div>
             <label for="doc_type">文件类型</label>
           </div>
           <label class="checkbox-inline">
-            <input type="checkbox" name="" value="doc">doc
+            <input type="checkbox" name="modify_allowed_suffix_doc" value="doc">doc
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" name="" value="zip">zip
+            <input type="checkbox" name="modify_allowed_suffix_docx" value="docx">docx
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" name="" value="png">png
+            <input type="checkbox" name="modify_allowed_suffix_zip" value="zip">zip
           </label>
         </div>
         <div class="form-group">
-          <label for="size_limit">大小限制（单位：KB）</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
-        </div>
-        <div class="form-group">
-          <label for="result">预期成果</label>
-          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="result">预期成果</label>
-          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
+          <label for="size_limit">大小限制（单位：MB）</label>
+          <input type="text" class="form-control" name="modify_allowed_max_size" placeholder="请输入">
         </div>
         <div>
           <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
