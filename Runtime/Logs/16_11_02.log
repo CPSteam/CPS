@@ -1748,3 +1748,142 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.003980s ]
 INFO: [ app_end ] --END-- [ RunTime:0.004398s ]
 
+[ 2016-11-02T11:32:12+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004562s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.113461s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000962s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003460s ]
+
+[ 2016-11-02T11:32:15+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_group/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006432s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.117751s ]
+SQL: SELECT * FROM `course` WHERE ( course_id = '1' )  [ RunTime:0.001053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000433s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004485s ]
+
+[ 2016-11-02T11:32:19+08:00 ] ::1 /CPS/index.php/Manager/Manage/edit_group/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003009s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.093591s ]
+SQL: select * from course where course.course_id = 1 [ RunTime:0.000988s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000453s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002309s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002528s ]
+
+[ 2016-11-02T11:33:25+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_group/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008490s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.114075s ]
+SQL: SELECT * FROM `course` WHERE ( course_id = '1' )  [ RunTime:0.001244s ]
+
+[ 2016-11-02T11:34:01+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_group/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004762s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.090955s ]
+SQL: SELECT * FROM `course` WHERE ( course_id = '1' )  [ RunTime:0.001141s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002686s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004075s ]
+
+[ 2016-11-02T11:34:42+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_group/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010764s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.104035s ]
+SQL: SELECT * FROM `course` WHERE ( course_id = '1' )  [ RunTime:0.001068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000656s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.050758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003064s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003457s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004170s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004563s ]
+
+[ 2016-11-02T11:34:45+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004869s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.120385s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001120s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000342s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000743s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.050670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.006827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007258s ]
+
+[ 2016-11-02T11:34:46+08:00 ] ::1 /CPS/index.php/Manager/Manage/check_file
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003922s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000373s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000705s ]
+NOTIC: [8] Undefined variable: info D:\WWW\CPS\Runtime\Cache\Manager\ec48b39c88eee250d5b26412a70a10b1.php 第 72 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001973s ]
+

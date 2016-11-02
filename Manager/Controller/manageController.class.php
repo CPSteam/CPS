@@ -33,9 +33,7 @@ class ManageController extends Controller {
 	}
 	function check_group() {
 		$course_id = I('course_id');
-		$group_sql = "select * from course where course.course_id = ".$course_id;
-		$course = D('Course');
-		$info = $course -> query($group_sql);
+		$info = M("course")->where("course_id = '$course_id'")->select();
 		$this->assign('edit_group_url',U('edit_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
 
@@ -71,9 +69,7 @@ class ManageController extends Controller {
 	}
 	function edit_group() {
 		$course_id = I('course_id');
-		$group_sql = "select * from course where course.course_id = ".$course_id;
-		$course = D('Course');
-		$info = $course -> query($group_sql);
+		$info = M("course")->where("course_id = '$course_id'")->select();
 		$this -> assign('check_group_url',U('check_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
 
