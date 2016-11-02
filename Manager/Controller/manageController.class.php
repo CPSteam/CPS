@@ -17,9 +17,7 @@ class ManageController extends Controller {
 	}
 	function check_courseInfo() {
 		$course_id = I('course_id');
-		$course_sql = "select * from course where course.course_id = ".$course_id;
-		$course = D('Course');
-		$info = $course -> query($course_sql);
+		$info = M("course")->where("course_id = '$course_id'")->select();
 		$this->assign('edit_courseInfo_url',U('edit_courseInfo'));
 		$this -> assign('login_url',U('Home/Login/login'));
 
@@ -40,9 +38,7 @@ class ManageController extends Controller {
 	}
 	function check_group() {
 		$course_id = I('course_id');
-		$group_sql = "select * from course where course.course_id = ".$course_id;
-		$course = D('Course');
-		$info = $course -> query($group_sql);
+		$info = M("course")->where("course_id = '$course_id'")->select();
 		$this->assign('edit_group_url',U('edit_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
 
@@ -50,6 +46,27 @@ class ManageController extends Controller {
 		$this -> display();
 	}
 	function edit_courseInfo() {
+		$course_name = I('course_name');
+		$course_detail_info = I('course_detail_info');
+		$this -> assign('list_course_name',$course_name);
+		$this -> assign('list_course_detail_info',$course_detail_info);
+		$this -> assign('edit_courseInfo_url',U('edit_courseInfo'));
+
+		if(!empty($_POST)){
+			$list_course_name = $_POST['list_course_name'];
+			$modify_course_info = M("course");
+			$modify_info = array(
+				'reply_num' => $_POST['modify_reply_num'], 
+				'group_num' => $_POST['modify_group_num'], 
+				'teacher_course_max' => $_POST['modify_teacher_max_course_num'], 
+				'stu_course_max' => $_POST['modify_stu_max_course_num'], 
+				);
+			$modify_course_info->where("course_name = '$list_course_name'")->field('reply_num,group_num,teacher_course_max,stu_course_max')->save($modify_info);
+			$this -> redirect('manage_info');
+			//dump($modify_course_info->getLastSql());
+		}else{
+			
+		}
 		$this -> display();
 	}
 	function edit_file() {
@@ -57,9 +74,7 @@ class ManageController extends Controller {
 	}
 	function edit_group() {
 		$course_id = I('course_id');
-		$group_sql = "select * from course where course.course_id = ".$course_id;
-		$course = D('Course');
-		$info = $course -> query($group_sql);
+		$info = M("course")->where("course_id = '$course_id'")->select();
 		$this -> assign('check_group_url',U('check_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
 

@@ -12,31 +12,31 @@
 <body>
     <include file="Home/View/Header/header.html"/>
     <include file="Tab:tab_edit_course"/>
-    <form action="#" method="" role="form">
+    <form action="{$edit_courseInfo_url}" method="post" role="form">
       <div style="width: 400px; margin: 0 auto;">
         <div class="form-group">
           <label for="course_name">课程名称</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <input type="text" class="form-control" name="list_course_name" value="{$list_course_name}" readonly>
         </div>
         <div class="form-group">
           <label for="course_content">课程内容</label>
-          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
+          <textarea class="form-control" rows="3" readonly="readonly" name="list_course_detail_info" placeholder="{$list_course_detail_info}">{$list_course_detail_info}</textarea>
         </div>
         <div class="form-group">
-          <label for="group_num">答辩组人数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <label for="reply_num">答辩组人数</label>
+          <input type="text" class="form-control" name="modify_reply_num" placeholder="请输入">
         </div>
         <div class="form-group">
-          <label for="stu_num">学生组人数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <label for="group_num">学生组人数</label>
+          <input type="text" class="form-control" name="modify_group_num" placeholder="请输入">
         </div>
         <div class="form-group">
           <label for="teacher_max_course_num">教师允许申请课题数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <input type="text" class="form-control" name="modify_teacher_max_course_num" placeholder="请输入">
         </div>
         <div class="form-group">
           <label for="stu_max_course_num">学生允许申请课题数</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <input type="text" class="form-control" name="modify_stu_max_course_num" placeholder="请输入">
         </div>
         <div>
           <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
