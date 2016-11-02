@@ -65,16 +65,16 @@ class ManageController extends Controller {
 			$list_course_name = $_POST['list_course_name'];
 			$modify_course_info = M("course");
 			$modify_info = array(
-				'reply_num' => $_POST['modify_reply_num'], 
-				'group_num' => $_POST['modify_group_num'], 
-				'teacher_course_max' => $_POST['modify_teacher_max_course_num'], 
-				'stu_course_max' => $_POST['modify_stu_max_course_num'], 
+				'reply_num' => $_POST['modify_reply_num'],
+				'group_num' => $_POST['modify_group_num'],
+				'teacher_course_max' => $_POST['modify_teacher_max_course_num'],
+				'stu_course_max' => $_POST['modify_stu_max_course_num'],
 				);
 			$modify_course_info->where("course_name = '$list_course_name'")->field('reply_num,group_num,teacher_course_max,stu_course_max')->save($modify_info);
 			$this -> redirect('manage_info');
 			//dump($modify_course_info->getLastSql());
 		}else{
-			
+
 		}
 		$this -> display();
 	}
