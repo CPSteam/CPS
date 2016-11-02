@@ -54,70 +54,32 @@
 </div>
 
   	<div style="width: 1080px; margin: 0 auto">
-
-      <div class="div_title_middle">
-        <h4>期中报告</h4>
+    <?php if(is_array($file_info)): foreach($file_info as $key=>$v): ?><div class="div_title_middle">
+        <h4><?php echo ($v["file_type_name"]); ?></h4>
       </div>
 
       <table class="table table-bordered table-striped text-center">
        <thead>
           <tr>
-             <th>预期成果</th>
-             <th>主要任务内容</th>
              <th>截止日期</th>
              <th>文件类型</th>
-             <th>限制大小</th>
+             <th>限制大小(MB)</th>
           </tr>
        </thead>
        <tbody>
          <tr>
-           <td>预期成果</th>
            <td>
-             <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
+           <?php echo ($v["file_deadline"]); ?>
            </td>
-           <td>截止日期</td>
-           <td>文件类型</td>
-           <td>限制大小</td>
+           <td><?php echo ($v["allowed_suffix_list"]); ?></td>
+           <td><?php echo ($v["allowed_max_size"]); ?></td>
          </tr>
        </tbody>
       </table>
-      <a href="<?php echo ($edit_file_url); ?>">
+      <a href="<?php echo ($edit_file_url); ?>/file_type_name/<?php echo ($v["file_type_name"]); ?>/course_id/<?php echo ($course_id); ?>/file_type_id/<?php echo ($v["file_type_id"]); ?>">
         <button type="button" class="btn btn-info">编辑文件</button>
-      </a>
-
-      <div class="div_title_middle">
-        <h4>期中报告</h4>
-      </div>
-      <table class="table table-bordered table-striped text-center">
-       <thead>
-          <tr>
-             <th>预期成果</th>
-             <th>主要任务内容</th>
-             <th>截止日期</th>
-             <th>文件类型</th>
-             <th>限制大小</th>
-          </tr>
-       </thead>
-       <tbody>
-         <tr>
-           <td>预期成果</td>
-           <td>
-             <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
-             <p><a href="#">详情</a></p>
-           </td>
-           <td>2014-12-11</td>
-           <td>文件类型</td>
-           <td>限制大小</td>
-         </tr>
-       </tbody>
-      </table>
-      <a href="<?php echo ($edit_file_url); ?>">
-        <button type="button" class="btn btn-info">编辑文件</button>
-      </a>
+      </a><?php endforeach; endif; ?>
   </div>
+
 </body>
 </html>

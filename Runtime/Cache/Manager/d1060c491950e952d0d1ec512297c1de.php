@@ -53,20 +53,19 @@
   </ol>
 </div>
 
-    <form action="#" method="" role="form">
+    <form action="<?php echo ($course_file_conf_url); ?>" method="post" role="form">
       <div style="width: 400px; margin: 0 auto;">
         <div class="form-group">
           <label for="doc_name">课程名称</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <input type="text" class="form-control" name="list_course_name" value="<?php echo ($list_course_name); ?>">
+          <input type="hidden" class="form-control" name="list_course_id" value="<?php echo ($list_course_id); ?>">
         </div>
         <div class="form-group">
           <label for="name">考核类型</label>
-          <select class="form-control">
-            <option>期中考试</option>
-            <option>期末考试</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+          <select class="form-control" name="file-type">
+            <option>平时报告</option>
+            <option>期中报告</option>
+            <option>结题报告</option>
           </select>
         </div>
         <div class="form-group">
@@ -74,18 +73,18 @@
             <label for="doc_type">文件类型</label>
           </div>
           <label class="checkbox-inline">
-            <input type="checkbox" name="" value="doc">doc
+            <input type="checkbox" name="allowed_suffix_doc" value="doc">doc
+          </label> 
+          <label class="checkbox-inline">
+            <input type="checkbox" name="allowed_suffix_docx" value="docx">docx
           </label>
           <label class="checkbox-inline">
-            <input type="checkbox" name="" value="zip">zip
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="" value="png">png
+            <input type="checkbox" name="allowed_suffix_zip" value="zip">zip
           </label>
         </div>
         <div class="form-group">
-          <label for="size_limit">大小限制（单位：KB）</label>
-          <input type="text" class="form-control" name="" placeholder="请输入">
+          <label for="size_limit">大小限制（单位：MB）</label>
+          <input type="text" class="form-control" name="allowed_max_size" placeholder="请输入">
         </div>
           <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
         </div>
