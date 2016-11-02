@@ -58,22 +58,22 @@
         <tr>
            <th>课程名称</th>
            <th>课程内容</th>
-           <th>更改答辩组</th>
+           <th>创建答辩组</th>
         </tr>
      </thead>
      <tbody>
-      <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+      <?php if(is_array($course_info)): foreach($course_info as $key=>$v): ?><tr>
          <td><?php echo ($v["course_name"]); ?></td>
          <td>
            <p><?php echo ($v["course_detail_info"]); ?></p>
            <p><a href="#">详情</a></p>
          </td>
          <td>
-           <a href="<?php echo ($edit_group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button class="btn btn-info" type="button">编辑</button></a>
+           <a href="<?php echo ($edit_group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button class="btn btn-info" type="button">创建</button></a>
          </td>
        </tr><?php endforeach; endif; ?>
      </tbody>
   	</table>
-  </div>
+    </div>
 </body>
 </html>
