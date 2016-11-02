@@ -44,13 +44,14 @@ class ManageController extends Controller {
 		
 		foreach ($reply_group as $key => $s) {
 			$reply_group_id = $reply_group[$key]['reply_group_id'];
-			$reply_group['teachers'] = M("reply_member")->table('reply_member as A,teacher as B')->where("A.teacher_id=B.teacher_id and A.reply_group_id = '$reply_group_id'")->field('B.teacher_id,B.teacher_name')->select();
+			$group_teachers = M("reply_member")->table('reply_member as A,teacher as B')->where("A.teacher_id=B.teacher_id and A.reply_group_id = '$reply_group_id'")->field('B.teacher_id,B.teacher_name')->select();
 		}
 		$this->assign('edit_group_url',U('edit_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
 
 		$this -> assign('course_info',$info);
 		$this -> assign('reply_group_info',$reply_group);
+		$this -> assign('group_teachers',$group_teachers);
 		$this -> display();
 	}
 	function edit_courseInfo() {
@@ -81,12 +82,17 @@ class ManageController extends Controller {
 		$this -> display();
 	}
 	function edit_group() {
+		$this -> assign('edit_group_url',U('edit_group'));
 		$course_id = I('course_id');
 		$info = M("course")->where("course_id = '$course_id'")->select();
 		$this -> assign('check_group_url',U('check_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
 
 		$this -> assign('info',$info);
+
+		if(!empty($_POST)){
+			
+		}
 		$this -> display();
 	}
 	function group_info() {

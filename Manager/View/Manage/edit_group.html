@@ -36,12 +36,12 @@
         </foreach>
       </tbody>
   	</table>
-    <form class="form-horizontal" action="#" method="" role="form">
+    <form class="form-horizontal" action="{$edit_group_url}" method="post" role="form">
       <div style="width: 400px; margin: 0 auto;">
         <label for="members">答辩组组长</label>
         <div class="form-group">
           <div class="col-sm-11">
-            <select class="form-control" style="margin-top: 5px;">
+            <select class="form-control" style="margin-top: 5px;" name="test">
               <option>123344-x'x</option>
               <option>2</option>
               <option>3</option>
@@ -54,7 +54,7 @@
         <label for="members">答辩组组员</label>
         <div class="form-group" id="add-member">
           <div class="col-sm-11">
-            <select class="form-control" id="group-member" style="margin-top: 5px;">
+            <select class="form-control" id="group-member" style="margin-top: 5px;" name="test1">
               <option>添加最多三名组员</option>
               <option>2</option>
               <option>3</option>

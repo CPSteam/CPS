@@ -48,68 +48,76 @@
     <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
     <li><a href="/CPS/index.php/Manager/Manage/manage_info">课程</a></li>
-    <li><a href="javascript: history.back(-1)">答辩组信息</a></li>
-	  <li>编辑答辩组</li>
+	  <li><a href="javascript: history.back(-1)">文件信息</a></li>
+    <li>文件配置</li>
   </ol>
 </div>
 
   	<div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table-striped text-center">
-      <thead>
-         <tr>
-            <th>课程名称</th>
-            <th>课程内容</th>
-            <th>答辩组信息</th>
-         </tr>
-      </thead>
-      <tbody>
-        <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
-            <td><?php echo ($v["course_name"]); ?></td>
-            <td>
-              <p><?php echo ($v["course_detail_info"]); ?></p>
-              <p><a href="#">详情</a></p>
-            </td>
-            <td>
-              <a href="<?php echo ($check_group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button class="btn btn-info" type="button">查看</button></a>
-            </td>
-          </tr><?php endforeach; endif; ?>
-      </tbody>
-  	</table>
-    <form class="form-horizontal" action="<?php echo ($edit_group_url); ?>" method="post" role="form">
-      <div style="width: 400px; margin: 0 auto;">
-        <label for="members">答辩组组长</label>
-        <div class="form-group">
-          <div class="col-sm-11">
-            <select class="form-control" style="margin-top: 5px;" name="test">
-              <option>123344-x'x</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-        </div>
 
-        <label for="members">答辩组组员</label>
-        <div class="form-group" id="add-member">
-          <div class="col-sm-11">
-            <select class="form-control" id="group-member" style="margin-top: 5px;" name="test1">
-              <option>添加最多三名组员</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-          <div class="col-sm-1">
-            <a href="#"><button class="btn btn-info" type="button">+</button></a>
-          </div>
-        </div>
-        <div>
-          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">创建</button>
-        </div>
+      <div class="div_title_middle">
+        <h4>期中报告</h4>
       </div>
-    </form>
+
+      <table class="table table-bordered table-striped text-center">
+       <thead>
+          <tr>
+             <th>预期成果</th>
+             <th>主要任务内容</th>
+             <th>截止日期</th>
+             <th>文件类型</th>
+             <th>限制大小</th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>预期成果</th>
+           <td>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+           </td>
+           <td>截止日期</td>
+           <td>文件类型</td>
+           <td>限制大小</td>
+         </tr>
+       </tbody>
+      </table>
+      <a href="<?php echo ($edit_file_url); ?>">
+        <button type="button" class="btn btn-info">编辑文件</button>
+      </a>
+
+      <div class="div_title_middle">
+        <h4>期中报告</h4>
+      </div>
+      <table class="table table-bordered table-striped text-center">
+       <thead>
+          <tr>
+             <th>预期成果</th>
+             <th>主要任务内容</th>
+             <th>截止日期</th>
+             <th>文件类型</th>
+             <th>限制大小</th>
+          </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>预期成果</td>
+           <td>
+             <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+             </p>
+             <p><a href="#">详情</a></p>
+           </td>
+           <td>2014-12-11</td>
+           <td>文件类型</td>
+           <td>限制大小</td>
+         </tr>
+       </tbody>
+      </table>
+      <a href="<?php echo ($edit_file_url); ?>">
+        <button type="button" class="btn btn-info">编辑文件</button>
+      </a>
   </div>
 </body>
 </html>

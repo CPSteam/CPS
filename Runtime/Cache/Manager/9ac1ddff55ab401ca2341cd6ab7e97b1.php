@@ -48,68 +48,51 @@
     <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
     <li><a href="/CPS/index.php/Manager/Manage/manage_info">课程</a></li>
-    <li><a href="javascript: history.back(-1)">答辩组信息</a></li>
-	  <li>编辑答辩组</li>
+	  <li><a href="javascript: history.back(-1)">文件信息</a></li>
+    <li>文件编辑</li>
   </ol>
 </div>
 
-  	<div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table-striped text-center">
-      <thead>
-         <tr>
-            <th>课程名称</th>
-            <th>课程内容</th>
-            <th>答辩组信息</th>
-         </tr>
-      </thead>
-      <tbody>
-        <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
-            <td><?php echo ($v["course_name"]); ?></td>
-            <td>
-              <p><?php echo ($v["course_detail_info"]); ?></p>
-              <p><a href="#">详情</a></p>
-            </td>
-            <td>
-              <a href="<?php echo ($check_group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button class="btn btn-info" type="button">查看</button></a>
-            </td>
-          </tr><?php endforeach; endif; ?>
-      </tbody>
-  	</table>
-    <form class="form-horizontal" action="<?php echo ($edit_group_url); ?>" method="post" role="form">
+    <form action="#" method="" role="form">
       <div style="width: 400px; margin: 0 auto;">
-        <label for="members">答辩组组长</label>
         <div class="form-group">
-          <div class="col-sm-11">
-            <select class="form-control" style="margin-top: 5px;" name="test">
-              <option>123344-x'x</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
+          <label for="doc_name">文档名称</label>
+          <input type="text" class="form-control" name="" placeholder="请输入">
         </div>
-
-        <label for="members">答辩组组员</label>
-        <div class="form-group" id="add-member">
-          <div class="col-sm-11">
-            <select class="form-control" id="group-member" style="margin-top: 5px;" name="test1">
-              <option>添加最多三名组员</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+        <div class="form-group">
+          <label for="deadline">截止日期</label>
+          <input type="text" class="form-control" name="" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="doc_type">文件类型</label>
           </div>
-          <div class="col-sm-1">
-            <a href="#"><button class="btn btn-info" type="button">+</button></a>
-          </div>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="" value="doc">doc
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="" value="zip">zip
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="" value="png">png
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="size_limit">大小限制（单位：KB）</label>
+          <input type="text" class="form-control" name="" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="result">预期成果</label>
+          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="result">预期成果</label>
+          <textarea class="form-control" rows="3" name="" placeholder="请输入"></textarea>
         </div>
         <div>
-          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">创建</button>
+          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
         </div>
       </div>
     </form>
-  </div>
 </body>
 </html>
