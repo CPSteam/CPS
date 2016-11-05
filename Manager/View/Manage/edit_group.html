@@ -41,29 +41,32 @@
         <label for="members">答辩组组长</label>
         <div class="form-group">
           <div class="col-sm-11">
-            <select class="form-control" style="margin-top: 5px;" name="test">
+            <select class="form-control" style="margin-top: 5px;" name="group_leader_id">
               <foreach name="group_teacher" item="v">
-                <option>{$v.teacher_name}</option>
+                <option value="{$v.teacher_id}">{$v.teacher_name}</option>
               </foreach>
             </select>
           </div>
         </div>
 
+        <foreach name="info" item="v">
+          <input type="hidden" name="course_id" value="{$v.course_id}">
+        </foreach>
+
         <label for="members">答辩组组员</label>
         <div class="form-group" id="add-member">
           <div class="col-sm-11">
-            <select class="form-control" id="group-member" style="margin-top: 5px;" name="test1">
+            <select class="form-control" id="group-member" style="margin-top: 5px;" name="">
               <option>添加最多三名组员</option>
               <foreach name="group_teacher" item="v">
-                <option>{$v.teacher_name}</option>
+                <option value="{$v.teacher_id}">{$v.teacher_name}</option>
               </foreach>
             </select>
           </div>
-          <div class="col-sm-1">
-            <a href="#"><button class="btn btn-info" type="button">+</button></a>
-          </div>
+          <div id="member-btn"></div>
         </div>
-        <div>
+
+        <div class="submit-box">
           <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">创建</button>
         </div>
       </div>

@@ -87,13 +87,13 @@
        <tbody>
        <?php if(is_array($reply_group_info)): foreach($reply_group_info as $key=>$v): ?><tr>
              <td>
-                 <?php echo ($v["reply_group_id"]); ?>
+               <?php echo ($v["reply_group_id"]); ?>
              </td>
              <td>
-              <?php echo ($v["group_leader_id"]); ?>
+               <?php echo ($v["group_leader_id"]); ?>
              </td>
              <td>
-               <?php if(is_array($group_teachers)): foreach($group_teachers as $key=>$m): echo ($m["teacher_id"]); ?>-<?php echo ($m["teacher_name"]); ?><br><?php endforeach; endif; ?>
+               <?php if(is_array($v["reply_groupMember"])): foreach($v["reply_groupMember"] as $key=>$m): echo ($m["teacher_id"]); ?>-<?php echo ($m["teacher_name"]); ?><br><?php endforeach; endif; ?>
              </td>
           </tr><?php endforeach; endif; ?>
        </tbody>

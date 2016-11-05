@@ -39,23 +39,25 @@ $(document).ready(function() {
 
   //改变选项
   $("#group-member").change(function() {
-    $val = $(this).val();
-    $valList = $("#member input");
+    $innerHtml = $(this).find("option:selected").text();
+    $value = $(this).val();
+    $valList = $("#member-btn input");
     $flag = true;
+
     $valList.each(function() {
-      if($(this).val() == $val) {
+      if($(this).val() == $value) {
         $flag = false;
         return 0;
       }
     });
-    if($val == "添加最多三名组员") {
+    if($value == "添加最多三名组员") {
       return 0;
     }
     if($valList.length >= 3) {
       return 0;
     }
     if($flag == true) {
-      $("#member").append('<input type="text" class="form-control add-member" name="' + $member.shift() +'" value="' + $val + '"><span class="glyphicon glyphicon-remove"style="float: right; left: -80px; top: -26px; color: #666; cursor: pointer"></span>');
+      $("#member-btn").append('<input type="hidden" class="form-control add-member" name="' + $member.shift() +'" value="' + $value + '"><button style="button" class="btn btn-default member-btn"><i>' + $innerHtml +'</i><span class="glyphicon glyphicon-remove"></span></button>');
     }
   });
 
@@ -66,7 +68,7 @@ $(document).ready(function() {
     $(this).next().remove();
     $(this).remove();
   });
-  $(".form-group").on("click","span.glyphicon-remove", function() {
+  $(".form-group").on("click","button.btn", function() {
     $thisname = $(this).prev().attr("name");
     $member.push($thisname);
     $(this).prev().remove();

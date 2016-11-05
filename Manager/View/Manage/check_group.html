@@ -50,13 +50,13 @@
        <foreach name="reply_group_info" item="v">
           <tr>
              <td>
-                 {$v.reply_group_id}
+               {$v.reply_group_id}
              </td>
              <td>
-              {$v.group_leader_id}
+               {$v.group_leader_id}
              </td>
              <td>
-               <foreach name="group_teachers" item="m">
+               <foreach name="v.reply_groupMember" item="m">
                   {$m.teacher_id}-{$m.teacher_name}<br>
                </foreach>
              </td>

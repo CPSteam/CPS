@@ -69,11 +69,11 @@ class StuController extends Controller{
 			$this -> redirect('course_info');
 
 		}else{
-			
+
 		}
 		$this->display();
 	}
-	
+
 	function project_report(){
 		$project_id = I('project_id');
 		$student_id = $_SESSION['id'];
@@ -99,7 +99,7 @@ class StuController extends Controller{
 		 $this -> assign('groupMember',$groupMember);
 		 $this->display();
 	}
-	
+
 	function myteam(){
 		$student_id = $_SESSION['id'];
 		$inviteMessage = M("student_group_member")->table('student_group_member as A,student_group as B')->where("A.group_id=B.group_id and A.student_id = '$student_id'")->field('A.student_message,A.student_message_status,B.project_id,B.group_id')->select();
@@ -135,7 +135,7 @@ class StuController extends Controller{
 		}
 		$this->display();
 	}
-	
+
 	function project_info(){
 		$course_id = I('course_id');
 		$info = M("course")->table('course as A,project as B')->where("A.course_id=B.course_id and B.course_id= '$course_id'")->field('A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id')->select();
@@ -149,7 +149,7 @@ class StuController extends Controller{
 		$teamgroup_id = I('group_id');
 		$this -> assign('teamgroup_id',$teamgroup_id);
 		$project_id = M("student_group")->where("group_id = '$teamgroup_id'")->field('project_id')->select();
-		
+
 		foreach ($project_id as $key => $s) {
 			if($project_id[$key]['project_id'] == 0){
 				$projectid = 0;
@@ -176,7 +176,7 @@ class StuController extends Controller{
 		   $order = M("student_group")->order('group_id desc')->limit(1)->select();
 		   foreach ($order as $key => $s) {
 		   	 $order_result = $order[$key]['group_id'];
-		   	 if($teamCreate == 1){
+		   	 if($teamCreate == 1) {
 		   		$teamNew = D("student_group");
 		   		$team_array = array(
 		   			'group_id' => $order_result+1,
@@ -188,13 +188,13 @@ class StuController extends Controller{
 		   			'group_final_report_score' => 0,
 		   			'group_reply_score' => 0,
 		   			'group_manage' => '',
-		   			'group_lock' => 0, 
+		   			'group_lock' => 0,
 		   			);
 		   		$newTeam = $teamNew->add($team_array);
 
 		   		$groupNew = D("student_group_member");
 		   		$group_array = array(
-		   			'student_id' => $_SESSION['id'], 
+		   			'student_id' => $_SESSION['id'],
 		   			'group_id' => $order_result+1,
 		   			'student_message' => '',
 		   			'student_message_status' => 2,
@@ -284,7 +284,7 @@ class StuController extends Controller{
    		    if(!empty($_GET)){
    		    	$send_message = D("student_group_member");
    		    	$send_message_array = array(
-   		    		'student_id' => $_GET['studentId'], 
+   		    		'student_id' => $_GET['studentId'],
 		   			'group_id' => $_GET['get_group_id'],
 		   			'student_message' => $_SESSION['id'],
 		   			'student_message_status' => 1,
@@ -296,7 +296,7 @@ class StuController extends Controller{
    		    		);
    		    	$send_message->add($send_message_array);
    		   }else{
-				
+
    		   }
    		   $this->display();
 	}

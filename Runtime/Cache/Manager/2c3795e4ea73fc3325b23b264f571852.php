@@ -62,22 +62,23 @@
           </tr>
        </thead>
        <tbody>
-         <tr>
-           <td>综合课程设计</td>
-           <td>
-             <p>
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-             </p>
-           </td>
-           <td>
-            <p>
-              <a href="<?php echo ($course_file_conf_url); ?>"><button type="button" class="btn btn-success" name="button" style="margin-bottom: 30px;">课程文件配置</button></a>
-            </p>
-            <p>
-              <a href="<?php echo ($check_file_conf_url); ?>"><button type="button" class="btn btn-info" name="button" style="margin-bottom: 30px;">查看文件配置</button></a>
-            </p>
-           </td>
-         </tr>
+       <?php if(is_array($course_info)): foreach($course_info as $key=>$v): ?><tr>
+             <td>
+             <?php echo ($v["course_name"]); ?>
+             <input type="hidden" value="<?php echo ($v["course_id"]); ?>">
+             </td>
+             <td>
+               <?php echo ($v["course_detail_info"]); ?>
+             </td>
+             <td>
+              <p>
+                <a href="<?php echo ($course_file_conf_url); ?>/course_id/<?php echo ($v["course_id"]); ?>/course_name/<?php echo ($v["course_name"]); ?>"><button type="button" class="btn btn-success" name="button" style="margin-bottom: 30px;">课程文件配置</button></a>
+              </p>
+              <p>
+                <a href="<?php echo ($check_file_conf_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info" name="button" style="margin-bottom: 30px;">查看文件配置</button></a>
+              </p>
+             </td>
+         </tr><?php endforeach; endif; ?>
        </tbody>
     	</table>
   </div>

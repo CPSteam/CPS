@@ -84,10 +84,9 @@ class ManageController extends Controller {
 		$info = M("course")->where("course_id = '$course_id'")->select();
 
 		$reply_group = M("reply")->where("course_id = '$course_id'")->field('reply_group_id,group_leader_id')->select();
-
 		foreach ($reply_group as $key => $s) {
 			$reply_group_id = $reply_group[$key]['reply_group_id'];
-			$group_teachers = M("reply_member")->table('reply_member as A,teacher as B')->where("A.teacher_id=B.teacher_id and A.reply_group_id = '$reply_group_id'")->field('B.teacher_id,B.teacher_name')->select();
+			$reply_group[$key]['reply_groupMember'] = M("reply_member")->table('reply_member as A,teacher as B')->where("A.teacher_id=B.teacher_id and A.reply_group_id = '$reply_group_id'")->field('B.teacher_id,B.teacher_name')->select();
 		}
 		$this->assign('edit_group_url',U('edit_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
@@ -147,21 +146,59 @@ class ManageController extends Controller {
 	}
 
 	function edit_group() {
-		$this -> assign('edit_group_url',U('edit_group'));
 		$course_id = I('course_id');
+		$this -> assign('edit_group_url',U('edit_group'));
 		$info = M("Course") -> where("course_id = '$course_id'") -> select();
 		$group_teacher = M("Teacher") -> select();
 		$this -> assign('check_group_url',U('check_group'));
+		$this -> assign('login_url',U('Home/Login/login'));
 		$this -> assign('login_url',U('Home/Login/login'));
 
 		$this -> assign('info',$info);
 		$this -> assign('group_teacher',$group_teacher);
 
 		if(!empty($_POST)){
+			$order = M("reply")->order('reply_group_id desc')->limit(1)->select();
+			foreach ($order as $key => $s) {
+				$order_result = $order[$key]['reply_group_id'];
+				 $add_reply = D("reply");
+				 $add_reply_array = array(
+					 'reply_group_id' => $order_result + 1,
+					 'course_id' => $_POST['course_id'],
+					 'group_leader_id' => $_POST['group_leader_id']
+				 );
+				 $newReply = $add_reply -> add($add_reply_array);
+
+				 $reply_member = D("reply_member");
+				 $group_array = null;
+				 $group_array = array (
+				 					"0" => array (
+												 'reply_group_id' => $order_result + 1,
+								 				 'teacher_id' => isset( $_POST['member0'] ) ? $_POST['member0'] : null
+                  ),
+									"1" => array (
+												 'reply_group_id' => $order_result + 1,
+								 				 'teacher_id' => isset( $_POST['member1'] ) ? $_POST['member1'] : null
+                  ),
+									"2" => array (
+												 'reply_group_id' => $order_result + 1,
+								 				 'teacher_id' => isset( $_POST['member2'] ) ? $_POST['member2'] : null
+                  ),
+         );
+				foreach ($group_array as $key => $s) {
+					if($group_array[$key]['teacher_id'] == null) {
+
+					} else {
+						$newGroup = $reply_member -> add($group_array[$key]);
+					}
+				}
+			 }
+			 $this -> redirect('manage_info');
+		} else{
 
 		}
 		$this -> display();
-	}
+}
 
 	function group_info() {
 		$this -> display();
