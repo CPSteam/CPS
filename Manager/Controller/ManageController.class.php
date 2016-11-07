@@ -93,7 +93,6 @@ class ManageController extends Controller {
 
 		$this -> assign('course_info',$info);
 		$this -> assign('reply_group_info',$reply_group);
-		$this -> assign('group_teachers',$group_teachers);
 		$this -> display();
 	}
 

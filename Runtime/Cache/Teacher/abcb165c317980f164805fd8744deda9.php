@@ -45,65 +45,53 @@
     </nav>
   </div>
 
-    <div class="breadTab clearfloat">
-  <ol class="breadcrumb" style="background-color:#FFFFFF;">
-    <li><a href="/CPS/index.php/Manager/Manage/manage_info">课程</a></li>
-    <li><a href="javascript: history.back(-1)">答辩组信息</a></li>
-	  <li>编辑答辩组</li>
-  </ol>
-</div>
-
+    
   	<div style="width: 1080px; margin: 0 auto">
   	<table class="table table-bordered table-striped text-center">
-      <thead>
-         <tr>
-            <th>课程名称</th>
-            <th>课程内容</th>
-            <th>答辩组信息</th>
-         </tr>
-      </thead>
-      <tbody>
-        <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
-            <td><?php echo ($v["course_name"]); ?></td>
-            <td>
-              <p><?php echo ($v["course_detail_info"]); ?></p>
-              <p><a href="#">详情</a></p>
-            </td>
-            <td>
-              <a href="<?php echo ($check_group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button class="btn btn-info" type="button">查看</button></a>
-            </td>
-          </tr><?php endforeach; endif; ?>
-      </tbody>
+     <thead>
+        <tr>
+           <th>课程名称</th>
+           <th>课程内容</th>
+           <th>创建答辩组</th>
+        </tr>
+     </thead>
+     <tbody>
+      <?php if(is_array($course_info)): foreach($course_info as $key=>$v): ?><tr>
+         <td><?php echo ($v["course_name"]); ?></td>
+         <td>
+           <p><?php echo ($v["course_detail_info"]); ?></p>
+           <p><a href="#">详情</a></p>
+         </td>
+         <td>
+           <a href="<?php echo ($edit_group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button class="btn btn-info" type="button">创建</button></a>
+         </td>
+       </tr><?php endforeach; endif; ?>
+     </tbody>
   	</table>
-    <form class="form-horizontal" action="<?php echo ($edit_group_url); ?>" method="post" role="form">
-      <div style="width: 400px; margin: 0 auto;">
-        <label for="members">答辩组组长</label>
-        <div class="form-group">
-          <div class="col-sm-11">
-            <select class="form-control" style="margin-top: 5px;" name="group_leader_id">
-              <?php if(is_array($group_teacher)): foreach($group_teacher as $key=>$v): ?><option value="<?php echo ($v["teacher_id"]); ?>"><?php echo ($v["teacher_name"]); ?></option><?php endforeach; endif; ?>
-            </select>
-          </div>
-        </div>
-
-        <?php if(is_array($info)): foreach($info as $key=>$v): ?><input type="hidden" name="course_id" value="<?php echo ($v["course_id"]); ?>"><?php endforeach; endif; ?>
-
-        <label for="members">答辩组组员</label>
-        <div class="form-group" id="add-member">
-          <div class="col-sm-11">
-            <select class="form-control" id="group-member" style="margin-top: 5px;" name="">
-              <option>添加最多三名组员</option>
-              <?php if(is_array($group_teacher)): foreach($group_teacher as $key=>$v): ?><option value="<?php echo ($v["teacher_id"]); ?>"><?php echo ($v["teacher_name"]); ?></option><?php endforeach; endif; ?>
-            </select>
-          </div>
-          <div id="member-btn"></div>
-        </div>
-
-        <div class="submit-box">
-          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">创建</button>
-        </div>
-      </div>
-    </form>
+    </div>
+    <div style="width: 1080px; margin: 0 auto">
+    <table class="table table-bordered table table-striped text-center">
+       <thead>
+          <tr>
+             <th>答辩组id</th>
+             <th>答辩组组长</th>
+             <th>答辩组成员</th>
+          </tr>
+       </thead>
+       <tbody>
+       <?php if(is_array($reply_group_info)): foreach($reply_group_info as $key=>$v): ?><tr>
+             <td>
+               <?php echo ($v["reply_group_id"]); ?>
+             </td>
+             <td>
+               <?php echo ($v["group_leader_id"]); ?>
+             </td>
+             <td>
+               <?php if(is_array($v["reply_groupMember"])): foreach($v["reply_groupMember"] as $key=>$m): echo ($m["teacher_id"]); ?>-<?php echo ($m["teacher_name"]); ?><br><?php endforeach; endif; ?>
+             </td>
+          </tr><?php endforeach; endif; ?>
+       </tbody>
+    </table>
   </div>
 </body>
 </html>
