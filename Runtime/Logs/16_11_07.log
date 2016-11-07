@@ -918,3 +918,23 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.008356s ]
 INFO: [ app_end ] --END-- [ RunTime:0.008733s ]
 
+[ 2016-11-07T22:37:48+08:00 ] ::1 /CPS/index.php/Teacher/Professor/my_replyGroup
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004891s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_group.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+NOTIC: [8] Undefined index: name D:\WWW\CPS\Runtime\Cache\Teacher\9b882f26fdb5b7b44a5ef9e4234a68a1.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\9b882f26fdb5b7b44a5ef9e4234a68a1.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.032980s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001877s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002829s ]
+
