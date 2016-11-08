@@ -26,20 +26,20 @@
         </tr>
      </thead>
      <tbody>
-     <!-- <foreach name="info" item="v"> -->
+     <foreach name="info" item="v">
         <tr>
-           <td>{$v.course_name}</td>
-           <td>{$v.course_id}</td>
-           <td>{d}</td>
-           <td>{data}</td>
-           <td>{data}</td>
-           <td>{d}</td>
+           <td>{$v.project_id}</td>
+           <td>{$v.teacher_name}</td>
+           <td>{$v.teacher_id}</td>
+           <td>{$v.project_name}</td>
+           <td>{$v.project_status}</td>
+           <td>{$v.main_project}</td>
            <td>
            	<a href="#"><button type="button" class="btn btn-success">同意</button></a>
             <a href="#"><button type="button" class="btn btn-danger">拒绝</button></a>
            </td>
         </tr>
-     <!-- </foreach> -->
+     </foreach>
      </tbody>
   	</table>
   </div>

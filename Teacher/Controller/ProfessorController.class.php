@@ -25,9 +25,7 @@ class ProfessorController extends Controller {
 
 	function teacher_project_applied(){
 		$course_id = I('course_id');
-		$info = M("Project") -> where("course_id = '$course_id'") -> table('project as A,teacher as B') -> where("A.teacher_id = B.teacher_id") -> field('A.project_id,A.teacher_id,A.project_name,A.project_status,,B.teacher_name') -> select();
-
-		$group_teacher = M("Teacher") -> select();
+		$info = M("Project") -> table('project as A,teacher as B') -> where("A.course_id = '$course_id' and A.teacher_id = B.teacher_id") -> field('A.project_id, A.teacher_id, A.project_name, A.project_status, A.main_project, B.teacher_name') -> select();
 		$this -> assign('login_url',U('Home/Login/login'));
 		$this -> assign('info',$info);
 		$this->display();
