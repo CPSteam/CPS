@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>管理员</title>
+   <title>课程</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
-   <script src="/CPS/Manager/Public/js/global.js"></script>
-   <link href="/CPS/Manager/Public/css/style.css" rel="stylesheet">
+   <script src="/CPS/Student/Public/js/global.js"></script>
+   <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
      <div class="navWrap">
@@ -45,48 +45,39 @@
     </nav>
   </div>
 
-    <div class="breadTab clearfloat">
-  <ol class="breadcrumb" style="background-color:#FFFFFF;">
-    <li><a href="/CPS/index.php/Manager/Manage/manage_info">课程</a></li>
-	  <li><a href="javascript: history.back(-1)">文件信息</a></li>
-    <li>文件编辑</li>
-  </ol>
-</div>
-
-    <form action="<?php echo ($edit_file_url); ?>" method="post" role="form">
-      <div style="width: 400px; margin: 0 auto;">
-        <div class="form-group">
-          <label for="doc_name">文档名称</label>
-          <input type="text" class="form-control" name="file_type_name" value="<?php echo ($file_type_name); ?>">
-          <input type="hidden" name="modify_file_type_id" value="<?php echo ($file_type_id); ?>">
-          <input type="hidden" name="course_id" value="<?php echo ($course_id); ?>">
-        </div>
-        <div class="form-group">
-          <label for="deadline">截止日期</label>
-          <input type="date" class="form-control" name="modify_file_deadline">
-        </div>
-        <div class="form-group">
-          <div>
-            <label for="doc_type">文件类型</label>
-          </div>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="modify_allowed_suffix_doc" value="doc">doc
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="modify_allowed_suffix_docx" value="docx">docx
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="modify_allowed_suffix_zip" value="zip">zip
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="size_limit">大小限制（单位：MB）</label>
-          <input type="text" class="form-control" name="modify_allowed_max_size" placeholder="请输入">
-        </div>
-        <div>
-          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
-        </div>
-      </div>
-    </form>
+    
+  	<div style="width: 1080px; margin: 0 auto">
+  	<table class="table table-bordered table-striped text-center">
+     <thead>
+        <tr>
+           <th>课程名称</th>
+           <th>课程ID</th>
+           <th>课程内容</th>
+           <th>课题信息</th>
+           <th>答辩组信息</th>
+        </tr>
+     </thead>
+     <tbody>
+     <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+           <td><?php echo ($v["course_name"]); ?></td>
+           <td><?php echo ($v["course_id"]); ?></td>
+           <td>
+           	<p><?php echo ($v["course_detail_info"]); ?></p>
+           </td>
+           <td>
+           	<p>
+              <a href="<?php echo ($teacher_project_applied_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-success">审核课题</button></a>
+            </p>
+            <p>
+              <a href="<?php echo ($apply_subject_url); ?>"><button type="button" class="btn btn-info">申请课题</button></a>
+            </p>
+           </td>
+           <td>
+            <a href="<?php echo ($my_replyGroup_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
+           </td>
+        </tr><?php endforeach; endif; ?>
+     </tbody>
+  	</table>
+  </div>
 </body>
 </html>
