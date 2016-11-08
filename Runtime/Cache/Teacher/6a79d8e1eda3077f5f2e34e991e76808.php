@@ -60,20 +60,18 @@
         </tr>
      </thead>
      <tbody>
-     <!-- <?php if(is_array($info)): foreach($info as $key=>$v): ?>-->
-        <tr>
-           <td><?php echo ($v["course_name"]); ?></td>
-           <td><?php echo ($v["course_id"]); ?></td>
-           <td>{d}</td>
-           <td>{data}</td>
-           <td>{data}</td>
-           <td>{d}</td>
+     <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+           <td><?php echo ($v["project_id"]); ?></td>
+           <td><?php echo ($v["teacher_name"]); ?></td>
+           <td><?php echo ($v["teacher_id"]); ?></td>
+           <td><?php echo ($v["project_name"]); ?></td>
+           <td><?php echo ($v["project_status"]); ?></td>
+           <td><?php echo ($v["main_project"]); ?></td>
            <td>
            	<a href="#"><button type="button" class="btn btn-success">同意</button></a>
             <a href="#"><button type="button" class="btn btn-danger">拒绝</button></a>
            </td>
-        </tr>
-     <!--<?php endforeach; endif; ?> -->
+        </tr><?php endforeach; endif; ?>
      </tbody>
   	</table>
   </div>
