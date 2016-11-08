@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>管理员</title>
+   <title>教授</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
