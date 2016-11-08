@@ -45,7 +45,13 @@
     </nav>
   </div>
 
-    
+    <div class="breadTab clearfloat">
+  <ol class="breadcrumb" style="background-color:#FFFFFF;">
+    <li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
+	  <li>审核课题</li>
+  </ol>
+</div>
+
   	<div style="width: 1080px; margin: 0 auto">
   	<table class="table table-bordered table-striped text-center">
      <thead>

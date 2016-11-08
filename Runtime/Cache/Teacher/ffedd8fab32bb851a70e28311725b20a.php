@@ -45,7 +45,12 @@
     </nav>
   </div>
 
-    
+    <div class="breadTab clearfloat">
+  <ol class="breadcrumb" style="background-color:#FFFFFF;">
+    <li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
+  </ol>
+</div>
+
   	<div style="width: 1080px; margin: 0 auto">
   	<table class="table table-bordered table-striped text-center">
      <thead>
@@ -69,7 +74,7 @@
               <a href="<?php echo ($teacher_project_applied_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-success">审核课题</button></a>
             </p>
             <p>
-              <a href="<?php echo ($apply_subject_url); ?>"><button type="button" class="btn btn-info">申请课题</button></a>
+              <a href="<?php echo ($apply_subject_url); ?>/course_name/<?php echo ($v["course_name"]); ?>"><button type="button" class="btn btn-info">申请课题</button></a>
             </p>
            </td>
            <td>
