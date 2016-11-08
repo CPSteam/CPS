@@ -151,7 +151,6 @@ class ManageController extends Controller {
 		$group_teacher = M("Teacher") -> select();
 		$this -> assign('check_group_url',U('check_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
-		$this -> assign('login_url',U('Home/Login/login'));
 
 		$this -> assign('info',$info);
 		$this -> assign('group_teacher',$group_teacher);

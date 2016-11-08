@@ -45,43 +45,32 @@
     </nav>
   </div>
 
-    <div class="breadTab clearfloat">
-  <ol class="breadcrumb" style="background-color:#FFFFFF;">
-    <li><a href="/CPS/index.php/Manager/Manage/manage_info">课程</a></li>
-	  <li><a href="javascript: history.back(-1)">文件信息</a></li>
-    <li>文件编辑</li>
-  </ol>
-</div>
-
-    <form action="<?php echo ($edit_file_url); ?>" method="post" role="form">
+    
+    <form action="<?php echo ($edit_courseInfo_url); ?>" method="post" role="form">
       <div style="width: 400px; margin: 0 auto;">
         <div class="form-group">
-          <label for="doc_name">文档名称</label>
-          <input type="text" class="form-control" name="file_type_name" value="<?php echo ($file_type_name); ?>">
-          <input type="hidden" name="modify_file_type_id" value="<?php echo ($file_type_id); ?>">
-          <input type="hidden" name="course_id" value="<?php echo ($course_id); ?>">
+          <label for="course_name">课程名称</label>
+          <input type="text" class="form-control" name="list_course_name" value="<?php echo ($list_course_name); ?>" readonly>
         </div>
         <div class="form-group">
-          <label for="deadline">截止日期</label>
-          <input type="date" class="form-control" name="modify_file_deadline">
+          <label for="reply_num">课题名称</label>
+          <input type="text" class="form-control" name="modify_reply_num" placeholder="请输入">
         </div>
         <div class="form-group">
-          <div>
-            <label for="doc_type">文件类型</label>
-          </div>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="modify_allowed_suffix_doc" value="doc">doc
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="modify_allowed_suffix_docx" value="docx">docx
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" name="modify_allowed_suffix_zip" value="zip">zip
-          </label>
+          <label for="group_num">指导教师</label>
+          <input type="text" class="form-control" name="modify_group_num" placeholder="请输入">
         </div>
         <div class="form-group">
-          <label for="size_limit">大小限制（单位：MB）</label>
-          <input type="text" class="form-control" name="modify_allowed_max_size" placeholder="请输入">
+          <label for="teacher_max_course_num">主要任务</label>
+          <input type="text" class="form-control" name="modify_teacher_max_course_num" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="stu_max_course_num">预期成果目标</label>
+          <input type="text" class="form-control" name="modify_stu_max_course_num" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="stu_max_course_num">预期成果形式</label>
+          <input type="text" class="form-control" name="modify_stu_max_course_num" placeholder="请输入">
         </div>
         <div>
           <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
