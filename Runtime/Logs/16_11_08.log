@@ -154,3 +154,1046 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.002598s ]
 INFO: [ app_end ] --END-- [ RunTime:0.002811s ]
 
+[ 2016-11-08T20:23:07+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005562s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.007896s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004222s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004493s ]
+
+[ 2016-11-08T20:23:19+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005701s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.006699s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.002856s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.070318s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004759s ]
+
+[ 2016-11-08T20:23:22+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002993s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005204s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.008479s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.004487s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.004642s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.003255s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.000629s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.069431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003042s ]
+
+[ 2016-11-08T20:23:25+08:00 ] ::1 /CPS/index.php/Teacher/Professor/apply_subject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004789s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_edit_course.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000401s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_courseInfo_url D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 49 行.
+NOTIC: [8] Undefined variable: list_course_name D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 53 行.
+NOTIC: [8] Undefined variable: list_course_detail_info D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 73 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.072682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001789s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002773s ]
+
+[ 2016-11-08T20:23:45+08:00 ] ::1 /CPS/index.php/Teacher/Professor/my_replyGroup/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008404s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_group.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000249s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\9b882f26fdb5b7b44a5ef9e4234a68a1.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.040854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003144s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003396s ]
+
+[ 2016-11-08T20:23:57+08:00 ] ::1 /CPS/index.php/Teacher/Professor/apply_subject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005962s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_edit_course.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_courseInfo_url D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 49 行.
+NOTIC: [8] Undefined variable: list_course_name D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 53 行.
+NOTIC: [8] Undefined variable: list_course_detail_info D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 73 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006363s ]
+
+[ 2016-11-08T20:24:09+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003242s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006103s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.007317s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.003178s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000520s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003119s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003349s ]
+
+[ 2016-11-08T20:24:16+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005275s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.007609s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006217s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.007658s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.005619s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.000974s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005628s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005903s ]
+
+[ 2016-11-08T20:24:19+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003639s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.007962s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.004898s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.003590s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.005121s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.000871s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.037741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002587s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002775s ]
+
+[ 2016-11-08T20:24:22+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003584s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.007250s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.003532s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.002982s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.003199s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.000724s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002487s ]
+
+[ 2016-11-08T20:25:57+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005264s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.007979s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006597s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.003270s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.006956s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.001263s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.049559s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004910s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005132s ]
+
+[ 2016-11-08T20:25:59+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/3
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007167s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.008920s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006740s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.001330s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.004461s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.001077s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.039086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003028s ]
+
+[ 2016-11-08T20:26:02+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004467s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006396s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.004774s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.002550s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.005317s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.001125s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002400s ]
+
+[ 2016-11-08T20:26:21+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006912s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011612s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.007186s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.003037s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.005546s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.001097s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000481s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.056501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004882s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005202s ]
+
+[ 2016-11-08T20:26:53+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008013s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.008532s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006307s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.002783s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.005421s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.005410s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.000981s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043523s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003105s ]
+
+[ 2016-11-08T20:27:53+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006707s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.008022s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.005480s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.002931s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006312s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.004722s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.000900s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000547s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.052078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003326s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004841s ]
+
+[ 2016-11-08T20:27:55+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007237s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006706s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006288s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.000829s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006038s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.005792s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.001786s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000415s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003233s ]
+
+[ 2016-11-08T20:27:57+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007062s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.006434s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001168s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.042910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004624s ]
+
+[ 2016-11-08T20:27:58+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008485s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.005531s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.005733s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.000899s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.004597s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.005249s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.000799s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001969s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003277s ]
+
+[ 2016-11-08T20:28:36+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008143s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006013s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006292s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.002831s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.006499s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.001238s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000471s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.056997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003192s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006194s ]
+
+[ 2016-11-08T20:28:51+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005899s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006692s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.007035s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.005964s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.006308s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.001067s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined index: course_name D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 64 行.
+NOTIC: [8] Undefined index: course_id D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 65 行.
+NOTIC: [8] Undefined index: course_name D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 64 行.
+NOTIC: [8] Undefined index: course_id D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 65 行.
+NOTIC: [8] Undefined index: course_name D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 64 行.
+NOTIC: [8] Undefined index: course_id D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 65 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005899s ]
+
+[ 2016-11-08T20:29:12+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006908s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006470s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.005968s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.001622s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.005746s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.000885s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+NOTIC: [8] Undefined index: course_name D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 64 行.
+NOTIC: [8] Undefined index: course_id D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 65 行.
+NOTIC: [8] Undefined index: course_name D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 64 行.
+NOTIC: [8] Undefined index: course_id D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 65 行.
+NOTIC: [8] Undefined index: course_name D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 64 行.
+NOTIC: [8] Undefined index: course_id D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 65 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003954s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004188s ]
+
+[ 2016-11-08T20:31:27+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.006541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011571s ]
+
+[ 2016-11-08T20:31:30+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005489s ]
+
+[ 2016-11-08T20:31:35+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.006045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009427s ]
+
+[ 2016-11-08T20:31:38+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006396s ]
+
+[ 2016-11-08T20:31:49+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006766s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.008020s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001332s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.052937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.007137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007443s ]
+
+[ 2016-11-08T20:31:50+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003124s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005471s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.005456s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.004787s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id )  [ RunTime:0.000752s ]
+ERR: 1054:Unknown column '' in 'field list'
+ [ SQL语句 ] : SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,``,B.teacher_name FROM project as A,teacher as B WHERE ( A.teacher_id = B.teacher_id ) 
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.005069s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.000811s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002347s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003264s ]
+
+[ 2016-11-08T20:46:16+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.008204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011313s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.007589s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006829s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,A.main_project,B.teacher_name FROM project as A,teacher as B WHERE ( A.course_id = '1' and A.teacher_id = B.teacher_id )  [ RunTime:0.002202s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000250s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000794s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.057777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.005772s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.007996s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008492s ]
+
+[ 2016-11-08T21:10:58+08:00 ] ::1 /CPS/index.php/Teacher/Professor/my_replyGroup/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006976s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_group.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002457s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\9b882f26fdb5b7b44a5ef9e4234a68a1.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.073605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.007268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007826s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.019340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019703s ]
+
+[ 2016-11-08T21:11:01+08:00 ] ::1 /CPS/index.php/Teacher/Professor/replyMember_task
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006090s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_group.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\533cf1c645c6b122d474e7a8543c156f.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002746s ]
+
+[ 2016-11-08T21:17:54+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006209s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006873s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.003762s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,A.main_project,B.teacher_name FROM project as A,teacher as B WHERE ( A.course_id = '1' and A.teacher_id = B.teacher_id )  [ RunTime:0.001679s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_student.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002945s ]
+
+[ 2016-11-08T21:19:20+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.006220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010024s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.008061s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001528s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000529s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.062199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.007474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007874s ]
+
+[ 2016-11-08T21:19:22+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008182s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.010172s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001964s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000206s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000471s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001842s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004166s ]
+
+[ 2016-11-08T21:21:55+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.012181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019594s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.012064s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001428s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001028s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.064186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.005465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.010667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011477s ]
+
+[ 2016-11-08T21:21:57+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007123s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.008825s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.007439s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,A.main_project,B.teacher_name FROM project as A,teacher as B WHERE ( A.course_id = '1' and A.teacher_id = B.teacher_id )  [ RunTime:0.002562s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000378s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000692s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.049227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049510s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004745s ]
+
+[ 2016-11-08T21:22:17+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007452s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.009763s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006693s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,A.main_project,B.teacher_name FROM project as A,teacher as B WHERE ( A.course_id = '1' and A.teacher_id = B.teacher_id )  [ RunTime:0.002343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003438s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003480s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003727s ]
+
+[ 2016-11-08T21:22:19+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003974s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007173s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.008202s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006125s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,A.main_project,B.teacher_name FROM project as A,teacher as B WHERE ( A.course_id = '1' and A.teacher_id = B.teacher_id )  [ RunTime:0.004921s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.056005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005384s ]
+
+[ 2016-11-08T21:22:20+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006184s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.006947s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.003442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003304s ]
+
+[ 2016-11-08T21:22:21+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006122s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006626s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.007129s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,A.main_project,B.teacher_name FROM project as A,teacher as B WHERE ( A.course_id = '1' and A.teacher_id = B.teacher_id )  [ RunTime:0.004512s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000437s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044626s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003739s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003283s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003501s ]
+
+[ 2016-11-08T21:22:30+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.005117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007288s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006278s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.006848s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,A.main_project,B.teacher_name FROM project as A,teacher as B WHERE ( A.course_id = '1' and A.teacher_id = B.teacher_id )  [ RunTime:0.002080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000327s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001631s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.039474s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002894s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005308s ]
+
+[ 2016-11-08T21:22:33+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005685s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.007147s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.002238s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000992s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.051177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002788s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004171s ]
+
+[ 2016-11-08T21:22:40+08:00 ] ::1 /CPS/index.php/Teacher/Professor/apply_subject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004708s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_edit_course.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_courseInfo_url D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 49 行.
+NOTIC: [8] Undefined variable: list_course_name D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 53 行.
+NOTIC: [8] Undefined variable: list_course_detail_info D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 73 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.035473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002848s ]
+
+[ 2016-11-08T21:24:57+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006415s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.007429s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001714s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001360s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.089307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.006831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007115s ]
+
+[ 2016-11-08T21:24:58+08:00 ] ::1 /CPS/index.php/Teacher/Professor/apply_subject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000283s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000550s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 39 行.
+NOTIC: [8] Undefined variable: edit_courseInfo_url D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 55 行.
+NOTIC: [8] Undefined variable: list_course_name D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 59 行.
+NOTIC: [8] Undefined variable: list_course_detail_info D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 79 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003570s ]
+
+[ 2016-11-08T21:25:00+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003840s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006541s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.005283s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001298s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000441s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003753s ]
+
+[ 2016-11-08T21:25:43+08:00 ] ::1 /CPS/index.php/Teacher/Professor/my_replyGroup/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002539s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004516s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(D:/WWW/CPS/Teacher/View/Tab/tab_group.html): failed to open stream: No such file or directory D:\WWW\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\9b882f26fdb5b7b44a5ef9e4234a68a1.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.026212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002689s ]
+
+[ 2016-11-08T21:28:28+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008724s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.006040s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.059569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002519s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003553s ]
+
+[ 2016-11-08T21:28:29+08:00 ] ::1 /CPS/index.php/Teacher/Professor/my_replyGroup/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004492s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\9b882f26fdb5b7b44a5ef9e4234a68a1.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.042991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003927s ]
+
+[ 2016-11-08T21:28:31+08:00 ] ::1 /CPS/index.php/Teacher/Professor/replyMember_task
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004324s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\533cf1c645c6b122d474e7a8543c156f.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003502s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003770s ]
+
+[ 2016-11-08T21:28:34+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003509s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.003515s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000945s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.025825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002951s ]
+

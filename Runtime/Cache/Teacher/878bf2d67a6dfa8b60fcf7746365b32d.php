@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>教授</title>
+   <title>管理员</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
-   <script src="/CPS/Teacher/Public/js/global.js"></script>
-   <link href="/CPS/Teacher/Public/css/style.css" rel="stylesheet">
+   <script src="/CPS/Manager/Public/js/global.js"></script>
+   <link href="/CPS/Manager/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
      <div class="navWrap">
@@ -48,38 +48,44 @@
     <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
     <li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
-    <li><a href="javascript: history.back(-1)">答辩组信息</a></li>
-	<li>任务内容</li>
+	  <li>申请课题</li>
   </ol>
 </div>
 
-    <div style="width: 1080px; margin: 0 auto">
-      <table class="table table-bordered table-striped text-center">
-     <thead>
-        <tr>
-           <th>答辩组成员</th>
-           <th>学生组ID</th>
-           <th>学生组成员</th>
-           <th>课题名称</th>
-        </tr>
-     </thead>
-     <tbody>
-       <tr>
-         <td>14143-xxx</td>
-         <td>
-           123124
-         </td>
-         <td>
-           162434-xx<br>
-           162434-xx<br>
-           141243-xx
-         </td>
-         <td>
-           沙发上地方地方
-         </td>
-       </tr>
-     </tbody>
-    </table>
-    </div>
+    <form action="<?php echo ($edit_courseInfo_url); ?>" method="post" role="form">
+      <div style="width: 400px; margin: 0 auto;">
+        <div class="form-group">
+          <label for="course_name">课程名称</label>
+          <input type="text" class="form-control" name="list_course_name" value="<?php echo ($list_course_name); ?>" readonly>
+        </div>
+        <div class="form-group">
+          <label for="subject_name">课题名称</label>
+          <input type="text" class="form-control" name="modify_reply_num" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="group_num">指导教师</label>
+          <input type="text" class="form-control" name="modify_group_num" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="teacher_max_course_num">主要任务</label>
+          <input type="text" class="form-control" name="modify_teacher_max_course_num" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="stu_max_course_num">预期成果目标</label>
+          <input type="text" class="form-control" name="modify_stu_max_course_num" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="stu_max_course_num">预期成果形式</label>
+          <textarea class="form-control" rows="3" name="list_course_detail_info" placeholder="请输入"><?php echo ($list_course_detail_info); ?></textarea>
+        </div>
+        <div class="form-group">
+          <label for="stu_max_course_num">附件</label>
+          <input type="file" class="form-control" name="modify_stu_max_course_num">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
+        </div>
+      </div>
+    </form>
 </body>
 </html>

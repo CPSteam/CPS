@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>教授</title>
+   <title>课程</title>
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
    <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
    <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
-   <script src="/CPS/Teacher/Public/js/global.js"></script>
-   <link href="/CPS/Teacher/Public/css/style.css" rel="stylesheet">
+   <script src="/CPS/Student/Public/js/global.js"></script>
+   <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
      <div class="navWrap">
@@ -48,38 +48,38 @@
     <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
     <li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
-    <li><a href="javascript: history.back(-1)">答辩组信息</a></li>
-	<li>任务内容</li>
+	  <li>审核课题</li>
   </ol>
 </div>
 
-    <div style="width: 1080px; margin: 0 auto">
-      <table class="table table-bordered table-striped text-center">
+  	<div style="width: 1080px; margin: 0 auto">
+  	<table class="table table-bordered table-striped text-center">
      <thead>
         <tr>
-           <th>答辩组成员</th>
-           <th>学生组ID</th>
-           <th>学生组成员</th>
+           <th>序号</th>
+           <th>教师姓名</th>
+           <th>教师ID</th>
            <th>课题名称</th>
+           <th>状态</th>
+           <th>详情</th>
+           <th>操作</th>
         </tr>
      </thead>
      <tbody>
-       <tr>
-         <td>14143-xxx</td>
-         <td>
-           123124
-         </td>
-         <td>
-           162434-xx<br>
-           162434-xx<br>
-           141243-xx
-         </td>
-         <td>
-           沙发上地方地方
-         </td>
-       </tr>
+     <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
+           <td><?php echo ($v["project_id"]); ?></td>
+           <td><?php echo ($v["teacher_name"]); ?></td>
+           <td><?php echo ($v["teacher_id"]); ?></td>
+           <td><?php echo ($v["project_name"]); ?></td>
+           <td><?php echo ($v["project_status"]); ?></td>
+           <td><?php echo ($v["main_project"]); ?></td>
+           <td>
+           	<a href="#"><button type="button" class="btn btn-success">同意</button></a>
+            <a href="#"><button type="button" class="btn btn-danger">拒绝</button></a>
+           </td>
+        </tr><?php endforeach; endif; ?>
      </tbody>
-    </table>
-    </div>
+  	</table>
+  </div>
 </body>
 </html>
