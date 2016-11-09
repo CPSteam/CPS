@@ -6,10 +6,10 @@ use Think\Controller;
 class StuController extends Controller{
 
 	function course_info(){
-   	 	$info = D('course')->select();
+   	$info = D('course')->select();
 		$this -> assign('login_url',U('Home/Login/login'));
-    	$this->assign('info',$info);
-    	$this->assign('query_url',U('project_info'));
+  	$this->assign('info',$info);
+  	$this->assign('query_url',U('project_info'));
 		$this->display();
 	}
 	function myproject(){

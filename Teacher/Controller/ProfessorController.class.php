@@ -25,7 +25,7 @@ class ProfessorController extends Controller {
 
 	function teacher_project_applied() {
 		$course_id = I('course_id');
-		$info = M("Project") -> table('project as A,teacher as B') -> where("A.course_id = '$course_id' and A.teacher_id = B.teacher_id") -> field('A.project_id, A.teacher_id, A.project_name, A.project_status, A.main_project, B.teacher_name') -> select();
+		$info = M("Project") -> table('project as A, teacher as B') -> where("A.course_id = '$course_id' and A.teacher_id = B.teacher_id") -> field('A.project_id, A.teacher_id, A.project_name, A.project_status, A.main_project, B.teacher_name') -> select();
 		$this -> assign('login_url', U('Home/Login/login'));
 
 		foreach($info as $key => $s) {
@@ -46,6 +46,36 @@ class ProfessorController extends Controller {
 		$course_name = I('course_name');
 		$this -> assign('login_url', U('Home/Login/login'));
 		$this -> assign('course_name', $course_name);
+
+		$course_info = M("course") -> where("course_name = '$course_name'") -> field('course_id') -> select();
+
+		foreach ($course_info as $key => $value) {
+			$course_id = $course_info[$key]['course_id'];
+		}
+
+		if(!empty($_POST)) {
+			$modify_project = M("project");
+			$teacher_name = $_POST['teacher_name'];
+			$teacher_info = M("teacher") -> where("teacher_name = '$teacher_name'") -> field('teacher_id') -> select();
+
+			foreach ($teacher_info as $key => $value) {
+					$teacher_id = $teacher_info[$key]['teacher_id'];
+			}
+
+			$modify_info = array(
+				'course_id' => $course_id,
+				'project_name' => $_POST['project_name'],
+				'teacher_id' => $teacher_id,
+				'main_project' => $_POST['main_project'],
+				'main_project' => $_POST['main_project'],
+				'main_project' => $_POST['main_project'],
+				'main_project' => $_POST['main_project'],
+				);
+			$modify_project -> field('reply_num, group_num, teacher_course_max, stu_course_max')->save($modify_info);
+			$this -> redirect('manage_info');
+		}else{
+
+		}
 		$this -> display();
 	}
 
