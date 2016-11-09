@@ -1,16 +1,16 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>教授</title>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
-   <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
-   <script src="/CPS/Teacher/Public/js/global.js"></script>
-   <link href="/CPS/Teacher/Public/css/style.css" rel="stylesheet">
+ <title>教授</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
+ <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
+ <script src="/CPS/Teacher/Public/js/global.js"></script>
+ <link href="/CPS/Teacher/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
-     <div class="navWrap">
+   <div class="navWrap">
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="row">
@@ -45,45 +45,39 @@
     </nav>
   </div>
 
-    <div class="breadTab clearfloat">
-  <ol class="breadcrumb" style="background-color:#FFFFFF;">
-    <li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
-	  <li>答辩组信息</li>
-  </ol>
+  <div class="breadTab clearfloat">
+	<ol class="breadcrumb" style="background-color:#FFFFFF;">
+		<li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
+		<li><a href="/CPS/index.php/Teacher/Professor/my_project">我的课题</a></li>
+		<li><a href="/CPS/index.php/Teacher/Professor/project_stuGroup">学生组信息</a></li>
+		<li>学生组报告信息</li>
+	</ol>
 </div>
 
-  	<div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table-striped text-center">
-     <thead>
+  <div style="width: 1080px; margin: 0 auto">
+      <table class="table table-bordered table-striped text-center">
+       <thead>
         <tr>
-           <th>课程名称</th>
-           <th>课程内容</th>
-           <th>组长</th>
-           <th>组员</th>
-           <th>答辩组ID</th>
-           <th>操作</th>
-        </tr>
+         <th>报告类型</th>
+         <th>学生组ID</th>
+         <th>学生组成员</th>
+         <th>截止日期</th>
+         <th>评分</th>
+         <th>评论</th>
+         <th>评审操作</th>
+         <th>操作</th>
+       </tr>
      </thead>
      <tbody>
        <tr>
-         <td>xxx</td>
+         <td>期中报告</td>
+         <td>2323</td>
+         <td>1231412-xx<br>2414124-xx<br>1241242-xx</td>
+         <td>2016-10-22</td>
+         <td>90</td>
+         <td>xxxx</td>
          <td>
-           <p>ssss</p>
-           <p><a href="#">详情</a></p>
-         </td>
-         <td>
-           162434-xx
-         </td>
-         <td>
-           162434-xx<br>
-           162434-xx<br>
-           162434-xx
-         </td>
-         <td>
-           53423432
-         </td>
-         <td>
-           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1">分配任务</button><br/>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1">评审</button><br/>
                    <!-- 模态框（Modal） -->
                       <div class="modal fade" id="myModa1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                          <div class="modal-dialog">
@@ -93,24 +87,16 @@
                                         &times;
                                      </button>
                                      <h4 class="modal-title" id="myModalLabel3">
-                                     任务分配
+                                     评审课题
                                      </h4>
                                   </div>
                                <div class="modal-body">
-                                <div style="width: 200px;height:200px;margin: 0 auto">
+                                <div style="width: 200px;height:260px;margin: 0 auto">
                                       <form action="#" method="post" enctype="multipart/form-data"> 
-                                       <h5 style="text-align: left;">答辩组成员</h5>
-                                        <select class="select-type form-control">
-                                          <option>23333223-xx</option>
-                                          <option>21412412-xx</option>
-                                          <option>14234232-xx</option>
-                                        </select>
-                                        <h5 style="text-align: left;">学生组ID-组长</h5>
-                                        <select class="select-type form-control">
-                                          <option>23333223-xx</option>
-                                          <option>21412412-xx</option>
-                                          <option>14234232-xx</option>
-                                        </select>
+                                       <h5 style="text-align: left;">评分</h5>
+                                       <input type="text" name="review_score" class="form-control" placeholder="请输入评分" />
+                                        <h5 style="text-align: left;">评论</h5>
+                                        <textarea class="form-control" rows="4" placeholder="请输入评语"></textarea>
                                        <br>
                                        <button class="btn btn-info" style="margin-left: 0px;" type="submit">提交</button>
                                        </form>
@@ -119,32 +105,13 @@
                             </div><!-- /.modal-content -->
                       </div><!-- /.modal -->
                   </div>
-           <a href="<?php echo ($replyMember_task_url); ?>"><button type="button" class="btn btn-success">查看任务</button></a>
-         </td>
-       </tr>
-       <tr>
-         <td>xxx</td>
-         <td>
-           <p>ssss</p>
-           <p><a href="#">详情</a></p>
          </td>
          <td>
-           162434-xx
+          <a href="#"><button type="file" class="btn btn-success">查看报告</button></a>
          </td>
-         <td>
-           162434-xx<br>
-           162434-xx<br>
-           162434-xx
-         </td>
-         <td>
-           53423432
-         </td>
-         <td>
-           <button type="button" class="btn btn-success">查看任务</button>
-         </td>
-       </tr>
+      </tr>
      </tbody>
-  	</table>
-    </div>
+   </table>
+  </div>
 </body>
 </html>
