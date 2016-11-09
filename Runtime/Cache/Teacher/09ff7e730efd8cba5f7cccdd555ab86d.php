@@ -91,20 +91,12 @@
                                      </h4>
                                   </div>
                                <div class="modal-body">
-                                <div style="width: 200px;height:200px;margin: 0 auto">
+                                <div style="width: 200px;height:260px;margin: 0 auto">
                                       <form action="#" method="post" enctype="multipart/form-data"> 
-                                       <h5 style="text-align: left;">答辩组成员</h5>
-                                        <select class="select-type form-control">
-                                          <option>23333223-xx</option>
-                                          <option>21412412-xx</option>
-                                          <option>14234232-xx</option>
-                                        </select>
-                                        <h5 style="text-align: left;">学生组ID-组长</h5>
-                                        <select class="select-type form-control">
-                                          <option>23333223-xx</option>
-                                          <option>21412412-xx</option>
-                                          <option>14234232-xx</option>
-                                        </select>
+                                       <h5 style="text-align: left;">评分</h5>
+                                       <input type="text" name="review_score" class="form-control" placeholder="请输入评分" />
+                                        <h5 style="text-align: left;">评论</h5>
+                                        <textarea class="form-control" rows="4" placeholder="请输入评语"></textarea>
                                        <br>
                                        <button class="btn btn-info" style="margin-left: 0px;" type="submit">提交</button>
                                        </form>
