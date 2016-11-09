@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
-   <title>管理员</title>
-   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
-   <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
-   <script src="/CPS/Manager/Public/js/global.js"></script>
-   <link href="/CPS/Manager/Public/css/style.css" rel="stylesheet">
+ <title>管理员</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
+ <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
+ <script src="/CPS/Manager/Public/js/global.js"></script>
+ <link href="/CPS/Manager/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
      <div class="navWrap">
@@ -46,10 +46,10 @@
   </div>
 
     <div class="breadTab clearfloat">
-  <ol class="breadcrumb" style="background-color:#FFFFFF;">
-    <li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
-	  <li>申请课题</li>
-  </ol>
+	<ol class="breadcrumb" style="background-color:#FFFFFF;">
+		<li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
+		<li>申请课题</li>
+	</ol>
 </div>
 
     <form action="<?php echo ($apply_subject_url); ?>" method="post" role="form">
