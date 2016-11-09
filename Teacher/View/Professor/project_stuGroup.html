@@ -11,32 +11,44 @@
 </head>
 <body>
   <include file="Home/View/Header/header.html"/>
-  <include file="Tab:tab_replyTask"/>
+  <include file="Tab:tab_stuGroup"/>
   <div style="width: 1080px; margin: 0 auto">
     <table class="table table-bordered table-striped text-center">
      <thead>
       <tr>
-       <th>答辩组成员</th>
-       <th>学生组ID</th>
-       <th>学生组成员</th>
+       <th>课程名称</th>
+       <th>课题ID</th>
        <th>课题名称</th>
+       <th>状态</th>
      </tr>
    </thead>
    <tbody>
      <tr>
-       <td>14143-xxx</td>
-       <td>
-         123124
-       </td>
-       <td>
-         162434-xx<br>
-         162434-xx<br>
-         141243-xx
-       </td>
-       <td>
-         沙发上地方地方
-       </td>
+       <td>基于。。。</td>
+       <td>2323</td>
+       <td>。。。</td>
+       <td>已通过</td>
+    </tr>
+   </tbody>
+ </table>
+</div>
+<div style="width: 1080px; margin: 0 auto">
+    <table class="table table-bordered table-striped text-center">
+     <thead>
+      <tr>
+       <th>学生组ID</th>
+       <th>学生组成员</th>
+       <th>操作</th>
      </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>2323</td>
+       <td>1231412-xx<br>2414124-xx<br>1241242-xx</td>
+       <td>
+        <a href="{$stuGroup_report_url}"><button type="button" class="btn btn-success">管理</button></a>
+       </td>
+    </tr>
    </tbody>
  </table>
 </div>

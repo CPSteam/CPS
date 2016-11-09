@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
- <title>课程</title>
+ <title>教授</title>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
  <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
  <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
- <script src="/CPS/Student/Public/js/global.js"></script>
- <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
+ <script src="/CPS/Teacher/Public/js/global.js"></script>
+ <link href="/CPS/Teacher/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
    <div class="navWrap">
@@ -53,37 +53,41 @@
 </div>
 
   <div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table-striped text-center">
+    <table class="table table-bordered table-striped text-center">
      <thead>
       <tr>
        <th>课程名称</th>
-       <th>课程ID</th>
-       <th>课程内容</th>
-       <th>课题信息</th>
-       <th>答辩组信息</th>
+       <th>课题ID</th>
+       <th>课题名称</th>
+       <th>主要任务内容</th>
+       <th>预期成果形式</th>
+       <th>预期成果目标</th>
+       <th>附近</th>
+       <th>评分</th>
+       <th>操作</th>
+       <th>状态</th>
      </tr>
    </thead>
    <tbody>
-     <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
-       <td><?php echo ($v["course_name"]); ?></td>
-       <td><?php echo ($v["course_id"]); ?></td>
+     <tr>
+       <td>基于。。。</td>
+       <td>2323</td>
+       <td>。。。</td>
+       <td>。。。</td>
+       <td>。。。</td>
        <td>
-        <p><?php echo ($v["course_detail_info"]); ?></p>
+          <a href="#">详情</a>
+       </td>
+       <td>90</td>
+       <td>xxxxx</td>
+       <td>已通过</td>
+       <td>
+        <a href="<?php echo ($stuGroup_url); ?>"><button type="button" class="btn btn-success">学生组</button></a>
+        <a href="<?php echo ($project_configure_url); ?>"><button type="button" class="btn btn-info">配置课题</button></a>
       </td>
-      <td>
-        <p>
-          <a href="<?php echo ($teacher_project_applied_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-success">审核课题</button></a>
-        </p>
-        <p>
-          <a href="<?php echo ($apply_subject_url); ?>"><button type="button" class="btn btn-info">申请课题</button></a>
-        </p>
-      </td>
-      <td>
-        <a href="<?php echo ($my_replyGroup_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">查看</button></a>
-      </td>
-    </tr><?php endforeach; endif; ?>
-</tbody>
-</table>
+    </tr>
+   </tbody>
+ </table>
 </div>
 </body>
 </html>
