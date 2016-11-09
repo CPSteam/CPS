@@ -57,7 +57,7 @@
       <div style="width: 400px; margin: 0 auto;">
         <div class="form-group">
           <label for="course_name">课程名称</label>
-          <input type="text" class="form-control" name="list_course_name" value="<?php echo ($list_course_name); ?>" readonly>
+          <input type="text" class="form-control" name="list_course_name" value="<?php echo ($list_course_name); ?>" readonly="readonly">
         </div>
         <div class="form-group">
           <label for="course_content">课程内容</label>

@@ -16,7 +16,6 @@
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="row">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header inline">
                     <img class="logo navbar-brand" src="/CPS/Public/img/logo.png">
                     <a id="course" class="navbar-brand nav-height" href="#" onclick="delaye()" style="color: white;">实验实践教学选课选题管理系统</a>
