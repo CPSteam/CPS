@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
- <title>课程</title>
+ <title>教授</title>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
  <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
  <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
- <script src="/CPS/Student/Public/js/global.js"></script>
- <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
+ <script src="/CPS/Teacher/Public/js/global.js"></script>
+ <link href="/CPS/Teacher/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
    <div class="navWrap">
@@ -48,34 +48,36 @@
   <div class="breadTab clearfloat">
 	<ol class="breadcrumb" style="background-color:#FFFFFF;">
 		<li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
-		<li>审核课题</li>
+		<li><a href="/CPS/index.php/Teacher/Professor/my_project">我的课题</a></li>
+		<li><a href="/CPS/index.php/Teacher/Professor/project_stuGroup">学生组信息</a></li>
+		<li>学生组报告信息</li>
 	</ol>
 </div>
 
   <div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table-striped text-center">
-     <thead>
-      <tr>
-       <th>序号</th>
-       <th>教师姓名</th>
-       <th>教师ID</th>
-       <th>课题名称</th>
-       <th>状态</th>
-       <th>详情</th>
-       <th>评审课题</th>
-       <th>操作</th>
-     </tr>
-   </thead>
-   <tbody>
-     <?php if(is_array($info)): foreach($info as $key=>$v): ?><tr>
-       <td><?php echo ($v["project_id"]); ?></td>
-       <td><?php echo ($v["teacher_name"]); ?></td>
-       <td><?php echo ($v["teacher_id"]); ?></td>
-       <td><?php echo ($v["project_name"]); ?></td>
-       <td><?php echo ($v["project_status"]); ?></td>
-       <td><?php echo ($v["main_project"]); ?></td>
-       <td>
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1">评审</button><br/>
+      <table class="table table-bordered table-striped text-center">
+       <thead>
+        <tr>
+         <th>报告类型</th>
+         <th>学生组ID</th>
+         <th>学生组成员</th>
+         <th>截止日期</th>
+         <th>评分</th>
+         <th>评论</th>
+         <th>评审操作</th>
+         <th>操作</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td>期中报告</td>
+         <td>2323</td>
+         <td>1231412-xx<br>2414124-xx<br>1241242-xx</td>
+         <td>2016-10-22</td>
+         <td>90</td>
+         <td>xxxx</td>
+         <td>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1">评审</button><br/>
                    <!-- 模态框（Modal） -->
                       <div class="modal fade" id="myModa1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                          <div class="modal-dialog">
@@ -103,14 +105,13 @@
                             </div><!-- /.modal-content -->
                       </div><!-- /.modal -->
                   </div>
-       </td>
-       <td>
-        <a href="#"><button type="button" class="btn btn-success">同意</button></a><br>
-        <a href="#"><button type="button" class="btn btn-danger">拒绝</button></a>
-      </td>
-    </tr><?php endforeach; endif; ?>
-</tbody>
-</table>
-</div>
+         </td>
+         <td>
+          <a href="#"><button type="file" class="btn btn-success">查看报告</button></a>
+         </td>
+      </tr>
+     </tbody>
+   </table>
+  </div>
 </body>
 </html>

@@ -70,7 +70,7 @@ class ManageController extends Controller {
 
 	function check_file_conf() {
 		$course_id = I("course_id");
-		$file_info = M("file_property")->where("course_id = '$course_id'")->field('file_type_id,file_type_name,file_deadline,allowed_suffix_list,allowed_max_size')->select();
+		$file_info = M("file_property")->where("course_id = '$course_id'")->field('file_type_id, file_type_name, file_deadline, allowed_suffix_list, allowed_max_size')->select();
 		$this->assign('edit_file_url',U('edit_file'));
 		$this -> assign('login_url',U('Home/Login/login'));
 		$this -> assign('course_id',$course_id);
@@ -112,7 +112,7 @@ class ManageController extends Controller {
 				'teacher_course_max' => $_POST['modify_teacher_max_course_num'],
 				'stu_course_max' => $_POST['modify_stu_max_course_num'],
 				);
-			$modify_course_info->where("course_name = '$list_course_name'")->field('reply_num,group_num,teacher_course_max,stu_course_max')->save($modify_info);
+			$modify_course_info->where("course_name = '$list_course_name'")->field('reply_num, group_num, teacher_course_max, stu_course_max')->save($modify_info);
 			$this -> redirect('manage_info');
 		}else{
 
