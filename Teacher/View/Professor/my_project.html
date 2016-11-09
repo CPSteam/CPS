@@ -11,32 +11,41 @@
 </head>
 <body>
   <include file="Home/View/Header/header.html"/>
-  <include file="Tab:tab_replyTask"/>
+  <include file="Tab:tab_myProject"/>
   <div style="width: 1080px; margin: 0 auto">
     <table class="table table-bordered table-striped text-center">
      <thead>
       <tr>
-       <th>答辩组成员</th>
-       <th>学生组ID</th>
-       <th>学生组成员</th>
+       <th>课程名称</th>
+       <th>课题ID</th>
        <th>课题名称</th>
+       <th>主要任务内容</th>
+       <th>预期成果形式</th>
+       <th>预期成果目标</th>
+       <th>附近</th>
+       <th>评分</th>
+       <th>操作</th>
+       <th>状态</th>
      </tr>
    </thead>
    <tbody>
      <tr>
-       <td>14143-xxx</td>
+       <td>基于。。。</td>
+       <td>2323</td>
+       <td>。。。</td>
+       <td>。。。</td>
+       <td>。。。</td>
        <td>
-         123124
+          <a href="#">详情</a>
        </td>
+       <td>90</td>
+       <td>xxxxx</td>
+       <td>已通过</td>
        <td>
-         162434-xx<br>
-         162434-xx<br>
-         141243-xx
-       </td>
-       <td>
-         沙发上地方地方
-       </td>
-     </tr>
+        <a href="{$stuGroup_url}"><button type="button" class="btn btn-success">学生组</button></a>
+        <a href="{$project_configure_url}"><button type="button" class="btn btn-info">配置课题</button></a>
+      </td>
+    </tr>
    </tbody>
  </table>
 </div>

@@ -42,6 +42,21 @@ class ProfessorController extends Controller {
 		$this->display();
 	}
 
+	function my_project(){
+		$this -> assign('stuGroup_url',U('project_stuGroup'));
+		$this -> assign('project_configure_url',U('project_configure'));
+		$this -> display();
+	}
+
+	function project_stuGroup(){
+		$this -> assign('stuGroup_report_url',U('stuGroup_report'));
+		$this -> display();
+	}
+
+	function stuGroup_report(){
+		$this -> display();
+	}
+
 	function apply_subject() {
 		$course_name = I('course_name');
 		$this -> assign('login_url', U('Home/Login/login'));

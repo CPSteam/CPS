@@ -1,13 +1,13 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
- <title>管理员</title>
+ <title>教授</title>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
  <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
  <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
- <script src="/CPS/Manager/Public/js/global.js"></script>
- <link href="/CPS/Manager/Public/css/style.css" rel="stylesheet">
+ <script src="/CPS/Teacher/Public/js/global.js"></script>
+ <link href="/CPS/Teacher/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
    <div class="navWrap">
@@ -48,45 +48,49 @@
   <div class="breadTab clearfloat">
 	<ol class="breadcrumb" style="background-color:#FFFFFF;">
 		<li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
-		<li>申请课题</li>
+		<li><a href="/CPS/index.php/Teacher/Professor/my_project">我的课题</a></li>
+		<li>配置课题信息</li>
 	</ol>
 </div>
 
-  <form action="<?php echo ($edit_courseInfo_url); ?>" method="post" role="form">
-    <div style="width: 400px; margin: 0 auto;">
-      <div class="form-group">
-        <label for="course_name">课程名称</label>
-        <input type="text" class="form-control" name="list_course_name" value="<?php echo ($list_course_name); ?>" readonly>
+  <div style="width: 1080px; margin: 0 auto">
+    <form action="<?php echo ($course_file_conf_url); ?>" method="post" role="form">
+      <div style="width: 400px; margin: 0 auto;">
+        <div class="form-group">
+          <label for="doc_name">课题名称</label>
+          <input type="text" class="form-control" name="list_course_name" value="<?php echo ($list_course_name); ?>">
+          <input type="hidden" class="form-control" name="list_course_id" value="<?php echo ($list_course_id); ?>">
+        </div>
+        <div class="form-group">
+          <label for="name">考核类型</label>
+          <select class="form-control" name="file-type">
+            <option>平时报告</option>
+            <option>期中报告</option>
+            <option>结题报告</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div>
+            <label for="doc_type">文件类型</label>
+          </div>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="allowed_suffix_doc" value="doc">doc
+          </label> 
+          <label class="checkbox-inline">
+            <input type="checkbox" name="allowed_suffix_docx" value="docx">docx
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" name="allowed_suffix_zip" value="zip">zip
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="size_limit">大小限制（单位：MB）</label>
+          <input type="text" class="form-control" name="allowed_max_size" placeholder="请输入">
+        </div>
+          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="subject_name">课题名称</label>
-        <input type="text" class="form-control" name="modify_reply_num" placeholder="请输入">
-      </div>
-      <div class="form-group">
-        <label for="group_num">指导教师</label>
-        <input type="text" class="form-control" name="modify_group_num" placeholder="请输入">
-      </div>
-      <div class="form-group">
-        <label for="teacher_max_course_num">主要任务</label>
-        <input type="text" class="form-control" name="modify_teacher_max_course_num" placeholder="请输入">
-      </div>
-      <div class="form-group">
-        <label for="stu_max_course_num">预期成果目标</label>
-        <input type="text" class="form-control" name="modify_stu_max_course_num" placeholder="请输入">
-      </div>
-      <div class="form-group">
-        <label for="stu_max_course_num">预期成果形式</label>
-        <textarea class="form-control" rows="3" name="list_course_detail_info" placeholder="请输入"><?php echo ($list_course_detail_info); ?></textarea>
-      </div>
-      <div class="form-group">
-        <label for="stu_max_course_num">附件</label>
-        <input type="file" class="form-control" name="modify_stu_max_course_num">
-      </div>
-      <div>
-        <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
-      </div>
-    </div>
-  </form>
-
+    </form>
+</div>
 </body>
 </html>
