@@ -89,7 +89,7 @@ class ProfessorController extends Controller {
 				'main_project' => $_POST['main_project'],
 				'final_expected_result' => $_POST['final_expected_result'],
 				'final_expected_context' => $_POST['final_expected_context'],
-			);
+				);
 			$add_project -> add($add_info);
 			$this -> redirect('course_info');
 		} else {

@@ -10,7 +10,7 @@
  <link href="/CPS/Manager/Public/css/style.css" rel="stylesheet">
 </head>
 <body>
-   <div class="navWrap">
+     <div class="navWrap">
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="row">
@@ -45,48 +45,47 @@
     </nav>
   </div>
 
-  <div class="breadTab clearfloat">
+    <div class="breadTab clearfloat">
 	<ol class="breadcrumb" style="background-color:#FFFFFF;">
 		<li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
 		<li>申请课题</li>
 	</ol>
 </div>
 
-  <form action="<?php echo ($edit_courseInfo_url); ?>" method="post" role="form">
-    <div style="width: 400px; margin: 0 auto;">
-      <div class="form-group">
-        <label for="course_name">课程名称</label>
-        <input type="text" class="form-control" name="list_course_name" value="<?php echo ($list_course_name); ?>" readonly>
+    <form action="<?php echo ($apply_subject_url); ?>" method="post" role="form">
+      <div style="width: 400px; margin: 0 auto;">
+        <div class="form-group">
+          <label for="course_name">课程名称</label>
+          <input type="text" class="form-control" name="course_name" value="<?php echo ($course_name); ?>" readonly="readonly">
+        </div>
+        <div class="form-group">
+          <label for="project_name">课题名称</label>
+          <input type="text" class="form-control" name="project_name" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="teacher_name">指导教师</label>
+          <input type="text" class="form-control" name="teacher_name" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="main_project">主要任务</label>
+          <input type="text" class="form-control" name="main_project" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="final_expected_result">预期成果目标</label>
+          <input type="text" class="form-control" name="final_expected_result" placeholder="请输入">
+        </div>
+        <div class="form-group">
+          <label for="final_expected_context">预期成果形式</label>
+          <textarea class="form-control" rows="3" name="final_expected_context" placeholder="请输入"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="attachment">附件</label>
+          <input type="file" class="form-control" name="attachment">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="subject_name">课题名称</label>
-        <input type="text" class="form-control" name="modify_reply_num" placeholder="请输入">
-      </div>
-      <div class="form-group">
-        <label for="group_num">指导教师</label>
-        <input type="text" class="form-control" name="modify_group_num" placeholder="请输入">
-      </div>
-      <div class="form-group">
-        <label for="teacher_max_course_num">主要任务</label>
-        <input type="text" class="form-control" name="modify_teacher_max_course_num" placeholder="请输入">
-      </div>
-      <div class="form-group">
-        <label for="stu_max_course_num">预期成果目标</label>
-        <input type="text" class="form-control" name="modify_stu_max_course_num" placeholder="请输入">
-      </div>
-      <div class="form-group">
-        <label for="stu_max_course_num">预期成果形式</label>
-        <textarea class="form-control" rows="3" name="list_course_detail_info" placeholder="请输入"><?php echo ($list_course_detail_info); ?></textarea>
-      </div>
-      <div class="form-group">
-        <label for="stu_max_course_num">附件</label>
-        <input type="file" class="form-control" name="modify_stu_max_course_num">
-      </div>
-      <div>
-        <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
-      </div>
-    </div>
-  </form>
-
+    </form>
 </body>
 </html>

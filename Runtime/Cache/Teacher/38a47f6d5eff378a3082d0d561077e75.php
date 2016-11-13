@@ -75,7 +75,7 @@
           <a href="<?php echo ($teacher_project_applied_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-success">审核课题</button></a>
         </p>
         <p>
-          <a href="<?php echo ($apply_subject_url); ?>"><button type="button" class="btn btn-info">申请课题</button></a>
+          <a href="<?php echo ($apply_subject_url); ?>/course_name/<?php echo ($v["course_name"]); ?>"><button type="button" class="btn btn-info">申请课题</button></a>
         </p>
       </td>
       <td>

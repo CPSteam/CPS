@@ -2794,3 +2794,103 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.004857s ]
 INFO: [ app_end ] --END-- [ RunTime:0.005105s ]
 
+[ 2016-11-09T23:28:30+08:00 ] ::1 /CPS/index.php/Teacher/Professor/my_replyGroup
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.007617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000511s ]
+NOTIC: [8] Undefined index: name D:\WWW\CPS\Runtime\Cache\Teacher\9b882f26fdb5b7b44a5ef9e4234a68a1.php 第 36 行.
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\9b882f26fdb5b7b44a5ef9e4234a68a1.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.069744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.004858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.005471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005724s ]
+
+[ 2016-11-09T23:28:32+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007962s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.073003s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.005524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+NOTIC: [8] Undefined index: name D:\WWW\CPS\Runtime\Cache\Teacher\38a47f6d5eff378a3082d0d561077e75.php 第 36 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.052849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053135s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003991s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005236s ]
+
+[ 2016-11-09T23:28:34+08:00 ] ::1 /CPS/index.php/Teacher/Professor/apply_subject/course_name/%E7%BB%BC%E5%90%88%E8%AF%BE%E7%A8%8B%E8%AE%BE%E8%AE%A11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007211s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.014830s ]
+SQL: SELECT `course_id` FROM `course` WHERE ( course_name = '综合课程设计1' )  [ RunTime:0.002836s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index: name D:\WWW\CPS\Runtime\Cache\Teacher\878bf2d67a6dfa8b60fcf7746365b32d.php 第 36 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.054284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001983s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004708s ]
+
+[ 2016-11-09T23:28:36+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005839s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.011829s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.001963s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Undefined index: name D:\WWW\CPS\Runtime\Cache\Teacher\38a47f6d5eff378a3082d0d561077e75.php 第 36 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.063235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.003959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.006325s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006740s ]
+
+[ 2016-11-09T23:28:38+08:00 ] ::1 /CPS/index.php/Teacher/Professor/teacher_project_applied/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006338s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.011047s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.007642s ]
+SQL: SELECT A.project_id,A.teacher_id,A.project_name,A.project_status,A.main_project,B.teacher_name FROM project as A,teacher as B WHERE ( A.course_id = '1' and A.teacher_id = B.teacher_id )  [ RunTime:0.006640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000458s ]
+NOTIC: [8] Undefined index: name D:\WWW\CPS\Runtime\Cache\Teacher\d87291beb2cb32d723b2ac80bc4fff85.php 第 36 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.048936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002248s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.006321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006722s ]
+
