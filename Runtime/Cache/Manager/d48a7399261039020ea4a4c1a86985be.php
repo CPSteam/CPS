@@ -82,6 +82,7 @@
              <th>答辩组id</th>
              <th>答辩组组长</th>
              <th>答辩组成员</th>
+             <th>分配学生组</th>
           </tr>
        </thead>
        <tbody>
@@ -94,6 +95,38 @@
              </td>
              <td>
                <?php if(is_array($v["reply_groupMember"])): foreach($v["reply_groupMember"] as $key=>$m): echo ($m["teacher_id"]); ?>-<?php echo ($m["teacher_name"]); ?><br><?php endforeach; endif; ?>
+             </td>
+             <td>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1">分配任务</button><br/>
+                   <!-- 模态框（Modal） -->
+                      <div class="modal fade" id="myModa1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                         <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                     <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+                                        &times;
+                                     </button>
+                                     <h4 class="modal-title" id="myModalLabel3">
+                                     任务分配
+                                     </h4>
+                                  </div>
+                               <div class="modal-body">
+                                <div style="width: 200px;height:200px;margin: 0 auto">
+                                      <form action="#" method="post" enctype="multipart/form-data"> 
+                                        <h5 style="text-align: left;">学生组ID-组长</h5>
+                                        <select class="select-type form-control">
+                                          <option>23333223-xx</option>
+                                          <option>21412412-xx</option>
+                                          <option>14234232-xx</option>
+                                        </select>
+                                       <br>
+                                       <button class="btn btn-info" style="margin-left: 0px;" type="submit">提交</button>
+                                       </form>
+                                  </div>
+                               </div>
+                            </div><!-- /.modal-content -->
+                      </div><!-- /.modal -->
+                  </div>
              </td>
           </tr><?php endforeach; endif; ?>
        </tbody>
