@@ -77,12 +77,17 @@ class StuController extends Controller{
 	function project_report(){
 		$project_id = I('project_id');
 		$student_id = $_SESSION['id'];
+		$this->assign('project_report_url',U('project_report'));
 		$report = M("course")->table('course as A,project as B,student_group_member as C,student_group as D')->where("A.course_id=B.course_id and D.project_id=B.project_id and C.group_id=D.group_id and B.project_id='$project_id' and C.student_id = '$student_id'")->field('A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status,B.main_project,B.middle_expected_result,B.final_expected_result,B.project_comment_info,D.group_middle_report_score,D.group_final_report_score')->select();
 		 $this -> assign('login_url',U('Home/Login/login'));
 
 		 foreach($report as $key => $s){
 		 	$report_groupId = $report[$key]['group_id'];
+		 	$course_id =  $report[$key]['course_id'];
 		 	$groupMember = M("student_group_member")->table('student as A,student_group as B,student_group_member as C')->where("A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = '$report_groupId'")->field('A.student_id,A.student_name')->select();
+
+		 	$file_info = M("file_property")->where("course_id = '$course_id'")->field('file_type_id, file_type_name, file_deadline, allowed_suffix_list, allowed_max_size')->select();
+			$this -> assign('file_info',$file_info);
 
 			   if($report[$key]['group_project_status'] == 0){
 					$report[$key]['group_project_status'] = '<p style="color: red;">拒绝</p>';
@@ -300,4 +305,25 @@ class StuController extends Controller{
    		   }
    		   $this->display();
 	}
+
+	function StuUpload(){
+	 	if(empty($_FILES)){
+	 		$this->error('请选择您想上传的文件');
+	 	}else{
+	 		$upload = new \Think\Upload();// 实例化上传类
+		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
+		    $upload->exts      =     array('doc', 'docx', 'png', 'jpeg');// 设置附件上传类型
+		    $upload->saveName  = 	 $_POST['file_type_name'];
+		    $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+		    $upload->savePath  =     './Student/'; // 设置附件上传（子）目录
+		    // 上传文件 
+		    $info   =   $upload->upload();
+		    if(!$info) {// 上传错误提示错误信息
+		        $this->error($upload->getError());
+		    }else{// 上传成功
+		        $this->success('上传成功！');
+		    }
+	 	}
+	}
+
 }
