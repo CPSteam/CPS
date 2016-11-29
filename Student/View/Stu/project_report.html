@@ -151,9 +151,10 @@
 									<input type="text" class="form-control" id="report_file" style="width: 200px;" value="{$v.project_name}" readonly>
 									<label>报告文件
 									</label>
-									<form action="__URL__/StuUpload" method="post" enctype="multipart/form-data">
+									<form action="__URL__/StuGroup_fileUpload" method="post" enctype="multipart/form-data">
 										<input type="file" name="{$m.file_type_name}">
 										<input type="text" hidden="hidden" name="file_type_name" value="{$m.file_type_name}">
+										<input type="text" name="stuGroup_id" value="{$v.group_id}" hidden="hidden">
 										<br>
 										<button class="btn btn-info"
 									style="margin-left:15%;" type="submit">上传</button>

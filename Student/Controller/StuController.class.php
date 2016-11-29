@@ -59,18 +59,6 @@ class StuController extends Controller{
 			$apply_id = $apply_group_id[$key]['group_id'];
 			$this->assign('apply_id',$apply_id);
 		}
-
-		if(!empty($_POST)){
-			$post_apply_group_id = $_POST['apply_group_id'];
-			$student_group = M("student_group"); // 实例化student_group对象
-			// 要修改的数据对象属性赋值
-			$student_group->project_id = $_POST['project_id'];
-			$student_group->where("group_id = '$post_apply_group_id'")->save(); // 根据条件更新记录
-			$this -> redirect('course_info');
-
-		}else{
-
-		}
 		$this->display();
 	}
 
@@ -306,16 +294,16 @@ class StuController extends Controller{
    		   $this->display();
 	}
 
-	function StuUpload(){
+	function StuGroup_fileUpload(){
 	 	if(empty($_FILES)){
 	 		$this->error('请选择您想上传的文件');
 	 	}else{
 	 		$upload = new \Think\Upload();// 实例化上传类
 		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
-		    $upload->exts      =     array('doc', 'docx', 'png', 'jpeg');// 设置附件上传类型
-		    $upload->saveName  = 	 $_POST['file_type_name'];
+		    $upload->exts      =     array('doc', 'docx');// 设置附件上传类型
+		    $upload->saveName  = 	 $_SESSION['id'].'_'.$_POST['stuGroup_id'].'_'.$_POST['file_type_name'];
 		    $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
-		    $upload->savePath  =     './Student/'; // 设置附件上传（子）目录
+		    $upload->savePath  =     './StudentGroup_file/'; // 设置附件上传（子）目录
 		    // 上传文件 
 		    $info   =   $upload->upload();
 		    if(!$info) {// 上传错误提示错误信息
@@ -326,4 +314,30 @@ class StuController extends Controller{
 	 	}
 	}
 
+	function StuGroup_applyUpload(){
+	 	if(empty($_FILES)){
+	 		$this->error('请选择您想上传的文件');
+	 	}else{
+	 		$upload = new \Think\Upload();// 实例化上传类
+		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
+		    $upload->exts      =     array('doc', 'docx');// 设置附件上传类型
+		    $upload->saveName  = 	 $_SESSION['id'].'_'.$_POST['apply_stugroup_id'].'_'.$_POST['apply_course_name'].'_'.$_POST['apply_project_name'];
+		    $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+		    $upload->savePath  =     './StudentGroup_apply/'; // 设置附件上传（子）目录
+		    // 上传文件 
+		    $info   =   $upload->upload();
+		    if(!$info) {// 上传错误提示错误信息
+		        $this->error($upload->getError());
+		    }else{// 上传成功
+		    	if(!empty($_POST['apply_group_id'])){
+				$post_apply_group_id = $_POST['apply_group_id'];
+				$student_group = M("student_group"); // 实例化student_group对象
+				// 要修改的数据对象属性赋值
+				$student_group->project_id = $_POST['project_id'];
+				$student_group->where("group_id = '$post_apply_group_id'")->save(); // 根据条件更新记录
+				}
+		        $this->success('上传成功！');
+		    }
+	 	}
+	}
 }

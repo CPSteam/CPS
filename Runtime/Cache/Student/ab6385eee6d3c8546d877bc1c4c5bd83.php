@@ -158,7 +158,7 @@
 							</tr>
 						</tbody>
 					</table><?php endif; ?>
-						<!-- 模态框（Modal） -->
+				<!-- 模态框（Modal） -->
 				<div class="modal fade" id="<?php echo ($m["file_type_name"]); ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog">
 						<div class="modal-content">
@@ -184,9 +184,10 @@
 									<input type="text" class="form-control" id="report_file" style="width: 200px;" value="<?php echo ($v["project_name"]); ?>" readonly>
 									<label>报告文件
 									</label>
-									<form action="/CPS/index.php/Student/Stu/StuUpload" method="post" enctype="multipart/form-data">
+									<form action="/CPS/index.php/Student/Stu/StuGroup_fileUpload" method="post" enctype="multipart/form-data">
 										<input type="file" name="<?php echo ($m["file_type_name"]); ?>">
 										<input type="text" hidden="hidden" name="file_type_name" value="<?php echo ($m["file_type_name"]); ?>">
+										<input type="text" name="stuGroup_id" value="<?php echo ($v["group_id"]); ?>">
 										<br>
 										<button class="btn btn-info"
 									style="margin-left:15%;" type="submit">上传</button>

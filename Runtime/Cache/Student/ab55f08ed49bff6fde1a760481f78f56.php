@@ -55,7 +55,7 @@
   </div>
       <h3 style="text-align: center;">申请课题</h3><br/>
       <div class="stugroup">
-      <form action="<?php echo ($apply_project_url); ?>" method="post" enctype="multipart/form-data"> 
+       <form action="/CPS/index.php/Student/Stu/StuGroup_applyUpload" method="post" enctype="multipart/form-data">
          <h5>课程名称</h5>
          <input type="text" class="form-control" name="course_name" value="<?php echo ($course_name); ?>" readonly>
          <h5>课题名称</h5>
@@ -70,7 +70,10 @@
           </select>
          <input type="text" id="apply_project_id" name="apply_group_id" class="form-control">
          <h5>提交附件</h5>
-         <input type="file">
+         <input type="file" name="apply_file">
+         <input type="text" name="apply_stugroup_id" value="<?php echo ($v["group_id"]); ?>" hidden="hidden">
+         <input type="text" name="apply_course_name" value="<?php echo ($course_name); ?>" hidden="hidden">
+         <input type="text" name="apply_project_name" value="<?php echo ($project_name); ?>" hidden="hidden">
          <br>
          <button class="btn btn-info" style="margin-left: 60px;" type="submit">提交</button>
          </form>
