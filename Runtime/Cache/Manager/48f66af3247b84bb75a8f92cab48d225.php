@@ -47,34 +47,12 @@
 
     <div class="breadTab clearfloat">
   <ol class="breadcrumb" style="background-color:#FFFFFF;">
-    <li><a href="/CPS/index.php/Manager/Manage/manage_info">课程</a></li>
-	  <li>答辩组信息</li>
+     <li><a href="/CPS/index.php/Manager/Manage/manage_info">课程</a></li>
+     <li><a href="javascript: history.back(-1)">答辩组信息</a></li>
+	 <li>分配学生组</li>
   </ol>
 </div>
 
-  	<div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table-striped text-center">
-     <thead>
-        <tr>
-           <th>课程名称</th>
-           <th>课程内容</th>
-           <th>创建答辩组</th>
-        </tr>
-     </thead>
-     <tbody>
-      <?php if(is_array($course_info)): foreach($course_info as $key=>$v): ?><tr>
-         <td><?php echo ($v["course_name"]); ?></td>
-         <td>
-           <p><?php echo ($v["course_detail_info"]); ?></p>
-           <p><a href="#">详情</a></p>
-         </td>
-         <td>
-           <a href="<?php echo ($edit_group_url); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button class="btn btn-info" type="button">创建</button></a>
-         </td>
-       </tr><?php endforeach; endif; ?>
-     </tbody>
-  	</table>
-    </div>
     <div style="width: 1080px; margin: 0 auto">
     <table class="table table-bordered table table-striped text-center">
        <thead>
@@ -82,7 +60,6 @@
              <th>答辩组id</th>
              <th>答辩组组长</th>
              <th>答辩组成员</th>
-             <th>分配学生组</th>
           </tr>
        </thead>
        <tbody>
@@ -96,12 +73,20 @@
              <td>
                <?php if(is_array($v["reply_groupMember"])): foreach($v["reply_groupMember"] as $key=>$m): echo ($m["teacher_id"]); ?>-<?php echo ($m["teacher_name"]); ?><br><?php endforeach; endif; ?>
              </td>
-             <td>
-                <a href="<?php echo ($edit_allocate_group_url); ?>/course_id/<?php echo ($course_id); ?>/reply_group_id/<?php echo ($v["reply_group_id"]); ?>"><button type="button" class="btn btn-info">分配任务</button></a>
-             </td>
           </tr><?php endforeach; endif; ?>
        </tbody>
     </table>
+    <form action="<?php echo ($check_group_url); ?>" method="post" enctype="multipart/form-data">
+          <div style="width: 400px; margin: 0 auto;">
+            <h5 style="text-align: left;">学生组ID-组长</h5>
+            <select class="form-control" name="reply_stuGroup_id">
+              <?php if(is_array($stu_groupInfo)): foreach($stu_groupInfo as $key=>$h): ?><option value="<?php echo ($h["group_id"]); ?>"><?php echo ($h["group_id"]); ?>-<?php echo ($h["student_id"]); ?></option><?php endforeach; endif; ?>
+            </select>
+           <br>
+           <input type="text" name="reply_id" value="<?php echo ($reply_id); ?>" hidden="hidden">
+           <button class="btn btn-info" style="margin-left: 0px;" type="submit">提交</button>
+           </div>
+         </form>
   </div>
 </body>
 </html>

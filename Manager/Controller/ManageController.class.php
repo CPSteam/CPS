@@ -81,19 +81,67 @@ class ManageController extends Controller {
 
 	function check_group() {
 		$course_id = I('course_id');
+		$this -> assign('course_id',$course_id);
+		$this -> assign('edit_allocate_group_url',U('edit_allocate_stugroup'));
 		$info = M("course")->where("course_id = '$course_id'")->select();
 
+		$stu_groupInfo = M('stu_group')->table('course as A,project as B,student_group as C,student_group_member as D,student as E')->where("A.course_id = B.course_id and B.project_id = C.project_id and A.course_id = $course_id and C.group_id=D.group_id and D.is_groupLeader = 1 and D.student_id = E.student_id")->field('C.group_id,E.student_id')->select();
 		$reply_group = M("reply")->where("course_id = '$course_id'")->field('reply_group_id,group_leader_id')->select();
+
 		foreach ($reply_group as $key => $s) {
 			$reply_group_id = $reply_group[$key]['reply_group_id'];
 			$reply_group[$key]['reply_groupMember'] = M("reply_member")->table('reply_member as A,teacher as B')->where("A.teacher_id=B.teacher_id and A.reply_group_id = '$reply_group_id'")->field('B.teacher_id,B.teacher_name')->select();
 		}
+
 		$this->assign('edit_group_url',U('edit_group'));
 		$this -> assign('login_url',U('Home/Login/login'));
 
 		$this -> assign('course_info',$info);
 		$this -> assign('reply_group_info',$reply_group);
+		$this->assign('stu_groupInfo',$stu_groupInfo);
 		$this -> display();
+	}
+
+	function edit_allocate_stugroup(){
+		$course_id = I('course_id');
+		$reply_group_id = I('reply_group_id');
+		$this -> assign('reply_id',$reply_group_id);
+
+		$reply_group = M("reply")->where("course_id = '$course_id' and reply_group_id = '$reply_group_id'")->field('reply_group_id,group_leader_id')->select();
+
+		foreach ($reply_group as $key => $s) {
+			$reply_group_id = $reply_group[$key]['reply_group_id'];
+			$reply_group[$key]['reply_groupMember'] = M("reply_member")->table('reply_member as A,teacher as B')->where("A.teacher_id=B.teacher_id and A.reply_group_id = '$reply_group_id'")->field('B.teacher_id,B.teacher_name')->select();
+		}
+
+		$stu_groupInfo = M('stu_group')->table('course as A,project as B,student_group as C,student_group_member as D,student as E')->where("A.course_id = B.course_id and B.project_id = C.project_id and A.course_id = $course_id and C.is_replyAllocated = 0 and C.group_id=D.group_id and D.is_groupLeader = 1 and D.student_id = E.student_id")->field('C.group_id,E.student_id')->select();
+
+		if(!empty($_POST)){
+				$stuGroup_id = $_POST['reply_stuGroup_id'];
+				$add_reply_stugroup = D('reply_stugroup');
+				$reply_stugroup_array = array(
+					'reply_group_id' => $_POST['reply_id'],
+					'stu_groupId' => $_POST['reply_stuGroup_id'],
+				);
+				$reply_stuGroup = $add_reply_stugroup -> add($reply_stugroup_array);
+
+				$modify_stu_group = M('student_group');
+				$modify_stugroup_array = array(
+					'is_replyAllocated' => 1,
+				);
+				$modify_stugroup = $modify_stu_group -> where("group_id = '$stuGroup_id'")->save($modify_stugroup_array);
+				dump($modify_stu_group->getLastSql());
+				//$this -> redirect('manage_info');
+			}else{
+
+		}
+		
+		$this->assign('edit_group_url',U('edit_group'));
+		$this -> assign('login_url',U('Home/Login/login'));
+
+		$this -> assign('reply_group_info',$reply_group);
+		$this->assign('stu_groupInfo',$stu_groupInfo);
+		$this->display();
 	}
 
 	function edit_courseInfo() {

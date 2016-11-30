@@ -11,32 +11,7 @@
 </head>
 <body>
     <include file="Home/View/Header/header.html"/>
-    <include file="Tab:tab_group"/>
-  	<div style="width: 1080px; margin: 0 auto">
-  	<table class="table table-bordered table-striped text-center">
-     <thead>
-        <tr>
-           <th>课程名称</th>
-           <th>课程内容</th>
-           <th>创建答辩组</th>
-        </tr>
-     </thead>
-     <tbody>
-      <foreach name="course_info" item="v">
-       <tr>
-         <td>{$v.course_name}</td>
-         <td>
-           <p>{$v.course_detail_info}</p>
-           <p><a href="#">详情</a></p>
-         </td>
-         <td>
-           <a href="{$edit_group_url}/course_id/{$v.course_id}"><button class="btn btn-info" type="button">创建</button></a>
-         </td>
-       </tr>
-     </foreach>
-     </tbody>
-  	</table>
-    </div>
+    <include file="Tab:tab_reply_allocate_stugroup"/>
     <div style="width: 1080px; margin: 0 auto">
     <table class="table table-bordered table table-striped text-center">
        <thead>
@@ -44,7 +19,6 @@
              <th>答辩组id</th>
              <th>答辩组组长</th>
              <th>答辩组成员</th>
-             <th>分配学生组</th>
           </tr>
        </thead>
        <tbody>
@@ -61,13 +35,23 @@
                   {$m.teacher_id}-{$m.teacher_name}<br>
                </foreach>
              </td>
-             <td>
-                <a href="{$edit_allocate_group_url}/course_id/{$course_id}/reply_group_id/{$v.reply_group_id}"><button type="button" class="btn btn-info">分配任务</button></a>
-             </td>
           </tr>
         </foreach>
        </tbody>
     </table>
+    <form action="{$check_group_url}" method="post" enctype="multipart/form-data">
+          <div style="width: 400px; margin: 0 auto;">
+            <h5 style="text-align: left;">学生组ID-组长</h5>
+            <select class="form-control" name="reply_stuGroup_id">
+              <foreach name="stu_groupInfo" item="h">
+                <option value="{$h.group_id}">{$h.group_id}-{$h.student_id}</option>
+              </foreach>
+            </select>
+           <br>
+           <input type="text" name="reply_id" value="{$reply_id}" hidden="hidden">
+           <button class="btn btn-info" style="margin-left: 0px;" type="submit">提交</button>
+           </div>
+         </form>
   </div>
 </body>
 </html>
