@@ -128,6 +128,7 @@ class ManageController extends Controller {
 				$modify_stu_group = M('student_group');
 				$modify_stugroup_array = array(
 					'is_replyAllocated' => 1,
+					'reply_group_id' => $_POST['reply_id'],
 				);
 				$modify_stugroup = $modify_stu_group -> where("group_id = '$stuGroup_id'")->save($modify_stugroup_array);
 				$this -> redirect('manage_info');

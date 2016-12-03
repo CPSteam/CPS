@@ -16,6 +16,7 @@
     <table class="table table-bordered table-striped text-center">
      <thead>
       <tr>
+       <th>答辩组ID</th>
        <th>答辩组成员</th>
        <th>学生组ID</th>
        <th>学生组成员</th>
@@ -23,20 +24,25 @@
      </tr>
    </thead>
    <tbody>
+    <foreach name="reply_member_task_info" item="v">
      <tr>
-       <td>14143-xxx</td>
+       <td>{$v.reply_group_id}</td>
+       <td>{$v.teacher_id}-{$v.teacher_name}</td>
        <td>
-         123124
+         {$v.allocated_stugroup_id}
        </td>
        <td>
-         162434-xx<br>
-         162434-xx<br>
-         141243-xx
+        <foreach name="v.stu_groupMember" item="m">
+         {$m.student_id}-{$m.student_name}<br>
+        </foreach>
        </td>
        <td>
-         沙发上地方地方
+        <foreach name="v.project_info" item="h">
+          {$h.project_name}
+        </foreach>
        </td>
      </tr>
+    </foreach>
    </tbody>
  </table>
 </div>

@@ -5,11 +5,43 @@ use Think\Controller;
 
 class ProfessorController extends Controller {
 	function my_replyGroup(){
+		$course_id = I('course_id');
+		$reply_info = M('reply')->where("course_id = '$course_id'")->field('reply_group_id,group_leader_id')->select();
+		foreach ($reply_info as $key => $s) {
+			$reply_leader_id = $reply_info[$key]['group_leader_id'];
+			$reply_teacher_group_id = $reply_info[$key]['reply_group_id'];
+			$reply_info[$key]['groupleader'] = M('teacher')->where("teacher_id = '$reply_leader_id'")->field('teacher_id,teacher_name')->select();
+			$reply_info[$key]['reply_group_members'] = M('reply_member')->table('reply_member as A,teacher as B')->where("A.reply_group_id = '$reply_teacher_group_id' and A.teacher_id = B.teacher_id")->field('B.teacher_id,B.teacher_name')->select();
+
+			$reply_info[$key]['stu_groupleader'] = M('reply_stugroup')->table('reply_stugroup as A,student_group_member as B,student as C')->where("A.reply_group_id = '$reply_teacher_group_id' and A.stu_groupId = B.group_id and B.is_groupLeader = 1 and B.student_id = C.student_id")->field('B.group_id,C.student_id')->select();
+		}
+
+		if(!empty($_POST)){
+			$reply_group_id = explode(',',$_POST['teacher_group']);
+			$replyMember_task = M('reply_member');
+			$replyMember_task_array = array(
+				'allocated_stugroup_id' => $_POST['student_group'],
+			);
+			$replyMember_task -> where("reply_group_id = '$reply_group_id[0]' and teacher_id = '$reply_group_id[1]'")->save($replyMember_task_array);
+		}
+
+		$this -> assign('reply_info',$reply_info);
+		$this -> assign('my_replyGroup_url',U('my_replyGroup'));
 		$this -> assign('replyMember_task_url',U('replyMember_task'));
 		$this -> display();
 	}
 
-	function replyMember_task() {
+	function replyMember_task(){
+		$reply_group_id = I('reply_group_id');
+
+		$reply_member_task = M('reply_member')->table('reply_member as A,teacher as B')->where("A.reply_group_id = '$reply_group_id' and A.teacher_id = B.teacher_id")->field('A.reply_group_id,A.teacher_id,A.allocated_stugroup_id,B.teacher_name')->select();
+		foreach ($reply_member_task as $key => $s) {
+			$stu_group_id = $reply_member_task[$key]['allocated_stugroup_id'];
+			$reply_member_task[$key]['stu_groupMember'] = M('student')->table('student as A,student_group_member as B')->where("A.student_id = B.student_id and B.group_id = '$stu_group_id'")->field('A.student_id,A.student_name')->select();
+			$reply_member_task[$key]['project_info'] = M('project')->table('project as A,student_group as B')->where("A.project_id = B.project_id and B.group_id = '$stu_group_id'")->field('A.project_name')->select();
+		}
+
+		$this -> assign('reply_member_task_info',$reply_member_task);
 		$this -> display();
 	}
 

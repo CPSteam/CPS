@@ -57,6 +57,7 @@
     <table class="table table-bordered table-striped text-center">
      <thead>
       <tr>
+       <th>答辩组ID</th>
        <th>答辩组成员</th>
        <th>学生组ID</th>
        <th>学生组成员</th>
@@ -64,20 +65,19 @@
      </tr>
    </thead>
    <tbody>
-     <tr>
-       <td>14143-xxx</td>
+    <?php if(is_array($reply_member_task_info)): foreach($reply_member_task_info as $key=>$v): ?><tr>
+       <td><?php echo ($v["reply_group_id"]); ?></td>
+       <td><?php echo ($v["teacher_id"]); ?>-<?php echo ($v["teacher_name"]); ?></td>
        <td>
-         123124
+         <?php echo ($v["allocated_stugroup_id"]); ?>
        </td>
        <td>
-         162434-xx<br>
-         162434-xx<br>
-         141243-xx
+        <?php if(is_array($v["stu_groupMember"])): foreach($v["stu_groupMember"] as $key=>$m): echo ($m["student_id"]); ?>-<?php echo ($m["student_name"]); ?><br><?php endforeach; endif; ?>
        </td>
        <td>
-         沙发上地方地方
+        <?php if(is_array($v["project_info"])): foreach($v["project_info"] as $key=>$h): echo ($h["project_name"]); endforeach; endif; ?>
        </td>
-     </tr>
+     </tr><?php endforeach; endif; ?>
    </tbody>
  </table>
 </div>
