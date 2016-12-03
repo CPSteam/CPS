@@ -130,8 +130,7 @@ class ManageController extends Controller {
 					'is_replyAllocated' => 1,
 				);
 				$modify_stugroup = $modify_stu_group -> where("group_id = '$stuGroup_id'")->save($modify_stugroup_array);
-				dump($modify_stu_group->getLastSql());
-				//$this -> redirect('manage_info');
+				$this -> redirect('manage_info');
 			}else{
 
 		}

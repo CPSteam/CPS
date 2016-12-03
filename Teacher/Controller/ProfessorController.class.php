@@ -25,19 +25,40 @@ class ProfessorController extends Controller {
 
 	function teacher_project_applied() {
 		$course_id = I('course_id');
-		$info = M("Project") -> table('project as A, teacher as B') -> where("A.course_id = '$course_id' and A.teacher_id = B.teacher_id") -> field('A.project_id, A.teacher_id, A.project_name, A.project_status, A.main_project, B.teacher_name') -> select();
+		$info = M("project") -> table('project as A, teacher as B') -> where("A.course_id = '$course_id' and A.teacher_id = B.teacher_id") -> field('A.project_id, A.teacher_id, A.project_name, A.project_status, A.main_project, B.teacher_name,A.review_score,A.review_context') -> select();
 		$this -> assign('login_url', U('Home/Login/login'));
 
-		foreach($info as $key => $s) {
-			if($info[$key]['project_status'] == 0) {
-				$info[$key]['project_status'] = '<p style="color: red;">拒绝</p>';
-			} else if($info[$key]['project_status'] == 1) {
-				$info[$key]['project_status'] = '<p style="color: blue;">待审核</p>';
-			} else {
-				$info[$key]['project_status'] = '<p style="color: green;">已通过</p>';
-			}
+		if(!empty($_POST)){
+			$review_project_id = $_POST['review_project_id'];
+			$review_course_id = $_POST['review_course_id'];
+			$review_project = M('project');
+			$review_project_array = array(
+				'review_score' => $_POST['review_score'],
+				'review_context' => $_POST['review_context'],
+			);
+			$review_project -> where("project_id = '$review_project_id' and course_id = '$review_course_id'")->save($review_project_array);
+			$this -> redirect('course_info');
 		}
 
+		$accept_project_status = I('accept_status');
+		$accept_projectId = I('project_id');
+		$accept_courseId = I('course_id');
+		if($accept_project_status == 1){
+			$accept_project = M('project');
+			$accept_project_array = array(
+				'project_status' => 2,
+			);
+			$accept_project -> where("course_id = '$accept_courseId' and project_id = '$accept_projectId'")->save($accept_project_array);
+		}else{
+			$accept_project = M('project');
+			$accept_project_array = array(
+				'project_status' => 0,
+			);
+			$accept_project -> where("course_id = '$accept_courseId' and project_id = '$accept_projectId'")->save($accept_project_array);
+		}
+		
+		$this -> assign('course_id',$course_id);
+		$this -> assign('teacher_project_applied_url',U('teacher_project_applied'));
 		$this -> assign('info',$info);
 		$this->display();
 	}

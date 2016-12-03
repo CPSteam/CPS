@@ -6,8 +6,14 @@
  <script src="/CPS/Public/bootstrap/js/jquery.min.js"></script>
  <link href="/CPS/Public/bootstrap/css/bootstrap.min.css" rel="stylesheet">
  <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
- <script src="/CPS/Student/Public/js/global.js"></script>
- <link href="/CPS/Student/Public/css/style.css" rel="stylesheet">
+ <script src="/CPS/Teacher/Public/js/global.js"></script>
+ <link href="/CPS/Teacher/Public/css/style.css" rel="stylesheet">
+ <script type="text/javascript">
+  function need_review()
+  {
+    alert("请先完成评审")
+  }
+</script>
 </head>
 <body>
    <div class="navWrap">
@@ -72,43 +78,70 @@
        <td><?php echo ($v["teacher_name"]); ?></td>
        <td><?php echo ($v["teacher_id"]); ?></td>
        <td><?php echo ($v["project_name"]); ?></td>
-       <td><?php echo ($v["project_status"]); ?></td>
-       <td><?php echo ($v["main_project"]); ?></td>
-       <td>
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1">评审</button><br/>
-                   <!-- 模态框（Modal） -->
-                      <div class="modal fade" id="myModa1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                         <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                     <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
-                                        &times;
-                                     </button>
-                                     <h4 class="modal-title" id="myModalLabel3">
-                                     评审课题
-                                     </h4>
-                                  </div>
-                               <div class="modal-body">
-                                <div style="width: 200px;height:260px;margin: 0 auto">
-                                      <form action="#" method="post" enctype="multipart/form-data"> 
-                                       <h5 style="text-align: left;">评分</h5>
-                                       <input type="text" name="review_score" class="form-control" placeholder="请输入评分" />
-                                        <h5 style="text-align: left;">评论</h5>
-                                        <textarea class="form-control" rows="4" placeholder="请输入评语"></textarea>
-                                       <br>
-                                       <button class="btn btn-info" style="margin-left: 0px;" type="submit">提交</button>
-                                       </form>
-                                  </div>
-                               </div>
-                            </div><!-- /.modal-content -->
-                      </div><!-- /.modal -->
+       <?php if($v["project_status"] == 1): ?><td><p style="color: blue;">待审核</p></td>
+         <td><?php echo ($v["main_project"]); ?></td>
+         <td>
+          <?php if(($v["review_score"] == '') or ($v["review_context"] == '')): ?><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1<?php echo ($v["project_id"]); ?>">评审</button>
+          <?php else: ?>
+            <button type="button" class="btn btn-info disabled">评审</button><?php endif; ?>
+         </td>
+         <?php if(($v["review_score"] == '') or ($v["review_context"] == '')): ?><td>
+                <button type="button" class="btn btn-success" onclick="need_review()">同意</button><br>
+                <button type="button" class="btn btn-danger" onclick="need_review()">拒绝</button>
+             </td>
+         <?php else: ?>
+             <td>
+              <a href="<?php echo ($teacher_project_applied_url); ?>/project_id/<?php echo ($v["project_id"]); ?>/course_id/<?php echo ($course_id); ?>/accept_status/1"><button type="button" class="btn btn-success">同意</button></a><br>
+              <a href="<?php echo ($teacher_project_applied_url); ?>/project_id/<?php echo ($v["project_id"]); ?>/course_id/<?php echo ($course_id); ?>/accept_status/0"><button type="button" class="btn btn-danger">拒绝</button></a>
+            </td><?php endif; ?>
+       <?php elseif($v["project_status"] == 2): ?>
+         <td><p style="color: green;">已通过</p></td>
+         <td><?php echo ($v["main_project"]); ?></td>
+          <td>
+            <button type="button" class="btn btn-info disabled">评审</button>
+           </td>
+           <td>
+            <a href="#"><button type="button" class="btn btn-success disabled">同意</button></a>
+          </td>
+       <?php else: ?>
+          <td><p style="color: red;">拒绝</p></td>
+          <td><?php echo ($v["main_project"]); ?></td>
+          <td>
+            <button type="button" class="btn btn-info disabled">评审</button>
+           </td>
+           <td>
+            <a href="#"><button type="button" class="btn btn-danger disabled">拒绝</button></a>
+          </td><?php endif; ?>
+    </tr>
+    <!-- 模态框（Modal） -->
+      <div class="modal fade" id="myModa1<?php echo ($v["project_id"]); ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                     <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+                        &times;
+                     </button>
+                     <h4 class="modal-title" id="myModalLabel3">
+                     评审课题
+                     </h4>
                   </div>
-       </td>
-       <td>
-        <a href="#"><button type="button" class="btn btn-success">同意</button></a><br>
-        <a href="#"><button type="button" class="btn btn-danger">拒绝</button></a>
-      </td>
-    </tr><?php endforeach; endif; ?>
+               <div class="modal-body">
+                <div style="width: 200px;height:260px;margin: 0 auto">
+                      <form action="<?php echo ($teacher_project_applied_url); ?>" method="post" enctype="multipart/form-data"> 
+                        <h5 style="text-align: left;">评分</h5>
+                        <input type="text" name="review_score" class="form-control" placeholder="请输入评分" />
+                        <input type="text" name="review_project_id" value="<?php echo ($v["project_id"]); ?>" hidden="hidden">
+                        <input type="text" name="review_course_id" value="<?php echo ($course_id); ?>" hidden="hidden">
+                        <h5 style="text-align: left;">评论</h5>
+                        <textarea class="form-control" name="review_context" rows="4" placeholder="请输入评语"></textarea>
+                        <h6 style="color: red;">注：提交过后不能再修改！</h6>
+                        <button class="btn btn-info" style="margin-left: 0px;" type="submit">提交</button>
+                      </form>
+                  </div>
+               </div>
+            </div><!-- /.modal-content -->
+      </div><!-- /.modal -->
+    </div><?php endforeach; endif; ?>
 </tbody>
 </table>
 </div>
