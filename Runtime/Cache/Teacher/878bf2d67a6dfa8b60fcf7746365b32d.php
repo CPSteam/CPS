@@ -52,7 +52,7 @@
 	</ol>
 </div>
 
-    <form action="<?php echo ($apply_subject_url); ?>" method="post" role="form">
+    <form action="/CPS/index.php/Teacher/Professor/teacher_apply_file_upload" method="post" enctype="multipart/form-data">
       <div style="width: 400px; margin: 0 auto;">
         <div class="form-group">
           <label for="course_name">课程名称</label>
@@ -79,8 +79,8 @@
           <textarea class="form-control" rows="3" name="final_expected_context" placeholder="请输入"></textarea>
         </div>
         <div class="form-group">
-          <label for="attachment">附件</label>
-          <input type="file" class="form-control" name="attachment">
+          <label for="teacher_apply_project_file">附件</label>
+          <input type="file" class="form-control" name="teacher_apply_project_file">
         </div>
         <div>
           <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>

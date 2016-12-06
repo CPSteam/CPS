@@ -121,34 +121,56 @@ class ProfessorController extends Controller {
 			$course_id = $course_info[$key]['course_id'];
 		}
 
-		if(!empty($_POST)) {
-			$add_project = M("project");
-			$teacher_name = $_POST['teacher_name'];
-			$teacher_info = M("teacher") -> where("teacher_name = '$teacher_name'") -> field('teacher_id') -> select();
-			$order = M("project") -> order('project_id desc') -> limit(1) -> select();
-			foreach ($order as $key => $value) {
-				$project_id = $order[$key]['project_id'] + 1;
-			}
-			foreach ($teacher_info as $key => $value) {
-				$teacher_id = $teacher_info[$key]['teacher_id'];
-			}
-
-			$add_info = array(
-				'project_id' => $project_id,
-				'course_id' => $course_id,
-				'teacher_id' => $teacher_id,
-				'project_name' => $_POST['project_name'],
-				'project_status' => '1',
-				'main_project' => $_POST['main_project'],
-				'final_expected_result' => $_POST['final_expected_result'],
-				'final_expected_context' => $_POST['final_expected_context'],
-				);
-			$add_project -> add($add_info);
-			$this -> redirect('course_info');
-		} else {
-
-		}
 		$this -> display();
 	}
 
+	function teacher_apply_file_upload(){
+	 	if(empty($_FILES)){
+	 		$this->error('请选择您想上传的文件');
+	 	}else{
+	 		$upload = new \Think\Upload();// 实例化上传类
+		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
+		    $upload->exts      =     array('doc', 'docx');// 设置附件上传类型
+		    $upload->saveName  = 	  $_POST['course_name'].'_'.$_POST['teacher_name'].'_'.$_POST['project_name'];
+		    $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+		    $upload->savePath  =     './Teacher_apply_file/'; // 设置附件上传（子）目录
+		    // 上传文件 
+		    $info   =   $upload->upload();
+		    if(!$info) {// 上传错误提示错误信息
+		        $this->error($upload->getError());
+		    }else{// 上传成功
+		    	if(!empty($_POST)) {
+		    	$course_name = $_POST['course_name'];
+		    	$course_info = M("course") -> where("course_name = '$course_name'") -> field('course_id') -> select();
+				foreach ($course_info as $key => $value) {
+					$course_id = $course_info[$key]['course_id'];
+				}
+				$add_project = M("project");
+				$teacher_name = $_POST['teacher_name'];
+				$teacher_info = M("teacher") -> where("teacher_name = '$teacher_name'") -> field('teacher_id') -> select();
+				$order = M("project") -> order('project_id desc') -> limit(1) -> select();
+				foreach ($order as $key => $value) {
+					$project_id = $order[$key]['project_id'] + 1;
+				}
+				foreach ($teacher_info as $key => $value) {
+					$teacher_id = $teacher_info[$key]['teacher_id'];
+				}
+
+				$add_info = array(
+					'project_id' => $project_id,
+					'course_id' => $course_id,
+					'teacher_id' => $teacher_id,
+					'project_name' => $_POST['project_name'],
+					'project_status' => '1',
+					'main_project' => $_POST['main_project'],
+					'accessary_path' => '',
+					'final_expected_result' => $_POST['final_expected_result'],
+					'final_expected_context' => $_POST['final_expected_context'],
+					);
+				$add_project -> add($add_info);
+				}
+		        $this->success('上传成功！');
+		    }
+	 	}
+	}
 }
