@@ -53,30 +53,48 @@
     <li><a href="/CPS/index.php/Student/Stu/team_manage">队伍管理</a></li>
   </ol>
   </div>
-      <h3 style="text-align: center;">申请课题</h3><br/>
-      <div class="stugroup">
-       <form action="/CPS/index.php/Student/Stu/StuGroup_applyUpload" method="post" enctype="multipart/form-data">
-         <h5>课程名称</h5>
-         <input type="text" class="form-control" name="course_name" value="<?php echo ($course_name); ?>" readonly>
-         <h5>课题名称</h5>
-         <input type="text" class="form-control" name="project_name" value="<?php echo ($project_name); ?>" readonly>
-         <h5>课题id</h5>
-         <input type="text" class="form-control" name="project_id" value="<?php echo ($project_id); ?>" readonly>
-         <?php if($apply_id == ''): ?><h5>学生组<span style="color: red;">（请创建一个新学生组）</span></h5>
-         <?php else: ?>
-         <h5>学生组</h5><?php endif; ?>
-          <select id="apply_group_id" class="select-type">
-          <?php if(is_array($apply_group_id)): foreach($apply_group_id as $key=>$v): ?><option value="<?php echo ($v["group_id"]); ?>"><?php echo ($v["group_id"]); ?></option><?php endforeach; endif; ?>
-          </select>
-         <input type="text" id="apply_project_id" name="apply_group_id" class="form-control">
-         <h5>提交附件</h5>
-         <input type="file" name="apply_file">
-         <input type="text" name="apply_stugroup_id" value="<?php echo ($v["group_id"]); ?>" hidden="hidden">
-         <input type="text" name="apply_course_name" value="<?php echo ($course_name); ?>" hidden="hidden">
-         <input type="text" name="apply_project_name" value="<?php echo ($project_name); ?>" hidden="hidden">
-         <br>
-         <button class="btn btn-info" style="margin-left: 60px;" type="submit">提交</button>
-         </form>
-      </div>
+        <div style="width: 1080px; margin: 0 auto">
+          <table class="table table-bordered table table-striped text-center">
+           <thead>
+              <tr>
+                 <th>课程名称</th>
+                 <th>课题名称</th>
+                 <th>指导教师</th>
+                 <th>队伍ID</th>
+                 <th>队员</th>
+                 <th>课题详情</th>
+              </tr>
+           </thead>
+           <tbody>
+           <?php if($projectid == 0): ?><tr>
+                   <td>--</td>
+                   <td>--</td>
+                   <td>--</td>
+                   <td><?php echo ($teamgroup_id); ?></td>
+                   <td>
+                   <?php if(is_array($group_member)): foreach($group_member as $key=>$m): echo ($m["student_id"]); ?>-<?php echo ($m["student_name"]); ?><br/><?php endforeach; endif; ?>
+                   </td>
+                    <td>--</td>
+                </tr>
+           <?php else: ?>
+             <?php if(is_array($teamInfo)): foreach($teamInfo as $key=>$v): ?><tr>
+                   <td><?php echo ($v["course_name"]); ?></td>
+                   <td><?php echo ($v["project_name"]); ?></td>
+                   <td>
+                      <?php echo ($v["teacher_id"]); ?>
+                   </td>
+                   <td>
+                     <?php echo ($v["group_id"]); ?>
+                   </td>
+                   <td>
+                   <?php if(is_array($group_member)): foreach($group_member as $key=>$m): echo ($m["student_id"]); ?>-<?php echo ($m["student_name"]); ?><br/><?php endforeach; endif; ?>
+                   </td>
+                    <td>
+                     <a href="#">查看</a>
+                   </td>
+                </tr><?php endforeach; endif; endif; ?>
+           </tbody>
+         </table>
+        </div>
 </body>
 </html>

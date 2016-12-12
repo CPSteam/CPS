@@ -187,7 +187,7 @@
 									<form action="/CPS/index.php/Student/Stu/StuGroup_fileUpload" method="post" enctype="multipart/form-data">
 										<input type="file" name="<?php echo ($m["file_type_name"]); ?>">
 										<input type="text" hidden="hidden" name="file_type_name" value="<?php echo ($m["file_type_name"]); ?>">
-										<input type="text" name="stuGroup_id" value="<?php echo ($v["group_id"]); ?>">
+										<input type="text" name="stuGroup_id" value="<?php echo ($v["group_id"]); ?>" hidden="hidden">
 										<br>
 										<button class="btn btn-info"
 									style="margin-left:15%;" type="submit">上传</button>

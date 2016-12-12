@@ -1,0 +1,60 @@
+[ 2016-12-08T14:19:22+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.060839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.063562s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.015103s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.070954s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+NOTIC: [8] Undefined index: name D:\WWW\CPS\Runtime\Cache\Manager\b2e21d1919f93d16faa134e79d8c3954.php 第 36 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.255302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.255511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.044582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.044865s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.047214s ]
+INFO: [ app_end ] --END-- [ RunTime:0.047424s ]
+
+[ 2016-12-08T14:20:58+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.003258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005624s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.009800s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.003319s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Undefined index: name D:\WWW\CPS\Runtime\Cache\Manager\b2e21d1919f93d16faa134e79d8c3954.php 第 36 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.002020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.003406s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003626s ]
+
+[ 2016-12-08T17:06:05+08:00 ] ::1 /CPS/index.php/Manager/Manage/manage_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.004823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009851s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.042629s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.004819s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Undefined index: name D:\WWW\CPS\Runtime\Cache\Manager\b2e21d1919f93d16faa134e79d8c3954.php 第 36 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.049912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.004309s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004807s ]
+

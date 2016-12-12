@@ -8,12 +8,6 @@
  <script src="/CPS/Public/bootstrap/js/bootstrap.min.js"></script>
  <script src="/CPS/Teacher/Public/js/global.js"></script>
  <link href="/CPS/Teacher/Public/css/style.css" rel="stylesheet">
- <script type="text/javascript">
-  function need_review()
-  {
-    alert("请先完成评审")
-  }
-</script>
 </head>
 <body>
   <include file="Home/View/Header/header.html"/>
@@ -50,15 +44,35 @@
           </if>
          </td>
          <if condition="($v.review_score eq '') or ($v.review_context eq '')">
-             <td>
-                <button type="button" class="btn btn-success" onclick="need_review()">同意</button><br>
-                <button type="button" class="btn btn-danger" onclick="need_review()">拒绝</button>
-             </td>
+           <td>
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#review_error">同意</button><br>
+              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#review_error">拒绝</button>
+              <!-- 模态框（Modal） -->
+                  <div class="modal fade" id="review_error" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                 <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+                                    &times;
+                                 </button>
+                                 <h4 class="modal-title" id="myModalLabel3">
+                                 评审错误
+                                 </h4>
+                              </div>
+                           <div class="modal-body">
+                            <div style="width: 200px;margin: 0 auto">
+                                <h3 style="color: red">请先完成评审！</h3>
+                            </div>
+                           </div>
+                        </div><!-- /.modal-content -->
+                  </div><!-- /.modal -->
+                </div>
+           </td>
          <else/>
-             <td>
-              <a href="{$teacher_project_applied_url}/project_id/{$v.project_id}/course_id/{$course_id}/accept_status/1"><button type="button" class="btn btn-success">同意</button></a><br>
-              <a href="{$teacher_project_applied_url}/project_id/{$v.project_id}/course_id/{$course_id}/accept_status/0"><button type="button" class="btn btn-danger">拒绝</button></a>
-            </td>
+           <td>
+            <a href="{$teacher_project_applied_url}/project_id/{$v.project_id}/course_id/{$course_id}/accept_status/1"><button type="button" class="btn btn-success">同意</button></a><br>
+            <a href="{$teacher_project_applied_url}/project_id/{$v.project_id}/course_id/{$course_id}/accept_status/0"><button type="button" class="btn btn-danger">拒绝</button></a>
+          </td>
          </if>
        <elseif condition="$v.project_status eq 2"/>
          <td><p style="color: green;">已通过</p></td>

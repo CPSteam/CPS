@@ -74,7 +74,7 @@
                   <td><?php echo ($v["project_id"]); ?></td>
                  <td><?php echo ($v["teacher_id"]); ?></td>
                  <td>
-                   <a href="#">查看</a>
+                   <a href="/CPS/index.php/Student/Stu/project_file_download?course_name=<?php echo ($v["course_name"]); ?>&project_name=<?php echo ($v["project_name"]); ?>">查看</a>
                  </td>
                  <td>
                     <a href="<?php echo ($apply_project); ?>/course_name/<?php echo ($v["course_name"]); ?>/project_name/<?php echo ($v["project_name"]); ?>/project_id/<?php echo ($v["project_id"]); ?>"><button class="btn btn-info">申请</button></a>

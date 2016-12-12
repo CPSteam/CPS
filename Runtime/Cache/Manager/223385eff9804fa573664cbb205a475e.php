@@ -70,7 +70,7 @@
           <td><?php echo ($v["course_name"]); ?></td>
           <td>
             <p><?php echo ($v["course_detail_info"]); ?></p>
-            <p><a href="#">详情</a></p>
+            <p><a href="/CPS/index.php/Manager/Manage/course_file_download?course_id=<?php echo ($v["course_id"]); ?>&course_name=<?php echo ($v["course_name"]); ?>">详情</a></p>
           </td>
           <td><?php echo ($v["reply_num"]); ?></td>
           <td><?php echo ($v["group_num"]); ?></td>

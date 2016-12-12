@@ -12,6 +12,7 @@ class StuController extends Controller{
   	$this->assign('query_url',U('project_info'));
 		$this->display();
 	}
+
 	function myproject(){
 		$student_id = $_SESSION['id'];
 		$projectInfo = M("course")->table('course A,project B,student_group_member C,student_group D')->where("A.course_id=B.course_id and B.project_id=D.project_id and C.group_id=D.group_id and C.student_id = '$student_id'")->field('A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id,D.group_id,D.group_project_status')->select();
@@ -22,21 +23,6 @@ class StuController extends Controller{
  		foreach($projectInfo as $key => $s){
  			$group_id = $projectInfo[$key]['group_id'];
  			$projectInfo[$key]['students'] = M("student_group_member")->table('student as A,student_group as B,student_group_member as C')->where("A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = '$group_id'")->field('A.student_id,A.student_name')->select();
-			   if($projectInfo[$key]['group_project_status'] == 0){
-					$projectInfo[$key]['group_project_status'] = '<p style="color: red;">拒绝</p>';
-					$button_disabled = 'disabled';
-                    $this -> assign('button_disabled',$button_disabled);
-                    $this -> assign('projectInfo_url','#');
-			   }
-				else if($projectInfo[$key]['group_project_status'] == 1){
-                    $projectInfo[$key]['group_project_status'] = '<p style="color: blue;">待审核</p>';
-                    $button_disabled = 'disabled';
-                    $this -> assign('button_disabled',$button_disabled);
-                    $this -> assign('projectInfo_url','#');
-                }
-			   else{
-					 $projectInfo[$key]['group_project_status'] = '<p style="color: green;">已通过</p>';
-			   }
 	 	   }
 	 	$this -> assign('projectInfo',$projectInfo);
 	 	$this -> assign('groupMember',$groupMember);
@@ -44,14 +30,20 @@ class StuController extends Controller{
 	}
 
 	function apply_project(){
+		$student_id = $_SESSION['id'];
 		$course_name = I('course_name');
 		$this -> assign('course_name',$course_name);
 		$project_name = I('project_name');
 		$this -> assign('project_name',$project_name);
 		$project_id = I('project_id');
 		$this -> assign('project_id',$project_id);
+
+		$is_exist_project = M("student_group")->table('student_group as A,student_group_member as B')->where("A.group_id=B.group_id and B.student_id = '$student_id' and B.is_groupLeader = 1 and A.project_id = '$project_id'")->select();
+		if($is_exist_project){
+			$this->error('您已经有学生组申请过此课题，请选择其它课题');
+		}
+
 		$this -> assign('apply_project_url',U('apply_project'));
-		$student_id = $_SESSION['id'];
 		$apply_group_id = M("student_group")->table('student_group as A,student_group_member as B')->where("A.group_id=B.group_id and B.student_id = '$student_id' and B.is_groupLeader = 1 and A.project_id = 0")->field('A.group_id')->select();
 		$this -> assign('apply_group_id',$apply_group_id);
 
@@ -132,6 +124,7 @@ class StuController extends Controller{
 	function project_info(){
 		$course_id = I('course_id');
 		$info = M("course")->table('course as A,project as B')->where("A.course_id=B.course_id and B.course_id= '$course_id'")->field('A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id')->select();
+
 
 		 $this->assign('info',$info);
 		 $this ->assign('apply_project',U('apply_project'));
@@ -293,51 +286,102 @@ class StuController extends Controller{
    		   }
    		   $this->display();
 	}
-
+	//学生组上传报告文件
 	function StuGroup_fileUpload(){
-	 	if(empty($_FILES)){
-	 		$this->error('请选择您想上传的文件');
-	 	}else{
-	 		$upload = new \Think\Upload();// 实例化上传类
-		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
-		    $upload->exts      =     array('doc', 'docx');// 设置附件上传类型
-		    $upload->saveName  = 	 $_SESSION['id'].'_'.$_POST['stuGroup_id'].'_'.$_POST['file_type_name'];
-		    $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
-		    $upload->savePath  =     './StudentGroup_file/'; // 设置附件上传（子）目录
-		    // 上传文件 
-		    $info   =   $upload->upload();
-		    if(!$info) {// 上传错误提示错误信息
-		        $this->error($upload->getError());
-		    }else{// 上传成功
-		        $this->success('上传成功！');
-		    }
-	 	}
+	            if(empty($_FILES)){
+	                  $this->error('请选择您想上传的文件');
+	            }else{
+	                  $upload = new \Think\Upload();// 实例化上传类
+	                $upload->maxSize   =     3145728 ;// 设置附件上传大小
+	                $upload->exts      =     array('doc', 'docx');// 设置附件上传类型
+	                $upload->saveName  =       $_SESSION['id'].'_'.$_POST['stuGroup_id'].'_'.$_POST['file_type_name'];
+	                $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+	                $upload->savePath  =     './StudentGroup_file/'; // 设置附件上传（子）目录
+	                // 上传文件 
+	                $info   =   $upload->upload();
+	                if(!$info) {// 上传错误提示错误信息
+	                    $this->error($upload->getError());
+	                }else{// 上传成功
+	                    $this->success('上传成功！');
+	                }
+	            }
+	      }
+
+	//学生组上传申请课题材料
+	function StuGroup_applyUpload(){
+	      if(empty($_FILES)){
+	            $this->error('请选择您想上传的文件');
+	      }else{
+	            $upload = new \Think\Upload();// 实例化上传类
+	          $upload->maxSize   =     3145728 ;// 设置附件上传大小
+	          $upload->exts      =     array('doc', 'docx');// 设置附件上传类型
+	          $upload->saveName  =       $_SESSION['id'].'_'.$_POST['apply_stugroup_id'].'_'.$_POST['apply_course_name'].'_'.$_POST['apply_project_name'];
+	          $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+	          $upload->savePath  =     './StudentGroup_apply/'; // 设置附件上传（子）目录
+	          // 上传文件 
+	          $info   =   $upload->upload();
+	          if(!$info) {// 上传错误提示错误信息
+	              $this->error($upload->getError());
+	          }else{// 上传成功
+	            if(!empty($_POST['apply_group_id'])){
+	                  $post_apply_group_id = $_POST['apply_group_id'];
+	                  $student_group = M("student_group"); // 实例化student_group对象
+	                  // 要修改的数据对象属性赋值
+	                  $student_group->project_id = $_POST['project_id'];
+	                  $student_group->where("group_id = '$post_apply_group_id'")->save(); // 根据条件更新记录
+	                  }
+	              $this->success('上传成功！');
+	          }
+	      }
 	}
 
-	function StuGroup_applyUpload(){
-	 	if(empty($_FILES)){
-	 		$this->error('请选择您想上传的文件');
-	 	}else{
-	 		$upload = new \Think\Upload();// 实例化上传类
-		    $upload->maxSize   =     3145728 ;// 设置附件上传大小
-		    $upload->exts      =     array('doc', 'docx');// 设置附件上传类型
-		    $upload->saveName  = 	 $_SESSION['id'].'_'.$_POST['apply_stugroup_id'].'_'.$_POST['apply_course_name'].'_'.$_POST['apply_project_name'];
-		    $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
-		    $upload->savePath  =     './StudentGroup_apply/'; // 设置附件上传（子）目录
-		    // 上传文件 
-		    $info   =   $upload->upload();
-		    if(!$info) {// 上传错误提示错误信息
-		        $this->error($upload->getError());
-		    }else{// 上传成功
-		    	if(!empty($_POST['apply_group_id'])){
-				$post_apply_group_id = $_POST['apply_group_id'];
-				$student_group = M("student_group"); // 实例化student_group对象
-				// 要修改的数据对象属性赋值
-				$student_group->project_id = $_POST['project_id'];
-				$student_group->where("group_id = '$post_apply_group_id'")->save(); // 根据条件更新记录
-				}
-		        $this->success('上传成功！');
-		    }
-	 	}
+	//课程内容文件下载
+	function project_file_download($course_name,$project_name)
+	{
+		 $filename = './Uploads/project_file/'.$course_name.'-'.$project_name.'.docx';
+		 $filename= iconv("utf-8", "gbk", $filename);
+		  if ($filename == ''){
+		      return FALSE;
+		  }
+		  if (FALSE === strpos($filename, '.')){
+		      return FALSE;
+		  }
+		  if(!is_file($filename)){
+		  	$this -> error('无相关文件！');
+		  }
+
+		  $x = explode('.', $filename);
+		  $extension = end($x);
+		  $mimes = getMimes();
+
+		  $showname = $course_name.'-'.$project_name.'.docx';
+		  // Set a default mime if we can't find it
+		  if ( ! isset($mimes[$extension])){
+		      $mime = 'application/octet-stream';
+		  }else{
+		      $mime = (is_array($mimes[$extension])) ? $mimes[$extension][0] : $mimes[$extension];
+		  }
+
+		  // Generate the server headers
+		  if (strpos($_SERVER['HTTP_USER_AGENT'], "MSIE") !== FALSE)
+		  {
+		      header('Content-Type: "'.$mime.'";charset=utf-8');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header('Expires: 0');
+		      header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Pragma: public');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  else
+		  {
+		      header('Content-Type: "'.$mime.'"');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Expires: 0');
+		      header('Pragma: no-cache');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  readfile($filename);
 	}
 }

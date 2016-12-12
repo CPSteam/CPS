@@ -78,7 +78,7 @@
     </table>
     <form action="<?php echo ($check_group_url); ?>" method="post" enctype="multipart/form-data">
           <div style="width: 400px; margin: 0 auto;">
-            <h5 style="text-align: left;">学生组ID-组长</h5>
+            <h5 style="text-align: left;">组ID-组长学号</h5>
             <select class="form-control" name="reply_stuGroup_id">
               <?php if(is_array($stu_groupInfo)): foreach($stu_groupInfo as $key=>$h): ?><option value="<?php echo ($h["group_id"]); ?>"><?php echo ($h["group_id"]); ?>-<?php echo ($h["student_id"]); ?></option><?php endforeach; endif; ?>
             </select>

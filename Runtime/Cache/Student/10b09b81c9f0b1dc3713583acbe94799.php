@@ -83,14 +83,32 @@
 					<td>
 						<a href="#">查看</a>
 					</td>
-					<td>
-						 <?php echo ($v["group_project_status"]); ?>
-					</td>
-					<td>
-						 <a href="<?php echo ($projectInfo_url); ?>/project_id/<?php echo ($v["project_id"]); ?>">
-						 	<button type="button" class="btn btn-info <?php echo ($button_disabled); ?>">查看报告</button>
-						 </a>
-					</td>
+					<?php if($v["group_project_status"] == 0): ?><td>
+							 <p style="color: red;">拒绝</p>
+						</td>
+						<td>
+							 <a href="#">
+							 	<button type="button" class="btn btn-info disabled">查看报告</button>
+							 </a>
+						</td>
+					<?php elseif($v["group_project_status"] == 1): ?>
+						<td>
+							 <p style="color: blue;">待审核</p>
+						</td>
+						<td>
+							 <a href="#">
+							 	<button type="button" class="btn btn-info disabled">查看报告</button>
+							 </a>
+						</td>
+					<?php else: ?>
+						<td>
+							 <p style="color: green;">已通过</p>
+						</td>
+						<td>
+							 <a href="<?php echo ($projectInfo_url); ?>/project_id/<?php echo ($v["project_id"]); ?>">
+							 	<button type="button" class="btn btn-info">查看报告</button>
+							 </a>
+						</td><?php endif; ?>
 				</tr><?php endforeach; endif; ?>
 			</tbody>
 		</table>

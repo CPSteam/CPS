@@ -244,9 +244,59 @@ class ManageController extends Controller {
 
 		}
 		$this -> display();
-}
+	}
 
 	function group_info() {
 		$this -> display();
+	}
+
+	//课程内容文件下载
+	function course_file_download($course_id,$course_name)
+	{
+		  $filename = './Uploads/course_file/'.$course_id.'-'.$course_name.'.docx';
+		  $filename= iconv("utf-8", "gbk", $filename);
+		  if ($filename == ''){
+		      return FALSE;
+		  }
+		  if (FALSE === strpos($filename, '.')){
+		      return FALSE;
+		  }
+		  if(!is_file($filename)){
+		  	$this -> error('无相关文件！');
+		  }
+
+		  $x = explode('.', $filename);
+		  $extension = end($x);
+		  $mimes = getMimes();
+		  // Set a default mime if we can't find it
+		  if ( ! isset($mimes[$extension])){
+		      $mime = 'application/octet-stream';
+		  }else{
+		      $mime = (is_array($mimes[$extension])) ? $mimes[$extension][0] : $mimes[$extension];
+		  }
+
+		  $showname = $course_id.'-'.$course_name.'.docx';
+
+		  // Generate the server headers
+		  if (strpos($_SERVER['HTTP_USER_AGENT'], "MSIE") !== FALSE)
+		  {
+		      header('Content-Type: "'.$mime.'"');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header('Expires: 0');
+		      header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Pragma: public');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  else
+		  {
+		      header('Content-Type: "'.$mime.'"');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Expires: 0');
+		      header('Pragma: no-cache');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  readfile($filename);
 	}
 }
