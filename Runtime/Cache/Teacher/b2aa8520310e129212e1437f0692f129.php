@@ -58,8 +58,9 @@
       <div style="width: 400px; margin: 0 auto;">
         <div class="form-group">
           <label for="doc_name">课题名称</label>
-          <input type="text" class="form-control" name="list_course_name" value="<?php echo ($list_course_name); ?>">
-          <input type="hidden" class="form-control" name="list_course_id" value="<?php echo ($list_course_id); ?>">
+          <input type="text" class="form-control" name="file_project_name" value="<?php echo ($file_project_name); ?>">
+          <input type="hidden" class="form-control" name="file_project_id" value="<?php echo ($file_project_id); ?>">
+          <input type="hidden" class="form-control" name="file_course_id" value="<?php echo ($file_course_id); ?>">
         </div>
         <div class="form-group">
           <label for="name">考核类型</label>
@@ -84,10 +85,47 @@
           </label>
         </div>
         <div class="form-group">
+          <label for="deadline">截止日期</label>
+          <input type="date" class="form-control" name="file_deadline">
+        </div>
+        <div class="form-group">
           <label for="size_limit">大小限制（单位：MB）</label>
           <input type="text" class="form-control" name="allowed_max_size" placeholder="请输入">
         </div>
-          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
+        <?php if($is_file_complete == 0): ?><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1" style="display: block; margin: 0 auto; width: 100px;">提交</button>
+                     <!-- 模态框（Modal） -->
+                        <div class="modal fade" id="myModa1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                           <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                       <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+                                          &times;
+                                       </button>
+                                       <h4 class="modal-title" id="myModalLabel3">
+                                       任务分配
+                                       </h4>
+                                    </div>
+                                 <div class="modal-body">
+                                  <div style="width: 200px;height:200px;margin: 0 auto">
+                                        <form action="<?php echo ($my_replyGroup_url); ?>" method="post" enctype="multipart/form-data"> 
+                                         <h5 style="text-align: left;">答辩组成员</h5>
+                                          <select name="teacher_group" class="select-type form-control">
+                                          <?php if(is_array($v["reply_group_members"])): foreach($v["reply_group_members"] as $key=>$x): ?><option value="<?php echo ($v["reply_group_id"]); ?>,<?php echo ($x["teacher_id"]); ?>"><?php echo ($x["teacher_id"]); ?>-<?php echo ($x["teacher_name"]); ?></option><?php endforeach; endif; ?>
+                                          </select>
+                                          <h5 style="text-align: left;">组ID-组长学号</h5>
+                                          <select name="student_group" class="select-type form-control">
+                                           <?php if(is_array($v["stu_groupleader"])): foreach($v["stu_groupleader"] as $key=>$q): ?><option value="<?php echo ($q["group_id"]); ?>"><?php echo ($q["group_id"]); ?>-<?php echo ($q["student_id"]); ?></option><?php endforeach; endif; ?>
+                                          </select>
+                                         <br>
+                                         <button class="btn btn-info" style="margin-left: 0px;" type="submit">提交</button>
+                                         </form>
+                                    </div>
+                                 </div>
+                              </div><!-- /.modal-content -->
+                        </div><!-- /.modal -->
+                    </div>
+        <?php else: ?>
+          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button><?php endif; ?>
         </div>
       </div>
     </form>

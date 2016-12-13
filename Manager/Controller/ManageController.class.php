@@ -62,7 +62,6 @@ class ManageController extends Controller {
 				);
 			$test = M("file_property")->add($file_type_array);
 			$this -> redirect('manage_info');
-			//dump(M("file_property")->getLastSql());
 		}
 		$this -> assign('course_file_conf_url',U('course_file_conf'));
 		$this -> display();

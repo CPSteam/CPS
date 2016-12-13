@@ -101,7 +101,7 @@
             </td>
             <td>
               <a href="<?php echo ($stuGroup_url); ?>/project_id/<?php echo ($v["project_id"]); ?>"><button type="button" class="btn btn-success">学生组</button></a>
-              <a href="<?php echo ($project_configure_url); ?>/project_id/<?php echo ($v["project_id"]); ?>"><button type="button" class="btn btn-info">配置课题</button></a>
+              <a href="<?php echo ($project_configure_url); ?>/project_id/<?php echo ($v["project_id"]); ?>/project_name/<?php echo ($v["project_name"]); ?>/course_id/<?php echo ($v["course_id"]); ?>"><button type="button" class="btn btn-info">配置课题</button></a>
             </td><?php endif; ?>
        </tr><?php endforeach; endif; ?>
    </tbody>

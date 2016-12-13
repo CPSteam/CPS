@@ -98,11 +98,45 @@ class ProfessorController extends Controller {
 
 	function my_project(){
 		//课题信息显示应该对应具体当前登录用户
-		$project_info = M('project')->table('project as A,course as B')->where("A.course_id = B.course_id and A.teacher_id = 1")->field('A.project_id,A.project_name,A.main_project,A.project_status,A.final_expected_result,A.final_expected_context,A.review_score,A.review_context,B.course_name')->select();
+		$project_info = M('project')->table('project as A,course as B')->where("A.course_id = B.course_id and A.teacher_id = 1")->field('A.project_id,A.project_name,A.main_project,A.project_status,A.final_expected_result,A.final_expected_context,A.review_score,A.review_context,B.course_name,B.course_id')->select();
 
 		$this -> assign('project_info',$project_info);
 		$this -> assign('stuGroup_url',U('project_stuGroup'));
 		$this -> assign('project_configure_url',U('project_configure'));
+		$this -> display();
+	}
+
+	function project_configure(){
+		$project_name = I('project_name');
+		$project_id = I('project_id');
+		$course_id = I('course_id');
+
+		if(!empty($_POST)){
+			$is_file_complete = 1;
+			$this -> assign('is_file_complete',$is_file_complete);
+			$file_type_array = array(
+				'file_type_id' => 2,
+				'course_id' => $_POST['file_course_id'],
+				'project_id' => $_POST['file_project_id'],
+				'file_id' => 0,
+				'file_type_name' => $_POST['file-type'],
+				'allowed_mime_list' => '',
+				'allowed_suffix_list' => $_POST['allowed_suffix_doc'].$_POST['allowed_suffix_docx'].$_POST['allowed_suffix_zip'],
+				'allowed_max_size' => $_POST['allowed_max_size'],
+				'file_deadline' => $_POST['file_deadline'],
+				'need_to_submit_papety_doc' => 0,
+				'score_enable' => 0,
+				'score_max_value' => 100,
+				'score_increasement_unit' => 1,
+				'comments_enable' => 1,
+				'notes' => '课题报告设置',
+				);
+			$this -> redirect('my_project');
+		}
+
+		$this -> assign('file_project_name',$project_name);
+		$this -> assign('file_project_id',$project_id);
+		$this -> assign('file_course_id',$course_id);
 		$this -> display();
 	}
 
