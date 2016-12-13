@@ -23,12 +23,26 @@
      </tr>
    </thead>
    <tbody>
-     <tr>
-       <td>基于。。。</td>
-       <td>2323</td>
-       <td>。。。</td>
-       <td>已通过</td>
-    </tr>
+    <foreach name="project_info" item="v">
+      <tr>
+         <td>{$v.course_name}</td>
+         <td>{$v.project_id}</td>
+         <td>{$v.project_name}</td>
+         <if condition="$v.project_status eq 0">
+            <td>
+              <p style="color: red">拒绝</p>
+            </td>
+           <elseif condition="$v.project_status eq 1"/>
+            <td>
+              <p style="color: blue">待审核</p>
+            </td>
+           <else/>
+            <td>
+              <p style="color: green">已通过</p>
+            </td>
+           </if>
+      </tr>
+    </foreach>
    </tbody>
  </table>
 </div>
@@ -42,13 +56,19 @@
      </tr>
    </thead>
    <tbody>
-     <tr>
-       <td>2323</td>
-       <td>1231412-xx<br>2414124-xx<br>1241242-xx</td>
-       <td>
-        <a href="{$stuGroup_report_url}"><button type="button" class="btn btn-success">管理</button></a>
-       </td>
-    </tr>
+    <foreach name="project_stu_group" item="h">
+       <tr>
+         <td>{$h.group_id}</td>
+         <td>
+            <foreach name="h.stu_group_members" item="m">
+              {$m.student_id}-{$m.student_name}<br>
+            </foreach>
+         </td>
+         <td>
+          <a href="{$stuGroup_report_url}"><button type="button" class="btn btn-success">管理</button></a>
+         </td>
+       </tr>
+    </foreach>
    </tbody>
  </table>
 </div>

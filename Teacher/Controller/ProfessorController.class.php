@@ -14,7 +14,7 @@ class ProfessorController extends Controller {
 
 			$reply_info[$key]['reply_group_members'] = M('reply_member')->table('reply_member as A,teacher as B')->where("A.reply_group_id = '$reply_teacher_group_id' and A.teacher_id = B.teacher_id")->field('B.teacher_id,B.teacher_name')->select();
 
-			$reply_info[$key]['stu_groupleader'] = M('reply_stugroup')->table('reply_stugroup as A,student_group_member as B,student as C')->where("A.reply_group_id = '$reply_teacher_group_id' and A.stu_groupId = B.group_id and B.is_groupLeader = 1 and B.student_id = C.student_id")->field('B.group_id,C.student_id')->select();
+			$reply_info[$key]['stu_groupleader'] = M('reply_stugroup')->table('reply_stugroup as A,student_group_member as B,student as C,student_group as D')->where("A.reply_group_id = '$reply_teacher_group_id' and A.stu_groupId = B.group_id and B.is_groupLeader = 1 and B.student_id = C.student_id and B.group_id = D.group_id and D.is_replyAllocated = 0")->field('B.group_id,C.student_id')->select();
 		}
 
 		if(!empty($_POST)){
@@ -58,7 +58,7 @@ class ProfessorController extends Controller {
 
 	function teacher_project_reiview() {
 		$course_id = I('course_id');
-		$info = M("project") -> table('project as A, teacher as B') -> where("A.course_id = '$course_id' and A.teacher_id = B.teacher_id") -> field('A.project_id, A.teacher_id, A.project_name, A.project_status, A.main_project,A.review_score,A.review_context,B.teacher_name') -> select();
+		$info = M("project") -> table('project as A, teacher as B,course as C') -> where("A.course_id = '$course_id' and A.teacher_id = B.teacher_id and A.course_id = C.course_id") -> field('A.project_id, A.teacher_id, A.project_name, A.project_status, A.main_project,A.review_score,A.review_context,B.teacher_name,C.course_name') -> select();
 		$this -> assign('login_url', U('Home/Login/login'));
 
 		if(!empty($_POST)){
@@ -97,12 +97,27 @@ class ProfessorController extends Controller {
 	}
 
 	function my_project(){
+		//课题信息显示应该对应具体当前登录用户
+		$project_info = M('project')->table('project as A,course as B')->where("A.course_id = B.course_id and A.teacher_id = 1")->field('A.project_id,A.project_name,A.main_project,A.project_status,A.final_expected_result,A.final_expected_context,A.review_score,A.review_context,B.course_name')->select();
+
+		$this -> assign('project_info',$project_info);
 		$this -> assign('stuGroup_url',U('project_stuGroup'));
 		$this -> assign('project_configure_url',U('project_configure'));
 		$this -> display();
 	}
 
 	function project_stuGroup(){
+		$project_id = I('project_id');
+		$project_info = M('project')->table('project as A,course as B')->where("A.course_id = B.course_id and A.project_id = '$project_id'")->field('A.project_id,A.project_name,A.project_status,B.course_name')->select();
+
+		$project_stu_group_info = M('student_group')->where("project_id = '$project_id'")->field('group_id')->select();
+		
+		foreach ($project_stu_group_info as $key => $s) {
+			$stu_group_id = $project_stu_group_info[$key]['group_id'];
+			$project_stu_group_info[$key]['stu_group_members'] = M('student_group_member')->table('student_group_member as A,student as B')->where("A.student_id = B.student_id and A.group_id = '$stu_group_id'")->field('B.student_id,B.student_name')->select();
+		}
+		$this -> assign('project_info',$project_info);
+		$this -> assign('project_stu_group',$project_stu_group_info);
 		$this -> assign('stuGroup_report_url',U('stuGroup_report'));
 		$this -> display();
 	}
@@ -176,4 +191,53 @@ class ProfessorController extends Controller {
       }
 	}
 
+	//课题内容文件下载
+	function project_file_download($course_name,$project_name)
+	{
+		 $filename = './Uploads/project_file/'.$course_name.'-'.$project_name.'.docx';
+		 $filename= iconv("utf-8", "gbk", $filename);
+		  if ($filename == ''){
+		      return FALSE;
+		  }
+		  if (FALSE === strpos($filename, '.')){
+		      return FALSE;
+		  }
+		  if(!is_file($filename)){
+		  	$this -> error('无相关文件！');
+		  }
+
+		  $x = explode('.', $filename);
+		  $extension = end($x);
+		  $mimes = getMimes();
+
+		  $showname = $course_name.'-'.$project_name.'.docx';
+		  // Set a default mime if we can't find it
+		  if ( ! isset($mimes[$extension])){
+		      $mime = 'application/octet-stream';
+		  }else{
+		      $mime = (is_array($mimes[$extension])) ? $mimes[$extension][0] : $mimes[$extension];
+		  }
+
+		  // Generate the server headers
+		  if (strpos($_SERVER['HTTP_USER_AGENT'], "MSIE") !== FALSE)
+		  {
+		      header('Content-Type: "'.$mime.'";charset=utf-8');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header('Expires: 0');
+		      header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Pragma: public');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  else
+		  {
+		      header('Content-Type: "'.$mime.'"');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Expires: 0');
+		      header('Pragma: no-cache');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  readfile($filename);
+	}
 }

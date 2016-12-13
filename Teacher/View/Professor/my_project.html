@@ -22,30 +22,52 @@
        <th>主要任务内容</th>
        <th>预期成果形式</th>
        <th>预期成果目标</th>
-       <th>附近</th>
        <th>评分</th>
-       <th>操作</th>
+       <th>评论</th>
        <th>状态</th>
+       <th>操作</th>
      </tr>
    </thead>
    <tbody>
-     <tr>
-       <td>基于。。。</td>
-       <td>2323</td>
-       <td>。。。</td>
-       <td>。。。</td>
-       <td>。。。</td>
-       <td>
-          <a href="#">详情</a>
-       </td>
-       <td>90</td>
-       <td>xxxxx</td>
-       <td>已通过</td>
-       <td>
-        <a href="{$stuGroup_url}"><button type="button" class="btn btn-success">学生组</button></a>
-        <a href="{$project_configure_url}"><button type="button" class="btn btn-info">配置课题</button></a>
-      </td>
-    </tr>
+    <foreach name="project_info" item="v">
+       <tr>
+         <td>{$v.course_name}</td>
+         <td>{$v.project_id}</td>
+         <td>{$v.project_name}</td>
+         <td>{$v.main_project}</td>
+         <td>{$v.final_expected_context}</td>
+         <td>
+            {$v.final_expected_result}<br>
+         </td>
+         <td>{$v.review_score}</td>
+         <td>{$v.review_context}</td>
+           <if condition="$v.project_status eq 0">
+            <td>
+              <p style="color: red">拒绝</p>
+            </td>
+            <td>
+              <button type="button" class="btn btn-success disabled">学生组</button>
+              <button type="button" class="btn btn-info disabled">配置课题</button>
+            </td>
+           <elseif condition="$v.project_status eq 1"/>
+            <td>
+              <p style="color: blue">待审核</p>
+            </td>
+            <td>
+              <button type="button" class="btn btn-success disabled">学生组</button>
+              <button type="button" class="btn btn-info disabled">配置课题</button>
+            </td>
+           <else/>
+            <td>
+              <p style="color: green">已通过</p>
+            </td>
+            <td>
+              <a href="{$stuGroup_url}/project_id/{$v.project_id}"><button type="button" class="btn btn-success">学生组</button></a>
+              <a href="{$project_configure_url}/project_id/{$v.project_id}"><button type="button" class="btn btn-info">配置课题</button></a>
+            </td>
+           </if>
+       </tr>
+    </foreach>
    </tbody>
  </table>
 </div>

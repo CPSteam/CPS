@@ -73,7 +73,10 @@
        <td><?php echo ($v["teacher_id"]); ?></td>
        <td><?php echo ($v["project_name"]); ?></td>
        <?php if($v["project_status"] == 1): ?><td><p style="color: blue;">待审核</p></td>
-         <td><?php echo ($v["main_project"]); ?></td>
+         <td>
+          <?php echo ($v["main_project"]); ?><br>
+          <a href="/CPS/index.php/Teacher/Professor/project_file_download?course_name=<?php echo ($v["course_name"]); ?>&project_name=<?php echo ($v["project_name"]); ?>">详情</a>
+         </td>
          <td>
           <?php if(($v["review_score"] == '') or ($v["review_context"] == '')): ?><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1<?php echo ($v["project_id"]); ?>">评审</button>
           <?php else: ?>
@@ -110,7 +113,10 @@
           </td><?php endif; ?>
        <?php elseif($v["project_status"] == 2): ?>
          <td><p style="color: green;">已通过</p></td>
-         <td><?php echo ($v["main_project"]); ?></td>
+         <td>
+            <?php echo ($v["main_project"]); ?><br>
+            <a href="/CPS/index.php/Teacher/Professor/project_file_download?course_name=<?php echo ($v["course_name"]); ?>&project_name=<?php echo ($v["project_name"]); ?>">详情</a>
+         </td>
           <td>
             <button type="button" class="btn btn-info disabled">评审</button>
            </td>
@@ -119,7 +125,10 @@
           </td>
        <?php else: ?>
           <td><p style="color: red;">拒绝</p></td>
-          <td><?php echo ($v["main_project"]); ?></td>
+          <td>
+            <?php echo ($v["main_project"]); ?><br>
+            <a href="/CPS/index.php/Teacher/Professor/project_file_download?course_name=<?php echo ($v["course_name"]); ?>&project_name=<?php echo ($v["project_name"]); ?>">详情</a>
+          </td>
           <td>
             <button type="button" class="btn btn-info disabled">评审</button>
            </td>

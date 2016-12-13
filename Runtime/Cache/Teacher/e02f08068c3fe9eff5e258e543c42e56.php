@@ -64,12 +64,22 @@
      </tr>
    </thead>
    <tbody>
-     <tr>
-       <td>基于。。。</td>
-       <td>2323</td>
-       <td>。。。</td>
-       <td>已通过</td>
-    </tr>
+    <?php if(is_array($project_info)): foreach($project_info as $key=>$v): ?><tr>
+         <td><?php echo ($v["course_name"]); ?></td>
+         <td><?php echo ($v["project_id"]); ?></td>
+         <td><?php echo ($v["project_name"]); ?></td>
+         <?php if($v["project_status"] == 0): ?><td>
+              <p style="color: red">拒绝</p>
+            </td>
+           <?php elseif($v["project_status"] == 1): ?>
+            <td>
+              <p style="color: blue">待审核</p>
+            </td>
+           <?php else: ?>
+            <td>
+              <p style="color: green">已通过</p>
+            </td><?php endif; ?>
+      </tr><?php endforeach; endif; ?>
    </tbody>
  </table>
 </div>
@@ -83,13 +93,15 @@
      </tr>
    </thead>
    <tbody>
-     <tr>
-       <td>2323</td>
-       <td>1231412-xx<br>2414124-xx<br>1241242-xx</td>
-       <td>
-        <a href="<?php echo ($stuGroup_report_url); ?>"><button type="button" class="btn btn-success">管理</button></a>
-       </td>
-    </tr>
+    <?php if(is_array($project_stu_group)): foreach($project_stu_group as $key=>$h): ?><tr>
+         <td><?php echo ($h["group_id"]); ?></td>
+         <td>
+            <?php if(is_array($h["stu_group_members"])): foreach($h["stu_group_members"] as $key=>$m): echo ($m["student_id"]); ?>-<?php echo ($m["student_name"]); ?><br><?php endforeach; endif; ?>
+         </td>
+         <td>
+          <a href="<?php echo ($stuGroup_report_url); ?>"><button type="button" class="btn btn-success">管理</button></a>
+         </td>
+       </tr><?php endforeach; endif; ?>
    </tbody>
  </table>
 </div>

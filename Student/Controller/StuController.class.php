@@ -335,7 +335,7 @@ class StuController extends Controller{
 	      }
 	}
 
-	//课程内容文件下载
+	//课题内容文件下载
 	function project_file_download($course_name,$project_name)
 	{
 		 $filename = './Uploads/project_file/'.$course_name.'-'.$project_name.'.docx';

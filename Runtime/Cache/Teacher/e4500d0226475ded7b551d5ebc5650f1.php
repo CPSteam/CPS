@@ -62,30 +62,48 @@
        <th>主要任务内容</th>
        <th>预期成果形式</th>
        <th>预期成果目标</th>
-       <th>附近</th>
        <th>评分</th>
-       <th>操作</th>
+       <th>评论</th>
        <th>状态</th>
+       <th>操作</th>
      </tr>
    </thead>
    <tbody>
-     <tr>
-       <td>基于。。。</td>
-       <td>2323</td>
-       <td>。。。</td>
-       <td>。。。</td>
-       <td>。。。</td>
-       <td>
-          <a href="#">详情</a>
-       </td>
-       <td>90</td>
-       <td>xxxxx</td>
-       <td>已通过</td>
-       <td>
-        <a href="<?php echo ($stuGroup_url); ?>"><button type="button" class="btn btn-success">学生组</button></a>
-        <a href="<?php echo ($project_configure_url); ?>"><button type="button" class="btn btn-info">配置课题</button></a>
-      </td>
-    </tr>
+    <?php if(is_array($project_info)): foreach($project_info as $key=>$v): ?><tr>
+         <td><?php echo ($v["course_name"]); ?></td>
+         <td><?php echo ($v["project_id"]); ?></td>
+         <td><?php echo ($v["project_name"]); ?></td>
+         <td><?php echo ($v["main_project"]); ?></td>
+         <td><?php echo ($v["final_expected_context"]); ?></td>
+         <td>
+            <?php echo ($v["final_expected_result"]); ?><br>
+         </td>
+         <td><?php echo ($v["review_score"]); ?></td>
+         <td><?php echo ($v["review_context"]); ?></td>
+           <?php if($v["project_status"] == 0): ?><td>
+              <p style="color: red">拒绝</p>
+            </td>
+            <td>
+              <button type="button" class="btn btn-success disabled">学生组</button>
+              <button type="button" class="btn btn-info disabled">配置课题</button>
+            </td>
+           <?php elseif($v["project_status"] == 1): ?>
+            <td>
+              <p style="color: blue">待审核</p>
+            </td>
+            <td>
+              <button type="button" class="btn btn-success disabled">学生组</button>
+              <button type="button" class="btn btn-info disabled">配置课题</button>
+            </td>
+           <?php else: ?>
+            <td>
+              <p style="color: green">已通过</p>
+            </td>
+            <td>
+              <a href="<?php echo ($stuGroup_url); ?>/project_id/<?php echo ($v["project_id"]); ?>"><button type="button" class="btn btn-success">学生组</button></a>
+              <a href="<?php echo ($project_configure_url); ?>/project_id/<?php echo ($v["project_id"]); ?>"><button type="button" class="btn btn-info">配置课题</button></a>
+            </td><?php endif; ?>
+       </tr><?php endforeach; endif; ?>
    </tbody>
  </table>
 </div>
