@@ -112,8 +112,6 @@ class ProfessorController extends Controller {
 		$course_id = I('course_id');
 
 		if(!empty($_POST)){
-			$is_file_complete = 1;
-			$this -> assign('is_file_complete',$is_file_complete);
 			$file_type_array = array(
 				'file_type_id' => 2,
 				'course_id' => $_POST['file_course_id'],
@@ -131,6 +129,7 @@ class ProfessorController extends Controller {
 				'comments_enable' => 1,
 				'notes' => '课题报告设置',
 				);
+			$project_file = M("file_property")->add($file_type_array);
 			$this -> redirect('my_project');
 		}
 
@@ -157,6 +156,35 @@ class ProfessorController extends Controller {
 	}
 
 	function stuGroup_report(){
+		$stu_group_id = I('stu_group_id');
+
+		$stu_group_info = M('student_group')->table('student_group as A,file_property as B')->where("A.project_id = B.project_id and A.group_id = '$stu_group_id'")->field('A.group_id,B.file_type_name,B.file_deadline,A.group_middle_report_score,A.group_middle_report_context,A.group_final_report_score,A.group_final_report_context')->select();
+
+		foreach ($stu_group_info as $key => $value) {
+			$group_id = $stu_group_info[$key]['group_id'];
+			$stu_group_info[$key]['stu_members'] = M('student_group_member')->table('student_group_member as A,student as B')->where("A.group_id = '$group_id' and A.student_id = B.student_id")->field('B.student_id,B.student_name')->select();
+		}
+
+		if(!empty($_POST)){
+			$group_id = $_POST['stu_group_id'];
+			if($_POST['middle_or_final'] == '期中报告'){
+				$stu_group_review_array = array(
+				'group_middle_report_score' => $_POST['期中报告_review_score'],
+				'group_middle_report_context' => $_POST['期中报告_review_context'],
+				);
+				$student_group_review = M("student_group")->where("group_id = '$group_id'")->save($stu_group_review_array);
+			}else{
+				$stu_group_review_array = array(
+				'group_final_report_score' => $_POST['结题报告_review_score'],
+				'group_final_report_context' => $_POST['结题报告_review_context'],
+				);
+				$student_group_review = M("student_group")->where("group_id = '$group_id'")->save($stu_group_review_array);
+			}
+		}
+
+		$this -> assign('stu_group_id',$stu_group_id);
+		$this -> assign('stu_group_info',$stu_group_info);
+		$this -> assign('stuGroup_report_url',U('stuGroup_report'));
 		$this -> display();
 	}
 
@@ -245,6 +273,56 @@ class ProfessorController extends Controller {
 		  $mimes = getMimes();
 
 		  $showname = $course_name.'-'.$project_name.'.docx';
+		  // Set a default mime if we can't find it
+		  if ( ! isset($mimes[$extension])){
+		      $mime = 'application/octet-stream';
+		  }else{
+		      $mime = (is_array($mimes[$extension])) ? $mimes[$extension][0] : $mimes[$extension];
+		  }
+
+		  // Generate the server headers
+		  if (strpos($_SERVER['HTTP_USER_AGENT'], "MSIE") !== FALSE)
+		  {
+		      header('Content-Type: "'.$mime.'";charset=utf-8');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header('Expires: 0');
+		      header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Pragma: public');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  else
+		  {
+		      header('Content-Type: "'.$mime.'"');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Expires: 0');
+		      header('Pragma: no-cache');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  readfile($filename);
+	}
+
+	//学生报告内容文件下载
+	function stu_group_file_download($student_id,$stu_group_id,$file_type_name)
+	{
+		 $filename = './Uploads/StudentGroup_file/'.$student_id.'_'.$stu_group_id.'_'.$file_type_name.'.docx';
+		 $filename= iconv("utf-8", "gbk", $filename);
+		  if ($filename == ''){
+		      return FALSE;
+		  }
+		  if (FALSE === strpos($filename, '.')){
+		      return FALSE;
+		  }
+		  if(!is_file($filename)){
+		  	$this -> error('无相关文件！请提醒学生上传相关文件');
+		  }
+
+		  $x = explode('.', $filename);
+		  $extension = end($x);
+		  $mimes = getMimes();
+
+		  $showname = $student_id.'_'.$stu_group_id.'_'.$file_type_name.'.docx';
 		  // Set a default mime if we can't find it
 		  if ( ! isset($mimes[$extension])){
 		      $mime = 'application/octet-stream';

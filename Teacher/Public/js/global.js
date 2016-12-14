@@ -75,3 +75,24 @@ $(document).ready(function() {
     $(this).remove();
   });
 });
+
+
+$(document).ready(function() {
+   if($('#ipt1').value.length==0){    
+        alert('输入为空！');
+        document.getElementById('ipt1').focus();
+        return false;
+    }
+    if($('#ipt1').value=="请输入搜索内容"){    
+        alert('输入为空！');
+        document.getElementById('ipt1').focus();
+        return false;
+    }
+    $('#ipt1').keyup(function()){
+      if($('#ipt1').value.length==0){    
+        alert('输入为空！');
+        document.getElementById('ipt1').focus();
+        return false;
+      }
+    }
+}

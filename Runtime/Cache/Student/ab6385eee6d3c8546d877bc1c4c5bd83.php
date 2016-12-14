@@ -85,7 +85,7 @@
 						<?php if(is_array($groupMember)): foreach($groupMember as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br/><?php endforeach; endif; ?>
 					</td>
 					<td>
-						<a href="#">查看</a>
+						<a href="/CPS/index.php/Student/Stu/project_file_download?course_name=<?php echo ($v["course_name"]); ?>&project_name=<?php echo ($v["project_name"]); ?>">查看</a>
 					</td>
 				</tr><?php endforeach; endif; ?>
 			</tbody>
@@ -120,7 +120,7 @@
 									<?php echo ($m["file_deadline"]); ?>
 								</td>
 								<td>
-									<button type="button" class="btn btn-primary">查看</button>
+									<a href="/CPS/index.php/Student/Stu/stu_group_file_download?student_id=<?php echo ($student_id); ?>&stu_group_id=<?php echo ($v["group_id"]); ?>&file_type_name=<?php echo ($m["file_type_name"]); ?>"><button type="button" class="btn btn-primary">查看</button></a>
 									<button type="button" class="btn btn-info" data-toggle="modal" data-target="#<?php echo ($m["file_type_name"]); ?>">提交</button>
 								</td>
 							</tr>
@@ -152,7 +152,7 @@
 									<?php echo ($m["file_deadline"]); ?>
 								</td>
 								<td>
-									<button type="button" class="btn btn-primary">查看</button>
+									<a href="/CPS/index.php/Student/Stu/stu_group_file_download?student_id=<?php echo ($student_id); ?>&stu_group_id=<?php echo ($v["group_id"]); ?>&file_type_name=<?php echo ($m["file_type_name"]); ?>"><button type="button" class="btn btn-primary">查看</button></a>
 									<button type="button" class="btn btn-info" data-toggle="modal" data-target="#<?php echo ($m["file_type_name"]); ?>">提交</button>
 								</td>
 							</tr>

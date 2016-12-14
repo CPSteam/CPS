@@ -47,7 +47,7 @@
                      	</foreach>
 					</td>
 					<td>
-						<a href="#">查看</a>
+						<a href="__URL__/project_file_download?course_name={$v.course_name}&project_name={$v.project_name}">查看</a>
 					</td>
 				</tr>
 				</foreach>
@@ -86,7 +86,7 @@
 									{$m.file_deadline}
 								</td>
 								<td>
-									<button type="button" class="btn btn-primary">查看</button>
+									<a href="__URL__/stu_group_file_download?student_id={$student_id}&stu_group_id={$v.group_id}&file_type_name={$m.file_type_name}"><button type="button" class="btn btn-primary">查看</button></a>
 									<button type="button" class="btn btn-info" data-toggle="modal" data-target="#{$m.file_type_name}">提交</button>
 								</td>
 							</tr>
@@ -118,7 +118,7 @@
 									{$m.file_deadline}
 								</td>
 								<td>
-									<button type="button" class="btn btn-primary">查看</button>
+									<a href="__URL__/stu_group_file_download?student_id={$student_id}&stu_group_id={$v.group_id}&file_type_name={$m.file_type_name}"><button type="button" class="btn btn-primary">查看</button></a>
 									<button type="button" class="btn btn-info" data-toggle="modal" data-target="#{$m.file_type_name}">提交</button>
 								</td>
 							</tr>

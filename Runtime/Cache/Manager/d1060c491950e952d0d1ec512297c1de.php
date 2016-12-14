@@ -63,7 +63,6 @@
         <div class="form-group">
           <label for="name">考核类型</label>
           <select class="form-control" name="file-type">
-            <option>平时报告</option>
             <option>期中报告</option>
             <option>结题报告</option>
           </select>
@@ -86,7 +85,7 @@
           <label for="size_limit">大小限制（单位：MB）</label>
           <input type="text" class="form-control" name="allowed_max_size" placeholder="请输入">
         </div>
-          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">提交</button>
+          <button type="submit" class="btn btn-info" style="display: block; margin: 0 auto; width: 100px;">添加</button>
         </div>
       </div>
     </form>

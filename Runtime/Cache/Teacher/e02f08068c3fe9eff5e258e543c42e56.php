@@ -48,7 +48,7 @@
   <div class="breadTab clearfloat">
 	<ol class="breadcrumb" style="background-color:#FFFFFF;">
 		<li><a href="/CPS/index.php/Teacher/Professor/course_info">课程</a></li>
-		<li><a href="/CPS/index.php/Teacher/Professor/my_project">我的课题</a></li>
+		<li><a href="javascript: history.back(-1)">我的课题</a></li>
 		<li>学生组信息</li>
 	</ol>
 </div>
@@ -99,7 +99,7 @@
             <?php if(is_array($h["stu_group_members"])): foreach($h["stu_group_members"] as $key=>$m): echo ($m["student_id"]); ?>-<?php echo ($m["student_name"]); ?><br><?php endforeach; endif; ?>
          </td>
          <td>
-          <a href="<?php echo ($stuGroup_report_url); ?>"><button type="button" class="btn btn-success">管理</button></a>
+          <a href="<?php echo ($stuGroup_report_url); ?>/stu_group_id/<?php echo ($h["group_id"]); ?>"><button type="button" class="btn btn-success">管理</button></a>
          </td>
        </tr><?php endforeach; endif; ?>
    </tbody>

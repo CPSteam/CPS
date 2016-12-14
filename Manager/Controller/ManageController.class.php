@@ -69,7 +69,7 @@ class ManageController extends Controller {
 
 	function check_file_conf() {
 		$course_id = I("course_id");
-		$file_info = M("file_property")->where("course_id = '$course_id'")->field('file_type_id, file_type_name, file_deadline, allowed_suffix_list, allowed_max_size')->select();
+		$file_info = M("file_property")->where("course_id = '$course_id' and file_type_id = 1")->field('file_type_id, file_type_name, file_deadline, allowed_suffix_list, allowed_max_size')->select();
 		$this->assign('edit_file_url',U('edit_file'));
 		$this -> assign('login_url',U('Home/Login/login'));
 		$this -> assign('course_id',$course_id);

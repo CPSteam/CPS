@@ -81,7 +81,7 @@
 						<?php if(is_array($v["students"])): foreach($v["students"] as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br/><?php endforeach; endif; ?>
 					</td>
 					<td>
-						<a href="#">查看</a>
+						<a href="/CPS/index.php/Student/Stu/project_file_download?course_name=<?php echo ($v["course_name"]); ?>&project_name=<?php echo ($v["project_name"]); ?>">查看</a>
 					</td>
 					<?php if($v["group_project_status"] == 0): ?><td>
 							 <p style="color: red;">拒绝</p>

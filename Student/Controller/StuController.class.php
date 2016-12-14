@@ -66,7 +66,7 @@ class StuController extends Controller{
 		 	$course_id =  $report[$key]['course_id'];
 		 	$groupMember = M("student_group_member")->table('student as A,student_group as B,student_group_member as C')->where("A.student_id=C.student_id and B.group_id=C.group_id and C.is_available=1 and C.group_id = '$report_groupId'")->field('A.student_id,A.student_name')->select();
 
-		 	$file_info = M("file_property")->where("course_id = '$course_id'")->field('file_type_id, file_type_name, file_deadline, allowed_suffix_list, allowed_max_size')->select();
+		 	$file_info = M("file_property")->where("course_id = '$course_id' and project_id = '$project_id'")->field('file_type_id, file_type_name, file_deadline, allowed_suffix_list, allowed_max_size')->select();
 			$this -> assign('file_info',$file_info);
 
 			   if($report[$key]['group_project_status'] == 0){
@@ -80,6 +80,8 @@ class StuController extends Controller{
 			   }
 
 	 	   }
+
+	 	 $this -> assign('student_id',$student_id);
 		 $this -> assign('report',$report);
 		 $this -> assign('groupMember',$groupMember);
 		 $this->display();
@@ -288,24 +290,24 @@ class StuController extends Controller{
 	}
 	//学生组上传报告文件
 	function StuGroup_fileUpload(){
-	            if(empty($_FILES)){
-	                  $this->error('请选择您想上传的文件');
-	            }else{
-	                  $upload = new \Think\Upload();// 实例化上传类
-	                $upload->maxSize   =     3145728 ;// 设置附件上传大小
-	                $upload->exts      =     array('doc', 'docx');// 设置附件上传类型
-	                $upload->saveName  =       $_SESSION['id'].'_'.$_POST['stuGroup_id'].'_'.$_POST['file_type_name'];
-	                $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
-	                $upload->savePath  =     './StudentGroup_file/'; // 设置附件上传（子）目录
-	                // 上传文件 
-	                $info   =   $upload->upload();
-	                if(!$info) {// 上传错误提示错误信息
-	                    $this->error($upload->getError());
-	                }else{// 上传成功
-	                    $this->success('上传成功！');
-	                }
-	            }
-	      }
+        if(empty($_FILES)){
+              $this->error('请选择您想上传的文件');
+        }else{
+              $upload = new \Think\Upload();// 实例化上传类
+            $upload->maxSize   =     3145728 ;// 设置附件上传大小
+            $upload->exts      =     array('doc', 'docx');// 设置附件上传类型
+            $upload->saveName  =       $_SESSION['id'].'_'.$_POST['stuGroup_id'].'_'.$_POST['file_type_name'];
+            $upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+            $upload->savePath  =     './StudentGroup_file/'; // 设置附件上传（子）目录
+            // 上传文件 
+            $info   =   $upload->upload();
+            if(!$info) {// 上传错误提示错误信息
+                $this->error($upload->getError());
+            }else{// 上传成功
+                $this->success('上传成功！');
+            }
+        }
+  }
 
 	//学生组上传申请课题材料
 	function StuGroup_applyUpload(){
@@ -355,6 +357,56 @@ class StuController extends Controller{
 		  $mimes = getMimes();
 
 		  $showname = $course_name.'-'.$project_name.'.docx';
+		  // Set a default mime if we can't find it
+		  if ( ! isset($mimes[$extension])){
+		      $mime = 'application/octet-stream';
+		  }else{
+		      $mime = (is_array($mimes[$extension])) ? $mimes[$extension][0] : $mimes[$extension];
+		  }
+
+		  // Generate the server headers
+		  if (strpos($_SERVER['HTTP_USER_AGENT'], "MSIE") !== FALSE)
+		  {
+		      header('Content-Type: "'.$mime.'";charset=utf-8');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header('Expires: 0');
+		      header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Pragma: public');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  else
+		  {
+		      header('Content-Type: "'.$mime.'"');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Expires: 0');
+		      header('Pragma: no-cache');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  readfile($filename);
+	}
+
+	//学生报告内容文件下载
+	function stu_group_file_download($student_id,$stu_group_id,$file_type_name)
+	{
+		 $filename = './Uploads/StudentGroup_file/'.$student_id.'_'.$stu_group_id.'_'.$file_type_name.'.docx';
+		 $filename= iconv("utf-8", "gbk", $filename);
+		  if ($filename == ''){
+		      return FALSE;
+		  }
+		  if (FALSE === strpos($filename, '.')){
+		      return FALSE;
+		  }
+		  if(!is_file($filename)){
+		  	$this -> error('无相关文件！请上传相关文件');
+		  }
+
+		  $x = explode('.', $filename);
+		  $extension = end($x);
+		  $mimes = getMimes();
+
+		  $showname = $student_id.'_'.$stu_group_id.'_'.$file_type_name.'.docx';
 		  // Set a default mime if we can't find it
 		  if ( ! isset($mimes[$extension])){
 		      $mime = 'application/octet-stream';
