@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version: 5.5.53)
-# Date: 2016-12-13 21:24:18
+# Date: 2016-12-14 22:57:14
 # Generator: MySQL-Front 5.3  (Build 4.234)
 
 /*!40101 SET NAMES utf8 */;
@@ -55,9 +55,9 @@ CREATE TABLE `file` (
 #
 
 CREATE TABLE `file_property` (
-  `file_type_id` int(11) NOT NULL DEFAULT '0' COMMENT '文件类型编号id',
+  `file_type_id` int(11) NOT NULL DEFAULT '0' COMMENT '文件类型编号id：1->课程文件类型（作用课程所有课题），2->课题文件类型（作用特定课题）',
   `course_id` char(11) NOT NULL DEFAULT '' COMMENT '课程id',
-  `project_id` char(1) DEFAULT NULL COMMENT '课题id',
+  `project_id` char(1) NOT NULL DEFAULT '' COMMENT '课题id',
   `file_id` char(11) DEFAULT NULL COMMENT '文件编号id',
   `file_type_name` varchar(32) NOT NULL DEFAULT '' COMMENT '文件类型名称',
   `allowed_mime_list` varchar(100) NOT NULL DEFAULT '' COMMENT '允许的MIME列表，以逗号分隔',
@@ -70,14 +70,14 @@ CREATE TABLE `file_property` (
   `score_increasement_unit` float DEFAULT NULL COMMENT '分数增长步长，比如按1分增长，或按0.5分增长',
   `comments_enable` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否允许评论：0->No,1->Yes',
   `notes` varchar(1024) NOT NULL DEFAULT '' COMMENT '备注',
-  PRIMARY KEY (`file_type_id`,`course_id`,`file_type_name`) COMMENT '文件属性表'
+  PRIMARY KEY (`file_type_id`,`course_id`,`file_type_name`,`project_id`) COMMENT '文件属性表'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 #
 # Data for table "file_property"
 #
 
-INSERT INTO `file_property` VALUES (1,'1',NULL,'0','平时报告','','doc',6,'0000-00-00',0,0,100,1,1,'报告测试'),(1,'1',NULL,'0','期中报告','','zip',4,'2016-11-22',0,0,100,1,1,'报告测试'),(1,'1',NULL,'0','结题报告','','docx',7,'2016-11-18',0,0,100,1,1,'报告测试');
+INSERT INTO `file_property` VALUES (1,'1','','0','期中报告','','doc',4,'2016-12-30',0,0,100,1,1,'报告测试'),(1,'1','','0','结题报告','','docx',7,'2016-11-18',0,0,100,1,1,'报告测试'),(2,'1','2','0','期中报告','','doc',3,'2016-12-28',0,0,100,1,1,'课题报告设置'),(2,'1','2','0','结题报告','','doc',4,'2016-12-30',0,0,100,1,1,'课题报告设置'),(2,'2','3','0','平时报告','','doc',3,'2016-12-28',0,0,100,1,1,'课题报告设置');
 
 #
 # Structure for table "professor"
@@ -237,7 +237,9 @@ CREATE TABLE `student_group` (
   `stu_group_leader_id` char(20) NOT NULL DEFAULT '0' COMMENT '学生组组长编号id',
   `group_project_status` decimal(4,0) DEFAULT NULL COMMENT '学生组申请项目状态：0->拒绝，1->待审核，2->已通过',
   `group_middle_report_score` int(11) NOT NULL DEFAULT '0' COMMENT '学生组中期报告分数',
+  `group_middle_report_context` text COMMENT '期中评审评论',
   `group_final_report_score` int(11) NOT NULL DEFAULT '0' COMMENT '学生组结题报告分数',
+  `group_final_report_context` text COMMENT '结题评审评论',
   `group_reply_score` int(11) NOT NULL DEFAULT '0' COMMENT '学生组答辩分数',
   `group_manage` text NOT NULL COMMENT '队伍操作管理',
   `group_lock` tinyint(2) DEFAULT '0' COMMENT '队伍加锁操作：0->允许队员管理，1->不允许队员管理',
@@ -249,7 +251,7 @@ CREATE TABLE `student_group` (
 # Data for table "student_group"
 #
 
-INSERT INTO `student_group` VALUES ('1','1','1','4',0,0,0,0,'',0,0),('2','2','2','2',1,95,98,0,'',0,0),('3','3','3','6',2,90,89,0,'',0,0),('4','1','2','2014220202003',1,1,0,0,'',0,1),('5','1','0','2014220202007',1,1,0,0,'',0,0),('6','1','0','2014220202007',1,1,0,0,'',0,0);
+INSERT INTO `student_group` VALUES ('1','1','1','4',2,0,NULL,0,NULL,0,'',0,0),('2','2','2','2',2,65,'的',67,'地方',0,'',0,0),('3','3','3','6',2,90,NULL,89,NULL,0,'',0,0),('4','1','2','2014220202003',1,1,NULL,0,NULL,0,'',0,1),('5','1','0','2014220202007',1,1,NULL,0,NULL,0,'',0,0),('6','1','0','2014220202007',1,1,NULL,0,NULL,0,'',0,0);
 
 #
 # Structure for table "student_group_member"
