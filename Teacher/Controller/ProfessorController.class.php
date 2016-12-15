@@ -143,13 +143,31 @@ class ProfessorController extends Controller {
 		$project_id = I('project_id');
 		$project_info = M('project')->table('project as A,course as B')->where("A.course_id = B.course_id and A.project_id = '$project_id'")->field('A.project_id,A.project_name,A.project_status,B.course_name')->select();
 
-		$project_stu_group_info = M('student_group')->where("project_id = '$project_id'")->field('group_id')->select();
-		
+		$project_stu_group_info = M('student_group')->where("project_id = '$project_id'")->field('group_id,group_project_status')->select();
+
 		foreach ($project_stu_group_info as $key => $s) {
 			$stu_group_id = $project_stu_group_info[$key]['group_id'];
 			$project_stu_group_info[$key]['stu_group_members'] = M('student_group_member')->table('student_group_member as A,student as B')->where("A.student_id = B.student_id and A.group_id = '$stu_group_id'")->field('B.student_id,B.student_name')->select();
+			$project_stu_group_info[$key]['stu_group_leader'] = M('student_group_member')->where("is_groupLeader = 1 and group_id = '$stu_group_id'")->field('student_id')->select();
 		}
+
+		$stu_group_agree = I('stu_group_agree');
+		$stu_group_id = I('stu_group_id');
+
+		if($stu_group_agree == 0){
+			$stu_group_status_array = array(
+				'group_project_status' => 0,
+			);
+			$stu_group_status = M('student_group')->where("group_id = '$stu_group_id'")->save($stu_group_status_array);
+		}else{
+			$stu_group_status_array = array(
+				'group_project_status' => 2,
+			);
+			$stu_group_status = M('student_group')->where("group_id = '$stu_group_id'")->save($stu_group_status_array);
+		}
+
 		$this -> assign('project_info',$project_info);
+		$this -> assign('project_stuGroup_url',U('project_stuGroup'));
 		$this -> assign('project_stu_group',$project_stu_group_info);
 		$this -> assign('stuGroup_report_url',U('stuGroup_report'));
 		$this -> display();
@@ -323,6 +341,56 @@ class ProfessorController extends Controller {
 		  $mimes = getMimes();
 
 		  $showname = $student_id.'_'.$stu_group_id.'_'.$file_type_name.'.docx';
+		  // Set a default mime if we can't find it
+		  if ( ! isset($mimes[$extension])){
+		      $mime = 'application/octet-stream';
+		  }else{
+		      $mime = (is_array($mimes[$extension])) ? $mimes[$extension][0] : $mimes[$extension];
+		  }
+
+		  // Generate the server headers
+		  if (strpos($_SERVER['HTTP_USER_AGENT'], "MSIE") !== FALSE)
+		  {
+		      header('Content-Type: "'.$mime.'";charset=utf-8');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header('Expires: 0');
+		      header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Pragma: public');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  else
+		  {
+		      header('Content-Type: "'.$mime.'"');
+		      header('Content-Disposition: attachment; filename="'.$showname.'"');
+		      header("Content-Transfer-Encoding: binary");
+		      header('Expires: 0');
+		      header('Pragma: no-cache');
+		      header("Content-Length: ".filesize($filename));
+		  }
+		  readfile($filename);
+	}
+
+	//学生申请课题内容文件下载
+	function stu_apply_file_download($student_id,$stu_group_id,$course_name,$project_name)
+	{
+		 $filename = './Uploads/StudentGroup_apply/'.$student_id.'_'.$stu_group_id.'_'.$course_name.'_'.$project_name.'.docx';
+		 $filename= iconv("utf-8", "gbk", $filename);
+		  if ($filename == ''){
+		      return FALSE;
+		  }
+		  if (FALSE === strpos($filename, '.')){
+		      return FALSE;
+		  }
+		  if(!is_file($filename)){
+		  	$this -> error('无相关文件！');
+		  }
+
+		  $x = explode('.', $filename);
+		  $extension = end($x);
+		  $mimes = getMimes();
+
+		  $showname = $student_id.'_'.$stu_group_id.'_'.$course_name.'_'.$project_name.'.docx';
 		  // Set a default mime if we can't find it
 		  if ( ! isset($mimes[$extension])){
 		      $mime = 'application/octet-stream';

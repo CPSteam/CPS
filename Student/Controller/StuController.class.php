@@ -38,11 +38,6 @@ class StuController extends Controller{
 		$project_id = I('project_id');
 		$this -> assign('project_id',$project_id);
 
-		$is_exist_project = M("student_group")->table('student_group as A,student_group_member as B')->where("A.group_id=B.group_id and B.student_id = '$student_id' and B.is_groupLeader = 1 and A.project_id = '$project_id'")->select();
-		if($is_exist_project){
-			$this->error('您已经有学生组申请过此课题，请选择其它课题');
-		}
-
 		$this -> assign('apply_project_url',U('apply_project'));
 		$apply_group_id = M("student_group")->table('student_group as A,student_group_member as B')->where("A.group_id=B.group_id and B.student_id = '$student_id' and B.is_groupLeader = 1 and A.project_id = 0")->field('A.group_id')->select();
 		$this -> assign('apply_group_id',$apply_group_id);
@@ -124,13 +119,26 @@ class StuController extends Controller{
 	}
 
 	function project_info(){
+		$student_id = $_SESSION['id'];
 		$course_id = I('course_id');
-		$info = M("course")->table('course as A,project as B')->where("A.course_id=B.course_id and B.course_id= '$course_id'")->field('A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id')->select();
+		$project_info = M("course")->table('course as A,project as B')->where("A.course_id=B.course_id and B.course_id= '$course_id'")->field('A.course_name,A.course_id,B.project_name,B.project_id,B.teacher_id')->select();
 
+		foreach ($project_info as $key => $value) {
+			$project_id = $project_info[$key]['project_id'];
+			$is_exist_project = M("student_group")->table('student_group as A,student_group_member as B')->where("A.group_id=B.group_id and B.student_id = '$student_id' and B.is_groupLeader = 1 and A.project_id = '$project_id'")->select();
 
-		 $this->assign('info',$info);
-		 $this ->assign('apply_project',U('apply_project'));
-		 $this->display();
+			if($is_exist_project){
+				$is_exist_project = 1;
+				$this ->  assign('is_exist_project',$is_exist_project);
+			}else{
+				$is_exist_project = 0;
+				$this ->  assign('is_exist_project',$is_exist_project);
+			}
+		}
+
+		$this->assign('info',$project_info);
+		$this ->assign('apply_project',U('apply_project'));
+		$this->display();
 	}
 
 	function team_info(){
@@ -332,7 +340,7 @@ class StuController extends Controller{
 	                  $student_group->project_id = $_POST['project_id'];
 	                  $student_group->where("group_id = '$post_apply_group_id'")->save(); // 根据条件更新记录
 	                  }
-	              $this->success('上传成功！');
+	              $this->success('申请成功！');
 	          }
 	      }
 	}

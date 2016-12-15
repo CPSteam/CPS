@@ -77,7 +77,29 @@
                    <a href="/CPS/index.php/Student/Stu/project_file_download?course_name=<?php echo ($v["course_name"]); ?>&project_name=<?php echo ($v["project_name"]); ?>">查看</a>
                  </td>
                  <td>
-                    <a href="<?php echo ($apply_project); ?>/course_name/<?php echo ($v["course_name"]); ?>/project_name/<?php echo ($v["project_name"]); ?>/project_id/<?php echo ($v["project_id"]); ?>"><button class="btn btn-info">申请</button></a>
+                  <?php if($is_exist_project == 0): ?><a href="<?php echo ($apply_project); ?>/course_name/<?php echo ($v["course_name"]); ?>/project_name/<?php echo ($v["project_name"]); ?>/project_id/<?php echo ($v["project_id"]); ?>"><button class="btn btn-info">申请</button></a>
+                  <?php else: ?>
+                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#apply_already">申请</button>
+                    <!-- 模态框（Modal） -->
+                    <div class="modal fade" id="apply_already" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                       <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                   <button type="button" class="close"  data-dismiss="modal" aria-hidden="true">
+                                      &times;
+                                   </button>
+                                   <h4 class="modal-title" id="myModalLabel3">
+                                   申请失败
+                                   </h4>
+                                </div>
+                             <div class="modal-body">
+                              <div style="width: 200px;margin: 0 auto">
+                                <h3 style="color: red">您已有学生组申请过此课题</h3>  
+                              </div>
+                             </div>
+                          </div><!-- /.modal-content -->
+                    </div><!-- /.modal -->
+                  </div><?php endif; ?>
                  </td>
               </tr><?php endforeach; endif; ?>
            </tbody>

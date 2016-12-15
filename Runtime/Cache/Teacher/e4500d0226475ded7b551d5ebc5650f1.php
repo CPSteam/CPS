@@ -78,8 +78,11 @@
          <td>
             <?php echo ($v["final_expected_result"]); ?><br>
          </td>
-         <td><?php echo ($v["review_score"]); ?></td>
-         <td><?php echo ($v["review_context"]); ?></td>
+         <?php if(($v["review_score"] == '') or ($v["review_context"] == '')): ?><td>--</td>
+          <td>--</td>
+         <?php else: ?>
+          <td><?php echo ($v["review_score"]); ?></td>
+          <td><?php echo ($v["review_context"]); ?></td><?php endif; ?>
            <?php if($v["project_status"] == 0): ?><td>
               <p style="color: red">拒绝</p>
             </td>

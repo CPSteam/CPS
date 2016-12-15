@@ -69,24 +69,7 @@
        </tr>
      </thead>
      <tbody>
-      <?php if(is_array($stu_group_info)): foreach($stu_group_info as $key=>$v): if($v["file_type_name"] == '平时报告'): ?><tr>
-           <td><?php echo ($v["file_type_name"]); ?></td>
-           <td><?php echo ($v["group_id"]); ?></td>
-           <td>
-            <?php if(is_array($v["stu_members"])): foreach($v["stu_members"] as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br><?php endforeach; endif; ?>
-           </td>
-           <td><?php echo ($v["file_deadline"]); ?></td>
-           <td>--</td>
-           <td>--</td>
-           <td>
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1<?php echo ($v["file_type_name"]); ?>">评审</button><br/>
-           </td>
-           <td>
-            <a href="#"><button type="file" class="btn btn-success">查看报告</button></a>
-           </td>
-          </tr>
-        <?php elseif($v["file_type_name"] == '期中报告'): ?>
-          <tr>
+      <?php if(is_array($stu_group_info)): foreach($stu_group_info as $key=>$v): if($v["file_type_name"] == '期中报告'): ?><tr>
            <td><?php echo ($v["file_type_name"]); ?></td>
            <td><?php echo ($v["group_id"]); ?></td>
            <td>
@@ -95,12 +78,15 @@
            <td><?php echo ($v["file_deadline"]); ?></td>
            <?php if(($v["group_middle_report_score"] == '') or ($v["group_middle_report_context"] == '')): ?><td>--</td>
              <td>--</td>
+             <td>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1<?php echo ($v["file_type_name"]); ?>">评审</button>
+             </td>
            <?php else: ?>
               <td><?php echo ($v["group_middle_report_score"]); ?></td>
-              <td><?php echo ($v["group_middle_report_context"]); ?></td><?php endif; ?>
-           <td>
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1<?php echo ($v["file_type_name"]); ?>">评审</button>
-           </td>
+              <td><?php echo ($v["group_middle_report_context"]); ?></td>
+              <td>
+               <button type="button" class="btn btn-info disabled"">评审</button>
+              </td><?php endif; ?>
            <td>
             <a href="/CPS/index.php/Teacher/Professor/stu_group_file_download?student_id=<?php echo ($h["student_id"]); ?>&stu_group_id=<?php echo ($v["group_id"]); ?>&file_type_name=<?php echo ($v["file_type_name"]); ?>"><button type="button" class="btn btn-success">查看报告</button></a>
            </td>
@@ -113,14 +99,17 @@
             <?php if(is_array($v["stu_members"])): foreach($v["stu_members"] as $key=>$h): echo ($h["student_id"]); ?>-<?php echo ($h["student_name"]); ?><br><?php endforeach; endif; ?>
            </td>
            <td><?php echo ($v["file_deadline"]); ?></td>
-            <?php if(($v["group_middle_report_score"] == '') or ($v["group_middle_report_context"] == '')): ?><td>--</td>
+            <?php if(($v["group_final_report_score"] == '') or ($v["group_final_report_context"] == '')): ?><td>--</td>
              <td>--</td>
+             <td>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1<?php echo ($v["file_type_name"]); ?>">评审</button>
+             </td>
            <?php else: ?>
               <td><?php echo ($v["group_final_report_score"]); ?></td>
-              <td><?php echo ($v["group_final_report_context"]); ?></td><?php endif; ?>
-           <td>
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1<?php echo ($v["file_type_name"]); ?>">评审</button>
-           </td>
+              <td><?php echo ($v["group_final_report_context"]); ?></td>
+              <td>
+               <button type="button" class="btn btn-info disabled">评审</button>
+              </td><?php endif; ?>
            <td>
             <a href="/CPS/index.php/Teacher/Professor/stu_group_file_download?student_id=<?php echo ($h["student_id"]); ?>&stu_group_id=<?php echo ($v["group_id"]); ?>&file_type_name=<?php echo ($v["file_type_name"]); ?>"><button type="button" class="btn btn-success">查看报告</button></a>
            </td>

@@ -4710,3 +4710,147 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTrace [ RunTime:0.001028s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
 
+[ 2016-12-14T22:58:09+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001819s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.048302s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.024011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000702s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000743s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000927s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000968s ]
+
+[ 2016-12-14T22:58:13+08:00 ] ::1 /CPS/index.php/Teacher/Professor/my_replyGroup/course_id/1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003074s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.023472s ]
+SQL: SELECT `reply_group_id`,`group_leader_id` FROM `reply` WHERE ( course_id = '1' )  [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.035150s ]
+SQL: SELECT `teacher_id`,`teacher_name` FROM `teacher` WHERE ( teacher_id = '2' )  [ RunTime:0.000238s ]
+SQL: SHOW COLUMNS FROM `reply_member` [ RunTime:0.018114s ]
+SQL: SHOW COLUMNS FROM `reply_member` [ RunTime:0.012231s ]
+SQL: SELECT B.teacher_id,B.teacher_name FROM reply_member as A,teacher as B WHERE ( A.reply_group_id = '1' and A.teacher_id = B.teacher_id )  [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `reply_stugroup` [ RunTime:0.018520s ]
+SQL: SHOW COLUMNS FROM `reply_stugroup` [ RunTime:0.012351s ]
+SQL: SELECT B.group_id,C.student_id FROM reply_stugroup as A,student_group_member as B,student as C,student_group as D WHERE ( A.reply_group_id = '1' and A.stu_groupId = B.group_id and B.is_groupLeader = 1 and B.student_id = C.student_id and B.group_id = D.group_id and D.is_replyAllocated = 0 )  [ RunTime:0.000347s ]
+SQL: SELECT `teacher_id`,`teacher_name` FROM `teacher` WHERE ( teacher_id = '1' )  [ RunTime:0.000226s ]
+SQL: SHOW COLUMNS FROM `reply_member` [ RunTime:0.019648s ]
+SQL: SELECT B.teacher_id,B.teacher_name FROM reply_member as A,teacher as B WHERE ( A.reply_group_id = '3' and A.teacher_id = B.teacher_id )  [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `reply_stugroup` [ RunTime:0.011876s ]
+SQL: SELECT B.group_id,C.student_id FROM reply_stugroup as A,student_group_member as B,student as C,student_group as D WHERE ( A.reply_group_id = '3' and A.stu_groupId = B.group_id and B.is_groupLeader = 1 and B.student_id = C.student_id and B.group_id = D.group_id and D.is_replyAllocated = 0 )  [ RunTime:0.000343s ]
+SQL: SELECT `teacher_id`,`teacher_name` FROM `teacher` WHERE ( teacher_id = '1' )  [ RunTime:0.000238s ]
+SQL: SHOW COLUMNS FROM `reply_member` [ RunTime:0.012854s ]
+SQL: SELECT B.teacher_id,B.teacher_name FROM reply_member as A,teacher as B WHERE ( A.reply_group_id = '4' and A.teacher_id = B.teacher_id )  [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `reply_stugroup` [ RunTime:0.021073s ]
+SQL: SELECT B.group_id,C.student_id FROM reply_stugroup as A,student_group_member as B,student as C,student_group as D WHERE ( A.reply_group_id = '4' and A.stu_groupId = B.group_id and B.is_groupLeader = 1 and B.student_id = C.student_id and B.group_id = D.group_id and D.is_replyAllocated = 0 )  [ RunTime:0.000334s ]
+SQL: SELECT `teacher_id`,`teacher_name` FROM `teacher` WHERE ( teacher_id = '2' )  [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `reply_member` [ RunTime:0.010829s ]
+SQL: SELECT B.teacher_id,B.teacher_name FROM reply_member as A,teacher as B WHERE ( A.reply_group_id = '5' and A.teacher_id = B.teacher_id )  [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `reply_stugroup` [ RunTime:0.012843s ]
+SQL: SELECT B.group_id,C.student_id FROM reply_stugroup as A,student_group_member as B,student as C,student_group as D WHERE ( A.reply_group_id = '5' and A.stu_groupId = B.group_id and B.is_groupLeader = 1 and B.student_id = C.student_id and B.group_id = D.group_id and D.is_replyAllocated = 0 )  [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\9b882f26fdb5b7b44a5ef9e4234a68a1.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.034003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001700s ]
+
+[ 2016-12-14T22:58:20+08:00 ] ::1 /CPS/index.php/Teacher/Professor/course_info
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.019747s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.000285s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.012263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000888s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2016-12-14T22:58:23+08:00 ] ::1 /CPS/index.php/Teacher/Professor/my_replyGroup/course_id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001446s ]
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.028411s ]
+SQL: SELECT `reply_group_id`,`group_leader_id` FROM `reply` WHERE ( course_id = '2' )  [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.015107s ]
+SQL: SELECT `teacher_id`,`teacher_name` FROM `teacher` WHERE ( teacher_id = '5' )  [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `reply_member` [ RunTime:0.017608s ]
+SQL: SHOW COLUMNS FROM `reply_member` [ RunTime:0.038297s ]
+SQL: SELECT B.teacher_id,B.teacher_name FROM reply_member as A,teacher as B WHERE ( A.reply_group_id = '2' and A.teacher_id = B.teacher_id )  [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `reply_stugroup` [ RunTime:0.025133s ]
+SQL: SHOW COLUMNS FROM `reply_stugroup` [ RunTime:0.014115s ]
+SQL: SELECT B.group_id,C.student_id FROM reply_stugroup as A,student_group_member as B,student as C,student_group as D WHERE ( A.reply_group_id = '2' and A.stu_groupId = B.group_id and B.is_groupLeader = 1 and B.student_id = C.student_id and B.group_id = D.group_id and D.is_replyAllocated = 0 )  [ RunTime:0.000473s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\9b882f26fdb5b7b44a5ef9e4234a68a1.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000920s ]
+
+[ 2016-12-14T22:58:48+08:00 ] ::1 /CPS/index.php/Teacher/Professor/replyMember_task/reply_group_id/2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003351s ]
+SQL: SHOW COLUMNS FROM `reply_member` [ RunTime:0.040309s ]
+SQL: SHOW COLUMNS FROM `reply_member` [ RunTime:0.037390s ]
+SQL: SELECT A.reply_group_id,A.teacher_id,A.allocated_stugroup_id,B.teacher_name FROM reply_member as A,teacher as B WHERE ( A.reply_group_id = '2' and A.teacher_id = B.teacher_id )  [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.025946s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.012468s ]
+SQL: SELECT A.student_id,A.student_name FROM student as A,student_group_member as B WHERE ( A.student_id = B.student_id and B.group_id = '' )  [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.012762s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.014065s ]
+SQL: SELECT A.project_name FROM project as A,student_group as B WHERE ( A.project_id = B.project_id and B.group_id = '' )  [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.021367s ]
+SQL: SELECT A.student_id,A.student_name FROM student as A,student_group_member as B WHERE ( A.student_id = B.student_id and B.group_id = '' )  [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.013747s ]
+SQL: SELECT A.project_name FROM project as A,student_group as B WHERE ( A.project_id = B.project_id and B.group_id = '' )  [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.014931s ]
+SQL: SELECT A.student_id,A.student_name FROM student as A,student_group_member as B WHERE ( A.student_id = B.student_id and B.group_id = '' )  [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `project` [ RunTime:0.014889s ]
+SQL: SELECT A.project_name FROM project as A,student_group as B WHERE ( A.project_id = B.project_id and B.group_id = '' )  [ RunTime:0.000234s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: login_url D:\WWW\CPS\Runtime\Cache\Teacher\533cf1c645c6b122d474e7a8543c156f.php 第 39 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.033289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000782s ]
+

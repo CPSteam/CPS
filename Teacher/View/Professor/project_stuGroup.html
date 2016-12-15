@@ -52,6 +52,8 @@
       <tr>
        <th>学生组ID</th>
        <th>学生组成员</th>
+       <th>申请文件</th>
+       <th>状态</th>
        <th>操作</th>
      </tr>
    </thead>
@@ -65,7 +67,29 @@
             </foreach>
          </td>
          <td>
-          <a href="{$stuGroup_report_url}/stu_group_id/{$h.group_id}"><button type="button" class="btn btn-success">管理</button></a>
+          <foreach name="h.stu_group_leader" item="l">
+            <a href="__URL__/stu_apply_file_download?student_id={$l.student_id}&stu_group_id={$h.group_id}&course_name={$v.course_name}&project_name={$v.project_name}">查看</a>
+            <!-- {$l.student_id}_{$h.group_id}_{$v.course_name}_{$v.project_name} -->
+          </foreach>
+         </td>
+         <td>
+           <if condition="$h.group_project_status eq 0">
+            <p style="color: red">拒绝</p>
+           <elseif condition="$h.group_project_status eq 1"/>
+            <p style="color: blue">待审核</p>
+           <else/>
+            <p style="color: green">通过</p>
+           </if>
+         </td>
+         <td>
+          <if condition="$h.group_project_status eq 0">
+            <button type="button" class="btn btn-success disabled">管理</button>
+          <elseif condition="$h.group_project_status eq 1"/>
+            <a href="{$project_stuGroup_url}/stu_group_id/{$h.group_id}/stu_group_agree/1"><button type="button" class="btn btn-success">同意</button></a><br>
+            <a href="{$project_stuGroup_url}/stu_group_id/{$h.group_id}/stu_group_agree/0"><button type="button" class="btn btn-danger">拒绝</button></a>
+          <else/>
+            <a href="{$stuGroup_report_url}/stu_group_id/{$h.group_id}"><button type="button" class="btn btn-success">管理</button></a>
+          </if>
          </td>
        </tr>
     </foreach>

@@ -28,26 +28,7 @@
      </thead>
      <tbody>
       <foreach name="stu_group_info" item="v">
-        <if condition="$v.file_type_name eq '平时报告'">
-          <tr>
-           <td>{$v.file_type_name}</td>
-           <td>{$v.group_id}</td>
-           <td>
-            <foreach name="v.stu_members" item="h">
-                {$h.student_id}-{$h.student_name}<br>
-            </foreach>
-           </td>
-           <td>{$v.file_deadline}</td>
-           <td>--</td>
-           <td>--</td>
-           <td>
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1{$v.file_type_name}">评审</button><br/>
-           </td>
-           <td>
-            <a href="#"><button type="file" class="btn btn-success">查看报告</button></a>
-           </td>
-          </tr>
-        <elseif condition="$v.file_type_name eq '期中报告'"/>
+        <if condition="$v.file_type_name eq '期中报告'">
           <tr>
            <td>{$v.file_type_name}</td>
            <td>{$v.group_id}</td>
@@ -60,13 +41,16 @@
            <if condition="($v.group_middle_report_score eq '') or ($v.group_middle_report_context eq '')">
              <td>--</td>
              <td>--</td>
+             <td>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1{$v.file_type_name}">评审</button>
+             </td>
            <else/>
               <td>{$v.group_middle_report_score}</td>
               <td>{$v.group_middle_report_context}</td>
+              <td>
+               <button type="button" class="btn btn-info disabled"">评审</button>
+              </td>
            </if>
-           <td>
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1{$v.file_type_name}">评审</button>
-           </td>
            <td>
             <a href="__URL__/stu_group_file_download?student_id={$h.student_id}&stu_group_id={$v.group_id}&file_type_name={$v.file_type_name}"><button type="button" class="btn btn-success">查看报告</button></a>
            </td>
@@ -81,16 +65,19 @@
             </foreach>
            </td>
            <td>{$v.file_deadline}</td>
-            <if condition="($v.group_middle_report_score eq '') or ($v.group_middle_report_context eq '')">
+            <if condition="($v.group_final_report_score eq '') or ($v.group_final_report_context eq '')">
              <td>--</td>
              <td>--</td>
+             <td>
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1{$v.file_type_name}">评审</button>
+             </td>
            <else/>
               <td>{$v.group_final_report_score}</td>
               <td>{$v.group_final_report_context}</td>
+              <td>
+               <button type="button" class="btn btn-info disabled">评审</button>
+              </td>
            </if>
-           <td>
-            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModa1{$v.file_type_name}">评审</button>
-           </td>
            <td>
             <a href="__URL__/stu_group_file_download?student_id={$h.student_id}&stu_group_id={$v.group_id}&file_type_name={$v.file_type_name}"><button type="button" class="btn btn-success">查看报告</button></a>
            </td>

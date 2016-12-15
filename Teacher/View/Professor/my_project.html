@@ -39,8 +39,13 @@
          <td>
             {$v.final_expected_result}<br>
          </td>
-         <td>{$v.review_score}</td>
-         <td>{$v.review_context}</td>
+         <if condition="($v.review_score eq '') or ($v.review_context eq '')">
+          <td>--</td>
+          <td>--</td>
+         <else/>
+          <td>{$v.review_score}</td>
+          <td>{$v.review_context}</td>
+         </if>
            <if condition="$v.project_status eq 0">
             <td>
               <p style="color: red">拒绝</p>

@@ -89,6 +89,8 @@
       <tr>
        <th>学生组ID</th>
        <th>学生组成员</th>
+       <th>申请文件</th>
+       <th>状态</th>
        <th>操作</th>
      </tr>
    </thead>
@@ -99,7 +101,23 @@
             <?php if(is_array($h["stu_group_members"])): foreach($h["stu_group_members"] as $key=>$m): echo ($m["student_id"]); ?>-<?php echo ($m["student_name"]); ?><br><?php endforeach; endif; ?>
          </td>
          <td>
-          <a href="<?php echo ($stuGroup_report_url); ?>/stu_group_id/<?php echo ($h["group_id"]); ?>"><button type="button" class="btn btn-success">管理</button></a>
+          <?php if(is_array($h["stu_group_leader"])): foreach($h["stu_group_leader"] as $key=>$l): ?><a href="/CPS/index.php/Teacher/Professor/stu_apply_file_download?student_id=<?php echo ($l["student_id"]); ?>&stu_group_id=<?php echo ($h["group_id"]); ?>&course_name=<?php echo ($v["course_name"]); ?>&project_name=<?php echo ($v["project_name"]); ?>">查看</a>
+            <!-- <?php echo ($l["student_id"]); ?>_<?php echo ($h["group_id"]); ?>_<?php echo ($v["course_name"]); ?>_<?php echo ($v["project_name"]); ?> --><?php endforeach; endif; ?>
+         </td>
+         <td>
+           <?php if($h["group_project_status"] == 0): ?><p style="color: red">拒绝</p>
+           <?php elseif($h["group_project_status"] == 1): ?>
+            <p style="color: blue">待审核</p>
+           <?php else: ?>
+            <p style="color: green">通过</p><?php endif; ?>
+         </td>
+         <td>
+          <?php if($h["group_project_status"] == 0): ?><button type="button" class="btn btn-success disabled">管理</button>
+          <?php elseif($h["group_project_status"] == 1): ?>
+            <a href="<?php echo ($project_stuGroup_url); ?>/stu_group_id/<?php echo ($h["group_id"]); ?>/stu_group_agree/1"><button type="button" class="btn btn-success">同意</button></a><br>
+            <a href="<?php echo ($project_stuGroup_url); ?>/stu_group_id/<?php echo ($h["group_id"]); ?>/stu_group_agree/0"><button type="button" class="btn btn-danger">拒绝</button></a>
+          <?php else: ?>
+            <a href="<?php echo ($stuGroup_report_url); ?>/stu_group_id/<?php echo ($h["group_id"]); ?>"><button type="button" class="btn btn-success">管理</button></a><?php endif; ?>
          </td>
        </tr><?php endforeach; endif; ?>
    </tbody>
